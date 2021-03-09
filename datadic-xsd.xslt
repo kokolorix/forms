@@ -28,85 +28,69 @@
 					<xs:attribute name="FileVersion" use="required">
 						<xs:simpleType>
 							<xs:restriction base="xs:string">
-								<xs:enumeration value="9.0.24.10060"/>
 							</xs:restriction>
 						</xs:simpleType>
 					</xs:attribute>
 					<xs:attribute name="DatenbankAnwender" use="required">
 						<xs:simpleType>
 							<xs:restriction base="xs:byte">
-								<xs:enumeration value="1"/>
 							</xs:restriction>
 						</xs:simpleType>
 					</xs:attribute>
 					<xs:attribute name="DatenbankAnwenderDescr" use="required">
 						<xs:simpleType>
 							<xs:restriction base="xs:string">
-								<xs:enumeration value="ElektroForm Installateur"/>
 							</xs:restriction>
 						</xs:simpleType>
 					</xs:attribute>
 					<xs:attribute name="FormAnwender" use="required">
 						<xs:simpleType>
 							<xs:restriction base="xs:byte">
-								<xs:enumeration value="1"/>
 							</xs:restriction>
 						</xs:simpleType>
 					</xs:attribute>
 					<xs:attribute name="FormAnwenderDescr" use="required">
 						<xs:simpleType>
 							<xs:restriction base="xs:string">
-								<xs:enumeration value="Installateur"/>
 							</xs:restriction>
 						</xs:simpleType>
 					</xs:attribute>
 				</xs:complexType>
 			</xs:element>
-			<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="Elm"></xsl:apply-templates>
-			<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="ST"></xsl:apply-templates>			
+			<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="Elm"/>
+			<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="ST"/>
 			<!--=======================================================================-->
 			<xs:complexType name="RowT">
 				<xs:all>
-					<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="ref"></xsl:apply-templates>
+					<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="ref"/>
 				</xs:all>
 			</xs:complexType>
-			<!--=======================================================================-->			
+			<!--=======================================================================-->
 		</xs:schema>
 	</xsl:template>
 	<!--=======================================================================-->
 	<!-- Fld-Template, erstellt ein Feld-Element -->
 	<!--=======================================================================-->
 	<xsl:template match="Fld" mode="Elm">
-	<xs:element>
-		<xsl:attribute name="name">
-			<xsl:value-of select="@Name"></xsl:value-of>
-		</xsl:attribute>
-		<xs:simpleContent>
-			<xs:extension>
-				<xsl:attribute name="base">
-					<xsl:text>ST_</xsl:text>
-					<xsl:value-of select="@Name"></xsl:value-of>
-				</xsl:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:element>
+		<xs:element>
+			<xsl:attribute name="name"><xsl:value-of select="@Name"></xsl:value-of></xsl:attribute>
+			<xs:complexType>
+				<xs:simpleContent>
+					<xs:extension>
+						<xsl:attribute name="base"><xsl:text>ST_</xsl:text><xsl:value-of select="@Name"></xsl:value-of></xsl:attribute>
+					</xs:extension>
+				</xs:simpleContent>
+			</xs:complexType>
+		</xs:element>
 	</xsl:template>
 	<!--=======================================================================-->
 	<!-- Fld-Template, erstellt einen Feld-Typ -->
 	<!--=======================================================================-->
 	<xsl:template match="Fld" mode="ST">
 		<xs:simpleType>
-			<xsl:attribute name="name">
-				<xsl:text>ST_</xsl:text>
-				<xsl:value-of select="@Name"></xsl:value-of>
-			</xsl:attribute>
+			<xsl:attribute name="name"><xsl:text>ST_</xsl:text><xsl:value-of select="@Name"></xsl:value-of></xsl:attribute>
 			<xs:restriction base="xs:int">
-			<xsl:attribute name="base">
-				<xsl:choose>
-					<xsl:when test="@Type='INT'"><xsl:text>xs:int</xsl:text></xsl:when>
-				<xsl:otherwise><xsl:text>xs:string</xsl:text></xsl:otherwise>
-				</xsl:choose>
-			</xsl:attribute>
+				<xsl:attribute name="base"><xsl:choose><xsl:when test="@Type='INT'"><xsl:text>xs:int</xsl:text></xsl:when><xsl:otherwise><xsl:text>xs:string</xsl:text></xsl:otherwise></xsl:choose></xsl:attribute>
 			</xs:restriction>
 		</xs:simpleType>
 	</xsl:template>
@@ -115,9 +99,7 @@
 	<!--=======================================================================-->
 	<xsl:template match="Fld" mode="ref">
 		<xs:element>
-			<xsl:attribute name="ref">
-				<xsl:value-of select="@Name"></xsl:value-of>
-			</xsl:attribute>
+			<xsl:attribute name="ref"><xsl:value-of select="@Name"></xsl:value-of></xsl:attribute>
 		</xs:element>
 	</xsl:template>
 	<!--=======================================================================-->

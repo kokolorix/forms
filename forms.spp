@@ -3,6 +3,7 @@
 	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
 		<File FilePath="MESSPROT18.xml" HomeFolder="Yes"/>
 		<File FilePath="MPP.xml" HomeFolder="Yes"/>
+		<File FilePath="SINA18.xml" HomeFolder="Yes"/>
 	</Folder>
 	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
 		<File FilePath="datadic-xsd.xslt" HomeFolder="Yes"/>
