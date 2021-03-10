@@ -3,7 +3,7 @@
 	<xs:element name="DATAPACKET">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="ROW"/>
+				<xs:element name="ROW" type="T_Row"/>
 				<xs:sequence minOccurs="0">
 					<xs:element ref="PGM_INFO"/>
 				</xs:sequence>
@@ -18,7 +18,6 @@
 			<xs:attribute name="noNamespaceSchemaLocation" type="xs:string" use="optional"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="ROW" type="RowT"/>
 	<xs:element name="PGM_INFO">
 		<xs:complexType>
 			<xs:attribute name="FileVersion" use="required">
@@ -67,52 +66,439 @@
 	<xs:element name="WERK_IN" type="T_DATE"/>
 	<xs:element name="WERK_OUT" type="T_DATE"/>
 	<xs:element name="INST_IN" type="T_DATE"/>
-	<xs:element name="PROJ_NR" type="T_STRING"/>
+	<xs:element name="PROJ_NR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="12"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="PROJ_JAHR" type="T_INT"/>
-	<xs:element name="WERK" type="T_STRING"/>
-	<xs:element name="W_EMAIL" type="T_STRING"/>
-	<xs:element name="W_EF_EMAIL" type="T_STRING"/>
-	<xs:element name="VISUM" type="T_STRING"/>
-	<xs:element name="I_NAME1" type="T_STRING"/>
-	<xs:element name="I_NAME2" type="T_STRING"/>
-	<xs:element name="I_ADRESSE1" type="T_STRING"/>
-	<xs:element name="I_ADRESSE2" type="T_STRING"/>
-	<xs:element name="I_PLZ" type="T_STRING"/>
-	<xs:element name="I_ORT" type="T_STRING"/>
-	<xs:element name="I_KONZESS" type="T_STRING"/>
-	<xs:element name="I_SACHB" type="T_STRING"/>
-	<xs:element name="I_TELNR" type="T_STRING"/>
-	<xs:element name="I_FAXNR" type="T_STRING"/>
-	<xs:element name="I_EMAIL" type="T_STRING"/>
-	<xs:element name="I_EF_EMAIL" type="T_STRING"/>
-	<xs:element name="O_STRASSE" type="T_STRING"/>
-	<xs:element name="O_HAUSNR" type="T_STRING"/>
-	<xs:element name="O_PLZ" type="T_STRING"/>
-	<xs:element name="O_ORT" type="T_STRING"/>
-	<xs:element name="GEMEINDE" type="T_STRING"/>
-	<xs:element name="PARZELLE" type="T_STRING"/>
-	<xs:element name="VERSICH" type="T_STRING"/>
-	<xs:element name="GEBAEUDEART" type="T_STRING"/>
-	<xs:element name="GEBAEUDETEIL" type="T_STRING"/>
-	<xs:element name="LAGE" type="T_STRING"/>
-	<xs:element name="ANLNUTZUNG" type="T_STRING"/>
-	<xs:element name="U_NAME1" type="T_STRING"/>
-	<xs:element name="U_NAME2" type="T_STRING"/>
-	<xs:element name="U_ADRESSE1" type="T_STRING"/>
-	<xs:element name="U_ADRESSE2" type="T_STRING"/>
-	<xs:element name="U_PLZ" type="T_STRING"/>
-	<xs:element name="U_ORT" type="T_STRING"/>
-	<xs:element name="U_TELNR" type="T_STRING"/>
-	<xs:element name="U_FAXNR" type="T_STRING"/>
-	<xs:element name="U_EMAIL" type="T_STRING"/>
-	<xs:element name="GEBAEUDENR" type="T_STRING"/>
+	<xs:element name="WERK">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="W_EMAIL">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="60"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="W_EF_EMAIL">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="60"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="VISUM">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="6"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_NAME1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_NAME2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_ADRESSE1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_ADRESSE2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_PLZ">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_ORT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_KONZESS">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_SACHB">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_TELNR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_FAXNR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_EMAIL">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="60"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="I_EF_EMAIL">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="60"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="O_STRASSE">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="O_HAUSNR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="O_PLZ">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="O_ORT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GEMEINDE">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PARZELLE">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="18"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="VERSICH">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="18"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GEBAEUDEART">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GEBAEUDETEIL">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LAGE">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ANLNUTZUNG">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="U_NAME1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="U_NAME2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="U_ADRESSE1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="U_ADRESSE2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="U_PLZ">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="U_ORT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="U_TELNR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="U_FAXNR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="U_EMAIL">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="60"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GEBAEUDENR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="EGID" type="T_INT"/>
-	<xs:element name="ABONR" type="T_STRING"/>
-	<xs:element name="EVUAUFTNR" type="T_STRING"/>
+	<xs:element name="ABONR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EVUAUFTNR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="12"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="TERMIN" type="T_DATE"/>
-	<xs:element name="PACKNAME" type="T_STRING"/>
-	<xs:element name="MP_NR" type="T_STRING"/>
-	<xs:element name="RAPPORT_NR" type="T_STRING"/>
+	<xs:element name="PACKNAME">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MP_NR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="12"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RAPPORT_NR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="AN_INST" type="T_BOOL"/>
 	<xs:element name="AN_KONTR" type="T_BOOL"/>
 	<xs:element name="EIGENT" type="T_BOOL"/>
@@ -120,31 +506,175 @@
 	<xs:element name="STROMK" type="T_BOOL"/>
 	<xs:element name="INST" type="T_BOOL"/>
 	<xs:element name="AG_X" type="T_BOOL"/>
-	<xs:element name="AG_XTEXT" type="T_STRING"/>
-	<xs:element name="GES_NAME1" type="T_STRING"/>
-	<xs:element name="GES_NAME2" type="T_STRING"/>
-	<xs:element name="GES_ADRESSE1" type="T_STRING"/>
-	<xs:element name="GES_ADRESSE2" type="T_STRING"/>
-	<xs:element name="GES_PLZ" type="T_STRING"/>
-	<xs:element name="GES_ORT" type="T_STRING"/>
-	<xs:element name="GES_TELNR" type="T_STRING"/>
-	<xs:element name="GES_FAXNR" type="T_STRING"/>
-	<xs:element name="GES_EMAIL" type="T_STRING"/>
-	<xs:element name="BEMERKUNG" type="T_STRING"/>
+	<xs:element name="AG_XTEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GES_NAME1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GES_NAME2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GES_ADRESSE1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GES_ADRESSE2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GES_PLZ">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GES_ORT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GES_TELNR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GES_FAXNR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GES_EMAIL">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="60"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BEMERKUNG">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="ZEV" type="T_BOOL"/>
-	<xs:element name="ZEV_TEXT" type="T_STRING"/>
-	<xs:element name="ZAEHLER" type="T_STRING"/>
+	<xs:element name="ZEV_TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ZAEHLER">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="ANLJAHR0" type="T_INT"/>
-	<xs:element name="ANL1" type="T_STRING"/>
+	<xs:element name="ANL1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="ANLJAHR1" type="T_INT"/>
-	<xs:element name="ANL2" type="T_STRING"/>
+	<xs:element name="ANL2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="ANLJAHR2" type="T_INT"/>
 	<xs:element name="MP_NEU" type="T_BOOL"/>
 	<xs:element name="MP_BEST" type="T_BOOL"/>
 	<xs:element name="MP_ANDERS" type="T_BOOL"/>
 	<xs:element name="MP_ERWEIT" type="T_BOOL"/>
 	<xs:element name="MP_X" type="T_BOOL"/>
-	<xs:element name="MP_XTEXT" type="T_STRING"/>
+	<xs:element name="MP_XTEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="20"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="MP_SK" type="T_BOOL"/>
 	<xs:element name="MP_AK" type="T_BOOL"/>
 	<xs:element name="MP_PK" type="T_BOOL"/>
@@ -164,20 +694,47 @@
 	<xs:element name="S_8" type="T_BOOL"/>
 	<xs:element name="S_9" type="T_BOOL"/>
 	<xs:element name="S_18" type="T_BOOL"/>
-	<xs:element name="S_18TEXT" type="T_STRING"/>
+	<xs:element name="S_18TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="50"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="S_10" type="T_BOOL"/>
 	<xs:element name="S_TNS" type="T_BOOL"/>
 	<xs:element name="S_TNC" type="T_BOOL"/>
 	<xs:element name="S_TNCS" type="T_BOOL"/>
 	<xs:element name="S_SCH3" type="T_BOOL"/>
 	<xs:element name="S_TNX" type="T_BOOL"/>
-	<xs:element name="S_TNXTEXT" type="T_STRING"/>
+	<xs:element name="S_TNXTEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="14"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="S_12" type="T_BOOL"/>
 	<xs:element name="S_FUND" type="T_BOOL"/>
 	<xs:element name="S_TIEFENERDER" type="T_BOOL"/>
 	<xs:element name="S_BANDERDER" type="T_BOOL"/>
 	<xs:element name="S_ERDX" type="T_BOOL"/>
-	<xs:element name="S_ERDXTEXT" type="T_STRING"/>
+	<xs:element name="S_ERDXTEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="S_11" type="T_BOOL"/>
 	<xs:element name="S_13" type="T_BOOL"/>
 	<xs:element name="S_14" type="T_BOOL"/>
@@ -190,61 +747,358 @@
 	<xs:element name="F_4" type="T_BOOL"/>
 	<xs:element name="F_5N" type="T_BOOL"/>
 	<xs:element name="F_6" type="T_BOOL"/>
-	<xs:element name="F_6TEXT" type="T_STRING"/>
-	<xs:element name="F_SPANNUNG" type="T_STRING"/>
-	<xs:element name="F_BEM" type="T_STRING"/>
-	<xs:element name="N_MESSNORM" type="T_STRING"/>
-	<xs:element name="N_MESS1" type="T_STRING"/>
-	<xs:element name="N_MESS2" type="T_STRING"/>
-	<xs:element name="N_MESS3" type="T_STRING"/>
+	<xs:element name="F_6TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="44"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="F_SPANNUNG">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="10"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="F_BEM">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="36"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="N_MESSNORM">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="14"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="N_MESS1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="N_MESS2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="N_MESS3">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="N_NORM1" type="T_BOOL"/>
-	<xs:element name="N_NORM1TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM1TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="N_NORM2" type="T_BOOL"/>
-	<xs:element name="N_NORM2TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM2TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="N_NORM3" type="T_BOOL"/>
-	<xs:element name="N_NORM3TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM3TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="N_NORM4" type="T_BOOL"/>
-	<xs:element name="N_NORM4TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM4TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="N_NORM5" type="T_BOOL"/>
-	<xs:element name="N_NORM5TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM5TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="N_NORM6" type="T_BOOL"/>
-	<xs:element name="N_NORM6TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM6TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="N_NORM7" type="T_BOOL"/>
-	<xs:element name="N_NORM7TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM7TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="N_NORM8" type="T_BOOL"/>
-	<xs:element name="N_NORM8TEXT" type="T_STRING"/>
-	<xs:element name="SKLISTE_BEMTITEL" type="T_STRING"/>
+	<xs:element name="N_NORM8TEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SKLISTE_BEMTITEL">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="SK_ASBEST0" type="T_BOOL"/>
 	<xs:element name="SK_ASBEST1" type="T_BOOL"/>
 	<xs:element name="SK_1" type="T_BOOL"/>
-	<xs:element name="SK_1NORM" type="T_STRING"/>
+	<xs:element name="SK_1NORM">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="12"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="SK_2" type="T_BOOL"/>
 	<xs:element name="SK_3" type="T_BOOL"/>
 	<xs:element name="DOKU" type="T_BOOL"/>
 	<xs:element name="SCHEMA" type="T_BOOL"/>
 	<xs:element name="ZUSATZ1" type="T_BOOL"/>
-	<xs:element name="ZUSTXT1" type="T_STRING"/>
+	<xs:element name="ZUSTXT1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="24"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="OHNEMANGEL" type="T_BOOL"/>
-	<xs:element name="MANGELTEXT" type="T_STRING"/>
-	<xs:element name="GGZ_NAME1" type="T_STRING"/>
-	<xs:element name="GGZ_NAME2" type="T_STRING"/>
-	<xs:element name="GGZ_ADRESSE1" type="T_STRING"/>
-	<xs:element name="GGZ_ADRESSE2" type="T_STRING"/>
-	<xs:element name="GGZ_PLZ" type="T_STRING"/>
-	<xs:element name="GGZ_ORT" type="T_STRING"/>
-	<xs:element name="GGZ_KONZESS" type="T_STRING"/>
-	<xs:element name="GGZ_TELNR" type="T_STRING"/>
-	<xs:element name="GGZ_EMAIL" type="T_STRING"/>
+	<xs:element name="MANGELTEXT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="25"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_NAME1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_NAME2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_ADRESSE1">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_ADRESSE2">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="40"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_PLZ">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_ORT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_KONZESS">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_TELNR">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="16"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_EMAIL">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="60"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="GGZ_DATUM" type="T_DATE"/>
-	<xs:element name="GGZ_GRUND" type="T_STRING"/>
-	<xs:element name="GGZ_SIGN" type="T_STRING"/>
-	<xs:element name="GGZ_SIKT" type="T_STRING"/>
+	<xs:element name="GGZ_GRUND">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="60"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_SIGN">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="GGZ_SIKT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
 	<xs:element name="SIGN_DATUM" type="T_DATE"/>
-	<xs:element name="KONTR_SIGN" type="T_STRING"/>
-	<xs:element name="KONTR_SIKT" type="T_STRING"/>
-	<xs:element name="SKListeMESSPROT18_DE"/>
-	<xs:element name="SKListeMESSPROT18_FR"/>
-	<xs:element name="SKListeMESSPROT18_IT"/>
+	<xs:element name="KONTR_SIGN">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="KONTR_SIKT">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:restriction base="T_STRING">
+					<xs:minLength value="0"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SKListeMESSPROT18_DE" type="T_SKListe"/>
+	<xs:element name="SKListeMESSPROT18_FR" type="T_SKListe"/>
+	<xs:element name="SKListeMESSPROT18_IT" type="T_SKListe"/>
 	<xs:complexType name="T_MEMO">
 		<xs:simpleContent>
 			<xs:extension base="ST_STRING">
@@ -311,7 +1165,7 @@
 	<xs:simpleType name="ST_DATE">
 		<xs:restriction base="xs:string">
 			<xs:pattern value=""/>
-			<xs:pattern value="[0-9]{4}[0-9]{2}[0-9]{2}[0-9]{9}"/><!--Datums-Format: YYYYMMTThhmmssmmm--></xs:restriction></xs:simpleType><xs:complexType name="RowT">
+			<xs:pattern value="[0-9]{4}[0-9]{2}[0-9]{2}[0-9]{9}"/><!--Datums-Format: YYYYMMTThhmmssmmm--></xs:restriction></xs:simpleType><xs:complexType name="T_Row">
 		<xs:all>
 			<xs:element ref="FORM_TYP"/>
 			<xs:element ref="ID"/>
@@ -505,5 +1359,178 @@
 			<xs:element ref="SKListeMESSPROT18_FR" minOccurs="0"/>
 			<xs:element ref="SKListeMESSPROT18_IT" minOccurs="0"/>
 		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="T_SKListe">
+		<xs:sequence>
+			<xs:element name="ROW">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="ID" type="T_INT"/>
+						<xs:element name="FORM_ID" type="T_INT"/>
+						<xs:element name="SEQ_FORM" type="T_INT"/>
+						<xs:element name="NUMMER">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="23"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="BEZ">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="120"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="LEIT_ART">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="12"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="LEIT_ANZ">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="22"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="I_ART">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="10"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="I_INSTR">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="M_IKMAX">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="M_IKMIN">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="M_IKMAX_LN">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="M_IKMIN_LN">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="M_RISO">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="M_LEIT">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="FI_IN">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="6"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="FI_IDN">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="6"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="FI_T">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="BEMERK">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:restriction base="T_STRING">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="120"/>
+									</xs:restriction>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 </xs:schema>

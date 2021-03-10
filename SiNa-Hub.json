@@ -1,0 +1,478 @@
+{
+	"DATAPACKET": {
+		"@Version": 1.0,
+		"ROW": {
+			"FORM_TYP": "Q",
+			"ID": {
+				"@OLD": "1",
+				"$": "1"
+			},
+			"ID_PROJECT": "",
+			"COPY_ID": "",
+			"MANDANT": "",
+			"ID_FORMTMP": {
+				"@OLD": "2151",
+				"$": "2151"
+			},
+			"I_PROJECT": "",
+			"I_FORM": "",
+			"E_PROJECT": "",
+			"INST_OUT": {
+				"@Type": "DT",
+				"$": "20200728112751000"
+			},
+			"WERK_IN": {
+				"@Type": "DT"
+			},
+			"WERK_OUT": {
+				"@Type": "DT"
+			},
+			"INST_IN": {
+				"@Type": "DT"
+			},
+			"PROJ_NR": "",
+			"PROJ_JAHR": "",
+			"WERK": {
+				"@OLD": "EwiD",
+				"$": "EwiD"
+			},
+			"W_EMAIL": "",
+			"W_EF_EMAIL": "",
+			"VISUM": "",
+			"I_NAME1": {
+				"@OLD": "SaveControl GmbH",
+				"$": "SaveControl GmbH"
+			},
+			"I_NAME2": {
+				"@OLD": "Installationskontrolle",
+				"$": "Installationskontrolle"
+			},
+			"I_ADRESSE1": {
+				"@OLD": "Birkenweg 23",
+				"$": "Birkenweg 23"
+			},
+			"I_ADRESSE2": {
+				"@OLD": "Postfach 84",
+				"$": "Postfach 84"
+			},
+			"I_PLZ": {
+				"@OLD": "6560",
+				"$": "6560"
+			},
+			"I_ORT": {
+				"@OLD": "Neustadt",
+				"$": "Neustadt"
+			},
+			"I_KONZESS": {
+				"@OLD": "K-0101",
+				"$": "K-0101"
+			},
+			"I_SACHB": {
+				"@OLD": "Simon Reber",
+				"$": "Simon Reber"
+			},
+			"I_TELNR": {
+				"@OLD": "031 917 00 43",
+				"$": "031 917 00 43"
+			},
+			"I_FAXNR": "",
+			"I_EMAIL": {
+				"@OLD": "resi@brunnerinformatik.ch",
+				"$": "resi@brunnerinformatik.ch"
+			},
+			"I_EF_EMAIL": "",
+			"O_STRASSE": {
+				"@OLD": "Brunnenweg",
+				"$": "Brunnenweg"
+			},
+			"O_HAUSNR": {
+				"@OLD": "51",
+				"$": "51"
+			},
+			"O_PLZ": {
+				"@OLD": "5623",
+				"$": "5623"
+			},
+			"O_ORT": {
+				"@OLD": "Kleinwil",
+				"$": "Kleinwil"
+			},
+			"GEMEINDE": {
+				"@OLD": "Kleinwil",
+				"$": "Kleinwil"
+			},
+			"PARZELLE": "",
+			"VERSICH": "",
+			"GEBAEUDEART": {
+				"@OLD": "Schulhaus",
+				"$": "Schulhaus"
+			},
+			"GEBAEUDETEIL": "",
+			"LAGE": {
+				"@OLD": "3.OG",
+				"$": "3.OG"
+			},
+			"ANLNUTZUNG": {
+				"@OLD": "Wohnung Abwart",
+				"$": "Wohnung Abwart"
+			},
+			"U_NAME1": {
+				"@OLD": "Gemeindeverwaltung",
+				"$": "Gemeindeverwaltung"
+			},
+			"U_NAME2": "",
+			"U_ADRESSE1": {
+				"@OLD": "Brunnenweg 51",
+				"$": "Brunnenweg 51"
+			},
+			"U_ADRESSE2": "",
+			"U_PLZ": {
+				"@OLD": "5623",
+				"$": "5623"
+			},
+			"U_ORT": {
+				"@OLD": "Kleinwil",
+				"$": "Kleinwil"
+			},
+			"U_TELNR": "",
+			"U_FAXNR": "",
+			"U_EMAIL": "",
+			"GEBAEUDENR": "",
+			"EGID": "",
+			"ABONR": "",
+			"EVUAUFTNR": "",
+			"TERMIN": {
+				"@OLD": "20200731000000000",
+				"@Type": "DT",
+				"$": "20200731000000000"
+			},
+			"PACKNAME": {
+				"@OLD": "ewid.evu",
+				"$": "ewid.evu"
+			},
+			"RAPPORT_NR": "",
+			"P_NAME1": {
+				"@OLD": "Gemeindeverwaltung",
+				"$": "Gemeindeverwaltung"
+			},
+			"P_NAME2": "",
+			"P_ADRESSE1": {
+				"@OLD": "Brunnenweg 47",
+				"$": "Brunnenweg 47"
+			},
+			"P_ADRESSE2": "",
+			"P_PLZ": {
+				"@OLD": "5623",
+				"$": "5623"
+			},
+			"P_ORT": {
+				"@OLD": "Kleinwil",
+				"$": "Kleinwil"
+			},
+			"P_TELNR": "",
+			"P_FAXNR": "",
+			"P_EMAIL": "",
+			"V_NAME1": "",
+			"V_NAME2": "",
+			"V_ADRESSE1": "",
+			"V_ADRESSE2": "",
+			"V_PLZ": "",
+			"V_ORT": "",
+			"V_TELNR": "",
+			"V_FAXNR": "",
+			"V_EMAIL": "",
+			"E_NAME1": "",
+			"E_NAME2": "",
+			"E_ADRESSE1": "",
+			"E_ADRESSE2": "",
+			"E_PLZ": "",
+			"E_ORT": "",
+			"E_KONZESS": "",
+			"E_TELNR": "",
+			"E_FAXNR": "",
+			"E_EMAIL": "",
+			"K_NAME1": {
+				"@OLD": "SaveControl GmbH",
+				"$": "SaveControl GmbH"
+			},
+			"K_NAME2": {
+				"@OLD": "Installationskontrolle",
+				"$": "Installationskontrolle"
+			},
+			"K_ADRESSE1": {
+				"@OLD": "Birkenweg 23",
+				"$": "Birkenweg 23"
+			},
+			"K_ADRESSE2": {
+				"@OLD": "Postfach 84",
+				"$": "Postfach 84"
+			},
+			"K_PLZ": {
+				"@OLD": "6560",
+				"$": "6560"
+			},
+			"K_ORT": {
+				"@OLD": "Neustadt",
+				"$": "Neustadt"
+			},
+			"K_KONZESS": {
+				"@OLD": "K-0101",
+				"$": "K-0101"
+			},
+			"K_TELNR": {
+				"@OLD": "062 111 11 11",
+				"$": "062 111 11 11"
+			},
+			"K_FAXNR": "",
+			"K_EMAIL": {
+				"@OLD": "info@savecontrol.ch",
+				"$": "info@savecontrol.ch"
+			},
+			"BEMERKUNG": "",
+			"ZEV": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"ZEV_TEXT": "",
+			"ZAEHLER": {
+				"@OLD": "04001",
+				"$": "04001"
+			},
+			"ANLJAHR0": {
+				"@OLD": "20",
+				"$": "20"
+			},
+			"ANL1": "",
+			"ANLJAHR1": "",
+			"ANL2": "",
+			"ANLJAHR2": "",
+			"NEUANL": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"BEST": {
+				"@OLD": "TRUE",
+				"@Type": "B",
+				"$": "TRUE"
+			},
+			"ANDERS": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"ERWEIT": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"GRUND_X": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"GRUND_XTXT": "",
+			"KONTUMFANG": "",
+			"IA_DATUM": {
+				"@Type": "DT"
+			},
+			"KONT_SK": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"KONT_AK": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"KONT_PK": {
+				"@OLD": "TRUE",
+				"@Type": "B",
+				"$": "TRUE"
+			},
+			"TNS": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"TNC": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"TNCS": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"TNX": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"TNTEXT": "",
+			"AUU_IN": "",
+			"AUU_ART": "",
+			"UU_ART": "",
+			"UU_IN": "",
+			"UU_IKMAX": "",
+			"UU_IKLN": "",
+			"UU_IK": "",
+			"UU_IKLN_ENDE": "",
+			"UU_RISO": "",
+			"UU_ZWECK": "",
+			"BESONDER": "",
+			"KONDATUM_SK": {
+				"@Type": "DT"
+			},
+			"KONDATUM_AKPK": {
+				"@OLD": "20200801000000000",
+				"@Type": "DT",
+				"$": "20200801000000000"
+			},
+			"KONDATUM": {
+				"@OLD": "20200801000000000",
+				"@Type": "DT",
+				"$": "20200801000000000"
+			},
+			"KONDATZUS": "",
+			"PLOMBENTF": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"AUFTRAK": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"AUFTRSK": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"AUFTRSK_NAME1": "",
+			"AUFTRSK_NAME2": "",
+			"AUFTRSK_ADRESSE1": "",
+			"AUFTRSK_ADRESSE2": "",
+			"AUFTRSK_PLZ": "",
+			"AUFTRSK_ORT": "",
+			"AUFTRSK_KONZESS": "",
+			"AUFTRSK_TELNR": "",
+			"AUFTRSK_EMAIL": "",
+			"BEI_MP": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"BEI_MPPV": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"BEI_X": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"BEI_TEXT": "",
+			"SINAV": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"SINAN": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"VERT1_X": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"VERT1": "",
+			"EW_BEMERKUNG": "",
+			"SP_JA": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"SP_NEIN": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"SP_GUT": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"SP_MANGEL": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"SP_PLOMB": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"SP_PKRELEVANT": {
+				"@OLD": "FALSE",
+				"@Type": "B",
+				"$": "FALSE"
+			},
+			"SIGN_DATUM": {
+				"@Type": "DT"
+			},
+			"SIGN_DATUM2": {
+				"@Type": "DT"
+			},
+			"SIGNATURE": "",
+			"SIGNKT": "",
+			"KONTR_SIGN": "",
+			"KONTR_SIKT": "",
+			"KONTR_DAT": {
+				"@OLD": "20200731000000000",
+				"@Type": "DT",
+				"$": "20200731000000000"
+			},
+			"KONTR_DAT2": {
+				"@OLD": "20200731000000000",
+				"@Type": "DT",
+				"$": "20200731000000000"
+			},
+			"SIGNATURE2": {
+				"@OLD": "Ovvpp1M875n",
+				"$": "Ovvpp1M875n"
+			},
+			"SIGNKT2": {
+				"@OLD": "Simon Reber",
+				"$": "Simon Reber"
+			},
+			"KONT_SIGN2": {
+				"@OLD": "Ovvpp1M875n",
+				"$": "Ovvpp1M875n"
+			},
+			"KONT_SIKT2": {
+				"@OLD": "Simon Reber",
+				"$": "Simon Reber"
+			},
+			"EW_SIGNDAT": {
+				"@Type": "DT"
+			},
+			"EW_SIGN": "",
+			"EW_SIGNKT": ""
+		},
+		"PGM_INFO": {
+			"@FileVersion": "9.0.24.10060",
+			"@DatenbankAnwender": 1,
+			"@DatenbankAnwenderDescr": "ElektroForm Installateur",
+			"@FormAnwender": 1,
+			"@FormAnwenderDescr": "Installateur"
+		}
+	}
+}

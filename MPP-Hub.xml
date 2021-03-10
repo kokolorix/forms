@@ -31,23 +31,23 @@
 		<I_FAXNR/>
 		<I_EMAIL OLD="resi@brunnerinformatik.ch">resi@brunnerinformatik.ch</I_EMAIL>
 		<I_EF_EMAIL/>
-		<O_STRASSE OLD="Gewerbepark">Gewerbepark</O_STRASSE>
-		<O_HAUSNR OLD="1">1</O_HAUSNR>
-		<O_PLZ OLD="7777">7777</O_PLZ>
-		<O_ORT OLD="Grosswil">Grosswil</O_ORT>
-		<GEMEINDE/>
-		<PARZELLE OLD="7777-01">7777-01</PARZELLE>
+		<O_STRASSE OLD="Brunnenweg">Brunnenweg</O_STRASSE>
+		<O_HAUSNR OLD="51">51</O_HAUSNR>
+		<O_PLZ OLD="5623">5623</O_PLZ>
+		<O_ORT OLD="Kleinwil">Kleinwil</O_ORT>
+		<GEMEINDE OLD="Kleinwil">Kleinwil</GEMEINDE>
+		<PARZELLE/>
 		<VERSICH/>
-		<GEBAEUDEART OLD="Wohn- + Geschäftshaus">Wohn- + Geschäftshaus</GEBAEUDEART>
+		<GEBAEUDEART OLD="Schulhaus">Schulhaus</GEBAEUDEART>
 		<GEBAEUDETEIL/>
-		<LAGE/>
-		<ANLNUTZUNG OLD="Gewerbe">Gewerbe</ANLNUTZUNG>
-		<U_NAME1 OLD="0">0</U_NAME1>
+		<LAGE OLD="3.OG">3.OG</LAGE>
+		<ANLNUTZUNG OLD="Wohnung Abwart">Wohnung Abwart</ANLNUTZUNG>
+		<U_NAME1 OLD="Gemeindeverwaltung">Gemeindeverwaltung</U_NAME1>
 		<U_NAME2/>
-		<U_ADRESSE1 OLD="Gewerbepark 1">Gewerbepark 1</U_ADRESSE1>
+		<U_ADRESSE1 OLD="Brunnenweg 51">Brunnenweg 51</U_ADRESSE1>
 		<U_ADRESSE2/>
-		<U_PLZ OLD="7777">7777</U_PLZ>
-		<U_ORT OLD="Grosswil">Grosswil</U_ORT>
+		<U_PLZ OLD="5623">5623</U_PLZ>
+		<U_ORT OLD="Kleinwil">Kleinwil</U_ORT>
 		<U_TELNR/>
 		<U_FAXNR/>
 		<U_EMAIL/>
@@ -55,7 +55,7 @@
 		<EGID/>
 		<ABONR/>
 		<EVUAUFTNR/>
-		<TERMIN OLD="20200122000000000" Type="DT">20200122000000000</TERMIN>
+		<TERMIN OLD="20200731000000000" Type="DT">20200731000000000</TERMIN>
 		<PACKNAME OLD="ewid.evu">ewid.evu</PACKNAME>
 		<MP_NR/>
 		<RAPPORT_NR/>
@@ -67,19 +67,19 @@
 		<INST OLD="FALSE" Type="B">FALSE</INST>
 		<AG_X OLD="FALSE" Type="B">FALSE</AG_X>
 		<AG_XTEXT/>
-		<GES_NAME1 OLD="Graf Hoch und Schiefbau AG">Graf Hoch und Schiefbau AG</GES_NAME1>
-		<GES_NAME2 OLD="Theo Graf">Theo Graf</GES_NAME2>
-		<GES_ADRESSE1 OLD="Hauptallee 186">Hauptallee 186</GES_ADRESSE1>
+		<GES_NAME1 OLD="Gemeindeverwaltung">Gemeindeverwaltung</GES_NAME1>
+		<GES_NAME2/>
+		<GES_ADRESSE1 OLD="Brunnenweg 47">Brunnenweg 47</GES_ADRESSE1>
 		<GES_ADRESSE2/>
-		<GES_PLZ OLD="6560">6560</GES_PLZ>
-		<GES_ORT OLD="Neustadt">Neustadt</GES_ORT>
+		<GES_PLZ OLD="5623">5623</GES_PLZ>
+		<GES_ORT OLD="Kleinwil">Kleinwil</GES_ORT>
 		<GES_TELNR/>
 		<GES_FAXNR/>
 		<GES_EMAIL/>
 		<BEMERKUNG/>
 		<ZEV OLD="FALSE" Type="B">FALSE</ZEV>
 		<ZEV_TEXT/>
-		<ZAEHLER OLD="003.055">003.055</ZAEHLER>
+		<ZAEHLER OLD="04001">04001</ZAEHLER>
 		<ANLJAHR0 OLD="20">20</ANLJAHR0>
 		<ANL1/>
 		<ANLJAHR1/>
@@ -97,8 +97,8 @@
 		<MP_SP OLD="FALSE" Type="B">FALSE</MP_SP>
 		<IA_DATUM Type="DT"/>
 		<KONDATUM_SK Type="DT"/>
-		<KONDATUM_AKPKSP OLD="20200110000000000" Type="DT">20200110000000000</KONDATUM_AKPKSP>
-		<KONDATUM OLD="20200110000000000" Type="DT">20200110000000000</KONDATUM>
+		<KONDATUM_AKPKSP OLD="20200801000000000" Type="DT">20200801000000000</KONDATUM_AKPKSP>
+		<KONDATUM OLD="20200801000000000" Type="DT">20200801000000000</KONDATUM>
 		<KONTUMFANG/>
 		<S_1 OLD="FALSE" Type="B">FALSE</S_1>
 		<S_2 OLD="FALSE" Type="B">FALSE</S_2>
@@ -146,7 +146,7 @@
 		<N_NORM1 OLD="FALSE" Type="B">FALSE</N_NORM1>
 		<N_NORM1TEXT OLD="NIV">NIV</N_NORM1TEXT>
 		<N_NORM2 OLD="FALSE" Type="B">FALSE</N_NORM2>
-		<N_NORM2TEXT OLD="NIN SN 411000:2015">NIN SN 411000:2015</N_NORM2TEXT>
+		<N_NORM2TEXT OLD="NIN SN 411000:2020">NIN SN 411000:2020</N_NORM2TEXT>
 		<N_NORM3 OLD="FALSE" Type="B">FALSE</N_NORM3>
 		<N_NORM3TEXT OLD="HV">HV</N_NORM3TEXT>
 		<N_NORM4 OLD="FALSE" Type="B">FALSE</N_NORM4>
@@ -185,10 +185,53 @@
 		<GGZ_GRUND/>
 		<GGZ_SIGN/>
 		<GGZ_SIKT/>
-		<SIGN_DATUM OLD="20200324000000000" Type="DT">20200324000000000</SIGN_DATUM>
-		<KONTR_SIGN OLD="OwRsq1LZ8zn">OwRsq1LZ8zn</KONTR_SIGN>
+		<SIGN_DATUM OLD="20210310000000000" Type="DT">20210310000000000</SIGN_DATUM>
+		<KONTR_SIGN OLD="OvpSU1Mx33n">OvpSU1Mx33n</KONTR_SIGN>
 		<KONTR_SIKT OLD="Simon Reber">Simon Reber</KONTR_SIKT>
-		<SKListeMESSPROT18_DE/>
+		<SKListeMESSPROT18_DE>
+			<ROW>
+				<ID>1</ID>
+				<FORM_ID>1</FORM_ID>
+				<SEQ_FORM/>
+				<NUMMER>1</NUMMER>
+				<BEZ>HAK</BEZ>
+				<LEIT_ART>TT</LEIT_ART>
+				<LEIT_ANZ>5x16</LEIT_ANZ>
+				<I_ART>LSD</I_ART>
+				<I_INSTR>20</I_INSTR>
+				<M_IKMAX>9.8</M_IKMAX>
+				<M_IKMIN>3.14</M_IKMIN>
+				<M_IKMAX_LN>3.7777</M_IKMAX_LN>
+				<M_IKMIN_LN>2.4</M_IKMIN_LN>
+				<M_RISO>1.5</M_RISO>
+				<M_LEIT>230.55</M_LEIT>
+				<FI_IN>25</FI_IN>
+				<FI_IDN>300</FI_IDN>
+				<FI_T>230</FI_T>
+				<BEMERK>Toll</BEMERK>
+			</ROW>
+			<ROW>
+				<ID>2</ID>
+				<FORM_ID>1</FORM_ID>
+				<SEQ_FORM/>
+				<NUMMER>3</NUMMER>
+				<BEZ>Geschirrspüler1</BEZ>
+				<LEIT_ART>HO7V-R</LEIT_ART>
+				<LEIT_ANZ>4x2.5</LEIT_ANZ>
+				<I_ART>LSB</I_ART>
+				<I_INSTR>6</I_INSTR>
+				<M_IKMAX>3.3</M_IKMAX>
+				<M_IKMIN>2.6</M_IKMIN>
+				<M_IKMAX_LN>3.2345</M_IKMAX_LN>
+				<M_IKMIN_LN>2</M_IKMIN_LN>
+				<M_RISO>1</M_RISO>
+				<M_LEIT>123</M_LEIT>
+				<FI_IN>13</FI_IN>
+				<FI_IDN>10</FI_IDN>
+				<FI_T>231</FI_T>
+				<BEMERK>Geht so</BEMERK>
+			</ROW>
+		</SKListeMESSPROT18_DE>
 	</ROW>
-	<PGM_INFO FileVersion="9.0.24.10060" DatenbankAnwender="1" DatenbankAnwenderDescr="ElektroForm Installateur" FormAnwender="1" FormAnwenderDescr="Installateur"/>
+	<PGM_INFO FileVersion="9.0.31.10962" DatenbankAnwender="1" DatenbankAnwenderDescr="ElektroForm Installateur" FormAnwender="1" FormAnwenderDescr="Installateur"/>
 </DATAPACKET>

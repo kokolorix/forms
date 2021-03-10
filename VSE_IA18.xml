@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form Name="VSE_IA18" ID_FORMSET="4369" FORMTYP="I">
+	<DataDic>
+		<Tab ID="491" NameExtend="true" German="Installationsanzeige VSE" French="Avis d'installation AES" Status="1">
+			<Tab ID="492" Name="TAListe" NameExtend="true" German="Mess- und Steuereinrichtungen" French="Equipement de mesure" Status="1" ID_Parent="491">
+				<Fld ID="24709" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true"/>
+				<Fld ID="24710" Name="FORM_ID" German="FORM_ID" French="FORM_ID" Sequenz="2" Type="INT" ForeignTab="VSE_IA" ForeignFld="ID" Linked="true" Child="true"/>
+				<Fld ID="24711" Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Sequenz="3" Type="INT"/>
+				<Fld ID="24712" Name="BEZUEGER" German="Stromkunde-Name" French="Nom du client" Sequenz="4" Type="STRING" Length="40" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25440" Name="RECHADR" German="Rechnungsadresse" French="Adresse de facturation" Sequenz="5" Type="STRING" Length="100" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25113" Name="GEBTEIL" German="Gebäudeteil" French="Partie de bâtiment" Sequenz="6" Type="STRING" Length="40" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25114" Name="NUTZUNG" German="Nutzung" French="Utilisation" Sequenz="7" Type="STRING" Length="40" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25404" Name="EVUANLNR" German="Verbrauchsstelle VNB" French="Point de cons. GRD" Sequenz="8" Type="STRING" Length="20"/>
+				<Fld ID="25116" Name="STOCKWERK" German="Stockwerk" French="Etage" Sequenz="9" Type="STRING" Length="6" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25117" Name="RAUM" German="Raumnummer" French="N° de la pièce" Sequenz="10" Type="STRING" Length="6" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25118" Name="TARIF" German="Tarif" French="Tarif" Sequenz="11" Type="STRING" Length="30" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="24713" Name="SICH_IN" German="Sich. [A]" French="Fus. [A]" Sequenz="12" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="24714" Name="WERKNR" German="Zähler-Nr." French="N° compteur" Sequenz="13" Type="STRING" Length="20" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25119" Name="MONT_ORT" German="Montage Ort" French="Emplacement" Sequenz="14" Type="STRING" Length="30" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25138" Name="ZEV" German="ZEV" French="RCP" Sequenz="15" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+				<Fld ID="24715" Name="ANZ_AUSSENL" German="Anzahl Aussenleiter (1-3)" French="Nbre de cond. de phases (1-3)" Sequenz="16" Type="INT" UDom="1" UDomRec="2" UDomFld="2">
+					<Udo_DE ULookupOnly="true" UMinimum="0" UMaximum="3">
+						<Uda>1</Uda>
+						<Uda>2</Uda>
+						<Uda>3</Uda>
+					</Udo_DE>
+					<Udo_FR ULookupOnly="true" UMinimum="0" UMaximum="3">
+						<Uda>1</Uda>
+						<Uda>2</Uda>
+						<Uda>3</Uda>
+					</Udo_FR>
+					<Udo_IT ULookupOnly="true" UMinimum="0" UMaximum="3">
+						<Uda>1</Uda>
+						<Uda>2</Uda>
+						<Uda>3</Uda>
+					</Udo_IT>
+				</Fld>
+				<Fld ID="24721" Name="NEU" German="Neu" French="Nouveau" Sequenz="17" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+				<Fld ID="24722" Name="VORH" German="Vorhanden" French="Existant" Sequenz="18" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+				<Fld ID="24723" Name="AUSW" German="Auswechseln" French="Echange" Sequenz="19" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+				<Fld ID="24724" Name="DEMONT" German="Demontieren" French="Démonter" Sequenz="20" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+				<Fld ID="24725" Name="UMMONT" German="Ummontieren" French="Déplacer" Sequenz="21" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			</Tab>
+			<Tab ID="493" Name="VGListe" NameExtend="true" German="Verb., Erz., Speicher" French="Cons., prod., accum." Status="1" ID_Parent="491">
+				<Fld ID="24726" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true"/>
+				<Fld ID="24727" Name="FORM_ID" German="FORM_ID" French="FORM_ID" Sequenz="2" Type="INT" ForeignTab="VSE_IA" ForeignFld="ID" Linked="true" Child="true"/>
+				<Fld ID="24728" Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Sequenz="3" Type="INT"/>
+				<Fld ID="24729" Name="ANZAHL" German="Anzahl" French="Nombre" Sequenz="4" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25133" Name="VERBRAUCHER" German="Verbraucher" French="Consommateur" Sequenz="5" Type="BOOL" Required="true" DisplayFormat="X"/>
+				<Fld ID="25134" Name="ERZEUGER" German="Erzeuger" French="Producteur" Sequenz="6" Type="BOOL" Required="true" DisplayFormat="X"/>
+				<Fld ID="25135" Name="SPEICHER" German="Speicher" French="Accumulateur" Sequenz="7" Type="BOOL" Required="true" DisplayFormat="X"/>
+				<Fld ID="24730" Name="TEXT" German="Text Verb., Erz., Speicher" French="Texte cons., prod., accum." Sequenz="8" Type="STRING" Length="50" UDom="1" UDomRec="2" UDomFld="2">
+					<Udo_DE>
+						<Uda>Beleuchtung</Uda>
+						<Uda>Kochherd mit Backofen</Uda>
+						<Uda>Kochherd ohne Backofen</Uda>
+						<Uda>Backofen</Uda>
+						<Uda>Geschirrspüler</Uda>
+						<Uda>Waschautomat</Uda>
+						<Uda>Waschautomat mit Zählerumschalter</Uda>
+						<Uda>Wäschetrockner</Uda>
+						<Uda>Boiler  .... l,  Aufheizzeit .... h</Uda>
+						<Uda>Motoren ohne Anschlussgesuch</Uda>
+						<Uda>Motoren mit Anschlussgesuch</Uda>
+						<Uda>Wärmepumpe ohne Anschlussgesuch</Uda>
+						<Uda>Wärmepumpe mit Anschlussgesuch</Uda>
+						<Uda>Apparat Netzrückwirkungen verursachend</Uda>
+					</Udo_DE>
+					<Udo_FR>
+						<Uda>Eclairage</Uda>
+						<Uda>Cuisinière avec four</Uda>
+						<Uda>Cuisinière sans four</Uda>
+						<Uda>Four</Uda>
+						<Uda>Lave-vaisselle</Uda>
+						<Uda>Machine à laver</Uda>
+						<Uda>Machine à laver avec Interr.répart.</Uda>
+						<Uda>Séchoir à linge</Uda>
+						<Uda>Chauffe-eau  ....l,  Temps de chauf. ....h</Uda>
+						<Uda>Moteurs sans demande de raccordment</Uda>
+						<Uda>Moteurs avec demande de raccordment</Uda>
+						<Uda>Pompe à chaleur sans demande de racc.</Uda>
+						<Uda>Pompe à chaleur avec demande de racc.</Uda>
+						<Uda>Appareil générateur de perturbations</Uda>
+					</Udo_FR>
+				</Fld>
+				<Fld ID="24731" Name="GES_DATUM" German="Anschlussgesuch Datum" French="Demande de racc. Date" Sequenz="9" Type="DATE" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="24732" Name="KVA" German="Leistung vom Netz [kVA]" French="Puissance sur le reseau [kVA]" Sequenz="10" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25136" Name="KVA_ANS_NETZ" German="Leistung ans Netz [kVA]" French="Puissance au reseau [kVA]" Sequenz="11" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="25137" Name="SPEICH_KAP" German="Speicherkapazität [kWh]" French="Capacité de stockage [kWh]" Sequenz="12" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="24733" Name="ANZ_AUSSENL" German="Anzahl Aussenleiter (1-3)" French="Nbre de cond. de phases (1-3)" Sequenz="13" Type="INT" UDom="1" UDomRec="2" UDomFld="2" Minimum="0" Maximum="3">
+					<Udo_DE ULookupOnly="true" UMinimum="0" UMaximum="3">
+						<Uda>1</Uda>
+						<Uda>2</Uda>
+						<Uda>3</Uda>
+					</Udo_DE>
+					<Udo_FR ULookupOnly="true" UMinimum="0" UMaximum="3">
+						<Uda>1</Uda>
+						<Uda>2</Uda>
+						<Uda>3</Uda>
+					</Udo_FR>
+					<Udo_IT ULookupOnly="true" UMinimum="0" UMaximum="3">
+						<Uda>1</Uda>
+						<Uda>2</Uda>
+						<Uda>3</Uda>
+					</Udo_IT>
+				</Fld>
+			</Tab>
+			<Fld ID="24564" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true"/>
+			<Fld ID="24565" Name="ID_PROJECT" German="Projekt" French="Projet" Sequenz="2" Type="INT"/>
+			<Fld ID="24566" Name="COPY_ID" German="ID der Kopie" French="ID de la copie" Sequenz="3" Type="INT"/>
+			<Fld ID="24567" Name="MANDANT" German="MANDANT" French="MANDANT" Sequenz="4" Type="INT"/>
+			<Fld ID="24568" Name="ID_FORMTMP" German="Formular" French="Formulaire" Sequenz="5" Type="INT"/>
+			<Fld ID="24569" Name="I_PROJECT" German="I_PROJECT" French="I_PROJECT" Sequenz="6" Type="INT"/>
+			<Fld ID="24570" Name="I_FORM" German="I_FORM" French="I_FORM" Sequenz="7" Type="INT"/>
+			<Fld ID="24571" Name="E_PROJECT" German="E_PROJECT" French="E_PROJECT" Sequenz="8" Type="INT"/>
+			<Fld ID="24572" Name="INST_OUT" German="INST_OUT" French="INST_OUT" Sequenz="9" Type="DATE"/>
+			<Fld ID="24573" Name="WERK_IN" German="Eingang" French="Reçu le" Sequenz="10" Type="DATE"/>
+			<Fld ID="24574" Name="WERK_OUT" German="WERK_OUT" French="WERK_OUT" Sequenz="11" Type="DATE"/>
+			<Fld ID="24575" Name="INST_IN" German="INST_IN" French="INST_IN" Sequenz="12" Type="DATE"/>
+			<Fld ID="24576" Name="PROJ_NR" German="IA-Nr." French="N° AI" Sequenz="13" Type="STRING" Length="12" UDomRec="1" UDomFld="2"/>
+			<Fld ID="24577" Name="PROJ_JAHR" German="Jahr" French="Année" Sequenz="14" Type="INT" UDomRec="1" UDomFld="2"/>
+			<Fld ID="24578" Name="WERK" German="WERK" French="WERK" Sequenz="15" Type="STRING" Length="24"/>
+			<Fld ID="24579" Name="W_EMAIL" German="W_EMAIL" French="W_EMAIL" Sequenz="16" Type="STRING" Length="60"/>
+			<Fld ID="24580" Name="W_EF_EMAIL" German="W_EF_EMAIL" French="W_EF_EMAIL" Sequenz="17" Type="STRING" Length="60"/>
+			<Fld ID="24581" Name="VISUM" German="Visum" French="Visé par" Sequenz="18" Type="STRING" Length="6"/>
+			<Fld ID="24582" Name="I_NAME1" German="I_NAME1" French="I_NAME1" Sequenz="19" Type="STRING" Length="40"/>
+			<Fld ID="24583" Name="I_NAME2" German="I_NAME2" French="I_NAME2" Sequenz="20" Type="STRING" Length="40"/>
+			<Fld ID="24584" Name="I_ADRESSE1" German="I_ADRESSE1" French="I_ADRESSE1" Sequenz="21" Type="STRING" Length="40"/>
+			<Fld ID="24585" Name="I_ADRESSE2" German="I_ADRESSE2" French="I_ADRESSE2" Sequenz="22" Type="STRING" Length="40"/>
+			<Fld ID="24586" Name="I_PLZ" German="I_PLZ" French="I_PLZ" Sequenz="23" Type="STRING" Length="8"/>
+			<Fld ID="24587" Name="I_ORT" German="I_ORT" French="I_ORT" Sequenz="24" Type="STRING" Length="30"/>
+			<Fld ID="24588" Name="I_KONZESS" German="I_KONZESS" French="I_KONZESS" Sequenz="25" Type="STRING" Length="16"/>
+			<Fld ID="24589" Name="I_SACHB" German="I_SACHB" French="I_SACHB" Sequenz="26" Type="STRING" Length="24"/>
+			<Fld ID="24590" Name="I_TELNR" German="I_TELNR" French="I_TELNR" Sequenz="27" Type="STRING" Length="16"/>
+			<Fld ID="24591" Name="I_FAXNR" German="I_FAXNR" French="I_FAXNR" Sequenz="28" Type="STRING" Length="16"/>
+			<Fld ID="24592" Name="I_EMAIL" German="I_EMAIL" French="I_EMAIL" Sequenz="29" Type="STRING" Length="60"/>
+			<Fld ID="24593" Name="I_EF_EMAIL" German="I_EF_EMAIL" French="I_EF_EMAIL" Sequenz="30" Type="STRING" Length="60"/>
+			<Fld ID="24594" Name="O_STRASSE" German="O_STRASSE" French="O_STRASSE" Sequenz="31" Type="STRING" Length="30"/>
+			<Fld ID="24595" Name="O_HAUSNR" German="O_HAUSNR" French="O_HAUSNR" Sequenz="32" Type="STRING" Length="24"/>
+			<Fld ID="24596" Name="O_PLZ" German="O_PLZ" French="O_PLZ" Sequenz="33" Type="STRING" Length="8"/>
+			<Fld ID="24597" Name="O_ORT" German="O_ORT" French="O_ORT" Sequenz="34" Type="STRING" Length="30"/>
+			<Fld ID="24598" Name="GEMEINDE" German="Pol. Gemeinde" French="Commune polit." Sequenz="35" Type="STRING" Length="30" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24599" Name="PARZELLE" German="Parzelle-Nr." French="Parcelle n°" Sequenz="36" Type="STRING" Length="18" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24600" Name="VERSICH" German="GV-Nr." French="Ass. immob." Sequenz="37" Type="STRING" Length="18" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24601" Name="GEBAEUDEART" German="Gebäudeart" French="Type de bâtiment" Sequenz="38" Type="STRING" Length="40" UDomRec="2" UDomFld="2"/>
+			<Fld ID="25438" Name="GEBAEUDETEIL" German="Gebäudeteil" French="Partie du bâtiment" Sequenz="39" Type="STRING" Length="40" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24602" Name="LAGE" German="LAGE" French="LAGE" Sequenz="40" Type="STRING" Length="40"/>
+			<Fld ID="24603" Name="ANLNUTZUNG" German="ANLNUTZUNG" French="ANLNUTZUNG" Sequenz="41" Type="STRING" Length="40"/>
+			<Fld ID="24604" Name="U_NAME1" German="U_NAME1" French="U_NAME1" Sequenz="42" Type="STRING" Length="40"/>
+			<Fld ID="24605" Name="U_NAME2" German="U_NAME2" French="U_NAME2" Sequenz="43" Type="STRING" Length="40"/>
+			<Fld ID="24606" Name="U_ADRESSE1" German="U_ADRESSE1" French="U_ADRESSE1" Sequenz="44" Type="STRING" Length="40"/>
+			<Fld ID="24607" Name="U_ADRESSE2" German="U_ADRESSE2" French="U_ADRESSE2" Sequenz="45" Type="STRING" Length="40"/>
+			<Fld ID="24608" Name="U_PLZ" German="U_PLZ" French="U_PLZ" Sequenz="46" Type="STRING" Length="8"/>
+			<Fld ID="24609" Name="U_ORT" German="U_ORT" French="U_ORT" Sequenz="47" Type="STRING" Length="30"/>
+			<Fld ID="24610" Name="U_TELNR" German="U_TELNR" French="U_TELNR" Sequenz="48" Type="STRING" Length="16"/>
+			<Fld ID="24611" Name="U_FAXNR" German="U_FAXNR" French="U_FAXNR" Sequenz="49" Type="STRING" Length="16"/>
+			<Fld ID="24612" Name="U_EMAIL" German="U_EMAIL" French="U_EMAIL" Sequenz="50" Type="STRING" Length="60"/>
+			<Fld ID="24736" Name="U_SPRACHE" German="U_SPRACHE" French="U_SPRACHE" Sequenz="51" Type="STRING" Length="2"/>
+			<Fld ID="24613" Name="ABONR" German="VNB Objekt-Nr." French="N° CSG GRD" Sequenz="52" Type="STRING" Length="16" UDomRec="1" UDomFld="2"/>
+			<Fld ID="24614" Name="EVUAUFTNR" German="Meldungs-Nr. VNB" French="N° projet/offre GRD" Sequenz="53" Type="STRING" Length="12" UDomRec="1" UDomFld="2"/>
+			<Fld ID="24615" Name="TERMIN" German="Inbetriebsetzungstermin" French="Mise en service environ (date)" Sequenz="54" Type="DATE"/>
+			<Fld ID="25388" Name="ABSCHLTERMIN" German="Voraus. Abschluss der Arbeiten" French="Fin probable des travaux" Sequenz="55" Type="DATE"/>
+			<Fld ID="24616" Name="PACKNAME" German="PACKNAME" French="PACKNAME" Sequenz="56" Type="STRING" Length="16"/>
+			<Fld ID="24617" Name="ANZWOHNG" German="Anz. Einheiten/Zähler" French="Nbre compteurs GRD" Sequenz="57" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="25148" Name="ZEV" German="Zusammens. zum Eigenverbr. ZEV" French="Regrp. cadre cons. propre RCP" Sequenz="58" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24619" Name="ARCH" German="ARCH" French="ARCH" Sequenz="59" Type="BOOL" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24620" Name="VERW" German="VERW" French="VERW" Sequenz="60" Type="BOOL" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24621" Name="GES_NAME1" German="Eigentümer Name 1" French="Propriétaire Nom 1" Sequenz="61" Type="STRING" Length="40"/>
+			<Fld ID="24622" Name="GES_NAME2" German="Eigentümer Name 2" French="Propriétaire Nom 2" Sequenz="62" Type="STRING" Length="40"/>
+			<Fld ID="24623" Name="GES_ADR1" German="Eigentümer Adresse 1" French="Propriétaire Adresse 1" Sequenz="63" Type="STRING" Length="40"/>
+			<Fld ID="24624" Name="GES_ADR2" German="Eigentümer Adresse 2" French="Propriétaire Adresse 2" Sequenz="64" Type="STRING" Length="40"/>
+			<Fld ID="24625" Name="GES_PLZ" German="Eigentümer PLZ" French="Propriétaire NPA" Sequenz="65" Type="STRING" Length="8"/>
+			<Fld ID="24626" Name="GES_ORT" German="Eigentümer Ort" French="Propriétaire Localité" Sequenz="66" Type="STRING" Length="30"/>
+			<Fld ID="24627" Name="GES_TELNR" German="Eigentümer Tel.-Nr." French="Propriétaire N°-Tél." Sequenz="67" Type="STRING" Length="16"/>
+			<Fld ID="24628" Name="GES_FAXNR" German="Eigentümer Fax-Nr." French="Propriétaire N°-Fax" Sequenz="68" Type="STRING" Length="16"/>
+			<Fld ID="24629" Name="GES_EMAIL" German="Eigentümer E-Mail" French="Propriétaire E-Mail" Sequenz="69" Type="STRING" Length="60"/>
+			<Fld ID="24737" Name="GES_SPRACHE" German="Eigentümer Sprache" French="Propriétaire Langue" Sequenz="70" Type="STRING" Length="2"/>
+			<Fld ID="25120" Name="I_NEW" German="Installation Neuanlage" French="Installation Nouvelle" Sequenz="71" Type="BOOL" Required="true"/>
+			<Fld ID="25122" Name="I_EXTENT" German="Installation Erweit./Änderung" French="Installation Modification/ext." Sequenz="72" Type="BOOL" Required="true"/>
+			<Fld ID="25121" Name="I_REMOVE" German="Installation Rückbau" French="Installation Suppression" Sequenz="73" Type="BOOL" Required="true"/>
+			<Fld ID="25123" Name="I_PROV" German="Installation Bauanschluss" French="Installation Raccord. chantier" Sequenz="74" Type="BOOL" Required="true"/>
+			<Fld ID="25124" Name="I_TEMP" German="Installation Temporär" French="Installation Temporaire" Sequenz="75" Type="BOOL" Required="true"/>
+			<Fld ID="25125" Name="I_AREA" German="Installation Festanschluss" French="Installation Place de fêtes" Sequenz="76" Type="BOOL" Required="true"/>
+			<Fld ID="25093" Name="HAK_IST" German="HAK neu/bestehend" French="CR nouveau/existant" Sequenz="77" Type="STRING" Length="1" UDomFld="2"/>
+			<Fld ID="25094" Name="HAK_AENDERUNG" German="HAK Änderung" French="CR changement" Sequenz="78" Type="STRING" Length="1" UDomFld="2"/>
+			<Fld ID="24636" Name="I_TEXT" German="Installationsbeschrieb" French="Descriptif de l'installation" Sequenz="79" Type="MEMO" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24637" Name="V_LEIST_VOM" German="Leistung vom Netz Total" French="Puissance sur le reseau tot." Sequenz="80" Type="REAL" Length="20" Precision="4"/>
+			<Fld ID="25140" Name="V_LEIST_AN" German="Leistung ans Netz total" French="Puissance au réseau totale" Sequenz="81" Type="REAL" Length="20" Precision="4"/>
+			<Fld ID="24638" Name="V_LEISTMAX" German="Verbraucher Maximalbelastung" French="Consommateurs max. théorique" Sequenz="82" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="25143" Name="STEUER_VNB" German="Aktive Steuerung VNB" French="Commande active GRD" Sequenz="83" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="true"/>
+				<Udo_FR UDefault="true"/>
+				<Udo_IT UDefault="true"/>
+			</Fld>
+			<Fld ID="25386" Name="SYSTDIENSTL" German="Teiln. an Systemdienstl." French="Particip. aux services système" Sequenz="84" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="25387" Name="MITHKN" German="mit Herkunftsnachweis (HKN)" French="avec garantie d'origine (GO)" Sequenz="85" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24648" Name="RSEANZ" German="TRE/LSG Anzahl" French="App. tarif. Nombre RTC" Sequenz="86" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24649" Name="RSEKDO" German="TRE Kommando" French="App. tarif. RTC Commande" Sequenz="87" Type="STRING" Length="30" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24650" Name="RSENR" German="TRE-Nr." French="App. tarif. RTC N°" Sequenz="88" Type="STRING" Length="10" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24651" Name="RSEMONT" German="TRE Montageort" French="App. tarif. RTC Emplacement" Sequenz="89" Type="STRING" Length="16" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24652" Name="RSENEU" German="TRE neu" French="App. tarif. RTC nouveau" Sequenz="90" Type="BOOL" Required="true"/>
+			<Fld ID="24653" Name="RSEVORH" German="TRE vorhanden" French="App. tarif. RTC existant" Sequenz="91" Type="BOOL" Required="true"/>
+			<Fld ID="24654" Name="RSEAUSW" German="TRE auswechseln" French="App. tarif. RTC echange" Sequenz="92" Type="BOOL" Required="true"/>
+			<Fld ID="24655" Name="RSEDEMONT" German="TRE demontieren" French="App. tarif. RTC démonter" Sequenz="93" Type="BOOL" Required="true"/>
+			<Fld ID="24656" Name="RSEUMMONT" German="TRE ummontieren" French="App. tarif. RTC déplacer" Sequenz="94" Type="BOOL" Required="true"/>
+			<Fld ID="24662" Name="ANSCH_KAB" German="Netzanschluss Kabel" French="Raccordement câble" Sequenz="95" Type="BOOL" UDomRec="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24661" Name="ANSCH_FREI" German="Netzanschluss Freileitung" French="Raccordement aérienne" Sequenz="96" Type="BOOL" UDomRec="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24657" Name="ANSCH_ORT" German="Netzanschluss Standort" French="Raccordement emplacement" Sequenz="97" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="25391" Name="ANSCH_MAXBEZ" German="Netzanschluss max. Netzbez." French="Raccordement puiss. sur réseau" Sequenz="98" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="25392" Name="ANSCH_MAXSPEIS" German="Netzanschluss max. Netzeinsp." French="Raccordement puss. stock." Sequenz="99" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24665" Name="ANSCH_AS_VOR" German="Netzanschluss AS-Ü bisher" French="Raccordement CSG existant" Sequenz="100" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24666" Name="ANSCH_MOD" German="Netzanschluss Modell" French="Raccordement type" Sequenz="101" Type="STRING" Length="14" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="25393" Name="ANSCH_HAKINT" German="Netzanschluss HAK integriert" French="Raccordement CSG intégré" Sequenz="102" Type="BOOL" UDomRec="2" Required="true"/>
+			<Fld ID="25088" Name="ANSCH_HAKNR" German="Netzanschluss HAK-Nummer" French="Raccordement n° CSG" Sequenz="103" Type="STRING" Length="20" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="25127" Name="ANSCH_NEU" German="Netzanschluss erstellen" French="Raccordement à installer" Sequenz="104" Type="BOOL" Required="true"/>
+			<Fld ID="25128" Name="ANSCH_VER" German="Netzanschluss verstärken" French="Raccordement à renforcer" Sequenz="105" Type="BOOL" Required="true"/>
+			<Fld ID="25129" Name="ANSCH_WECHS" German="Netzanschluss auswechseln" French="Raccordement à remplacer" Sequenz="106" Type="BOOL" Required="true"/>
+			<Fld ID="25087" Name="ANSCH_AS_ERF" German="Netzanschluss AS-Ü erford." French="Raccordement CSG requis" Sequenz="107" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24678" Name="SCHEMA" German="Beilagen Schema" French="Annexes Schéma" Sequenz="108" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24679" Name="PLAN" German="Beilagen Situationsplan" French="Annexes Plan de situation" Sequenz="109" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24680" Name="GESUCH" German="Beilagen Anschlussgesuch" French="Annexes Demande de racc." Sequenz="110" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24681" Name="GESUCHTXT" German="Beilagen Anschlussgesuch Text" French="Annexes Demande de racc. texte" Sequenz="111" Type="STRING" Length="30" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24682" Name="VERBLIST" German="Beilagen Verbraucherliste" French="Annexes Liste de récepteurs" Sequenz="112" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="25142" Name="TALIST" German="Beilagen Liste Messapp." French="Annexes Liste équipements mes." Sequenz="113" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="25141" Name="DISP" German="Beilagen Disp. Hauptverteilung" French="Annexes Dispo. distrib. princ." Sequenz="114" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="25442" Name="STEUER" German="Beilagen Steuerung" French="Annexes Régulation" Sequenz="115" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24683" Name="BEILLEER" German="Beilagen (frei)" French="Annexes (libre)" Sequenz="116" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24684" Name="BEILTXT" German="Beilagen (frei) Text" French="Annexes (libre) texte" Sequenz="117" Type="STRING" Length="30" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24687" Name="INSTBEM" German="Bemerkungen" French="Remarques" Sequenz="118" Type="MEMO" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24688" Name="SIGN_DATUM" German="SIGN_DATUM" French="SIGN_DATUM" Sequenz="119" Type="DATE"/>
+			<Fld ID="24689" Name="SIGNATURE" German="SIGNATURE" French="SIGNATURE" Sequenz="120" Type="STRING" Length="30"/>
+			<Fld ID="24690" Name="SIGNKT" German="SIGNKT" French="SIGNKT" Sequenz="121" Type="STRING" Length="30"/>
+			<Fld ID="24691" Name="EW_BEW" German="Entscheid bewilligt" French="Décision accordé" Sequenz="122" Type="BOOL" UDomRec="1" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24694" Name="EW_VORB" German="Entscheid unter Vorbehalt bew." French="Décision accordé sous réserve" Sequenz="123" Type="BOOL" UDomRec="1" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24692" Name="EW_NBEW" German="Entscheid unvollständig Retour" French="Décision incomplet, retour" Sequenz="124" Type="BOOL" UDomRec="1" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24695" Name="EW_SCHEMA" German="Entscheid Schema" French="Décision schéma" Sequenz="125" Type="BOOL" UDomRec="1" UDomFld="2" Required="true">
+				<Udo_DE UDefault="false"/>
+				<Udo_FR UDefault="false"/>
+			</Fld>
+			<Fld ID="24696" Name="EW_SCHEMNR" German="Entscheid Schema beachten" French="Décision schéma texte" Sequenz="126" Type="STRING" Length="10" UDomRec="1" UDomFld="2"/>
+			<Fld ID="24699" Name="EW_BEM" German="Entscheid Bemerkungen" French="Décision remarques" Sequenz="127" Type="MEMO" UDomRec="1" UDomFld="2"/>
+			<Fld ID="24700" Name="EW_ADR" German="VNB" French="GRD" Sequenz="128" Type="STRING" Length="30" UDomRec="1" UDomFld="2"/>
+			<Fld ID="24701" Name="EW_SIGNDAT" German="EW_SIGNDAT" French="EW_SIGNDAT" Sequenz="129" Type="DATE"/>
+			<Fld ID="24702" Name="EW_SIGN" German="EW_SIGN" French="EW_SIGN" Sequenz="130" Type="STRING" Length="30"/>
+			<Fld ID="24703" Name="EW_SIGNKT" German="EW_SIGNKT" French="EW_SIGNKT" Sequenz="131" Type="STRING" Length="30"/>
+			<Fld ID="25394" Name="T1" German="Zirkulation 1" French="Circulation 1" Sequenz="132" Type="STRING" Length="20"/>
+			<Fld ID="25395" Name="T2" German="Zirkulation 2" French="Circulation 2" Sequenz="133" Type="STRING" Length="20"/>
+			<Fld ID="25396" Name="T3" German="Zirkulation 3" French="Circulation 3" Sequenz="134" Type="STRING" Length="20"/>
+			<Fld ID="25397" Name="T4" German="Zirkulation 4" French="Circulation 4" Sequenz="135" Type="STRING" Length="20"/>
+			<Fld ID="25398" Name="T5" German="Zirkulation 5" French="Circulation 5" Sequenz="136" Type="STRING" Length="20"/>
+		</Tab>
+	</DataDic>
+	<FormTemplate ID="2142" KURZBEZ="IA" TITEL="Installationsanzeige" SprachCode="1031" AUTOR="VSE" AUTORBEZ="VSE IA - 2018" FormNr="111" Version="4" DDTab="VSE_IA18_DE" PgmVersion="9.0.9.0"/>
+	<FormTemplate ID="2143" KURZBEZ="AI" TITEL="Avis d'Installation" SprachCode="1036" AUTOR="AES" AUTORBEZ="AES AI - 2018" FormNr="211" Version="4" DDTab="VSE_IA18_FR" PgmVersion="9.0.9.0"/>
+</Form>
