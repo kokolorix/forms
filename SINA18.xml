@@ -2,8 +2,8 @@
 <Form Name="SINA18" ID_FORMSET="17" FORMTYP="Q">
 	<DataDic>
 		<Tab ID="504" NameExtend="true" German="Sicherheitsnachweis" French="Rapport de sécurité" Status="1" Italian="Rapporto di Sicurezza per imp. elet.">
-			<Fl ID="25795" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true" Italian="ID">
-			</Fl>
+			<Fld ID="25795" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true" Italian="ID">
+			</Fld>
 			<Fld ID="25796" Name="ID_PROJECT" German="Projekt" French="Projet" Sequenz="2" Type="INT" Italian="Progetto">
 			</Fld>
 			<Fld ID="25797" Name="COPY_ID" German="ID der Kopie" French="ID de la copie" Sequenz="3" Type="INT" Italian="ID de la copia">

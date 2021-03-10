@@ -1,0 +1,182 @@
+<DATAPACKET Version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SINA18.xsd">
+	<ROW>
+		<FORM_TYP>Q</FORM_TYP>
+		<ID OLD="1">1</ID>
+		<ID_PROJECT/>
+		<COPY_ID/>
+		<MANDANT/>
+		<ID_FORMTMP OLD="2151">2151</ID_FORMTMP>
+		<I_PROJECT/>
+		<I_FORM/>
+		<E_PROJECT/>
+		<INST_OUT Type="DT"/>
+		<WERK_IN Type="DT"/>
+		<WERK_OUT Type="DT"/>
+		<INST_IN Type="DT"/>
+		<PROJ_NR/>
+		<PROJ_JAHR/>
+		<WERK OLD="EwiD">EwiD</WERK>
+		<W_EMAIL/>
+		<W_EF_EMAIL/>
+		<VISUM/>
+		<I_NAME1 OLD="SaveControl GmbH">SaveControl GmbH</I_NAME1>
+		<I_NAME2 OLD="Installationskontrolle">Installationskontrolle</I_NAME2>
+		<I_ADRESSE1 OLD="Birkenweg 23">Birkenweg 23</I_ADRESSE1>
+		<I_ADRESSE2 OLD="Postfach 84">Postfach 84</I_ADRESSE2>
+		<I_PLZ OLD="6560">6560</I_PLZ>
+		<I_ORT OLD="Neustadt">Neustadt</I_ORT>
+		<I_KONZESS OLD="K-0101">K-0101</I_KONZESS>
+		<I_SACHB OLD="Simon Reber">Simon Reber</I_SACHB>
+		<I_TELNR OLD="031 917 00 43">031 917 00 43</I_TELNR>
+		<I_FAXNR/>
+		<I_EMAIL OLD="resi@brunnerinformatik.ch">resi@brunnerinformatik.ch</I_EMAIL>
+		<I_EF_EMAIL/>
+		<O_STRASSE OLD="Brunnenweg">Brunnenweg</O_STRASSE>
+		<O_HAUSNR OLD="51">51</O_HAUSNR>
+		<O_PLZ OLD="5623">5623</O_PLZ>
+		<O_ORT OLD="Kleinwil">Kleinwil</O_ORT>
+		<GEMEINDE OLD="Kleinwil">Kleinwil</GEMEINDE>
+		<PARZELLE/>
+		<VERSICH/>
+		<GEBAEUDEART OLD="Schulhaus">Schulhaus</GEBAEUDEART>
+		<GEBAEUDETEIL/>
+		<LAGE OLD="3.OG">3.OG</LAGE>
+		<ANLNUTZUNG OLD="Wohnung Abwart">Wohnung Abwart</ANLNUTZUNG>
+		<U_NAME1 OLD="Gemeindeverwaltung">Gemeindeverwaltung</U_NAME1>
+		<U_NAME2/>
+		<U_ADRESSE1 OLD="Brunnenweg 51">Brunnenweg 51</U_ADRESSE1>
+		<U_ADRESSE2/>
+		<U_PLZ OLD="5623">5623</U_PLZ>
+		<U_ORT OLD="Kleinwil">Kleinwil</U_ORT>
+		<U_TELNR/>
+		<U_FAXNR/>
+		<U_EMAIL/>
+		<GEBAEUDENR/>
+		<EGID/>
+		<ABONR/>
+		<EVUAUFTNR/>
+		<TERMIN OLD="20200731000000000" Type="DT">20200731000000000</TERMIN>
+		<PACKNAME OLD="ewid.evu">ewid.evu</PACKNAME>
+		<RAPPORT_NR/>
+		<P_NAME1 OLD="Gemeindeverwaltung">Gemeindeverwaltung</P_NAME1>
+		<P_NAME2/>
+		<P_ADRESSE1 OLD="Brunnenweg 47">Brunnenweg 47</P_ADRESSE1>
+		<P_ADRESSE2/>
+		<P_PLZ OLD="5623">5623</P_PLZ>
+		<P_ORT OLD="Kleinwil">Kleinwil</P_ORT>
+		<P_TELNR/>
+		<P_FAXNR/>
+		<P_EMAIL/>
+		<V_NAME1/>
+		<V_NAME2/>
+		<V_ADRESSE1/>
+		<V_ADRESSE2/>
+		<V_PLZ/>
+		<V_ORT/>
+		<V_TELNR/>
+		<V_FAXNR/>
+		<V_EMAIL/>
+		<E_NAME1/>
+		<E_NAME2/>
+		<E_ADRESSE1/>
+		<E_ADRESSE2/>
+		<E_PLZ/>
+		<E_ORT/>
+		<E_KONZESS/>
+		<E_TELNR/>
+		<E_FAXNR/>
+		<E_EMAIL/>
+		<K_NAME1 OLD="SaveControl GmbH">SaveControl GmbH</K_NAME1>
+		<K_NAME2 OLD="Installationskontrolle">Installationskontrolle</K_NAME2>
+		<K_ADRESSE1 OLD="Birkenweg 23">Birkenweg 23</K_ADRESSE1>
+		<K_ADRESSE2 OLD="Postfach 84">Postfach 84</K_ADRESSE2>
+		<K_PLZ OLD="6560">6560</K_PLZ>
+		<K_ORT OLD="Neustadt">Neustadt</K_ORT>
+		<K_KONZESS OLD="K-0101">K-0101</K_KONZESS>
+		<K_TELNR OLD="062 111 11 11">062 111 11 11</K_TELNR>
+		<K_FAXNR/>
+		<K_EMAIL OLD="info@savecontrol.ch">info@savecontrol.ch</K_EMAIL>
+		<BEMERKUNG/>
+		<ZEV OLD="FALSE" Type="B">FALSE</ZEV>
+		<ZEV_TEXT/>
+		<ZAEHLER OLD="04001">04001</ZAEHLER>
+		<ANLJAHR0 OLD="20">20</ANLJAHR0>
+		<ANL1/>
+		<ANLJAHR1/>
+		<ANL2/>
+		<ANLJAHR2/>
+		<NEUANL OLD="FALSE" Type="B">FALSE</NEUANL>
+		<BEST OLD="TRUE" Type="B">TRUE</BEST>
+		<ANDERS OLD="FALSE" Type="B">FALSE</ANDERS>
+		<ERWEIT OLD="FALSE" Type="B">FALSE</ERWEIT>
+		<GRUND_X OLD="FALSE" Type="B">FALSE</GRUND_X>
+		<GRUND_XTXT/>
+		<KONTUMFANG/>
+		<IA_DATUM Type="DT"/>
+		<KONT_SK OLD="FALSE" Type="B">FALSE</KONT_SK>
+		<KONT_AK OLD="FALSE" Type="B">FALSE</KONT_AK>
+		<KONT_PK OLD="TRUE" Type="B">TRUE</KONT_PK>
+		<TNS OLD="FALSE" Type="B">FALSE</TNS>
+		<TNC OLD="FALSE" Type="B">FALSE</TNC>
+		<TNCS OLD="FALSE" Type="B">FALSE</TNCS>
+		<TNX OLD="FALSE" Type="B">FALSE</TNX>
+		<TNTEXT/>
+		<AUU_IN/>
+		<AUU_ART/>
+		<UU_ART/>
+		<UU_IN/>
+		<UU_IKMAX/>
+		<UU_IKLN/>
+		<UU_IK/>
+		<UU_IKLN_ENDE/>
+		<UU_RISO/>
+		<UU_ZWECK/>
+		<BESONDER/>
+		<KONDATUM_SK Type="DT"/>
+		<KONDATUM_AKPK OLD="20200801000000000" Type="DT">20200801000000000</KONDATUM_AKPK>
+		<KONDATUM OLD="20200801000000000" Type="DT">20200801000000000</KONDATUM>
+		<KONDATZUS/>
+		<PLOMBENTF OLD="FALSE" Type="B">FALSE</PLOMBENTF>
+		<AUFTRAK OLD="FALSE" Type="B">FALSE</AUFTRAK>
+		<AUFTRSK OLD="FALSE" Type="B">FALSE</AUFTRSK>
+		<AUFTRSK_NAME1/>
+		<AUFTRSK_NAME2/>
+		<AUFTRSK_ADRESSE1/>
+		<AUFTRSK_ADRESSE2/>
+		<AUFTRSK_PLZ/>
+		<AUFTRSK_ORT/>
+		<AUFTRSK_KONZESS/>
+		<AUFTRSK_TELNR/>
+		<AUFTRSK_EMAIL/>
+		<BEI_MP OLD="FALSE" Type="B">FALSE</BEI_MP>
+		<BEI_MPPV OLD="FALSE" Type="B">FALSE</BEI_MPPV>
+		<BEI_X OLD="FALSE" Type="B">FALSE</BEI_X>
+		<BEI_TEXT/>
+		<SINAV OLD="FALSE" Type="B">FALSE</SINAV>
+		<SINAN OLD="FALSE" Type="B">FALSE</SINAN>
+		<VERT1_X OLD="FALSE" Type="B">FALSE</VERT1_X>
+		<VERT1/>
+		<EW_BEMERKUNG/>
+		<SP_JA OLD="FALSE" Type="B">FALSE</SP_JA>
+		<SP_NEIN OLD="FALSE" Type="B">FALSE</SP_NEIN>
+		<SP_GUT OLD="FALSE" Type="B">FALSE</SP_GUT>
+		<SP_MANGEL OLD="FALSE" Type="B">FALSE</SP_MANGEL>
+		<SP_PLOMB OLD="FALSE" Type="B">FALSE</SP_PLOMB>
+		<SP_PKRELEVANT OLD="FALSE" Type="B">FALSE</SP_PKRELEVANT>
+		<SIGN_DATUM Type="DT"/>
+		<SIGN_DATUM2 Type="DT"/>
+		<SIGNATURE/>
+		<SIGNKT/>
+		<KONTR_SIGN/>
+		<KONTR_SIKT/>
+		<KONTR_DAT OLD="20200731000000000" Type="DT">20200731000000000</KONTR_DAT>
+		<KONTR_DAT2 OLD="20200731000000000" Type="DT">20200731000000000</KONTR_DAT2>
+		<SIGNATURE2 OLD="Ovvpp1M875n">Ovvpp1M875n</SIGNATURE2>
+		<SIGNKT2 OLD="Simon Reber">Simon Reber</SIGNKT2>
+		<KONT_SIGN2 OLD="Ovvpp1M875n">Ovvpp1M875n</KONT_SIGN2>
+		<KONT_SIKT2 OLD="Simon Reber">Simon Reber</KONT_SIKT2>
+		<EW_SIGNDAT Type="DT"/>
+		<EW_SIGN/>
+		<EW_SIGNKT/>
+	</ROW>
+</DATAPACKET>

@@ -12,6 +12,7 @@
 	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
 	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
 		<File FilePath="MPP.xsd" HomeFolder="Yes"/>
+		<File FilePath="SINA18.xsd" HomeFolder="Yes"/>
 	</Folder>
 	<Folder FolderName="Entities" ExtStr="ent"/>
 </Project>

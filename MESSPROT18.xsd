@@ -51,7 +51,7 @@
 	<xs:element name="FORM_TYP">
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:enumeration value="Q"/>
+				<xs:enumeration value="P"/>
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
@@ -111,45 +111,25 @@
 	<xs:element name="EVUAUFTNR" type="T_STRING"/>
 	<xs:element name="TERMIN" type="T_DATE"/>
 	<xs:element name="PACKNAME" type="T_STRING"/>
+	<xs:element name="MP_NR" type="T_STRING"/>
 	<xs:element name="RAPPORT_NR" type="T_STRING"/>
-	<xs:element name="P_NAME1" type="T_STRING"/>
-	<xs:element name="P_NAME2" type="T_STRING"/>
-	<xs:element name="P_ADRESSE1" type="T_STRING"/>
-	<xs:element name="P_ADRESSE2" type="T_STRING"/>
-	<xs:element name="P_PLZ" type="T_STRING"/>
-	<xs:element name="P_ORT" type="T_STRING"/>
-	<xs:element name="P_TELNR" type="T_STRING"/>
-	<xs:element name="P_FAXNR" type="T_STRING"/>
-	<xs:element name="P_EMAIL" type="T_STRING"/>
-	<xs:element name="V_NAME1" type="T_STRING"/>
-	<xs:element name="V_NAME2" type="T_STRING"/>
-	<xs:element name="V_ADRESSE1" type="T_STRING"/>
-	<xs:element name="V_ADRESSE2" type="T_STRING"/>
-	<xs:element name="V_PLZ" type="T_STRING"/>
-	<xs:element name="V_ORT" type="T_STRING"/>
-	<xs:element name="V_TELNR" type="T_STRING"/>
-	<xs:element name="V_FAXNR" type="T_STRING"/>
-	<xs:element name="V_EMAIL" type="T_STRING"/>
-	<xs:element name="E_NAME1" type="T_STRING"/>
-	<xs:element name="E_NAME2" type="T_STRING"/>
-	<xs:element name="E_ADRESSE1" type="T_STRING"/>
-	<xs:element name="E_ADRESSE2" type="T_STRING"/>
-	<xs:element name="E_PLZ" type="T_STRING"/>
-	<xs:element name="E_ORT" type="T_STRING"/>
-	<xs:element name="E_KONZESS" type="T_STRING"/>
-	<xs:element name="E_TELNR" type="T_STRING"/>
-	<xs:element name="E_FAXNR" type="T_STRING"/>
-	<xs:element name="E_EMAIL" type="T_STRING"/>
-	<xs:element name="K_NAME1" type="T_STRING"/>
-	<xs:element name="K_NAME2" type="T_STRING"/>
-	<xs:element name="K_ADRESSE1" type="T_STRING"/>
-	<xs:element name="K_ADRESSE2" type="T_STRING"/>
-	<xs:element name="K_PLZ" type="T_STRING"/>
-	<xs:element name="K_ORT" type="T_STRING"/>
-	<xs:element name="K_KONZESS" type="T_STRING"/>
-	<xs:element name="K_TELNR" type="T_STRING"/>
-	<xs:element name="K_FAXNR" type="T_STRING"/>
-	<xs:element name="K_EMAIL" type="T_STRING"/>
+	<xs:element name="AN_INST" type="T_BOOL"/>
+	<xs:element name="AN_KONTR" type="T_BOOL"/>
+	<xs:element name="EIGENT" type="T_BOOL"/>
+	<xs:element name="VERW" type="T_BOOL"/>
+	<xs:element name="STROMK" type="T_BOOL"/>
+	<xs:element name="INST" type="T_BOOL"/>
+	<xs:element name="AG_X" type="T_BOOL"/>
+	<xs:element name="AG_XTEXT" type="T_STRING"/>
+	<xs:element name="GES_NAME1" type="T_STRING"/>
+	<xs:element name="GES_NAME2" type="T_STRING"/>
+	<xs:element name="GES_ADRESSE1" type="T_STRING"/>
+	<xs:element name="GES_ADRESSE2" type="T_STRING"/>
+	<xs:element name="GES_PLZ" type="T_STRING"/>
+	<xs:element name="GES_ORT" type="T_STRING"/>
+	<xs:element name="GES_TELNR" type="T_STRING"/>
+	<xs:element name="GES_FAXNR" type="T_STRING"/>
+	<xs:element name="GES_EMAIL" type="T_STRING"/>
 	<xs:element name="BEMERKUNG" type="T_STRING"/>
 	<xs:element name="ZEV" type="T_BOOL"/>
 	<xs:element name="ZEV_TEXT" type="T_STRING"/>
@@ -159,87 +139,112 @@
 	<xs:element name="ANLJAHR1" type="T_INT"/>
 	<xs:element name="ANL2" type="T_STRING"/>
 	<xs:element name="ANLJAHR2" type="T_INT"/>
-	<xs:element name="NEUANL" type="T_BOOL"/>
-	<xs:element name="BEST" type="T_BOOL"/>
-	<xs:element name="ANDERS" type="T_BOOL"/>
-	<xs:element name="ERWEIT" type="T_BOOL"/>
-	<xs:element name="GRUND_X" type="T_BOOL"/>
-	<xs:element name="GRUND_XTXT" type="T_STRING"/>
-	<xs:element name="KONTUMFANG" type="T_MEMO"/>
+	<xs:element name="MP_NEU" type="T_BOOL"/>
+	<xs:element name="MP_BEST" type="T_BOOL"/>
+	<xs:element name="MP_ANDERS" type="T_BOOL"/>
+	<xs:element name="MP_ERWEIT" type="T_BOOL"/>
+	<xs:element name="MP_X" type="T_BOOL"/>
+	<xs:element name="MP_XTEXT" type="T_STRING"/>
+	<xs:element name="MP_SK" type="T_BOOL"/>
+	<xs:element name="MP_AK" type="T_BOOL"/>
+	<xs:element name="MP_PK" type="T_BOOL"/>
+	<xs:element name="MP_SP" type="T_BOOL"/>
 	<xs:element name="IA_DATUM" type="T_DATE"/>
-	<xs:element name="KONT_SK" type="T_BOOL"/>
-	<xs:element name="KONT_AK" type="T_BOOL"/>
-	<xs:element name="KONT_PK" type="T_BOOL"/>
-	<xs:element name="TNS" type="T_BOOL"/>
-	<xs:element name="TNC" type="T_BOOL"/>
-	<xs:element name="TNCS" type="T_BOOL"/>
-	<xs:element name="TNX" type="T_BOOL"/>
-	<xs:element name="TNTEXT" type="T_STRING"/>
-	<xs:element name="AUU_IN" type="T_STRING"/>
-	<xs:element name="AUU_ART" type="T_STRING"/>
-	<xs:element name="UU_ART" type="T_STRING"/>
-	<xs:element name="UU_IN" type="T_STRING"/>
-	<xs:element name="UU_IKMAX" type="T_STRING"/>
-	<xs:element name="UU_IKLN" type="T_STRING"/>
-	<xs:element name="UU_IK" type="T_STRING"/>
-	<xs:element name="UU_IKLN_ENDE" type="T_STRING"/>
-	<xs:element name="UU_RISO" type="T_STRING"/>
-	<xs:element name="UU_ZWECK" type="T_STRING"/>
-	<xs:element name="BESONDER" type="T_STRING"/>
 	<xs:element name="KONDATUM_SK" type="T_DATE"/>
-	<xs:element name="KONDATUM_AKPK" type="T_DATE"/>
+	<xs:element name="KONDATUM_AKPKSP" type="T_DATE"/>
 	<xs:element name="KONDATUM" type="T_DATE"/>
-	<xs:element name="KONDATZUS" type="T_STRING"/>
-	<xs:element name="PLOMBENTF" type="T_BOOL"/>
-	<xs:element name="AUFTRAK" type="T_BOOL"/>
-	<xs:element name="AUFTRSK" type="T_BOOL"/>
-	<xs:element name="AUFTRSK_NAME1" type="T_STRING"/>
-	<xs:element name="AUFTRSK_NAME2" type="T_STRING"/>
-	<xs:element name="AUFTRSK_ADRESSE1" type="T_STRING"/>
-	<xs:element name="AUFTRSK_ADRESSE2" type="T_STRING"/>
-	<xs:element name="AUFTRSK_PLZ" type="T_STRING"/>
-	<xs:element name="AUFTRSK_ORT" type="T_STRING"/>
-	<xs:element name="AUFTRSK_KONZESS" type="T_STRING"/>
-	<xs:element name="AUFTRSK_TELNR" type="T_STRING"/>
-	<xs:element name="AUFTRSK_EMAIL" type="T_STRING"/>
-	<xs:element name="BEI_MP" type="T_BOOL"/>
-	<xs:element name="BEI_MPPV" type="T_BOOL"/>
-	<xs:element name="BEI_X" type="T_BOOL"/>
-	<xs:element name="BEI_TEXT" type="T_STRING"/>
-	<xs:element name="SINAV" type="T_BOOL"/>
-	<xs:element name="SINAN" type="T_BOOL"/>
-	<xs:element name="VERT1_X" type="T_BOOL"/>
-	<xs:element name="VERT1" type="T_STRING"/>
-	<xs:element name="EW_BEMERKUNG" type="T_MEMO"/>
-	<xs:element name="SP_JA" type="T_BOOL"/>
-	<xs:element name="SP_NEIN" type="T_BOOL"/>
-	<xs:element name="SP_GUT" type="T_BOOL"/>
-	<xs:element name="SP_MANGEL" type="T_BOOL"/>
-	<xs:element name="SP_PLOMB" type="T_BOOL"/>
-	<xs:element name="SP_PKRELEVANT" type="T_BOOL"/>
+	<xs:element name="KONTUMFANG" type="T_MEMO"/>
+	<xs:element name="S_1" type="T_BOOL"/>
+	<xs:element name="S_2" type="T_BOOL"/>
+	<xs:element name="S_3" type="T_BOOL"/>
+	<xs:element name="S_4" type="T_BOOL"/>
+	<xs:element name="S_5" type="T_BOOL"/>
+	<xs:element name="S_6" type="T_BOOL"/>
+	<xs:element name="S_7" type="T_BOOL"/>
+	<xs:element name="S_8" type="T_BOOL"/>
+	<xs:element name="S_9" type="T_BOOL"/>
+	<xs:element name="S_18" type="T_BOOL"/>
+	<xs:element name="S_18TEXT" type="T_STRING"/>
+	<xs:element name="S_10" type="T_BOOL"/>
+	<xs:element name="S_TNS" type="T_BOOL"/>
+	<xs:element name="S_TNC" type="T_BOOL"/>
+	<xs:element name="S_TNCS" type="T_BOOL"/>
+	<xs:element name="S_SCH3" type="T_BOOL"/>
+	<xs:element name="S_TNX" type="T_BOOL"/>
+	<xs:element name="S_TNXTEXT" type="T_STRING"/>
+	<xs:element name="S_12" type="T_BOOL"/>
+	<xs:element name="S_FUND" type="T_BOOL"/>
+	<xs:element name="S_TIEFENERDER" type="T_BOOL"/>
+	<xs:element name="S_BANDERDER" type="T_BOOL"/>
+	<xs:element name="S_ERDX" type="T_BOOL"/>
+	<xs:element name="S_ERDXTEXT" type="T_STRING"/>
+	<xs:element name="S_11" type="T_BOOL"/>
+	<xs:element name="S_13" type="T_BOOL"/>
+	<xs:element name="S_14" type="T_BOOL"/>
+	<xs:element name="S_15" type="T_BOOL"/>
+	<xs:element name="S_16" type="T_BOOL"/>
+	<xs:element name="S_17" type="T_BOOL"/>
+	<xs:element name="F_1" type="T_BOOL"/>
+	<xs:element name="F_2" type="T_BOOL"/>
+	<xs:element name="F_3" type="T_BOOL"/>
+	<xs:element name="F_4" type="T_BOOL"/>
+	<xs:element name="F_5N" type="T_BOOL"/>
+	<xs:element name="F_6" type="T_BOOL"/>
+	<xs:element name="F_6TEXT" type="T_STRING"/>
+	<xs:element name="F_SPANNUNG" type="T_STRING"/>
+	<xs:element name="F_BEM" type="T_STRING"/>
+	<xs:element name="N_MESSNORM" type="T_STRING"/>
+	<xs:element name="N_MESS1" type="T_STRING"/>
+	<xs:element name="N_MESS2" type="T_STRING"/>
+	<xs:element name="N_MESS3" type="T_STRING"/>
+	<xs:element name="N_NORM1" type="T_BOOL"/>
+	<xs:element name="N_NORM1TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM2" type="T_BOOL"/>
+	<xs:element name="N_NORM2TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM3" type="T_BOOL"/>
+	<xs:element name="N_NORM3TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM4" type="T_BOOL"/>
+	<xs:element name="N_NORM4TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM5" type="T_BOOL"/>
+	<xs:element name="N_NORM5TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM6" type="T_BOOL"/>
+	<xs:element name="N_NORM6TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM7" type="T_BOOL"/>
+	<xs:element name="N_NORM7TEXT" type="T_STRING"/>
+	<xs:element name="N_NORM8" type="T_BOOL"/>
+	<xs:element name="N_NORM8TEXT" type="T_STRING"/>
+	<xs:element name="SKLISTE_BEMTITEL" type="T_STRING"/>
+	<xs:element name="SK_ASBEST0" type="T_BOOL"/>
+	<xs:element name="SK_ASBEST1" type="T_BOOL"/>
+	<xs:element name="SK_1" type="T_BOOL"/>
+	<xs:element name="SK_1NORM" type="T_STRING"/>
+	<xs:element name="SK_2" type="T_BOOL"/>
+	<xs:element name="SK_3" type="T_BOOL"/>
+	<xs:element name="DOKU" type="T_BOOL"/>
+	<xs:element name="SCHEMA" type="T_BOOL"/>
+	<xs:element name="ZUSATZ1" type="T_BOOL"/>
+	<xs:element name="ZUSTXT1" type="T_STRING"/>
+	<xs:element name="OHNEMANGEL" type="T_BOOL"/>
+	<xs:element name="MANGELTEXT" type="T_STRING"/>
+	<xs:element name="GGZ_NAME1" type="T_STRING"/>
+	<xs:element name="GGZ_NAME2" type="T_STRING"/>
+	<xs:element name="GGZ_ADRESSE1" type="T_STRING"/>
+	<xs:element name="GGZ_ADRESSE2" type="T_STRING"/>
+	<xs:element name="GGZ_PLZ" type="T_STRING"/>
+	<xs:element name="GGZ_ORT" type="T_STRING"/>
+	<xs:element name="GGZ_KONZESS" type="T_STRING"/>
+	<xs:element name="GGZ_TELNR" type="T_STRING"/>
+	<xs:element name="GGZ_EMAIL" type="T_STRING"/>
+	<xs:element name="GGZ_DATUM" type="T_DATE"/>
+	<xs:element name="GGZ_GRUND" type="T_STRING"/>
+	<xs:element name="GGZ_SIGN" type="T_STRING"/>
+	<xs:element name="GGZ_SIKT" type="T_STRING"/>
 	<xs:element name="SIGN_DATUM" type="T_DATE"/>
-	<xs:element name="SIGN_DATUM2" type="T_DATE"/>
-	<xs:element name="SIGNATURE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:maxLength value="5"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="SIGNKT" type="T_STRING"/>
 	<xs:element name="KONTR_SIGN" type="T_STRING"/>
 	<xs:element name="KONTR_SIKT" type="T_STRING"/>
-	<xs:element name="KONTR_DAT" type="T_DATE"/>
-	<xs:element name="KONTR_DAT2" type="T_DATE"/>
-	<xs:element name="SIGNATURE2" type="T_STRING"/>
-	<xs:element name="SIGNKT2" type="T_STRING"/>
-	<xs:element name="KONT_SIGN2" type="T_STRING"/>
-	<xs:element name="KONT_SIKT2" type="T_STRING"/>
-	<xs:element name="EW_SIGNDAT" type="T_DATE"/>
-	<xs:element name="EW_SIGN" type="T_STRING"/>
-	<xs:element name="EW_SIGNKT" type="T_STRING"/>
+	<xs:element name="SKListeMESSPROT18_DE"/>
+	<xs:element name="SKListeMESSPROT18_FR"/>
+	<xs:element name="SKListeMESSPROT18_IT"/>
 	<xs:complexType name="T_MEMO">
 		<xs:simpleContent>
 			<xs:extension base="ST_STRING">
@@ -306,11 +311,7 @@
 	<xs:simpleType name="ST_DATE">
 		<xs:restriction base="xs:string">
 			<xs:pattern value=""/>
-			<xs:pattern value="[0-9]{4}[0-9]{2}[0-9]{2}[0-9]{9}"/>
-			<!--Datums-Format: YYYYMMTThhmmssmmm-->
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:complexType name="RowT">
+			<xs:pattern value="[0-9]{4}[0-9]{2}[0-9]{2}[0-9]{9}"/><!--Datums-Format: YYYYMMTThhmmssmmm--></xs:restriction></xs:simpleType><xs:complexType name="RowT">
 		<xs:all>
 			<xs:element ref="FORM_TYP"/>
 			<xs:element ref="ID"/>
@@ -369,45 +370,25 @@
 			<xs:element ref="EVUAUFTNR"/>
 			<xs:element ref="TERMIN"/>
 			<xs:element ref="PACKNAME"/>
+			<xs:element ref="MP_NR"/>
 			<xs:element ref="RAPPORT_NR"/>
-			<xs:element ref="P_NAME1"/>
-			<xs:element ref="P_NAME2"/>
-			<xs:element ref="P_ADRESSE1"/>
-			<xs:element ref="P_ADRESSE2"/>
-			<xs:element ref="P_PLZ"/>
-			<xs:element ref="P_ORT"/>
-			<xs:element ref="P_TELNR"/>
-			<xs:element ref="P_FAXNR"/>
-			<xs:element ref="P_EMAIL"/>
-			<xs:element ref="V_NAME1"/>
-			<xs:element ref="V_NAME2"/>
-			<xs:element ref="V_ADRESSE1"/>
-			<xs:element ref="V_ADRESSE2"/>
-			<xs:element ref="V_PLZ"/>
-			<xs:element ref="V_ORT"/>
-			<xs:element ref="V_TELNR"/>
-			<xs:element ref="V_FAXNR"/>
-			<xs:element ref="V_EMAIL"/>
-			<xs:element ref="E_NAME1"/>
-			<xs:element ref="E_NAME2"/>
-			<xs:element ref="E_ADRESSE1"/>
-			<xs:element ref="E_ADRESSE2"/>
-			<xs:element ref="E_PLZ"/>
-			<xs:element ref="E_ORT"/>
-			<xs:element ref="E_KONZESS"/>
-			<xs:element ref="E_TELNR"/>
-			<xs:element ref="E_FAXNR"/>
-			<xs:element ref="E_EMAIL"/>
-			<xs:element ref="K_NAME1"/>
-			<xs:element ref="K_NAME2"/>
-			<xs:element ref="K_ADRESSE1"/>
-			<xs:element ref="K_ADRESSE2"/>
-			<xs:element ref="K_PLZ"/>
-			<xs:element ref="K_ORT"/>
-			<xs:element ref="K_KONZESS"/>
-			<xs:element ref="K_TELNR"/>
-			<xs:element ref="K_FAXNR"/>
-			<xs:element ref="K_EMAIL"/>
+			<xs:element ref="AN_INST"/>
+			<xs:element ref="AN_KONTR"/>
+			<xs:element ref="EIGENT"/>
+			<xs:element ref="VERW"/>
+			<xs:element ref="STROMK"/>
+			<xs:element ref="INST"/>
+			<xs:element ref="AG_X"/>
+			<xs:element ref="AG_XTEXT"/>
+			<xs:element ref="GES_NAME1"/>
+			<xs:element ref="GES_NAME2"/>
+			<xs:element ref="GES_ADRESSE1"/>
+			<xs:element ref="GES_ADRESSE2"/>
+			<xs:element ref="GES_PLZ"/>
+			<xs:element ref="GES_ORT"/>
+			<xs:element ref="GES_TELNR"/>
+			<xs:element ref="GES_FAXNR"/>
+			<xs:element ref="GES_EMAIL"/>
 			<xs:element ref="BEMERKUNG"/>
 			<xs:element ref="ZEV"/>
 			<xs:element ref="ZEV_TEXT"/>
@@ -417,79 +398,112 @@
 			<xs:element ref="ANLJAHR1"/>
 			<xs:element ref="ANL2"/>
 			<xs:element ref="ANLJAHR2"/>
-			<xs:element ref="NEUANL"/>
-			<xs:element ref="BEST"/>
-			<xs:element ref="ANDERS"/>
-			<xs:element ref="ERWEIT"/>
-			<xs:element ref="GRUND_X"/>
-			<xs:element ref="GRUND_XTXT"/>
-			<xs:element ref="KONTUMFANG"/>
+			<xs:element ref="MP_NEU"/>
+			<xs:element ref="MP_BEST"/>
+			<xs:element ref="MP_ANDERS"/>
+			<xs:element ref="MP_ERWEIT"/>
+			<xs:element ref="MP_X"/>
+			<xs:element ref="MP_XTEXT"/>
+			<xs:element ref="MP_SK"/>
+			<xs:element ref="MP_AK"/>
+			<xs:element ref="MP_PK"/>
+			<xs:element ref="MP_SP"/>
 			<xs:element ref="IA_DATUM"/>
-			<xs:element ref="KONT_SK"/>
-			<xs:element ref="KONT_AK"/>
-			<xs:element ref="KONT_PK"/>
-			<xs:element ref="TNS"/>
-			<xs:element ref="TNC"/>
-			<xs:element ref="TNCS"/>
-			<xs:element ref="TNX"/>
-			<xs:element ref="TNTEXT"/>
-			<xs:element ref="AUU_IN"/>
-			<xs:element ref="AUU_ART"/>
-			<xs:element ref="UU_ART"/>
-			<xs:element ref="UU_IN"/>
-			<xs:element ref="UU_IKMAX"/>
-			<xs:element ref="UU_IKLN"/>
-			<xs:element ref="UU_IK"/>
-			<xs:element ref="UU_IKLN_ENDE"/>
-			<xs:element ref="UU_RISO"/>
-			<xs:element ref="UU_ZWECK"/>
-			<xs:element ref="BESONDER"/>
 			<xs:element ref="KONDATUM_SK"/>
-			<xs:element ref="KONDATUM_AKPK"/>
+			<xs:element ref="KONDATUM_AKPKSP"/>
 			<xs:element ref="KONDATUM"/>
-			<xs:element ref="KONDATZUS"/>
-			<xs:element ref="PLOMBENTF"/>
-			<xs:element ref="AUFTRAK"/>
-			<xs:element ref="AUFTRSK"/>
-			<xs:element ref="AUFTRSK_NAME1"/>
-			<xs:element ref="AUFTRSK_NAME2"/>
-			<xs:element ref="AUFTRSK_ADRESSE1"/>
-			<xs:element ref="AUFTRSK_ADRESSE2"/>
-			<xs:element ref="AUFTRSK_PLZ"/>
-			<xs:element ref="AUFTRSK_ORT"/>
-			<xs:element ref="AUFTRSK_KONZESS"/>
-			<xs:element ref="AUFTRSK_TELNR"/>
-			<xs:element ref="AUFTRSK_EMAIL"/>
-			<xs:element ref="BEI_MP"/>
-			<xs:element ref="BEI_MPPV"/>
-			<xs:element ref="BEI_X"/>
-			<xs:element ref="BEI_TEXT"/>
-			<xs:element ref="SINAV"/>
-			<xs:element ref="SINAN"/>
-			<xs:element ref="VERT1_X"/>
-			<xs:element ref="VERT1"/>
-			<xs:element ref="EW_BEMERKUNG"/>
-			<xs:element ref="SP_JA"/>
-			<xs:element ref="SP_NEIN"/>
-			<xs:element ref="SP_GUT"/>
-			<xs:element ref="SP_MANGEL"/>
-			<xs:element ref="SP_PLOMB"/>
-			<xs:element ref="SP_PKRELEVANT"/>
+			<xs:element ref="KONTUMFANG"/>
+			<xs:element ref="S_1"/>
+			<xs:element ref="S_2"/>
+			<xs:element ref="S_3"/>
+			<xs:element ref="S_4"/>
+			<xs:element ref="S_5"/>
+			<xs:element ref="S_6"/>
+			<xs:element ref="S_7"/>
+			<xs:element ref="S_8"/>
+			<xs:element ref="S_9"/>
+			<xs:element ref="S_18"/>
+			<xs:element ref="S_18TEXT"/>
+			<xs:element ref="S_10"/>
+			<xs:element ref="S_TNS"/>
+			<xs:element ref="S_TNC"/>
+			<xs:element ref="S_TNCS"/>
+			<xs:element ref="S_SCH3"/>
+			<xs:element ref="S_TNX"/>
+			<xs:element ref="S_TNXTEXT"/>
+			<xs:element ref="S_12"/>
+			<xs:element ref="S_FUND"/>
+			<xs:element ref="S_TIEFENERDER"/>
+			<xs:element ref="S_BANDERDER"/>
+			<xs:element ref="S_ERDX"/>
+			<xs:element ref="S_ERDXTEXT"/>
+			<xs:element ref="S_11"/>
+			<xs:element ref="S_13"/>
+			<xs:element ref="S_14"/>
+			<xs:element ref="S_15"/>
+			<xs:element ref="S_16"/>
+			<xs:element ref="S_17"/>
+			<xs:element ref="F_1"/>
+			<xs:element ref="F_2"/>
+			<xs:element ref="F_3"/>
+			<xs:element ref="F_4"/>
+			<xs:element ref="F_5N"/>
+			<xs:element ref="F_6"/>
+			<xs:element ref="F_6TEXT"/>
+			<xs:element ref="F_SPANNUNG"/>
+			<xs:element ref="F_BEM"/>
+			<xs:element ref="N_MESSNORM"/>
+			<xs:element ref="N_MESS1"/>
+			<xs:element ref="N_MESS2"/>
+			<xs:element ref="N_MESS3"/>
+			<xs:element ref="N_NORM1"/>
+			<xs:element ref="N_NORM1TEXT"/>
+			<xs:element ref="N_NORM2"/>
+			<xs:element ref="N_NORM2TEXT"/>
+			<xs:element ref="N_NORM3"/>
+			<xs:element ref="N_NORM3TEXT"/>
+			<xs:element ref="N_NORM4"/>
+			<xs:element ref="N_NORM4TEXT"/>
+			<xs:element ref="N_NORM5"/>
+			<xs:element ref="N_NORM5TEXT"/>
+			<xs:element ref="N_NORM6"/>
+			<xs:element ref="N_NORM6TEXT"/>
+			<xs:element ref="N_NORM7"/>
+			<xs:element ref="N_NORM7TEXT"/>
+			<xs:element ref="N_NORM8"/>
+			<xs:element ref="N_NORM8TEXT"/>
+			<xs:element ref="SKLISTE_BEMTITEL"/>
+			<xs:element ref="SK_ASBEST0"/>
+			<xs:element ref="SK_ASBEST1"/>
+			<xs:element ref="SK_1"/>
+			<xs:element ref="SK_1NORM"/>
+			<xs:element ref="SK_2"/>
+			<xs:element ref="SK_3"/>
+			<xs:element ref="DOKU"/>
+			<xs:element ref="SCHEMA"/>
+			<xs:element ref="ZUSATZ1"/>
+			<xs:element ref="ZUSTXT1"/>
+			<xs:element ref="OHNEMANGEL"/>
+			<xs:element ref="MANGELTEXT"/>
+			<xs:element ref="GGZ_NAME1"/>
+			<xs:element ref="GGZ_NAME2"/>
+			<xs:element ref="GGZ_ADRESSE1"/>
+			<xs:element ref="GGZ_ADRESSE2"/>
+			<xs:element ref="GGZ_PLZ"/>
+			<xs:element ref="GGZ_ORT"/>
+			<xs:element ref="GGZ_KONZESS"/>
+			<xs:element ref="GGZ_TELNR"/>
+			<xs:element ref="GGZ_EMAIL"/>
+			<xs:element ref="GGZ_DATUM"/>
+			<xs:element ref="GGZ_GRUND"/>
+			<xs:element ref="GGZ_SIGN"/>
+			<xs:element ref="GGZ_SIKT"/>
 			<xs:element ref="SIGN_DATUM"/>
-			<xs:element ref="SIGN_DATUM2"/>
-			<xs:element ref="SIGNATURE"/>
-			<xs:element ref="SIGNKT"/>
 			<xs:element ref="KONTR_SIGN"/>
 			<xs:element ref="KONTR_SIKT"/>
-			<xs:element ref="KONTR_DAT"/>
-			<xs:element ref="KONTR_DAT2"/>
-			<xs:element ref="SIGNATURE2"/>
-			<xs:element ref="SIGNKT2"/>
-			<xs:element ref="KONT_SIGN2"/>
-			<xs:element ref="KONT_SIKT2"/>
-			<xs:element ref="EW_SIGNDAT"/>
-			<xs:element ref="EW_SIGN"/>
-			<xs:element ref="EW_SIGNKT"/>
+			<xs:element ref="SKListeMESSPROT18_DE" minOccurs="0"/>
+			<xs:element ref="SKListeMESSPROT18_FR" minOccurs="0"/>
+			<xs:element ref="SKListeMESSPROT18_IT" minOccurs="0"/>
 		</xs:all>
 	</xs:complexType>
 </xs:schema>

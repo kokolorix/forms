@@ -1,4 +1,4 @@
-<DATAPACKET Version="1.0" >
+<DATAPACKET Version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MESSPROT18.xsd">
 	<ROW>
 		<FORM_TYP>P</FORM_TYP>
 		<ID OLD="1">1</ID>
@@ -9,8 +9,8 @@
 		<I_PROJECT/>
 		<I_FORM/>
 		<E_PROJECT/>
-		<INST_OUT Type="DT">20200728112751000</INST_OUT>
-		<WERK_IN Type="DT">20200728000000000</WERK_IN>
+		<INST_OUT Type="DT"/>
+		<WERK_IN Type="DT"/>
 		<WERK_OUT Type="DT"/>
 		<INST_IN Type="DT"/>
 		<PROJ_NR/>
