@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name="DATAPACKET">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions">
+	<xs:element name="n">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="ROW" type="T_Row"/>
@@ -72,6 +72,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="12"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -83,6 +84,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -93,6 +95,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="60"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -103,6 +106,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="60"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -113,6 +117,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="6"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -123,6 +128,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -133,6 +139,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -143,6 +150,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -153,6 +161,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -163,6 +172,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="8"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -173,6 +183,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -183,6 +194,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -193,6 +205,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -203,6 +216,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -213,6 +227,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -223,6 +238,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="60"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -233,6 +249,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="60"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -243,6 +260,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -253,6 +271,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -263,6 +282,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="8"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -273,6 +293,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -283,6 +304,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -293,6 +315,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="18"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -303,6 +326,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="18"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -313,6 +337,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -323,6 +348,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -333,6 +359,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -343,6 +370,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -353,6 +381,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -363,6 +392,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -373,6 +403,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -383,6 +414,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -393,6 +425,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="8"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -403,6 +436,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -413,6 +447,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -423,6 +458,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -433,6 +469,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="60"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -443,6 +480,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -454,6 +492,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -464,6 +503,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="12"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -475,6 +515,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -485,6 +526,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="12"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -495,6 +537,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -512,6 +555,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -522,6 +566,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -532,6 +577,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -542,6 +588,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -552,6 +599,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -562,6 +610,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="8"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -572,6 +621,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -582,6 +632,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -592,6 +643,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -602,6 +654,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="60"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -612,6 +665,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -623,6 +677,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -633,6 +688,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -644,6 +700,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -655,6 +712,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -671,6 +729,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="20"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -783,6 +842,11 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="14"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="IEC 61010"/>
+					<xs:pattern value="SN EN 61557"/>
+					<xs:pattern value="IEC 61010"/>
+					<xs:pattern value="SN EN 61557"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -824,6 +888,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -835,6 +900,19 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="NIN 2015"/>
+					<xs:pattern value="NIN 2010"/>
+					<xs:pattern value="NIN 2005"/>
+					<xs:pattern value="NIN SN 411000:2015"/>
+					<xs:pattern value="SEV 1000:2010"/>
+					<xs:pattern value="SEV 1000:2005"/>
+					<xs:pattern value="NIBT 2015"/>
+					<xs:pattern value="NIBT 2010"/>
+					<xs:pattern value="NIBT 2005"/>
+					<xs:pattern value="NIBT SN 411000:2015"/>
+					<xs:pattern value="SEV 1000:2010"/>
+					<xs:pattern value="SEV 1000:2005"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -846,6 +924,11 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="WV"/>
+					<xs:pattern value="HV"/>
+					<xs:pattern value="PDIE"/>
+					<xs:pattern value="PIE"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -857,6 +940,15 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="SN EN 61439"/>
+					<xs:pattern value="SN EN 60439"/>
+					<xs:pattern value="SN EN 60204"/>
+					<xs:pattern value="SN EN 50160"/>
+					<xs:pattern value="SN EN 61439"/>
+					<xs:pattern value="SN EN 60439"/>
+					<xs:pattern value="SN EN 60204"/>
+					<xs:pattern value="SN EN 50160"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -868,6 +960,9 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="Werkvorschriften (TAB)"/>
+					<xs:pattern value="Prescriptions PDIE (CTR)"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -879,6 +974,9 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="D-A-CH-CZ"/>
+					<xs:pattern value="D-A-CH-CZ"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -890,6 +988,11 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="SNR 464022"/>
+					<xs:pattern value="SEV 4022:2008"/>
+					<xs:pattern value="SNR 464022"/>
+					<xs:pattern value="SEV 4022:2008"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -901,6 +1004,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -911,6 +1015,9 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="Bemerkungen"/>
+					<xs:pattern value="Remarques"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -924,6 +1031,13 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="12"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="EN 61439"/>
+					<xs:pattern value="EN 60439"/>
+					<xs:pattern value="SNG 461429"/>
+					<xs:pattern value="EN 61439"/>
+					<xs:pattern value="EN 60439"/>
+					<xs:pattern value="SNG 461429"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -939,6 +1053,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -950,6 +1065,11 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="25"/>
+					<xs:pattern value=".*"/>
+					<xs:pattern value="keine Mängel festgestellt"/>
+					<xs:pattern value="Mängel gemäss Bericht"/>
+					<xs:pattern value="Aucun défaut constaté"/>
+					<xs:pattern value="Défauts selon le rapport"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -960,6 +1080,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -970,6 +1091,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -980,6 +1102,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -990,6 +1113,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="40"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1000,6 +1124,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="8"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1010,6 +1135,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1020,6 +1146,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1030,6 +1157,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="16"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1040,6 +1168,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="60"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1061,6 +1190,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1071,6 +1201,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1082,6 +1213,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1092,6 +1224,7 @@
 				<xs:restriction base="T_STRING">
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
+					<xs:pattern value=".*"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1165,7 +1298,11 @@
 	<xs:simpleType name="ST_DATE">
 		<xs:restriction base="xs:string">
 			<xs:pattern value=""/>
-			<xs:pattern value="[0-9]{4}[0-9]{2}[0-9]{2}[0-9]{9}"/><!--Datums-Format: YYYYMMTThhmmssmmm--></xs:restriction></xs:simpleType><xs:complexType name="T_Row">
+			<xs:pattern value="[0-9]{4}[0-9]{2}[0-9]{2}[0-9]{9}"/>
+			<!--Datums-Format: YYYYMMTThhmmssmmm-->
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="T_Row">
 		<xs:all>
 			<xs:element ref="FORM_TYP"/>
 			<xs:element ref="ID"/>
@@ -1361,7 +1498,7 @@
 		</xs:all>
 	</xs:complexType>
 	<xs:complexType name="T_SKListe">
-		<xs:sequence>
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
 			<xs:element name="ROW">
 				<xs:complexType>
 					<xs:all>
@@ -1374,6 +1511,31 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="23"/>
+										<xs:pattern value=".*"/>
+										<xs:pattern value="F1"/>
+										<xs:pattern value="F2"/>
+										<xs:pattern value="F3"/>
+										<xs:pattern value="F4"/>
+										<xs:pattern value="F5"/>
+										<xs:pattern value="F6"/>
+										<xs:pattern value="F7"/>
+										<xs:pattern value="F8"/>
+										<xs:pattern value="F9"/>
+										<xs:pattern value="F10"/>
+										<xs:pattern value="F11"/>
+										<xs:pattern value="F12"/>
+										<xs:pattern value="F1"/>
+										<xs:pattern value="F2"/>
+										<xs:pattern value="F3"/>
+										<xs:pattern value="F4"/>
+										<xs:pattern value="F5"/>
+										<xs:pattern value="F6"/>
+										<xs:pattern value="F7"/>
+										<xs:pattern value="F8"/>
+										<xs:pattern value="F9"/>
+										<xs:pattern value="F10"/>
+										<xs:pattern value="F11"/>
+										<xs:pattern value="F12"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1384,6 +1546,39 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="120"/>
+										<xs:pattern value=".*"/>
+										<xs:pattern value="HAK"/>
+										<xs:pattern value="Licht EG"/>
+										<xs:pattern value="Licht 1.OG"/>
+										<xs:pattern value="Küche"/>
+										<xs:pattern value="Geschirrspüler"/>
+										<xs:pattern value="Kochherd"/>
+										<xs:pattern value="Steamer"/>
+										<xs:pattern value="Keller"/>
+										<xs:pattern value="Boiler (300l)"/>
+										<xs:pattern value="Heizung"/>
+										<xs:pattern value="Waschmaschine"/>
+										<xs:pattern value="Garage"/>
+										<xs:pattern value="UG"/>
+										<xs:pattern value="SGK"/>
+										<xs:pattern value="Aussenbeleuchtung"/>
+										<xs:pattern value="Mansarde"/>
+										<xs:pattern value="Coffret d'introduction"/>
+										<xs:pattern value="Lumière REZ"/>
+										<xs:pattern value="Lumière 1er étage"/>
+										<xs:pattern value="Cuisine"/>
+										<xs:pattern value="Lave-vaisselle"/>
+										<xs:pattern value="Cuisinière"/>
+										<xs:pattern value="Steamer"/>
+										<xs:pattern value="Cave"/>
+										<xs:pattern value="Chauffe-eau"/>
+										<xs:pattern value="Chauffage"/>
+										<xs:pattern value="Machine à laver"/>
+										<xs:pattern value="Garage"/>
+										<xs:pattern value="Tableau d'étage"/>
+										<xs:pattern value="Ensemble d'appareillage"/>
+										<xs:pattern value="Eclairage extérieur"/>
+										<xs:pattern value="Mansarde"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1394,6 +1589,21 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="12"/>
+										<xs:pattern value=".*"/>
+										<xs:pattern value="T"/>
+										<xs:pattern value="TT"/>
+										<xs:pattern value="TT-CLT"/>
+										<xs:pattern value="HO7V-U"/>
+										<xs:pattern value="HO7V-R"/>
+										<xs:pattern value="CH-N1W-U"/>
+										<xs:pattern value="CH-N1W-R"/>
+										<xs:pattern value="T"/>
+										<xs:pattern value="TT"/>
+										<xs:pattern value="TT-CLT"/>
+										<xs:pattern value="HO7V-U"/>
+										<xs:pattern value="HO7V-R"/>
+										<xs:pattern value="CH-N1W-U"/>
+										<xs:pattern value="CH-N1W-R"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1404,6 +1614,25 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="22"/>
+										<xs:pattern value=".*"/>
+										<xs:pattern value="3x1.5"/>
+										<xs:pattern value="4x1.5"/>
+										<xs:pattern value="4x2.5"/>
+										<xs:pattern value="5x1.5"/>
+										<xs:pattern value="5x2.5"/>
+										<xs:pattern value="5x4"/>
+										<xs:pattern value="5x6"/>
+										<xs:pattern value="5x10"/>
+										<xs:pattern value="5x16"/>
+										<xs:pattern value="3x1.5"/>
+										<xs:pattern value="4x1.5"/>
+										<xs:pattern value="4x2.5"/>
+										<xs:pattern value="5x1.5"/>
+										<xs:pattern value="5x2.5"/>
+										<xs:pattern value="5x4"/>
+										<xs:pattern value="5x6"/>
+										<xs:pattern value="5x10"/>
+										<xs:pattern value="5x16"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1414,6 +1643,35 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="10"/>
+										<xs:pattern value=".*"/>
+										<xs:pattern value="DI flink"/>
+										<xs:pattern value="DII träg"/>
+										<xs:pattern value="DIIIträg"/>
+										<xs:pattern value="LSB"/>
+										<xs:pattern value="LSC"/>
+										<xs:pattern value="LSD"/>
+										<xs:pattern value="FI-LSB"/>
+										<xs:pattern value="FI-LSC"/>
+										<xs:pattern value="FI-LSD"/>
+										<xs:pattern value="DIN00"/>
+										<xs:pattern value="NH00"/>
+										<xs:pattern value="NH1"/>
+										<xs:pattern value="NH2"/>
+										<xs:pattern value="NH3"/>
+										<xs:pattern value="DI"/>
+										<xs:pattern value="DII"/>
+										<xs:pattern value="DIII"/>
+										<xs:pattern value="LSB"/>
+										<xs:pattern value="LSC"/>
+										<xs:pattern value="LSD"/>
+										<xs:pattern value="FI-LSB"/>
+										<xs:pattern value="FI-LSC"/>
+										<xs:pattern value="FI-LSD"/>
+										<xs:pattern value="DIN00"/>
+										<xs:pattern value="NH00"/>
+										<xs:pattern value="NH1"/>
+										<xs:pattern value="NH2"/>
+										<xs:pattern value="NH3"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1424,6 +1682,31 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="8"/>
+										<xs:pattern value=".*"/>
+										<xs:pattern value="6"/>
+										<xs:pattern value="10"/>
+										<xs:pattern value="13"/>
+										<xs:pattern value="16"/>
+										<xs:pattern value="20"/>
+										<xs:pattern value="25"/>
+										<xs:pattern value="32"/>
+										<xs:pattern value="40"/>
+										<xs:pattern value="63"/>
+										<xs:pattern value="80"/>
+										<xs:pattern value="100"/>
+										<xs:pattern value="125"/>
+										<xs:pattern value="6"/>
+										<xs:pattern value="10"/>
+										<xs:pattern value="13"/>
+										<xs:pattern value="16"/>
+										<xs:pattern value="20"/>
+										<xs:pattern value="25"/>
+										<xs:pattern value="32"/>
+										<xs:pattern value="40"/>
+										<xs:pattern value="63"/>
+										<xs:pattern value="80"/>
+										<xs:pattern value="100"/>
+										<xs:pattern value="125"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1444,6 +1727,7 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="8"/>
+										<xs:pattern value=".*"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1494,6 +1778,19 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="6"/>
+										<xs:pattern value=".*"/>
+										<xs:pattern value="13"/>
+										<xs:pattern value="16"/>
+										<xs:pattern value="25"/>
+										<xs:pattern value="32"/>
+										<xs:pattern value="40"/>
+										<xs:pattern value="63"/>
+										<xs:pattern value="13"/>
+										<xs:pattern value="16"/>
+										<xs:pattern value="25"/>
+										<xs:pattern value="32"/>
+										<xs:pattern value="40"/>
+										<xs:pattern value="63"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1504,6 +1801,13 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="6"/>
+										<xs:pattern value=".*"/>
+										<xs:pattern value="10"/>
+										<xs:pattern value="30"/>
+										<xs:pattern value="300"/>
+										<xs:pattern value="10"/>
+										<xs:pattern value="30"/>
+										<xs:pattern value="300"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1524,6 +1828,7 @@
 									<xs:restriction base="T_STRING">
 										<xs:minLength value="0"/>
 										<xs:maxLength value="120"/>
+										<xs:pattern value=".*"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>

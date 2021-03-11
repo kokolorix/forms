@@ -120,14 +120,27 @@
 										</xsl:attribute>
 									</xsl:element>
 								</xsl:if>
-<!--								<xsl:if test="./*[starts-with(name(), 'Udo_')]>
+								<xsl:if test="./*[starts-with(name(), 'Udo_')]">
+									<xsl:choose>
+										<xsl:when test="@ULookupOnly = 'true'"></xsl:when>
+									</xsl:choose>
 									<xsl:element name="xs:pattern">
 										<xsl:attribute name="value">.*</xsl:attribute>
 									</xsl:element>
-									<xsl:for-each select="./Udo_*/Uda">
+									<xsl:for-each select="./*[starts-with(name(), 'Udo_')]/Uda">
+										<xsl:element name="xs:pattern">
+											<xsl:attribute name="value"><xsl:value-of select="."/></xsl:attribute>
+											<xsl:attribute name="lang">
+											<xsl:choose>
+												<xsl:when test="ends-with(../name(), 'FR')">fr</xsl:when>
+												<xsl:when test="ends-with(../name(), 'IT')">it</xsl:when>
+												<xsl:otherwise>de</xsl:otherwise>
+											</xsl:choose>
+											</xsl:attribute>
+										</xsl:element>
 									</xsl:for-each>
-								</xsl:if>
--->							</xs:restriction>
+							</xsl:if>
+							</xs:restriction>
 						</xs:simpleContent>
 					</xs:complexType>
 				</xsl:when>
@@ -260,7 +273,7 @@
 				<xsl:text>T_</xsl:text>
 				<xsl:value-of select="@Name"/>
 			</xsl:attribute>
-			<xs:sequence>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
 				<xs:element name="ROW">
 					<xs:complexType>
 						<xs:all>
