@@ -1,0 +1,878 @@
+
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".FORMULAR": {
+			"additionalProperties": false,
+			"properties": {
+				"ROW": {
+					"$ref": "#/definitions/T_Row"
+				}
+			},
+			"required": [
+				"ROW"
+			],
+			"type": "object"
+		},
+		"T_Row": {
+			"additionalProperties": false,
+			"properties": {
+				".FORM_TYP": {
+					"type": "string"
+				},
+				".ID": {
+					"type": "integer"
+				},
+				".ID_PROJECT": {
+					"type": "integer"
+				},
+				".COPY_ID": {
+					"type": "integer"
+				},
+				".MANDANT": {
+					"type": "integer"
+				},
+				".ID_FORMTMP": {
+					"type": "integer"
+				},
+				".I_PROJECT": {
+					"type": "integer"
+				},
+				".I_FORM": {
+					"type": "integer"
+				},
+				".E_PROJECT": {
+					"type": "integer"
+				},
+				".INST_OUT": {
+					"type": "string"
+				},
+				".WERK_IN": {
+					"type": "string"
+				},
+				".WERK_OUT": {
+					"type": "string"
+				},
+				".INST_IN": {
+					"type": "string"
+				},
+				".PROJ_NR": {
+					"minLength": 0,
+					"maxLength": 12,
+					"type": "string"
+				},
+				".PROJ_JAHR": {
+					"type": "integer"
+				},
+				".WERK": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".W_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".W_EF_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".VISUM": {
+					"minLength": 0,
+					"maxLength": 6,
+					"type": "string"
+				},
+				".I_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".I_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".I_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".I_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".I_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".I_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".I_KONZESS": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".I_SACHB": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".I_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".I_FAXNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".I_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".I_EF_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".O_STRASSE": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".O_HAUSNR": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".O_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".O_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".GEMEINDE": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".PARZELLE": {
+					"minLength": 0,
+					"maxLength": 18,
+					"type": "string"
+				},
+				".VERSICH": {
+					"minLength": 0,
+					"maxLength": 18,
+					"type": "string"
+				},
+				".GEBAEUDEART": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GEBAEUDETEIL": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".LAGE": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ANLNUTZUNG": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".U_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".U_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".U_FAXNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".U_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".GEBAEUDENR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".EGID": {
+					"type": "integer"
+				},
+				".ABONR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".EVUAUFTNR": {
+					"minLength": 0,
+					"maxLength": 12,
+					"type": "string"
+				},
+				".TERMIN": {
+					"type": "string"
+				},
+				".PACKNAME": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".MP_NR": {
+					"minLength": 0,
+					"maxLength": 12,
+					"type": "string"
+				},
+				".RAPPORT_NR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".AN_INST": {
+					"type": "boolean"
+				},
+				".AN_KONTR": {
+					"type": "boolean"
+				},
+				".EIGENT": {
+					"type": "boolean"
+				},
+				".VERW": {
+					"type": "boolean"
+				},
+				".STROMK": {
+					"type": "boolean"
+				},
+				".INST": {
+					"type": "boolean"
+				},
+				".AG_X": {
+					"type": "boolean"
+				},
+				".AG_XTEXT": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".GES_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GES_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GES_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GES_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GES_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".GES_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".GES_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".GES_FAXNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".GES_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".BEMERKUNG": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ZEV": {
+					"type": "boolean"
+				},
+				".ZEV_TEXT": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ZAEHLER": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ANLJAHR0": {
+					"type": "integer"
+				},
+				".ANL1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ANLJAHR1": {
+					"type": "integer"
+				},
+				".ANL2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ANLJAHR2": {
+					"type": "integer"
+				},
+				".MP_NEU": {
+					"type": "boolean"
+				},
+				".MP_BEST": {
+					"type": "boolean"
+				},
+				".MP_ANDERS": {
+					"type": "boolean"
+				},
+				".MP_ERWEIT": {
+					"type": "boolean"
+				},
+				".MP_X": {
+					"type": "boolean"
+				},
+				".MP_XTEXT": {
+					"minLength": 0,
+					"maxLength": 20,
+					"type": "string"
+				},
+				".MP_SK": {
+					"type": "boolean"
+				},
+				".MP_AK": {
+					"type": "boolean"
+				},
+				".MP_PK": {
+					"type": "boolean"
+				},
+				".MP_SP": {
+					"type": "boolean"
+				},
+				".IA_DATUM": {
+					"type": "string"
+				},
+				".KONDATUM_SK": {
+					"type": "string"
+				},
+				".KONDATUM_AKPKSP": {
+					"type": "string"
+				},
+				".KONDATUM": {
+					"type": "string"
+				},
+				".KONTUMFANG": {
+					"type": "string"
+				},
+				".S_1": {
+					"type": "boolean"
+				},
+				".S_2": {
+					"type": "boolean"
+				},
+				".S_3": {
+					"type": "boolean"
+				},
+				".S_4": {
+					"type": "boolean"
+				},
+				".S_5": {
+					"type": "boolean"
+				},
+				".S_6": {
+					"type": "boolean"
+				},
+				".S_7": {
+					"type": "boolean"
+				},
+				".S_8": {
+					"type": "boolean"
+				},
+				".S_9": {
+					"type": "boolean"
+				},
+				".S_18": {
+					"type": "boolean"
+				},
+				".S_18TEXT": {
+					"minLength": 0,
+					"maxLength": 50,
+					"type": "string"
+				},
+				".S_10": {
+					"type": "boolean"
+				},
+				".S_TNS": {
+					"type": "boolean"
+				},
+				".S_TNC": {
+					"type": "boolean"
+				},
+				".S_TNCS": {
+					"type": "boolean"
+				},
+				".S_SCH3": {
+					"type": "boolean"
+				},
+				".S_TNX": {
+					"type": "boolean"
+				},
+				".S_TNXTEXT": {
+					"minLength": 0,
+					"maxLength": 14,
+					"type": "string"
+				},
+				".S_12": {
+					"type": "boolean"
+				},
+				".S_FUND": {
+					"type": "boolean"
+				},
+				".S_TIEFENERDER": {
+					"type": "boolean"
+				},
+				".S_BANDERDER": {
+					"type": "boolean"
+				},
+				".S_ERDX": {
+					"type": "boolean"
+				},
+				".S_ERDXTEXT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".S_11": {
+					"type": "boolean"
+				},
+				".S_13": {
+					"type": "boolean"
+				},
+				".S_14": {
+					"type": "boolean"
+				},
+				".S_15": {
+					"type": "boolean"
+				},
+				".S_16": {
+					"type": "boolean"
+				},
+				".S_17": {
+					"type": "boolean"
+				},
+				".F_1": {
+					"type": "boolean"
+				},
+				".F_2": {
+					"type": "boolean"
+				},
+				".F_3": {
+					"type": "boolean"
+				},
+				".F_4": {
+					"type": "boolean"
+				},
+				".F_5N": {
+					"type": "boolean"
+				},
+				".F_6": {
+					"type": "boolean"
+				},
+				".F_6TEXT": {
+					"minLength": 0,
+					"maxLength": 44,
+					"type": "string"
+				},
+				".F_SPANNUNG": {
+					"minLength": 0,
+					"maxLength": 10,
+					"type": "string"
+				},
+				".F_BEM": {
+					"minLength": 0,
+					"maxLength": 36,
+					"type": "string"
+				},
+				".N_MESSNORM": {
+					"minLength": 0,
+					"maxLength": 14,
+					"type": "string"
+				},
+				".N_MESS1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".N_MESS2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".N_MESS3": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".N_NORM1": {
+					"type": "boolean"
+				},
+				".N_NORM1TEXT": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".N_NORM2": {
+					"type": "boolean"
+				},
+				".N_NORM2TEXT": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".N_NORM3": {
+					"type": "boolean"
+				},
+				".N_NORM3TEXT": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".N_NORM4": {
+					"type": "boolean"
+				},
+				".N_NORM4TEXT": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".N_NORM5": {
+					"type": "boolean"
+				},
+				".N_NORM5TEXT": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".N_NORM6": {
+					"type": "boolean"
+				},
+				".N_NORM6TEXT": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".N_NORM7": {
+					"type": "boolean"
+				},
+				".N_NORM7TEXT": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".N_NORM8": {
+					"type": "boolean"
+				},
+				".N_NORM8TEXT": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".SKLISTE_BEMTITEL": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".SK_ASBEST0": {
+					"type": "boolean"
+				},
+				".SK_ASBEST1": {
+					"type": "boolean"
+				},
+				".SK_1": {
+					"type": "boolean"
+				},
+				".SK_1NORM": {
+					"minLength": 0,
+					"maxLength": 12,
+					"type": "string"
+				},
+				".SK_2": {
+					"type": "boolean"
+				},
+				".SK_3": {
+					"type": "boolean"
+				},
+				".DOKU": {
+					"type": "boolean"
+				},
+				".SCHEMA": {
+					"type": "boolean"
+				},
+				".ZUSATZ1": {
+					"type": "boolean"
+				},
+				".ZUSTXT1": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".OHNEMANGEL": {
+					"type": "boolean"
+				},
+				".MANGELTEXT": {
+					"minLength": 0,
+					"maxLength": 25,
+					"type": "string"
+				},
+				".GGZ_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GGZ_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GGZ_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GGZ_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GGZ_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".GGZ_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".GGZ_KONZESS": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".GGZ_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".GGZ_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".GGZ_DATUM": {
+					"type": "string"
+				},
+				".GGZ_GRUND": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".GGZ_SIGN": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".GGZ_SIKT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".SIGN_DATUM": {
+					"type": "string"
+				},
+				".KONTR_SIGN": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".KONTR_SIKT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".SKListe": {
+					"type": "object",
+					"properties": {
+						".ID": {
+							"type": "integer"
+						},
+						".FORM_ID": {
+							"type": "integer"
+						},
+						".SEQ_FORM": {
+							"type": "integer"
+						},
+						".NUMMER": {
+							"minLength": 0,
+							"maxLength": 23,
+							"type": "string"
+						},
+						".BEZ": {
+							"minLength": 0,
+							"maxLength": 120,
+							"type": "string"
+						},
+						".LEIT_ART": {
+							"minLength": 0,
+							"maxLength": 12,
+							"type": "string"
+						},
+						".LEIT_ANZ": {
+							"minLength": 0,
+							"maxLength": 22,
+							"type": "string"
+						},
+						".I_ART": {
+							"minLength": 0,
+							"maxLength": 10,
+							"type": "string"
+						},
+						".I_INSTR": {
+							"minLength": 0,
+							"maxLength": 8,
+							"type": "string"
+						},
+						".M_IKMAX": {
+							"minLength": 0,
+							"maxLength": 8,
+							"type": "string"
+						},
+						".M_IKMIN": {
+							"minLength": 0,
+							"maxLength": 8,
+							"type": "string"
+						},
+						".M_IKMAX_LN": {
+							"minLength": 0,
+							"maxLength": 8,
+							"type": "string"
+						},
+						".M_IKMIN_LN": {
+							"minLength": 0,
+							"maxLength": 8,
+							"type": "string"
+						},
+						".M_RISO": {
+							"minLength": 0,
+							"maxLength": 8,
+							"type": "string"
+						},
+						".M_LEIT": {
+							"minLength": 0,
+							"maxLength": 8,
+							"type": "string"
+						},
+						".FI_IN": {
+							"minLength": 0,
+							"maxLength": 6,
+							"type": "string"
+						},
+						".FI_IDN": {
+							"minLength": 0,
+							"maxLength": 6,
+							"type": "string"
+						},
+						".FI_T": {
+							"minLength": 0,
+							"maxLength": 8,
+							"type": "string"
+						},
+						".BEMERK": {
+							"minLength": 0,
+							"maxLength": 120,
+							"type": "string"
+						}
+					}
+				}
+			}	
+		}
+	},
+	"properties": {
+		"FORMULAR": {
+			"$ref": "#/definitions/.FORMULAR"
+		}
+	},
+	"type": "object"
+}	

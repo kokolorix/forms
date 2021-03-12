@@ -1,0 +1,767 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "JSON Schema erstellt mit XMLSpy v2021 rel. 2 (x64) (http://www.altova.com)",
+  "type": "object",
+  "required": [
+    "FORM_TYP",
+    "ID",
+    "ID_PROJECT",
+    "COPY_ID",
+    "MANDANT",
+    "ID_FORMTMP",
+    "I_PROJECT",
+    "I_FORM",
+    "E_PROJECT",
+    "INST_OUT",
+    "WERK_IN",
+    "WERK_OUT",
+    "INST_IN",
+    "PROJ_NR",
+    "PROJ_JAHR",
+    "WERK",
+    "W_EMAIL",
+    "W_EF_EMAIL",
+    "VISUM",
+    "I_NAME1",
+    "I_NAME2",
+    "I_ADRESSE1",
+    "I_ADRESSE2",
+    "I_PLZ",
+    "I_ORT",
+    "I_KONZESS",
+    "I_SACHB",
+    "I_TELNR",
+    "I_FAXNR",
+    "I_EMAIL",
+    "I_EF_EMAIL",
+    "O_STRASSE",
+    "O_HAUSNR",
+    "O_PLZ",
+    "O_ORT",
+    "GEMEINDE",
+    "PARZELLE",
+    "VERSICH",
+    "GEBAEUDEART",
+    "GEBAEUDETEIL",
+    "LAGE",
+    "ANLNUTZUNG",
+    "U_NAME1",
+    "U_NAME2",
+    "U_ADRESSE1",
+    "U_ADRESSE2",
+    "U_PLZ",
+    "U_ORT",
+    "U_TELNR",
+    "U_FAXNR",
+    "U_EMAIL",
+    "GEBAEUDENR",
+    "EGID",
+    "ABONR",
+    "EVUAUFTNR",
+    "TERMIN",
+    "PACKNAME",
+    "MP_NR",
+    "RAPPORT_NR",
+    "AN_INST",
+    "AN_KONTR",
+    "EIGENT",
+    "VERW",
+    "STROMK",
+    "INST",
+    "AG_X",
+    "AG_XTEXT",
+    "GES_NAME1",
+    "GES_NAME2",
+    "GES_ADRESSE1",
+    "GES_ADRESSE2",
+    "GES_PLZ",
+    "GES_ORT",
+    "GES_TELNR",
+    "GES_FAXNR",
+    "GES_EMAIL",
+    "BEMERKUNG",
+    "ZEV",
+    "ZEV_TEXT",
+    "ZAEHLER",
+    "ANLJAHR0",
+    "ANL1",
+    "ANLJAHR1",
+    "ANL2",
+    "ANLJAHR2",
+    "MP_NEU",
+    "MP_BEST",
+    "MP_ANDERS",
+    "MP_ERWEIT",
+    "MP_X",
+    "MP_XTEXT",
+    "MP_SK",
+    "MP_AK",
+    "MP_PK",
+    "MP_SP",
+    "IA_DATUM",
+    "KONDATUM_SK",
+    "KONDATUM_AKPKSP",
+    "KONDATUM",
+    "KONTUMFANG",
+    "S_1",
+    "S_2",
+    "S_3",
+    "S_4",
+    "S_5",
+    "S_6",
+    "S_7",
+    "S_8",
+    "S_9",
+    "S_18",
+    "S_18TEXT",
+    "S_10",
+    "S_TNS",
+    "S_TNC",
+    "S_TNCS",
+    "S_SCH3",
+    "S_TNX",
+    "S_TNXTEXT",
+    "S_12",
+    "S_FUND",
+    "S_TIEFENERDER",
+    "S_BANDERDER",
+    "S_ERDX",
+    "S_ERDXTEXT",
+    "S_11",
+    "S_13",
+    "S_14",
+    "S_15",
+    "S_16",
+    "S_17",
+    "F_1",
+    "F_2",
+    "F_3",
+    "F_4",
+    "F_5N",
+    "F_6",
+    "F_6TEXT",
+    "F_SPANNUNG",
+    "F_BEM",
+    "N_MESSNORM",
+    "N_MESS1",
+    "N_MESS2",
+    "N_MESS3",
+    "N_NORM1",
+    "N_NORM1TEXT",
+    "N_NORM2",
+    "N_NORM2TEXT",
+    "N_NORM3",
+    "N_NORM3TEXT",
+    "N_NORM4",
+    "N_NORM4TEXT",
+    "N_NORM5",
+    "N_NORM5TEXT",
+    "N_NORM6",
+    "N_NORM6TEXT",
+    "N_NORM7",
+    "N_NORM7TEXT",
+    "N_NORM8",
+    "N_NORM8TEXT",
+    "SKLISTE_BEMTITEL",
+    "SK_ASBEST0",
+    "SK_ASBEST1",
+    "SK_1",
+    "SK_1NORM",
+    "SK_2",
+    "SK_3",
+    "DOKU",
+    "SCHEMA",
+    "ZUSATZ1",
+    "ZUSTXT1",
+    "OHNEMANGEL",
+    "MANGELTEXT",
+    "GGZ_NAME1",
+    "GGZ_NAME2",
+    "GGZ_ADRESSE1",
+    "GGZ_ADRESSE2",
+    "GGZ_PLZ",
+    "GGZ_ORT",
+    "GGZ_KONZESS",
+    "GGZ_TELNR",
+    "GGZ_EMAIL",
+    "GGZ_DATUM",
+    "GGZ_GRUND",
+    "GGZ_SIGN",
+    "GGZ_SIKT",
+    "SIGN_DATUM",
+    "KONTR_SIGN",
+    "KONTR_SIKT",
+    "SKListeMESSPROT18_DE"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "FORM_TYP": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "string"
+    },
+    "ID_PROJECT": {
+      "type": "string"
+    },
+    "COPY_ID": {
+      "type": "string"
+    },
+    "MANDANT": {
+      "type": "string"
+    },
+    "ID_FORMTMP": {
+      "type": "string"
+    },
+    "I_PROJECT": {
+      "type": "string"
+    },
+    "I_FORM": {
+      "type": "string"
+    },
+    "E_PROJECT": {
+      "type": "string"
+    },
+    "INST_OUT": {
+      "type": "string"
+    },
+    "WERK_IN": {
+      "type": "string"
+    },
+    "WERK_OUT": {
+      "type": "string"
+    },
+    "INST_IN": {
+      "type": "string"
+    },
+    "PROJ_NR": {
+      "type": "string"
+    },
+    "PROJ_JAHR": {
+      "type": "string"
+    },
+    "WERK": {
+      "type": "string"
+    },
+    "W_EMAIL": {
+      "type": "string"
+    },
+    "W_EF_EMAIL": {
+      "type": "string"
+    },
+    "VISUM": {
+      "type": "string"
+    },
+    "I_NAME1": {
+      "type": "string"
+    },
+    "I_NAME2": {
+      "type": "string"
+    },
+    "I_ADRESSE1": {
+      "type": "string"
+    },
+    "I_ADRESSE2": {
+      "type": "string"
+    },
+    "I_PLZ": {
+      "type": "string"
+    },
+    "I_ORT": {
+      "type": "string"
+    },
+    "I_KONZESS": {
+      "type": "string"
+    },
+    "I_SACHB": {
+      "type": "string"
+    },
+    "I_TELNR": {
+      "type": "string"
+    },
+    "I_FAXNR": {
+      "type": "string"
+    },
+    "I_EMAIL": {
+      "type": "string",
+      "format": "email"
+    },
+    "I_EF_EMAIL": {
+      "type": "string"
+    },
+    "O_STRASSE": {
+      "type": "string"
+    },
+    "O_HAUSNR": {
+      "type": "string"
+    },
+    "O_PLZ": {
+      "type": "string"
+    },
+    "O_ORT": {
+      "type": "string"
+    },
+    "GEMEINDE": {
+      "type": "string"
+    },
+    "PARZELLE": {
+      "type": "string"
+    },
+    "VERSICH": {
+      "type": "string"
+    },
+    "GEBAEUDEART": {
+      "type": "string"
+    },
+    "GEBAEUDETEIL": {
+      "type": "string"
+    },
+    "LAGE": {
+      "type": "string"
+    },
+    "ANLNUTZUNG": {
+      "type": "string"
+    },
+    "U_NAME1": {
+      "type": "string"
+    },
+    "U_NAME2": {
+      "type": "string"
+    },
+    "U_ADRESSE1": {
+      "type": "string"
+    },
+    "U_ADRESSE2": {
+      "type": "string"
+    },
+    "U_PLZ": {
+      "type": "string"
+    },
+    "U_ORT": {
+      "type": "string"
+    },
+    "U_TELNR": {
+      "type": "string"
+    },
+    "U_FAXNR": {
+      "type": "string"
+    },
+    "U_EMAIL": {
+      "type": "string"
+    },
+    "GEBAEUDENR": {
+      "type": "string"
+    },
+    "EGID": {
+      "type": "string"
+    },
+    "ABONR": {
+      "type": "string"
+    },
+    "EVUAUFTNR": {
+      "type": "string"
+    },
+    "TERMIN": {
+      "type": "string"
+    },
+    "PACKNAME": {
+      "type": "string"
+    },
+    "MP_NR": {
+      "type": "string"
+    },
+    "RAPPORT_NR": {
+      "type": "string"
+    },
+    "AN_INST": {
+      "type": "string"
+    },
+    "AN_KONTR": {
+      "type": "string"
+    },
+    "EIGENT": {
+      "type": "string"
+    },
+    "VERW": {
+      "type": "string"
+    },
+    "STROMK": {
+      "type": "string"
+    },
+    "INST": {
+      "type": "string"
+    },
+    "AG_X": {
+      "type": "string"
+    },
+    "AG_XTEXT": {
+      "type": "string"
+    },
+    "GES_NAME1": {
+      "type": "string"
+    },
+    "GES_NAME2": {
+      "type": "string"
+    },
+    "GES_ADRESSE1": {
+      "type": "string"
+    },
+    "GES_ADRESSE2": {
+      "type": "string"
+    },
+    "GES_PLZ": {
+      "type": "string"
+    },
+    "GES_ORT": {
+      "type": "string"
+    },
+    "GES_TELNR": {
+      "type": "string"
+    },
+    "GES_FAXNR": {
+      "type": "string"
+    },
+    "GES_EMAIL": {
+      "type": "string"
+    },
+    "BEMERKUNG": {
+      "type": "string"
+    },
+    "ZEV": {
+      "type": "string"
+    },
+    "ZEV_TEXT": {
+      "type": "string"
+    },
+    "ZAEHLER": {
+      "type": "string"
+    },
+    "ANLJAHR0": {
+      "type": "string"
+    },
+    "ANL1": {
+      "type": "string"
+    },
+    "ANLJAHR1": {
+      "type": "string"
+    },
+    "ANL2": {
+      "type": "string"
+    },
+    "ANLJAHR2": {
+      "type": "string"
+    },
+    "MP_NEU": {
+      "type": "string"
+    },
+    "MP_BEST": {
+      "type": "string"
+    },
+    "MP_ANDERS": {
+      "type": "string"
+    },
+    "MP_ERWEIT": {
+      "type": "string"
+    },
+    "MP_X": {
+      "type": "string"
+    },
+    "MP_XTEXT": {
+      "type": "string"
+    },
+    "MP_SK": {
+      "type": "string"
+    },
+    "MP_AK": {
+      "type": "string"
+    },
+    "MP_PK": {
+      "type": "string"
+    },
+    "MP_SP": {
+      "type": "string"
+    },
+    "IA_DATUM": {
+      "type": "string"
+    },
+    "KONDATUM_SK": {
+      "type": "string"
+    },
+    "KONDATUM_AKPKSP": {
+      "type": "string"
+    },
+    "KONDATUM": {
+      "type": "string"
+    },
+    "KONTUMFANG": {
+      "type": "string"
+    },
+    "S_1": {
+      "type": "string"
+    },
+    "S_2": {
+      "type": "string"
+    },
+    "S_3": {
+      "type": "string"
+    },
+    "S_4": {
+      "type": "string"
+    },
+    "S_5": {
+      "type": "string"
+    },
+    "S_6": {
+      "type": "string"
+    },
+    "S_7": {
+      "type": "string"
+    },
+    "S_8": {
+      "type": "string"
+    },
+    "S_9": {
+      "type": "string"
+    },
+    "S_18": {
+      "type": "string"
+    },
+    "S_18TEXT": {
+      "type": "string"
+    },
+    "S_10": {
+      "type": "string"
+    },
+    "S_TNS": {
+      "type": "string"
+    },
+    "S_TNC": {
+      "type": "string"
+    },
+    "S_TNCS": {
+      "type": "string"
+    },
+    "S_SCH3": {
+      "type": "string"
+    },
+    "S_TNX": {
+      "type": "string"
+    },
+    "S_TNXTEXT": {
+      "type": "string"
+    },
+    "S_12": {
+      "type": "string"
+    },
+    "S_FUND": {
+      "type": "string"
+    },
+    "S_TIEFENERDER": {
+      "type": "string"
+    },
+    "S_BANDERDER": {
+      "type": "string"
+    },
+    "S_ERDX": {
+      "type": "string"
+    },
+    "S_ERDXTEXT": {
+      "type": "string"
+    },
+    "S_11": {
+      "type": "string"
+    },
+    "S_13": {
+      "type": "string"
+    },
+    "S_14": {
+      "type": "string"
+    },
+    "S_15": {
+      "type": "string"
+    },
+    "S_16": {
+      "type": "string"
+    },
+    "S_17": {
+      "type": "string"
+    },
+    "F_1": {
+      "type": "string"
+    },
+    "F_2": {
+      "type": "string"
+    },
+    "F_3": {
+      "type": "string"
+    },
+    "F_4": {
+      "type": "string"
+    },
+    "F_5N": {
+      "type": "string"
+    },
+    "F_6": {
+      "type": "string"
+    },
+    "F_6TEXT": {
+      "type": "string"
+    },
+    "F_SPANNUNG": {
+      "type": "string"
+    },
+    "F_BEM": {
+      "type": "string"
+    },
+    "N_MESSNORM": {
+      "type": "string"
+    },
+    "N_MESS1": {
+      "type": "string"
+    },
+    "N_MESS2": {
+      "type": "string"
+    },
+    "N_MESS3": {
+      "type": "string"
+    },
+    "N_NORM1": {
+      "type": "string"
+    },
+    "N_NORM1TEXT": {
+      "type": "string"
+    },
+    "N_NORM2": {
+      "type": "string"
+    },
+    "N_NORM2TEXT": {
+      "type": "string"
+    },
+    "N_NORM3": {
+      "type": "string"
+    },
+    "N_NORM3TEXT": {
+      "type": "string"
+    },
+    "N_NORM4": {
+      "type": "string"
+    },
+    "N_NORM4TEXT": {
+      "type": "string"
+    },
+    "N_NORM5": {
+      "type": "string"
+    },
+    "N_NORM5TEXT": {
+      "type": "string"
+    },
+    "N_NORM6": {
+      "type": "string"
+    },
+    "N_NORM6TEXT": {
+      "type": "string"
+    },
+    "N_NORM7": {
+      "type": "string"
+    },
+    "N_NORM7TEXT": {
+      "type": "string"
+    },
+    "N_NORM8": {
+      "type": "string"
+    },
+    "N_NORM8TEXT": {
+      "type": "string"
+    },
+    "SKLISTE_BEMTITEL": {
+      "type": "string"
+    },
+    "SK_ASBEST0": {
+      "type": "string"
+    },
+    "SK_ASBEST1": {
+      "type": "string"
+    },
+    "SK_1": {
+      "type": "string"
+    },
+    "SK_1NORM": {
+      "type": "string"
+    },
+    "SK_2": {
+      "type": "string"
+    },
+    "SK_3": {
+      "type": "string"
+    },
+    "DOKU": {
+      "type": "string"
+    },
+    "SCHEMA": {
+      "type": "string"
+    },
+    "ZUSATZ1": {
+      "type": "string"
+    },
+    "ZUSTXT1": {
+      "type": "string"
+    },
+    "OHNEMANGEL": {
+      "type": "string"
+    },
+    "MANGELTEXT": {
+      "type": "string"
+    },
+    "GGZ_NAME1": {
+      "type": "string"
+    },
+    "GGZ_NAME2": {
+      "type": "string"
+    },
+    "GGZ_ADRESSE1": {
+      "type": "string"
+    },
+    "GGZ_ADRESSE2": {
+      "type": "string"
+    },
+    "GGZ_PLZ": {
+      "type": "string"
+    },
+    "GGZ_ORT": {
+      "type": "string"
+    },
+    "GGZ_KONZESS": {
+      "type": "string"
+    },
+    "GGZ_TELNR": {
+      "type": "string"
+    },
+    "GGZ_EMAIL": {
+      "type": "string"
+    },
+    "GGZ_DATUM": {
+      "type": "string"
+    },
+    "GGZ_GRUND": {
+      "type": "string"
+    },
+    "GGZ_SIGN": {
+      "type": "string"
+    },
+    "GGZ_SIKT": {
+      "type": "string"
+    },
+    "SIGN_DATUM": {
+      "type": "string"
+    },
+    "KONTR_SIGN": {
+      "type": "string"
+    },
+    "KONTR_SIKT": {
+      "type": "string"
+    },
+    "SKListeMESSPROT18_DE": {
+      "type": "string"
+    }
+  }
+}

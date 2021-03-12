@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions">
-	<xs:element name="n">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="DATAPACKET">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="ROW" type="T_Row"/>
@@ -843,10 +843,10 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="14"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="IEC 61010"/>
-					<xs:pattern value="SN EN 61557"/>
-					<xs:pattern value="IEC 61010"/>
-					<xs:pattern value="SN EN 61557"/>
+					<xs:pattern value="IEC 61010" xml:lang="de"/>
+					<xs:pattern value="SN EN 61557" xml:lang="de"/>
+					<xs:pattern value="IEC 61010" xml:lang="fr"/>
+					<xs:pattern value="SN EN 61557" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -901,18 +901,18 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="NIN 2015"/>
-					<xs:pattern value="NIN 2010"/>
-					<xs:pattern value="NIN 2005"/>
-					<xs:pattern value="NIN SN 411000:2015"/>
-					<xs:pattern value="SEV 1000:2010"/>
-					<xs:pattern value="SEV 1000:2005"/>
-					<xs:pattern value="NIBT 2015"/>
-					<xs:pattern value="NIBT 2010"/>
-					<xs:pattern value="NIBT 2005"/>
-					<xs:pattern value="NIBT SN 411000:2015"/>
-					<xs:pattern value="SEV 1000:2010"/>
-					<xs:pattern value="SEV 1000:2005"/>
+					<xs:pattern value="NIN 2015" xml:lang="de"/>
+					<xs:pattern value="NIN 2010" xml:lang="de"/>
+					<xs:pattern value="NIN 2005" xml:lang="de"/>
+					<xs:pattern value="NIN SN 411000:2015" xml:lang="de"/>
+					<xs:pattern value="SEV 1000:2010" xml:lang="de"/>
+					<xs:pattern value="SEV 1000:2005" xml:lang="de"/>
+					<xs:pattern value="NIBT 2015" xml:lang="fr"/>
+					<xs:pattern value="NIBT 2010" xml:lang="fr"/>
+					<xs:pattern value="NIBT 2005" xml:lang="fr"/>
+					<xs:pattern value="NIBT SN 411000:2015" xml:lang="fr"/>
+					<xs:pattern value="SEV 1000:2010" xml:lang="fr"/>
+					<xs:pattern value="SEV 1000:2005" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -925,10 +925,10 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="WV"/>
-					<xs:pattern value="HV"/>
-					<xs:pattern value="PDIE"/>
-					<xs:pattern value="PIE"/>
+					<xs:pattern value="WV" xml:lang="de"/>
+					<xs:pattern value="HV" xml:lang="de"/>
+					<xs:pattern value="PDIE" xml:lang="fr"/>
+					<xs:pattern value="PIE" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -941,14 +941,14 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="SN EN 61439"/>
-					<xs:pattern value="SN EN 60439"/>
-					<xs:pattern value="SN EN 60204"/>
-					<xs:pattern value="SN EN 50160"/>
-					<xs:pattern value="SN EN 61439"/>
-					<xs:pattern value="SN EN 60439"/>
-					<xs:pattern value="SN EN 60204"/>
-					<xs:pattern value="SN EN 50160"/>
+					<xs:pattern value="SN EN 61439" xml:lang="de"/>
+					<xs:pattern value="SN EN 60439" xml:lang="de"/>
+					<xs:pattern value="SN EN 60204" xml:lang="de"/>
+					<xs:pattern value="SN EN 50160" xml:lang="de"/>
+					<xs:pattern value="SN EN 61439" xml:lang="fr"/>
+					<xs:pattern value="SN EN 60439" xml:lang="fr"/>
+					<xs:pattern value="SN EN 60204" xml:lang="fr"/>
+					<xs:pattern value="SN EN 50160" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -961,8 +961,8 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="Werkvorschriften (TAB)"/>
-					<xs:pattern value="Prescriptions PDIE (CTR)"/>
+					<xs:pattern value="Werkvorschriften (TAB)" xml:lang="de"/>
+					<xs:pattern value="Prescriptions PDIE (CTR)" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -975,8 +975,8 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="D-A-CH-CZ"/>
-					<xs:pattern value="D-A-CH-CZ"/>
+					<xs:pattern value="D-A-CH-CZ" xml:lang="de"/>
+					<xs:pattern value="D-A-CH-CZ" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -989,10 +989,10 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="24"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="SNR 464022"/>
-					<xs:pattern value="SEV 4022:2008"/>
-					<xs:pattern value="SNR 464022"/>
-					<xs:pattern value="SEV 4022:2008"/>
+					<xs:pattern value="SNR 464022" xml:lang="de"/>
+					<xs:pattern value="SEV 4022:2008" xml:lang="de"/>
+					<xs:pattern value="SNR 464022" xml:lang="fr"/>
+					<xs:pattern value="SEV 4022:2008" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1016,8 +1016,8 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="30"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="Bemerkungen"/>
-					<xs:pattern value="Remarques"/>
+					<xs:pattern value="Bemerkungen" xml:lang="de"/>
+					<xs:pattern value="Remarques" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1032,12 +1032,12 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="12"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="EN 61439"/>
-					<xs:pattern value="EN 60439"/>
-					<xs:pattern value="SNG 461429"/>
-					<xs:pattern value="EN 61439"/>
-					<xs:pattern value="EN 60439"/>
-					<xs:pattern value="SNG 461429"/>
+					<xs:pattern value="EN 61439" xml:lang="de"/>
+					<xs:pattern value="EN 60439" xml:lang="de"/>
+					<xs:pattern value="SNG 461429" xml:lang="de"/>
+					<xs:pattern value="EN 61439" xml:lang="fr"/>
+					<xs:pattern value="EN 60439" xml:lang="fr"/>
+					<xs:pattern value="SNG 461429" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1066,10 +1066,10 @@
 					<xs:minLength value="0"/>
 					<xs:maxLength value="25"/>
 					<xs:pattern value=".*"/>
-					<xs:pattern value="keine Mängel festgestellt"/>
-					<xs:pattern value="Mängel gemäss Bericht"/>
-					<xs:pattern value="Aucun défaut constaté"/>
-					<xs:pattern value="Défauts selon le rapport"/>
+					<xs:pattern value="keine Mängel festgestellt" xml:lang="de"/>
+					<xs:pattern value="Mängel gemäss Bericht" xml:lang="de"/>
+					<xs:pattern value="Aucun défaut constaté" xml:lang="fr"/>
+					<xs:pattern value="Défauts selon le rapport" xml:lang="fr"/>
 				</xs:restriction>
 			</xs:simpleContent>
 		</xs:complexType>
@@ -1298,11 +1298,7 @@
 	<xs:simpleType name="ST_DATE">
 		<xs:restriction base="xs:string">
 			<xs:pattern value=""/>
-			<xs:pattern value="[0-9]{4}[0-9]{2}[0-9]{2}[0-9]{9}"/>
-			<!--Datums-Format: YYYYMMTThhmmssmmm-->
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:complexType name="T_Row">
+			<xs:pattern value="[0-9]{4}[0-9]{2}[0-9]{2}[0-9]{9}"/><!--Datums-Format: YYYYMMTThhmmssmmm--></xs:restriction></xs:simpleType><xs:complexType name="T_Row">
 		<xs:all>
 			<xs:element ref="FORM_TYP"/>
 			<xs:element ref="ID"/>
@@ -1512,30 +1508,30 @@
 										<xs:minLength value="0"/>
 										<xs:maxLength value="23"/>
 										<xs:pattern value=".*"/>
-										<xs:pattern value="F1"/>
-										<xs:pattern value="F2"/>
-										<xs:pattern value="F3"/>
-										<xs:pattern value="F4"/>
-										<xs:pattern value="F5"/>
-										<xs:pattern value="F6"/>
-										<xs:pattern value="F7"/>
-										<xs:pattern value="F8"/>
-										<xs:pattern value="F9"/>
-										<xs:pattern value="F10"/>
-										<xs:pattern value="F11"/>
-										<xs:pattern value="F12"/>
-										<xs:pattern value="F1"/>
-										<xs:pattern value="F2"/>
-										<xs:pattern value="F3"/>
-										<xs:pattern value="F4"/>
-										<xs:pattern value="F5"/>
-										<xs:pattern value="F6"/>
-										<xs:pattern value="F7"/>
-										<xs:pattern value="F8"/>
-										<xs:pattern value="F9"/>
-										<xs:pattern value="F10"/>
-										<xs:pattern value="F11"/>
-										<xs:pattern value="F12"/>
+										<xs:pattern value="F1" xml:lang="de"/>
+										<xs:pattern value="F2" xml:lang="de"/>
+										<xs:pattern value="F3" xml:lang="de"/>
+										<xs:pattern value="F4" xml:lang="de"/>
+										<xs:pattern value="F5" xml:lang="de"/>
+										<xs:pattern value="F6" xml:lang="de"/>
+										<xs:pattern value="F7" xml:lang="de"/>
+										<xs:pattern value="F8" xml:lang="de"/>
+										<xs:pattern value="F9" xml:lang="de"/>
+										<xs:pattern value="F10" xml:lang="de"/>
+										<xs:pattern value="F11" xml:lang="de"/>
+										<xs:pattern value="F12" xml:lang="de"/>
+										<xs:pattern value="F1" xml:lang="fr"/>
+										<xs:pattern value="F2" xml:lang="fr"/>
+										<xs:pattern value="F3" xml:lang="fr"/>
+										<xs:pattern value="F4" xml:lang="fr"/>
+										<xs:pattern value="F5" xml:lang="fr"/>
+										<xs:pattern value="F6" xml:lang="fr"/>
+										<xs:pattern value="F7" xml:lang="fr"/>
+										<xs:pattern value="F8" xml:lang="fr"/>
+										<xs:pattern value="F9" xml:lang="fr"/>
+										<xs:pattern value="F10" xml:lang="fr"/>
+										<xs:pattern value="F11" xml:lang="fr"/>
+										<xs:pattern value="F12" xml:lang="fr"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1547,38 +1543,38 @@
 										<xs:minLength value="0"/>
 										<xs:maxLength value="120"/>
 										<xs:pattern value=".*"/>
-										<xs:pattern value="HAK"/>
-										<xs:pattern value="Licht EG"/>
-										<xs:pattern value="Licht 1.OG"/>
-										<xs:pattern value="Küche"/>
-										<xs:pattern value="Geschirrspüler"/>
-										<xs:pattern value="Kochherd"/>
-										<xs:pattern value="Steamer"/>
-										<xs:pattern value="Keller"/>
-										<xs:pattern value="Boiler (300l)"/>
-										<xs:pattern value="Heizung"/>
-										<xs:pattern value="Waschmaschine"/>
-										<xs:pattern value="Garage"/>
-										<xs:pattern value="UG"/>
-										<xs:pattern value="SGK"/>
-										<xs:pattern value="Aussenbeleuchtung"/>
-										<xs:pattern value="Mansarde"/>
-										<xs:pattern value="Coffret d'introduction"/>
-										<xs:pattern value="Lumière REZ"/>
-										<xs:pattern value="Lumière 1er étage"/>
-										<xs:pattern value="Cuisine"/>
-										<xs:pattern value="Lave-vaisselle"/>
-										<xs:pattern value="Cuisinière"/>
-										<xs:pattern value="Steamer"/>
-										<xs:pattern value="Cave"/>
-										<xs:pattern value="Chauffe-eau"/>
-										<xs:pattern value="Chauffage"/>
-										<xs:pattern value="Machine à laver"/>
-										<xs:pattern value="Garage"/>
-										<xs:pattern value="Tableau d'étage"/>
-										<xs:pattern value="Ensemble d'appareillage"/>
-										<xs:pattern value="Eclairage extérieur"/>
-										<xs:pattern value="Mansarde"/>
+										<xs:pattern value="HAK" xml:lang="de"/>
+										<xs:pattern value="Licht EG" xml:lang="de"/>
+										<xs:pattern value="Licht 1.OG" xml:lang="de"/>
+										<xs:pattern value="Küche" xml:lang="de"/>
+										<xs:pattern value="Geschirrspüler" xml:lang="de"/>
+										<xs:pattern value="Kochherd" xml:lang="de"/>
+										<xs:pattern value="Steamer" xml:lang="de"/>
+										<xs:pattern value="Keller" xml:lang="de"/>
+										<xs:pattern value="Boiler (300l)" xml:lang="de"/>
+										<xs:pattern value="Heizung" xml:lang="de"/>
+										<xs:pattern value="Waschmaschine" xml:lang="de"/>
+										<xs:pattern value="Garage" xml:lang="de"/>
+										<xs:pattern value="UG" xml:lang="de"/>
+										<xs:pattern value="SGK" xml:lang="de"/>
+										<xs:pattern value="Aussenbeleuchtung" xml:lang="de"/>
+										<xs:pattern value="Mansarde" xml:lang="de"/>
+										<xs:pattern value="Coffret d'introduction" xml:lang="fr"/>
+										<xs:pattern value="Lumière REZ" xml:lang="fr"/>
+										<xs:pattern value="Lumière 1er étage" xml:lang="fr"/>
+										<xs:pattern value="Cuisine" xml:lang="fr"/>
+										<xs:pattern value="Lave-vaisselle" xml:lang="fr"/>
+										<xs:pattern value="Cuisinière" xml:lang="fr"/>
+										<xs:pattern value="Steamer" xml:lang="fr"/>
+										<xs:pattern value="Cave" xml:lang="fr"/>
+										<xs:pattern value="Chauffe-eau" xml:lang="fr"/>
+										<xs:pattern value="Chauffage" xml:lang="fr"/>
+										<xs:pattern value="Machine à laver" xml:lang="fr"/>
+										<xs:pattern value="Garage" xml:lang="fr"/>
+										<xs:pattern value="Tableau d'étage" xml:lang="fr"/>
+										<xs:pattern value="Ensemble d'appareillage" xml:lang="fr"/>
+										<xs:pattern value="Eclairage extérieur" xml:lang="fr"/>
+										<xs:pattern value="Mansarde" xml:lang="fr"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1590,20 +1586,20 @@
 										<xs:minLength value="0"/>
 										<xs:maxLength value="12"/>
 										<xs:pattern value=".*"/>
-										<xs:pattern value="T"/>
-										<xs:pattern value="TT"/>
-										<xs:pattern value="TT-CLT"/>
-										<xs:pattern value="HO7V-U"/>
-										<xs:pattern value="HO7V-R"/>
-										<xs:pattern value="CH-N1W-U"/>
-										<xs:pattern value="CH-N1W-R"/>
-										<xs:pattern value="T"/>
-										<xs:pattern value="TT"/>
-										<xs:pattern value="TT-CLT"/>
-										<xs:pattern value="HO7V-U"/>
-										<xs:pattern value="HO7V-R"/>
-										<xs:pattern value="CH-N1W-U"/>
-										<xs:pattern value="CH-N1W-R"/>
+										<xs:pattern value="T" xml:lang="de"/>
+										<xs:pattern value="TT" xml:lang="de"/>
+										<xs:pattern value="TT-CLT" xml:lang="de"/>
+										<xs:pattern value="HO7V-U" xml:lang="de"/>
+										<xs:pattern value="HO7V-R" xml:lang="de"/>
+										<xs:pattern value="CH-N1W-U" xml:lang="de"/>
+										<xs:pattern value="CH-N1W-R" xml:lang="de"/>
+										<xs:pattern value="T" xml:lang="fr"/>
+										<xs:pattern value="TT" xml:lang="fr"/>
+										<xs:pattern value="TT-CLT" xml:lang="fr"/>
+										<xs:pattern value="HO7V-U" xml:lang="fr"/>
+										<xs:pattern value="HO7V-R" xml:lang="fr"/>
+										<xs:pattern value="CH-N1W-U" xml:lang="fr"/>
+										<xs:pattern value="CH-N1W-R" xml:lang="fr"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1615,24 +1611,24 @@
 										<xs:minLength value="0"/>
 										<xs:maxLength value="22"/>
 										<xs:pattern value=".*"/>
-										<xs:pattern value="3x1.5"/>
-										<xs:pattern value="4x1.5"/>
-										<xs:pattern value="4x2.5"/>
-										<xs:pattern value="5x1.5"/>
-										<xs:pattern value="5x2.5"/>
-										<xs:pattern value="5x4"/>
-										<xs:pattern value="5x6"/>
-										<xs:pattern value="5x10"/>
-										<xs:pattern value="5x16"/>
-										<xs:pattern value="3x1.5"/>
-										<xs:pattern value="4x1.5"/>
-										<xs:pattern value="4x2.5"/>
-										<xs:pattern value="5x1.5"/>
-										<xs:pattern value="5x2.5"/>
-										<xs:pattern value="5x4"/>
-										<xs:pattern value="5x6"/>
-										<xs:pattern value="5x10"/>
-										<xs:pattern value="5x16"/>
+										<xs:pattern value="3x1.5" xml:lang="de"/>
+										<xs:pattern value="4x1.5" xml:lang="de"/>
+										<xs:pattern value="4x2.5" xml:lang="de"/>
+										<xs:pattern value="5x1.5" xml:lang="de"/>
+										<xs:pattern value="5x2.5" xml:lang="de"/>
+										<xs:pattern value="5x4" xml:lang="de"/>
+										<xs:pattern value="5x6" xml:lang="de"/>
+										<xs:pattern value="5x10" xml:lang="de"/>
+										<xs:pattern value="5x16" xml:lang="de"/>
+										<xs:pattern value="3x1.5" xml:lang="fr"/>
+										<xs:pattern value="4x1.5" xml:lang="fr"/>
+										<xs:pattern value="4x2.5" xml:lang="fr"/>
+										<xs:pattern value="5x1.5" xml:lang="fr"/>
+										<xs:pattern value="5x2.5" xml:lang="fr"/>
+										<xs:pattern value="5x4" xml:lang="fr"/>
+										<xs:pattern value="5x6" xml:lang="fr"/>
+										<xs:pattern value="5x10" xml:lang="fr"/>
+										<xs:pattern value="5x16" xml:lang="fr"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1644,34 +1640,34 @@
 										<xs:minLength value="0"/>
 										<xs:maxLength value="10"/>
 										<xs:pattern value=".*"/>
-										<xs:pattern value="DI flink"/>
-										<xs:pattern value="DII träg"/>
-										<xs:pattern value="DIIIträg"/>
-										<xs:pattern value="LSB"/>
-										<xs:pattern value="LSC"/>
-										<xs:pattern value="LSD"/>
-										<xs:pattern value="FI-LSB"/>
-										<xs:pattern value="FI-LSC"/>
-										<xs:pattern value="FI-LSD"/>
-										<xs:pattern value="DIN00"/>
-										<xs:pattern value="NH00"/>
-										<xs:pattern value="NH1"/>
-										<xs:pattern value="NH2"/>
-										<xs:pattern value="NH3"/>
-										<xs:pattern value="DI"/>
-										<xs:pattern value="DII"/>
-										<xs:pattern value="DIII"/>
-										<xs:pattern value="LSB"/>
-										<xs:pattern value="LSC"/>
-										<xs:pattern value="LSD"/>
-										<xs:pattern value="FI-LSB"/>
-										<xs:pattern value="FI-LSC"/>
-										<xs:pattern value="FI-LSD"/>
-										<xs:pattern value="DIN00"/>
-										<xs:pattern value="NH00"/>
-										<xs:pattern value="NH1"/>
-										<xs:pattern value="NH2"/>
-										<xs:pattern value="NH3"/>
+										<xs:pattern value="DI flink" xml:lang="de"/>
+										<xs:pattern value="DII träg" xml:lang="de"/>
+										<xs:pattern value="DIIIträg" xml:lang="de"/>
+										<xs:pattern value="LSB" xml:lang="de"/>
+										<xs:pattern value="LSC" xml:lang="de"/>
+										<xs:pattern value="LSD" xml:lang="de"/>
+										<xs:pattern value="FI-LSB" xml:lang="de"/>
+										<xs:pattern value="FI-LSC" xml:lang="de"/>
+										<xs:pattern value="FI-LSD" xml:lang="de"/>
+										<xs:pattern value="DIN00" xml:lang="de"/>
+										<xs:pattern value="NH00" xml:lang="de"/>
+										<xs:pattern value="NH1" xml:lang="de"/>
+										<xs:pattern value="NH2" xml:lang="de"/>
+										<xs:pattern value="NH3" xml:lang="de"/>
+										<xs:pattern value="DI" xml:lang="fr"/>
+										<xs:pattern value="DII" xml:lang="fr"/>
+										<xs:pattern value="DIII" xml:lang="fr"/>
+										<xs:pattern value="LSB" xml:lang="fr"/>
+										<xs:pattern value="LSC" xml:lang="fr"/>
+										<xs:pattern value="LSD" xml:lang="fr"/>
+										<xs:pattern value="FI-LSB" xml:lang="fr"/>
+										<xs:pattern value="FI-LSC" xml:lang="fr"/>
+										<xs:pattern value="FI-LSD" xml:lang="fr"/>
+										<xs:pattern value="DIN00" xml:lang="fr"/>
+										<xs:pattern value="NH00" xml:lang="fr"/>
+										<xs:pattern value="NH1" xml:lang="fr"/>
+										<xs:pattern value="NH2" xml:lang="fr"/>
+										<xs:pattern value="NH3" xml:lang="fr"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1683,30 +1679,30 @@
 										<xs:minLength value="0"/>
 										<xs:maxLength value="8"/>
 										<xs:pattern value=".*"/>
-										<xs:pattern value="6"/>
-										<xs:pattern value="10"/>
-										<xs:pattern value="13"/>
-										<xs:pattern value="16"/>
-										<xs:pattern value="20"/>
-										<xs:pattern value="25"/>
-										<xs:pattern value="32"/>
-										<xs:pattern value="40"/>
-										<xs:pattern value="63"/>
-										<xs:pattern value="80"/>
-										<xs:pattern value="100"/>
-										<xs:pattern value="125"/>
-										<xs:pattern value="6"/>
-										<xs:pattern value="10"/>
-										<xs:pattern value="13"/>
-										<xs:pattern value="16"/>
-										<xs:pattern value="20"/>
-										<xs:pattern value="25"/>
-										<xs:pattern value="32"/>
-										<xs:pattern value="40"/>
-										<xs:pattern value="63"/>
-										<xs:pattern value="80"/>
-										<xs:pattern value="100"/>
-										<xs:pattern value="125"/>
+										<xs:pattern value="6" xml:lang="de"/>
+										<xs:pattern value="10" xml:lang="de"/>
+										<xs:pattern value="13" xml:lang="de"/>
+										<xs:pattern value="16" xml:lang="de"/>
+										<xs:pattern value="20" xml:lang="de"/>
+										<xs:pattern value="25" xml:lang="de"/>
+										<xs:pattern value="32" xml:lang="de"/>
+										<xs:pattern value="40" xml:lang="de"/>
+										<xs:pattern value="63" xml:lang="de"/>
+										<xs:pattern value="80" xml:lang="de"/>
+										<xs:pattern value="100" xml:lang="de"/>
+										<xs:pattern value="125" xml:lang="de"/>
+										<xs:pattern value="6" xml:lang="fr"/>
+										<xs:pattern value="10" xml:lang="fr"/>
+										<xs:pattern value="13" xml:lang="fr"/>
+										<xs:pattern value="16" xml:lang="fr"/>
+										<xs:pattern value="20" xml:lang="fr"/>
+										<xs:pattern value="25" xml:lang="fr"/>
+										<xs:pattern value="32" xml:lang="fr"/>
+										<xs:pattern value="40" xml:lang="fr"/>
+										<xs:pattern value="63" xml:lang="fr"/>
+										<xs:pattern value="80" xml:lang="fr"/>
+										<xs:pattern value="100" xml:lang="fr"/>
+										<xs:pattern value="125" xml:lang="fr"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1779,18 +1775,18 @@
 										<xs:minLength value="0"/>
 										<xs:maxLength value="6"/>
 										<xs:pattern value=".*"/>
-										<xs:pattern value="13"/>
-										<xs:pattern value="16"/>
-										<xs:pattern value="25"/>
-										<xs:pattern value="32"/>
-										<xs:pattern value="40"/>
-										<xs:pattern value="63"/>
-										<xs:pattern value="13"/>
-										<xs:pattern value="16"/>
-										<xs:pattern value="25"/>
-										<xs:pattern value="32"/>
-										<xs:pattern value="40"/>
-										<xs:pattern value="63"/>
+										<xs:pattern value="13" xml:lang="de"/>
+										<xs:pattern value="16" xml:lang="de"/>
+										<xs:pattern value="25" xml:lang="de"/>
+										<xs:pattern value="32" xml:lang="de"/>
+										<xs:pattern value="40" xml:lang="de"/>
+										<xs:pattern value="63" xml:lang="de"/>
+										<xs:pattern value="13" xml:lang="fr"/>
+										<xs:pattern value="16" xml:lang="fr"/>
+										<xs:pattern value="25" xml:lang="fr"/>
+										<xs:pattern value="32" xml:lang="fr"/>
+										<xs:pattern value="40" xml:lang="fr"/>
+										<xs:pattern value="63" xml:lang="fr"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
@@ -1802,12 +1798,12 @@
 										<xs:minLength value="0"/>
 										<xs:maxLength value="6"/>
 										<xs:pattern value=".*"/>
-										<xs:pattern value="10"/>
-										<xs:pattern value="30"/>
-										<xs:pattern value="300"/>
-										<xs:pattern value="10"/>
-										<xs:pattern value="30"/>
-										<xs:pattern value="300"/>
+										<xs:pattern value="10" xml:lang="de"/>
+										<xs:pattern value="30" xml:lang="de"/>
+										<xs:pattern value="300" xml:lang="de"/>
+										<xs:pattern value="10" xml:lang="fr"/>
+										<xs:pattern value="30" xml:lang="fr"/>
+										<xs:pattern value="300" xml:lang="fr"/>
 									</xs:restriction>
 								</xs:simpleContent>
 							</xs:complexType>
