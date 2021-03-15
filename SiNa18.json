@@ -1,2019 +1,797 @@
+
 {
 	"$schema": "http://json-schema.org/schema#",
-	"description": "JSON Schema erstellt mit XMLSpy v2021 rel. 2 (x64) (http://www.altova.com)",
-	"type": "object",
-	"properties": {
-		"@xmlns:xs": {
-			"default": "http://www.w3.org/2001/XMLSchema"
-		},
-		"ABONR": {
-			"$ref": "#/definitions/.ABONR"
-		},
-		"ANDERS": {
-			"$ref": "#/definitions/.ANDERS"
-		},
-		"ANL1": {
-			"$ref": "#/definitions/.ANL1"
-		},
-		"ANL2": {
-			"$ref": "#/definitions/.ANL2"
-		},
-		"ANLJAHR0": {
-			"$ref": "#/definitions/.ANLJAHR0"
-		},
-		"ANLJAHR1": {
-			"$ref": "#/definitions/.ANLJAHR1"
-		},
-		"ANLJAHR2": {
-			"$ref": "#/definitions/.ANLJAHR2"
-		},
-		"ANLNUTZUNG": {
-			"$ref": "#/definitions/.ANLNUTZUNG"
-		},
-		"AUFTRAK": {
-			"$ref": "#/definitions/.AUFTRAK"
-		},
-		"AUFTRSK": {
-			"$ref": "#/definitions/.AUFTRSK"
-		},
-		"AUFTRSK_ADRESSE1": {
-			"$ref": "#/definitions/.AUFTRSK_ADRESSE1"
-		},
-		"AUFTRSK_ADRESSE2": {
-			"$ref": "#/definitions/.AUFTRSK_ADRESSE2"
-		},
-		"AUFTRSK_EMAIL": {
-			"$ref": "#/definitions/.AUFTRSK_EMAIL"
-		},
-		"AUFTRSK_KONZESS": {
-			"$ref": "#/definitions/.AUFTRSK_KONZESS"
-		},
-		"AUFTRSK_NAME1": {
-			"$ref": "#/definitions/.AUFTRSK_NAME1"
-		},
-		"AUFTRSK_NAME2": {
-			"$ref": "#/definitions/.AUFTRSK_NAME2"
-		},
-		"AUFTRSK_ORT": {
-			"$ref": "#/definitions/.AUFTRSK_ORT"
-		},
-		"AUFTRSK_PLZ": {
-			"$ref": "#/definitions/.AUFTRSK_PLZ"
-		},
-		"AUFTRSK_TELNR": {
-			"$ref": "#/definitions/.AUFTRSK_TELNR"
-		},
-		"AUU_ART": {
-			"$ref": "#/definitions/.AUU_ART"
-		},
-		"AUU_IN": {
-			"$ref": "#/definitions/.AUU_IN"
-		},
-		"BEI_MP": {
-			"$ref": "#/definitions/.BEI_MP"
-		},
-		"BEI_MPPV": {
-			"$ref": "#/definitions/.BEI_MPPV"
-		},
-		"BEI_TEXT": {
-			"$ref": "#/definitions/.BEI_TEXT"
-		},
-		"BEI_X": {
-			"$ref": "#/definitions/.BEI_X"
-		},
-		"BEMERKUNG": {
-			"$ref": "#/definitions/.BEMERKUNG"
-		},
-		"BESONDER": {
-			"$ref": "#/definitions/.BESONDER"
-		},
-		"BEST": {
-			"$ref": "#/definitions/.BEST"
-		},
-		"COPY_ID": {
-			"$ref": "#/definitions/.COPY_ID"
-		},
-		"DATAPACKET": {
-			"$ref": "#/definitions/.DATAPACKET"
-		},
-		"EGID": {
-			"$ref": "#/definitions/.EGID"
-		},
-		"ERWEIT": {
-			"$ref": "#/definitions/.ERWEIT"
-		},
-		"EVUAUFTNR": {
-			"$ref": "#/definitions/.EVUAUFTNR"
-		},
-		"EW_BEMERKUNG": {
-			"$ref": "#/definitions/.EW_BEMERKUNG"
-		},
-		"EW_SIGN": {
-			"$ref": "#/definitions/.EW_SIGN"
-		},
-		"EW_SIGNDAT": {
-			"$ref": "#/definitions/.EW_SIGNDAT"
-		},
-		"EW_SIGNKT": {
-			"$ref": "#/definitions/.EW_SIGNKT"
-		},
-		"E_ADRESSE1": {
-			"$ref": "#/definitions/.E_ADRESSE1"
-		},
-		"E_ADRESSE2": {
-			"$ref": "#/definitions/.E_ADRESSE2"
-		},
-		"E_EMAIL": {
-			"$ref": "#/definitions/.E_EMAIL"
-		},
-		"E_FAXNR": {
-			"$ref": "#/definitions/.E_FAXNR"
-		},
-		"E_KONZESS": {
-			"$ref": "#/definitions/.E_KONZESS"
-		},
-		"E_NAME1": {
-			"$ref": "#/definitions/.E_NAME1"
-		},
-		"E_NAME2": {
-			"$ref": "#/definitions/.E_NAME2"
-		},
-		"E_ORT": {
-			"$ref": "#/definitions/.E_ORT"
-		},
-		"E_PLZ": {
-			"$ref": "#/definitions/.E_PLZ"
-		},
-		"E_PROJECT": {
-			"$ref": "#/definitions/.E_PROJECT"
-		},
-		"E_TELNR": {
-			"$ref": "#/definitions/.E_TELNR"
-		},
-		"FORM_TYP": {
-			"$ref": "#/definitions/.FORM_TYP"
-		},
-		"GEBAEUDEART": {
-			"$ref": "#/definitions/.GEBAEUDEART"
-		},
-		"GEBAEUDENR": {
-			"$ref": "#/definitions/.GEBAEUDENR"
-		},
-		"GEBAEUDETEIL": {
-			"$ref": "#/definitions/.GEBAEUDETEIL"
-		},
-		"GEMEINDE": {
-			"$ref": "#/definitions/.GEMEINDE"
-		},
-		"GRUND_X": {
-			"$ref": "#/definitions/.GRUND_X"
-		},
-		"GRUND_XTXT": {
-			"$ref": "#/definitions/.GRUND_XTXT"
-		},
-		"IA_DATUM": {
-			"$ref": "#/definitions/.IA_DATUM"
-		},
-		"ID": {
-			"$ref": "#/definitions/.ID"
-		},
-		"ID_FORMTMP": {
-			"$ref": "#/definitions/.ID_FORMTMP"
-		},
-		"ID_PROJECT": {
-			"$ref": "#/definitions/.ID_PROJECT"
-		},
-		"INST_IN": {
-			"$ref": "#/definitions/.INST_IN"
-		},
-		"INST_OUT": {
-			"$ref": "#/definitions/.INST_OUT"
-		},
-		"I_ADRESSE1": {
-			"$ref": "#/definitions/.I_ADRESSE1"
-		},
-		"I_ADRESSE2": {
-			"$ref": "#/definitions/.I_ADRESSE2"
-		},
-		"I_EF_EMAIL": {
-			"$ref": "#/definitions/.I_EF_EMAIL"
-		},
-		"I_EMAIL": {
-			"$ref": "#/definitions/.I_EMAIL"
-		},
-		"I_FAXNR": {
-			"$ref": "#/definitions/.I_FAXNR"
-		},
-		"I_FORM": {
-			"$ref": "#/definitions/.I_FORM"
-		},
-		"I_KONZESS": {
-			"$ref": "#/definitions/.I_KONZESS"
-		},
-		"I_NAME1": {
-			"$ref": "#/definitions/.I_NAME1"
-		},
-		"I_NAME2": {
-			"$ref": "#/definitions/.I_NAME2"
-		},
-		"I_ORT": {
-			"$ref": "#/definitions/.I_ORT"
-		},
-		"I_PLZ": {
-			"$ref": "#/definitions/.I_PLZ"
-		},
-		"I_PROJECT": {
-			"$ref": "#/definitions/.I_PROJECT"
-		},
-		"I_SACHB": {
-			"$ref": "#/definitions/.I_SACHB"
-		},
-		"I_TELNR": {
-			"$ref": "#/definitions/.I_TELNR"
-		},
-		"KONDATUM": {
-			"$ref": "#/definitions/.KONDATUM"
-		},
-		"KONDATUM_AKPK": {
-			"$ref": "#/definitions/.KONDATUM_AKPK"
-		},
-		"KONDATUM_SK": {
-			"$ref": "#/definitions/.KONDATUM_SK"
-		},
-		"KONDATZUS": {
-			"$ref": "#/definitions/.KONDATZUS"
-		},
-		"KONTR_DAT": {
-			"$ref": "#/definitions/.KONTR_DAT"
-		},
-		"KONTR_DAT2": {
-			"$ref": "#/definitions/.KONTR_DAT2"
-		},
-		"KONTR_SIGN": {
-			"$ref": "#/definitions/.KONTR_SIGN"
-		},
-		"KONTR_SIKT": {
-			"$ref": "#/definitions/.KONTR_SIKT"
-		},
-		"KONTUMFANG": {
-			"$ref": "#/definitions/.KONTUMFANG"
-		},
-		"KONT_AK": {
-			"$ref": "#/definitions/.KONT_AK"
-		},
-		"KONT_PK": {
-			"$ref": "#/definitions/.KONT_PK"
-		},
-		"KONT_SIGN2": {
-			"$ref": "#/definitions/.KONT_SIGN2"
-		},
-		"KONT_SIKT2": {
-			"$ref": "#/definitions/.KONT_SIKT2"
-		},
-		"KONT_SK": {
-			"$ref": "#/definitions/.KONT_SK"
-		},
-		"K_ADRESSE1": {
-			"$ref": "#/definitions/.K_ADRESSE1"
-		},
-		"K_ADRESSE2": {
-			"$ref": "#/definitions/.K_ADRESSE2"
-		},
-		"K_EMAIL": {
-			"$ref": "#/definitions/.K_EMAIL"
-		},
-		"K_FAXNR": {
-			"$ref": "#/definitions/.K_FAXNR"
-		},
-		"K_KONZESS": {
-			"$ref": "#/definitions/.K_KONZESS"
-		},
-		"K_NAME1": {
-			"$ref": "#/definitions/.K_NAME1"
-		},
-		"K_NAME2": {
-			"$ref": "#/definitions/.K_NAME2"
-		},
-		"K_ORT": {
-			"$ref": "#/definitions/.K_ORT"
-		},
-		"K_PLZ": {
-			"$ref": "#/definitions/.K_PLZ"
-		},
-		"K_TELNR": {
-			"$ref": "#/definitions/.K_TELNR"
-		},
-		"LAGE": {
-			"$ref": "#/definitions/.LAGE"
-		},
-		"MANDANT": {
-			"$ref": "#/definitions/.MANDANT"
-		},
-		"NEUANL": {
-			"$ref": "#/definitions/.NEUANL"
-		},
-		"O_HAUSNR": {
-			"$ref": "#/definitions/.O_HAUSNR"
-		},
-		"O_ORT": {
-			"$ref": "#/definitions/.O_ORT"
-		},
-		"O_PLZ": {
-			"$ref": "#/definitions/.O_PLZ"
-		},
-		"O_STRASSE": {
-			"$ref": "#/definitions/.O_STRASSE"
-		},
-		"PACKNAME": {
-			"$ref": "#/definitions/.PACKNAME"
-		},
-		"PARZELLE": {
-			"$ref": "#/definitions/.PARZELLE"
-		},
-		"PGM_INFO": {
-			"$ref": "#/definitions/.PGM_INFO"
-		},
-		"PLOMBENTF": {
-			"$ref": "#/definitions/.PLOMBENTF"
-		},
-		"PROJ_JAHR": {
-			"$ref": "#/definitions/.PROJ_JAHR"
-		},
-		"PROJ_NR": {
-			"$ref": "#/definitions/.PROJ_NR"
-		},
-		"P_ADRESSE1": {
-			"$ref": "#/definitions/.P_ADRESSE1"
-		},
-		"P_ADRESSE2": {
-			"$ref": "#/definitions/.P_ADRESSE2"
-		},
-		"P_EMAIL": {
-			"$ref": "#/definitions/.P_EMAIL"
-		},
-		"P_FAXNR": {
-			"$ref": "#/definitions/.P_FAXNR"
-		},
-		"P_NAME1": {
-			"$ref": "#/definitions/.P_NAME1"
-		},
-		"P_NAME2": {
-			"$ref": "#/definitions/.P_NAME2"
-		},
-		"P_ORT": {
-			"$ref": "#/definitions/.P_ORT"
-		},
-		"P_PLZ": {
-			"$ref": "#/definitions/.P_PLZ"
-		},
-		"P_TELNR": {
-			"$ref": "#/definitions/.P_TELNR"
-		},
-		"RAPPORT_NR": {
-			"$ref": "#/definitions/.RAPPORT_NR"
-		},
-		"ROW": {
-			"$ref": "#/definitions/.ROW"
-		},
-		"SIGNATURE": {
-			"$ref": "#/definitions/.SIGNATURE"
-		},
-		"SIGNATURE2": {
-			"$ref": "#/definitions/.SIGNATURE2"
-		},
-		"SIGNKT": {
-			"$ref": "#/definitions/.SIGNKT"
-		},
-		"SIGNKT2": {
-			"$ref": "#/definitions/.SIGNKT2"
-		},
-		"SIGN_DATUM": {
-			"$ref": "#/definitions/.SIGN_DATUM"
-		},
-		"SIGN_DATUM2": {
-			"$ref": "#/definitions/.SIGN_DATUM2"
-		},
-		"SINAN": {
-			"$ref": "#/definitions/.SINAN"
-		},
-		"SINAV": {
-			"$ref": "#/definitions/.SINAV"
-		},
-		"SP_GUT": {
-			"$ref": "#/definitions/.SP_GUT"
-		},
-		"SP_JA": {
-			"$ref": "#/definitions/.SP_JA"
-		},
-		"SP_MANGEL": {
-			"$ref": "#/definitions/.SP_MANGEL"
-		},
-		"SP_NEIN": {
-			"$ref": "#/definitions/.SP_NEIN"
-		},
-		"SP_PKRELEVANT": {
-			"$ref": "#/definitions/.SP_PKRELEVANT"
-		},
-		"SP_PLOMB": {
-			"$ref": "#/definitions/.SP_PLOMB"
-		},
-		"TERMIN": {
-			"$ref": "#/definitions/.TERMIN"
-		},
-		"TNC": {
-			"$ref": "#/definitions/.TNC"
-		},
-		"TNCS": {
-			"$ref": "#/definitions/.TNCS"
-		},
-		"TNS": {
-			"$ref": "#/definitions/.TNS"
-		},
-		"TNTEXT": {
-			"$ref": "#/definitions/.TNTEXT"
-		},
-		"TNX": {
-			"$ref": "#/definitions/.TNX"
-		},
-		"UU_ART": {
-			"$ref": "#/definitions/.UU_ART"
-		},
-		"UU_IK": {
-			"$ref": "#/definitions/.UU_IK"
-		},
-		"UU_IKLN": {
-			"$ref": "#/definitions/.UU_IKLN"
-		},
-		"UU_IKLN_ENDE": {
-			"$ref": "#/definitions/.UU_IKLN_ENDE"
-		},
-		"UU_IKMAX": {
-			"$ref": "#/definitions/.UU_IKMAX"
-		},
-		"UU_IN": {
-			"$ref": "#/definitions/.UU_IN"
-		},
-		"UU_RISO": {
-			"$ref": "#/definitions/.UU_RISO"
-		},
-		"UU_ZWECK": {
-			"$ref": "#/definitions/.UU_ZWECK"
-		},
-		"U_ADRESSE1": {
-			"$ref": "#/definitions/.U_ADRESSE1"
-		},
-		"U_ADRESSE2": {
-			"$ref": "#/definitions/.U_ADRESSE2"
-		},
-		"U_EMAIL": {
-			"$ref": "#/definitions/.U_EMAIL"
-		},
-		"U_FAXNR": {
-			"$ref": "#/definitions/.U_FAXNR"
-		},
-		"U_NAME1": {
-			"$ref": "#/definitions/.U_NAME1"
-		},
-		"U_NAME2": {
-			"$ref": "#/definitions/.U_NAME2"
-		},
-		"U_ORT": {
-			"$ref": "#/definitions/.U_ORT"
-		},
-		"U_PLZ": {
-			"$ref": "#/definitions/.U_PLZ"
-		},
-		"U_TELNR": {
-			"$ref": "#/definitions/.U_TELNR"
-		},
-		"VERSICH": {
-			"$ref": "#/definitions/.VERSICH"
-		},
-		"VERT1": {
-			"$ref": "#/definitions/.VERT1"
-		},
-		"VERT1_X": {
-			"$ref": "#/definitions/.VERT1_X"
-		},
-		"VISUM": {
-			"$ref": "#/definitions/.VISUM"
-		},
-		"V_ADRESSE1": {
-			"$ref": "#/definitions/.V_ADRESSE1"
-		},
-		"V_ADRESSE2": {
-			"$ref": "#/definitions/.V_ADRESSE2"
-		},
-		"V_EMAIL": {
-			"$ref": "#/definitions/.V_EMAIL"
-		},
-		"V_FAXNR": {
-			"$ref": "#/definitions/.V_FAXNR"
-		},
-		"V_NAME1": {
-			"$ref": "#/definitions/.V_NAME1"
-		},
-		"V_NAME2": {
-			"$ref": "#/definitions/.V_NAME2"
-		},
-		"V_ORT": {
-			"$ref": "#/definitions/.V_ORT"
-		},
-		"V_PLZ": {
-			"$ref": "#/definitions/.V_PLZ"
-		},
-		"V_TELNR": {
-			"$ref": "#/definitions/.V_TELNR"
-		},
-		"WERK": {
-			"$ref": "#/definitions/.WERK"
-		},
-		"WERK_IN": {
-			"$ref": "#/definitions/.WERK_IN"
-		},
-		"WERK_OUT": {
-			"$ref": "#/definitions/.WERK_OUT"
-		},
-		"W_EF_EMAIL": {
-			"$ref": "#/definitions/.W_EF_EMAIL"
-		},
-		"W_EMAIL": {
-			"$ref": "#/definitions/.W_EMAIL"
-		},
-		"ZAEHLER": {
-			"$ref": "#/definitions/.ZAEHLER"
-		},
-		"ZEV": {
-			"$ref": "#/definitions/.ZEV"
-		},
-		"ZEV_TEXT": {
-			"$ref": "#/definitions/.ZEV_TEXT"
-		}
-	},
 	"additionalProperties": false,
 	"definitions": {
-		".ABONR": {
-			"$ref": "#/definitions/T_STRING"
+		".SINA18": {
+			"additionalProperties": false,
+			"$ref": "#/definitions/T_SINA18",
+			"type": "object"
 		},
-		".ANDERS": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".ANL1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".ANL2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".ANLJAHR0": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".ANLJAHR1": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".ANLJAHR2": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".ANLNUTZUNG": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUFTRAK": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".AUFTRSK": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".AUFTRSK_ADRESSE1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUFTRSK_ADRESSE2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUFTRSK_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUFTRSK_KONZESS": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUFTRSK_NAME1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUFTRSK_NAME2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUFTRSK_ORT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUFTRSK_PLZ": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUFTRSK_TELNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUU_ART": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".AUU_IN": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".BEI_MP": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".BEI_MPPV": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".BEI_TEXT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".BEI_X": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".BEMERKUNG": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".BESONDER": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".BEST": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".COPY_ID": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".DATAPACKET": {
-			"type": "object",
+		"T_SINA18": {
+			"additionalProperties": false,
 			"properties": {
-				"@Version": {
-					"type": "number",
-					"enum": [
-						1
-					]
-				},
-				"@noNamespaceSchemaLocation": {
-					"$ref": "#/definitions/xs:string"
-				},
-				"PGM_INFO": {
-					"$ref": "#/definitions/.PGM_INFO"
-				},
-				"ROW": {
-					"$ref": "#/definitions/.ROW"
-				}
-			},
-			"required": [
-				"@Version",
-				"ROW"
-			],
-			"additionalProperties": false
-		},
-		".EGID": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".ERWEIT": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".EVUAUFTNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".EW_BEMERKUNG": {
-			"$ref": "#/definitions/T_MEMO"
-		},
-		".EW_SIGN": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".EW_SIGNDAT": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".EW_SIGNKT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_ADRESSE1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_ADRESSE2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_FAXNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_KONZESS": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_NAME1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_NAME2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_ORT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_PLZ": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".E_PROJECT": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".E_TELNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".FORM_TYP": {
-			"type": "string",
-			"enum": [
-				"Q"
-			]
-		},
-		".GEBAEUDEART": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".GEBAEUDENR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".GEBAEUDETEIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".GEMEINDE": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".GRUND_X": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".GRUND_XTXT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".IA_DATUM": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".ID": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".ID_FORMTMP": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".ID_PROJECT": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".INST_IN": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".INST_OUT": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".I_ADRESSE1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_ADRESSE2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_EF_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_FAXNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_FORM": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".I_KONZESS": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_NAME1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_NAME2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_ORT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_PLZ": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_PROJECT": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".I_SACHB": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".I_TELNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".KONDATUM": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".KONDATUM_AKPK": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".KONDATUM_SK": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".KONDATZUS": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".KONTR_DAT": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".KONTR_DAT2": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".KONTR_SIGN": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".KONTR_SIKT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".KONTUMFANG": {
-			"$ref": "#/definitions/T_MEMO"
-		},
-		".KONT_AK": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".KONT_PK": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".KONT_SIGN2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".KONT_SIKT2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".KONT_SK": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".K_ADRESSE1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".K_ADRESSE2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".K_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".K_FAXNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".K_KONZESS": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".K_NAME1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".K_NAME2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".K_ORT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".K_PLZ": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".K_TELNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".LAGE": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".MANDANT": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".NEUANL": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".O_HAUSNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".O_ORT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".O_PLZ": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".O_STRASSE": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".PACKNAME": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".PARZELLE": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".PGM_INFO": {
-			"type": "object",
-			"properties": {
-				"@DatenbankAnwender": {
-					"type": "integer",
-					"minimum": -128,
-					"maximum": 127
-				},
-				"@DatenbankAnwenderDescr": {
+				".FORM_TYP": {
 					"type": "string"
 				},
-				"@FileVersion": {
+				".ID": {
+					"type": "integer"
+				},
+				".ID_PROJECT": {
+					"type": "integer"
+				},
+				".COPY_ID": {
+					"type": "integer"
+				},
+				".MANDANT": {
+					"type": "integer"
+				},
+				".ID_FORMTMP": {
+					"type": "integer"
+				},
+				".I_PROJECT": {
+					"type": "integer"
+				},
+				".I_FORM": {
+					"type": "integer"
+				},
+				".E_PROJECT": {
+					"type": "integer"
+				},
+				".INST_OUT": {
 					"type": "string"
 				},
-				"@FormAnwender": {
-					"type": "integer",
-					"minimum": -128,
-					"maximum": 127
+				".WERK_IN": {
+					"type": "string"
 				},
-				"@FormAnwenderDescr": {
+				".WERK_OUT": {
+					"type": "string"
+				},
+				".INST_IN": {
+					"type": "string"
+				},
+				".PROJ_NR": {
+					"minLength": 0,
+					"maxLength": 12,
+					"type": "string"
+				},
+				".PROJ_JAHR": {
+					"type": "integer"
+				},
+				".WERK": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".W_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".W_EF_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".VISUM": {
+					"minLength": 0,
+					"maxLength": 6,
+					"type": "string"
+				},
+				".I_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".I_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".I_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".I_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".I_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".I_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".I_KONZESS": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".I_SACHB": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".I_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".I_FAXNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".I_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".I_EF_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".O_STRASSE": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".O_HAUSNR": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".O_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".O_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".GEMEINDE": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".PARZELLE": {
+					"minLength": 0,
+					"maxLength": 18,
+					"type": "string"
+				},
+				".VERSICH": {
+					"minLength": 0,
+					"maxLength": 18,
+					"type": "string"
+				},
+				".GEBAEUDEART": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".GEBAEUDETEIL": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".LAGE": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ANLNUTZUNG": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".U_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".U_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".U_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".U_FAXNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".U_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".GEBAEUDENR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".EGID": {
+					"type": "integer"
+				},
+				".ABONR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".EVUAUFTNR": {
+					"minLength": 0,
+					"maxLength": 12,
+					"type": "string"
+				},
+				".TERMIN": {
+					"type": "string"
+				},
+				".PACKNAME": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".RAPPORT_NR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".P_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".P_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".P_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".P_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".P_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".P_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".P_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".P_FAXNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".P_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".V_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".V_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".V_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".V_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".V_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".V_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".V_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".V_FAXNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".V_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".E_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".E_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".E_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".E_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".E_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".E_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".E_KONZESS": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".E_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".E_FAXNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".E_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".K_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".K_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".K_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".K_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".K_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".K_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".K_KONZESS": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".K_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".K_FAXNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".K_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".BEMERKUNG": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ZEV": {
+					"type": "boolean"
+				},
+				".ZEV_TEXT": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ZAEHLER": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ANLJAHR0": {
+					"type": "integer"
+				},
+				".ANL1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ANLJAHR1": {
+					"type": "integer"
+				},
+				".ANL2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".ANLJAHR2": {
+					"type": "integer"
+				},
+				".NEUANL": {
+					"type": "boolean"
+				},
+				".BEST": {
+					"type": "boolean"
+				},
+				".ANDERS": {
+					"type": "boolean"
+				},
+				".ERWEIT": {
+					"type": "boolean"
+				},
+				".GRUND_X": {
+					"type": "boolean"
+				},
+				".GRUND_XTXT": {
+					"minLength": 0,
+					"maxLength": 20,
+					"type": "string"
+				},
+				".KONTUMFANG": {
+					"type": "string"
+				},
+				".IA_DATUM": {
+					"type": "string"
+				},
+				".KONT_SK": {
+					"type": "boolean"
+				},
+				".KONT_AK": {
+					"type": "boolean"
+				},
+				".KONT_PK": {
+					"type": "boolean"
+				},
+				".TNS": {
+					"type": "boolean"
+				},
+				".TNC": {
+					"type": "boolean"
+				},
+				".TNCS": {
+					"type": "boolean"
+				},
+				".TNX": {
+					"type": "boolean"
+				},
+				".TNTEXT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".AUU_IN": {
+					"minLength": 0,
+					"maxLength": 10,
+					"type": "string"
+				},
+				".AUU_ART": {
+					"minLength": 0,
+					"maxLength": 18,
+					"type": "string"
+				},
+				".UU_ART": {
+					"minLength": 0,
+					"maxLength": 18,
+					"type": "string"
+				},
+				".UU_IN": {
+					"minLength": 0,
+					"maxLength": 10,
+					"type": "string"
+				},
+				".UU_IKMAX": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".UU_IKLN": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".UU_IK": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".UU_IKLN_ENDE": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".UU_RISO": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".UU_ZWECK": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".BESONDER": {
+					"minLength": 0,
+					"maxLength": 92,
+					"type": "string"
+				},
+				".KONDATUM_SK": {
+					"type": "string"
+				},
+				".KONDATUM_AKPK": {
+					"type": "string"
+				},
+				".KONDATUM": {
+					"type": "string"
+				},
+				".KONDATZUS": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".PLOMBENTF": {
+					"type": "boolean"
+				},
+				".AUFTRAK": {
+					"type": "boolean"
+				},
+				".AUFTRSK": {
+					"type": "boolean"
+				},
+				".AUFTRSK_NAME1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".AUFTRSK_NAME2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".AUFTRSK_ADRESSE1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".AUFTRSK_ADRESSE2": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".AUFTRSK_PLZ": {
+					"minLength": 0,
+					"maxLength": 8,
+					"type": "string"
+				},
+				".AUFTRSK_ORT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".AUFTRSK_KONZESS": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".AUFTRSK_TELNR": {
+					"minLength": 0,
+					"maxLength": 16,
+					"type": "string"
+				},
+				".AUFTRSK_EMAIL": {
+					"minLength": 0,
+					"maxLength": 60,
+					"type": "string"
+				},
+				".BEI_MP": {
+					"type": "boolean"
+				},
+				".BEI_MPPV": {
+					"type": "boolean"
+				},
+				".BEI_X": {
+					"type": "boolean"
+				},
+				".BEI_TEXT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".SINAV": {
+					"type": "boolean"
+				},
+				".SINAN": {
+					"type": "boolean"
+				},
+				".VERT1_X": {
+					"type": "boolean"
+				},
+				".VERT1": {
+					"minLength": 0,
+					"maxLength": 40,
+					"type": "string"
+				},
+				".EW_BEMERKUNG": {
+					"type": "string"
+				},
+				".SP_JA": {
+					"type": "boolean"
+				},
+				".SP_NEIN": {
+					"type": "boolean"
+				},
+				".SP_GUT": {
+					"type": "boolean"
+				},
+				".SP_MANGEL": {
+					"type": "boolean"
+				},
+				".SP_PLOMB": {
+					"type": "boolean"
+				},
+				".SP_PKRELEVANT": {
+					"type": "boolean"
+				},
+				".SIGN_DATUM": {
+					"type": "string"
+				},
+				".SIGN_DATUM2": {
+					"type": "string"
+				},
+				".SIGNATURE": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".SIGNKT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".KONTR_SIGN": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".KONTR_SIKT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".KONTR_DAT": {
+					"type": "string"
+				},
+				".KONTR_DAT2": {
+					"type": "string"
+				},
+				".SIGNATURE2": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".SIGNKT2": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".KONT_SIGN2": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".KONT_SIKT2": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".EW_SIGNDAT": {
+					"type": "string"
+				},
+				".EW_SIGN": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".EW_SIGNKT": {
+					"minLength": 0,
+					"maxLength": 30,
 					"type": "string"
 				}
-			},
-			"required": [
-				"@DatenbankAnwender",
-				"@DatenbankAnwenderDescr",
-				"@FileVersion",
-				"@FormAnwender",
-				"@FormAnwenderDescr"
-			],
-			"additionalProperties": false
-		},
-		".PLOMBENTF": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".PROJ_JAHR": {
-			"$ref": "#/definitions/T_INT"
-		},
-		".PROJ_NR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".P_ADRESSE1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".P_ADRESSE2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".P_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".P_FAXNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".P_NAME1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".P_NAME2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".P_ORT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".P_PLZ": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".P_TELNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".RAPPORT_NR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".ROW": {
-			"$ref": "#/definitions/RowT"
-		},
-		".SIGNATURE": {
-			"type": [
-				"object",
-				"string",
-				"number",
-				"boolean"
-			],
-			"properties": {
-				"$": {
-					"type": "string",
-					"maxLength": 5
-				},
-				"@OLD": {
-					"$ref": "#/definitions/ST_STRING"
-				}
-			},
-			"additionalProperties": false
-		},
-		".SIGNATURE2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".SIGNKT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".SIGNKT2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".SIGN_DATUM": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".SIGN_DATUM2": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".SINAN": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".SINAV": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".SP_GUT": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".SP_JA": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".SP_MANGEL": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".SP_NEIN": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".SP_PKRELEVANT": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".SP_PLOMB": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".TERMIN": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".TNC": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".TNCS": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".TNS": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".TNTEXT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".TNX": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".UU_ART": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".UU_IK": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".UU_IKLN": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".UU_IKLN_ENDE": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".UU_IKMAX": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".UU_IN": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".UU_RISO": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".UU_ZWECK": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".U_ADRESSE1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".U_ADRESSE2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".U_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".U_FAXNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".U_NAME1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".U_NAME2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".U_ORT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".U_PLZ": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".U_TELNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".VERSICH": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".VERT1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".VERT1_X": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".VISUM": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".V_ADRESSE1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".V_ADRESSE2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".V_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".V_FAXNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".V_NAME1": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".V_NAME2": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".V_ORT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".V_PLZ": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".V_TELNR": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".WERK": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".WERK_IN": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".WERK_OUT": {
-			"$ref": "#/definitions/T_DATE"
-		},
-		".W_EF_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".W_EMAIL": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".ZAEHLER": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		".ZEV": {
-			"$ref": "#/definitions/T_BOOL"
-		},
-		".ZEV_TEXT": {
-			"$ref": "#/definitions/T_STRING"
-		},
-		"RowT": {
-			"type": "object",
-			"properties": {
-				"ABONR": {
-					"$ref": "#/definitions/.ABONR"
-				},
-				"ANDERS": {
-					"$ref": "#/definitions/.ANDERS"
-				},
-				"ANL1": {
-					"$ref": "#/definitions/.ANL1"
-				},
-				"ANL2": {
-					"$ref": "#/definitions/.ANL2"
-				},
-				"ANLJAHR0": {
-					"$ref": "#/definitions/.ANLJAHR0"
-				},
-				"ANLJAHR1": {
-					"$ref": "#/definitions/.ANLJAHR1"
-				},
-				"ANLJAHR2": {
-					"$ref": "#/definitions/.ANLJAHR2"
-				},
-				"ANLNUTZUNG": {
-					"$ref": "#/definitions/.ANLNUTZUNG"
-				},
-				"AUFTRAK": {
-					"$ref": "#/definitions/.AUFTRAK"
-				},
-				"AUFTRSK": {
-					"$ref": "#/definitions/.AUFTRSK"
-				},
-				"AUFTRSK_ADRESSE1": {
-					"$ref": "#/definitions/.AUFTRSK_ADRESSE1"
-				},
-				"AUFTRSK_ADRESSE2": {
-					"$ref": "#/definitions/.AUFTRSK_ADRESSE2"
-				},
-				"AUFTRSK_EMAIL": {
-					"$ref": "#/definitions/.AUFTRSK_EMAIL"
-				},
-				"AUFTRSK_KONZESS": {
-					"$ref": "#/definitions/.AUFTRSK_KONZESS"
-				},
-				"AUFTRSK_NAME1": {
-					"$ref": "#/definitions/.AUFTRSK_NAME1"
-				},
-				"AUFTRSK_NAME2": {
-					"$ref": "#/definitions/.AUFTRSK_NAME2"
-				},
-				"AUFTRSK_ORT": {
-					"$ref": "#/definitions/.AUFTRSK_ORT"
-				},
-				"AUFTRSK_PLZ": {
-					"$ref": "#/definitions/.AUFTRSK_PLZ"
-				},
-				"AUFTRSK_TELNR": {
-					"$ref": "#/definitions/.AUFTRSK_TELNR"
-				},
-				"AUU_ART": {
-					"$ref": "#/definitions/.AUU_ART"
-				},
-				"AUU_IN": {
-					"$ref": "#/definitions/.AUU_IN"
-				},
-				"BEI_MP": {
-					"$ref": "#/definitions/.BEI_MP"
-				},
-				"BEI_MPPV": {
-					"$ref": "#/definitions/.BEI_MPPV"
-				},
-				"BEI_TEXT": {
-					"$ref": "#/definitions/.BEI_TEXT"
-				},
-				"BEI_X": {
-					"$ref": "#/definitions/.BEI_X"
-				},
-				"BEMERKUNG": {
-					"$ref": "#/definitions/.BEMERKUNG"
-				},
-				"BESONDER": {
-					"$ref": "#/definitions/.BESONDER"
-				},
-				"BEST": {
-					"$ref": "#/definitions/.BEST"
-				},
-				"COPY_ID": {
-					"$ref": "#/definitions/.COPY_ID"
-				},
-				"EGID": {
-					"$ref": "#/definitions/.EGID"
-				},
-				"ERWEIT": {
-					"$ref": "#/definitions/.ERWEIT"
-				},
-				"EVUAUFTNR": {
-					"$ref": "#/definitions/.EVUAUFTNR"
-				},
-				"EW_BEMERKUNG": {
-					"$ref": "#/definitions/.EW_BEMERKUNG"
-				},
-				"EW_SIGN": {
-					"$ref": "#/definitions/.EW_SIGN"
-				},
-				"EW_SIGNDAT": {
-					"$ref": "#/definitions/.EW_SIGNDAT"
-				},
-				"EW_SIGNKT": {
-					"$ref": "#/definitions/.EW_SIGNKT"
-				},
-				"E_ADRESSE1": {
-					"$ref": "#/definitions/.E_ADRESSE1"
-				},
-				"E_ADRESSE2": {
-					"$ref": "#/definitions/.E_ADRESSE2"
-				},
-				"E_EMAIL": {
-					"$ref": "#/definitions/.E_EMAIL"
-				},
-				"E_FAXNR": {
-					"$ref": "#/definitions/.E_FAXNR"
-				},
-				"E_KONZESS": {
-					"$ref": "#/definitions/.E_KONZESS"
-				},
-				"E_NAME1": {
-					"$ref": "#/definitions/.E_NAME1"
-				},
-				"E_NAME2": {
-					"$ref": "#/definitions/.E_NAME2"
-				},
-				"E_ORT": {
-					"$ref": "#/definitions/.E_ORT"
-				},
-				"E_PLZ": {
-					"$ref": "#/definitions/.E_PLZ"
-				},
-				"E_PROJECT": {
-					"$ref": "#/definitions/.E_PROJECT"
-				},
-				"E_TELNR": {
-					"$ref": "#/definitions/.E_TELNR"
-				},
-				"FORM_TYP": {
-					"$ref": "#/definitions/.FORM_TYP"
-				},
-				"GEBAEUDEART": {
-					"$ref": "#/definitions/.GEBAEUDEART"
-				},
-				"GEBAEUDENR": {
-					"$ref": "#/definitions/.GEBAEUDENR"
-				},
-				"GEBAEUDETEIL": {
-					"$ref": "#/definitions/.GEBAEUDETEIL"
-				},
-				"GEMEINDE": {
-					"$ref": "#/definitions/.GEMEINDE"
-				},
-				"GRUND_X": {
-					"$ref": "#/definitions/.GRUND_X"
-				},
-				"GRUND_XTXT": {
-					"$ref": "#/definitions/.GRUND_XTXT"
-				},
-				"IA_DATUM": {
-					"$ref": "#/definitions/.IA_DATUM"
-				},
-				"ID": {
-					"$ref": "#/definitions/.ID"
-				},
-				"ID_FORMTMP": {
-					"$ref": "#/definitions/.ID_FORMTMP"
-				},
-				"ID_PROJECT": {
-					"$ref": "#/definitions/.ID_PROJECT"
-				},
-				"INST_IN": {
-					"$ref": "#/definitions/.INST_IN"
-				},
-				"INST_OUT": {
-					"$ref": "#/definitions/.INST_OUT"
-				},
-				"I_ADRESSE1": {
-					"$ref": "#/definitions/.I_ADRESSE1"
-				},
-				"I_ADRESSE2": {
-					"$ref": "#/definitions/.I_ADRESSE2"
-				},
-				"I_EF_EMAIL": {
-					"$ref": "#/definitions/.I_EF_EMAIL"
-				},
-				"I_EMAIL": {
-					"$ref": "#/definitions/.I_EMAIL"
-				},
-				"I_FAXNR": {
-					"$ref": "#/definitions/.I_FAXNR"
-				},
-				"I_FORM": {
-					"$ref": "#/definitions/.I_FORM"
-				},
-				"I_KONZESS": {
-					"$ref": "#/definitions/.I_KONZESS"
-				},
-				"I_NAME1": {
-					"$ref": "#/definitions/.I_NAME1"
-				},
-				"I_NAME2": {
-					"$ref": "#/definitions/.I_NAME2"
-				},
-				"I_ORT": {
-					"$ref": "#/definitions/.I_ORT"
-				},
-				"I_PLZ": {
-					"$ref": "#/definitions/.I_PLZ"
-				},
-				"I_PROJECT": {
-					"$ref": "#/definitions/.I_PROJECT"
-				},
-				"I_SACHB": {
-					"$ref": "#/definitions/.I_SACHB"
-				},
-				"I_TELNR": {
-					"$ref": "#/definitions/.I_TELNR"
-				},
-				"KONDATUM": {
-					"$ref": "#/definitions/.KONDATUM"
-				},
-				"KONDATUM_AKPK": {
-					"$ref": "#/definitions/.KONDATUM_AKPK"
-				},
-				"KONDATUM_SK": {
-					"$ref": "#/definitions/.KONDATUM_SK"
-				},
-				"KONDATZUS": {
-					"$ref": "#/definitions/.KONDATZUS"
-				},
-				"KONTR_DAT": {
-					"$ref": "#/definitions/.KONTR_DAT"
-				},
-				"KONTR_DAT2": {
-					"$ref": "#/definitions/.KONTR_DAT2"
-				},
-				"KONTR_SIGN": {
-					"$ref": "#/definitions/.KONTR_SIGN"
-				},
-				"KONTR_SIKT": {
-					"$ref": "#/definitions/.KONTR_SIKT"
-				},
-				"KONTUMFANG": {
-					"$ref": "#/definitions/.KONTUMFANG"
-				},
-				"KONT_AK": {
-					"$ref": "#/definitions/.KONT_AK"
-				},
-				"KONT_PK": {
-					"$ref": "#/definitions/.KONT_PK"
-				},
-				"KONT_SIGN2": {
-					"$ref": "#/definitions/.KONT_SIGN2"
-				},
-				"KONT_SIKT2": {
-					"$ref": "#/definitions/.KONT_SIKT2"
-				},
-				"KONT_SK": {
-					"$ref": "#/definitions/.KONT_SK"
-				},
-				"K_ADRESSE1": {
-					"$ref": "#/definitions/.K_ADRESSE1"
-				},
-				"K_ADRESSE2": {
-					"$ref": "#/definitions/.K_ADRESSE2"
-				},
-				"K_EMAIL": {
-					"$ref": "#/definitions/.K_EMAIL"
-				},
-				"K_FAXNR": {
-					"$ref": "#/definitions/.K_FAXNR"
-				},
-				"K_KONZESS": {
-					"$ref": "#/definitions/.K_KONZESS"
-				},
-				"K_NAME1": {
-					"$ref": "#/definitions/.K_NAME1"
-				},
-				"K_NAME2": {
-					"$ref": "#/definitions/.K_NAME2"
-				},
-				"K_ORT": {
-					"$ref": "#/definitions/.K_ORT"
-				},
-				"K_PLZ": {
-					"$ref": "#/definitions/.K_PLZ"
-				},
-				"K_TELNR": {
-					"$ref": "#/definitions/.K_TELNR"
-				},
-				"LAGE": {
-					"$ref": "#/definitions/.LAGE"
-				},
-				"MANDANT": {
-					"$ref": "#/definitions/.MANDANT"
-				},
-				"NEUANL": {
-					"$ref": "#/definitions/.NEUANL"
-				},
-				"O_HAUSNR": {
-					"$ref": "#/definitions/.O_HAUSNR"
-				},
-				"O_ORT": {
-					"$ref": "#/definitions/.O_ORT"
-				},
-				"O_PLZ": {
-					"$ref": "#/definitions/.O_PLZ"
-				},
-				"O_STRASSE": {
-					"$ref": "#/definitions/.O_STRASSE"
-				},
-				"PACKNAME": {
-					"$ref": "#/definitions/.PACKNAME"
-				},
-				"PARZELLE": {
-					"$ref": "#/definitions/.PARZELLE"
-				},
-				"PLOMBENTF": {
-					"$ref": "#/definitions/.PLOMBENTF"
-				},
-				"PROJ_JAHR": {
-					"$ref": "#/definitions/.PROJ_JAHR"
-				},
-				"PROJ_NR": {
-					"$ref": "#/definitions/.PROJ_NR"
-				},
-				"P_ADRESSE1": {
-					"$ref": "#/definitions/.P_ADRESSE1"
-				},
-				"P_ADRESSE2": {
-					"$ref": "#/definitions/.P_ADRESSE2"
-				},
-				"P_EMAIL": {
-					"$ref": "#/definitions/.P_EMAIL"
-				},
-				"P_FAXNR": {
-					"$ref": "#/definitions/.P_FAXNR"
-				},
-				"P_NAME1": {
-					"$ref": "#/definitions/.P_NAME1"
-				},
-				"P_NAME2": {
-					"$ref": "#/definitions/.P_NAME2"
-				},
-				"P_ORT": {
-					"$ref": "#/definitions/.P_ORT"
-				},
-				"P_PLZ": {
-					"$ref": "#/definitions/.P_PLZ"
-				},
-				"P_TELNR": {
-					"$ref": "#/definitions/.P_TELNR"
-				},
-				"RAPPORT_NR": {
-					"$ref": "#/definitions/.RAPPORT_NR"
-				},
-				"SIGNATURE": {
-					"$ref": "#/definitions/.SIGNATURE"
-				},
-				"SIGNATURE2": {
-					"$ref": "#/definitions/.SIGNATURE2"
-				},
-				"SIGNKT": {
-					"$ref": "#/definitions/.SIGNKT"
-				},
-				"SIGNKT2": {
-					"$ref": "#/definitions/.SIGNKT2"
-				},
-				"SIGN_DATUM": {
-					"$ref": "#/definitions/.SIGN_DATUM"
-				},
-				"SIGN_DATUM2": {
-					"$ref": "#/definitions/.SIGN_DATUM2"
-				},
-				"SINAN": {
-					"$ref": "#/definitions/.SINAN"
-				},
-				"SINAV": {
-					"$ref": "#/definitions/.SINAV"
-				},
-				"SP_GUT": {
-					"$ref": "#/definitions/.SP_GUT"
-				},
-				"SP_JA": {
-					"$ref": "#/definitions/.SP_JA"
-				},
-				"SP_MANGEL": {
-					"$ref": "#/definitions/.SP_MANGEL"
-				},
-				"SP_NEIN": {
-					"$ref": "#/definitions/.SP_NEIN"
-				},
-				"SP_PKRELEVANT": {
-					"$ref": "#/definitions/.SP_PKRELEVANT"
-				},
-				"SP_PLOMB": {
-					"$ref": "#/definitions/.SP_PLOMB"
-				},
-				"TERMIN": {
-					"$ref": "#/definitions/.TERMIN"
-				},
-				"TNC": {
-					"$ref": "#/definitions/.TNC"
-				},
-				"TNCS": {
-					"$ref": "#/definitions/.TNCS"
-				},
-				"TNS": {
-					"$ref": "#/definitions/.TNS"
-				},
-				"TNTEXT": {
-					"$ref": "#/definitions/.TNTEXT"
-				},
-				"TNX": {
-					"$ref": "#/definitions/.TNX"
-				},
-				"UU_ART": {
-					"$ref": "#/definitions/.UU_ART"
-				},
-				"UU_IK": {
-					"$ref": "#/definitions/.UU_IK"
-				},
-				"UU_IKLN": {
-					"$ref": "#/definitions/.UU_IKLN"
-				},
-				"UU_IKLN_ENDE": {
-					"$ref": "#/definitions/.UU_IKLN_ENDE"
-				},
-				"UU_IKMAX": {
-					"$ref": "#/definitions/.UU_IKMAX"
-				},
-				"UU_IN": {
-					"$ref": "#/definitions/.UU_IN"
-				},
-				"UU_RISO": {
-					"$ref": "#/definitions/.UU_RISO"
-				},
-				"UU_ZWECK": {
-					"$ref": "#/definitions/.UU_ZWECK"
-				},
-				"U_ADRESSE1": {
-					"$ref": "#/definitions/.U_ADRESSE1"
-				},
-				"U_ADRESSE2": {
-					"$ref": "#/definitions/.U_ADRESSE2"
-				},
-				"U_EMAIL": {
-					"$ref": "#/definitions/.U_EMAIL"
-				},
-				"U_FAXNR": {
-					"$ref": "#/definitions/.U_FAXNR"
-				},
-				"U_NAME1": {
-					"$ref": "#/definitions/.U_NAME1"
-				},
-				"U_NAME2": {
-					"$ref": "#/definitions/.U_NAME2"
-				},
-				"U_ORT": {
-					"$ref": "#/definitions/.U_ORT"
-				},
-				"U_PLZ": {
-					"$ref": "#/definitions/.U_PLZ"
-				},
-				"U_TELNR": {
-					"$ref": "#/definitions/.U_TELNR"
-				},
-				"VERSICH": {
-					"$ref": "#/definitions/.VERSICH"
-				},
-				"VERT1": {
-					"$ref": "#/definitions/.VERT1"
-				},
-				"VERT1_X": {
-					"$ref": "#/definitions/.VERT1_X"
-				},
-				"VISUM": {
-					"$ref": "#/definitions/.VISUM"
-				},
-				"V_ADRESSE1": {
-					"$ref": "#/definitions/.V_ADRESSE1"
-				},
-				"V_ADRESSE2": {
-					"$ref": "#/definitions/.V_ADRESSE2"
-				},
-				"V_EMAIL": {
-					"$ref": "#/definitions/.V_EMAIL"
-				},
-				"V_FAXNR": {
-					"$ref": "#/definitions/.V_FAXNR"
-				},
-				"V_NAME1": {
-					"$ref": "#/definitions/.V_NAME1"
-				},
-				"V_NAME2": {
-					"$ref": "#/definitions/.V_NAME2"
-				},
-				"V_ORT": {
-					"$ref": "#/definitions/.V_ORT"
-				},
-				"V_PLZ": {
-					"$ref": "#/definitions/.V_PLZ"
-				},
-				"V_TELNR": {
-					"$ref": "#/definitions/.V_TELNR"
-				},
-				"WERK": {
-					"$ref": "#/definitions/.WERK"
-				},
-				"WERK_IN": {
-					"$ref": "#/definitions/.WERK_IN"
-				},
-				"WERK_OUT": {
-					"$ref": "#/definitions/.WERK_OUT"
-				},
-				"W_EF_EMAIL": {
-					"$ref": "#/definitions/.W_EF_EMAIL"
-				},
-				"W_EMAIL": {
-					"$ref": "#/definitions/.W_EMAIL"
-				},
-				"ZAEHLER": {
-					"$ref": "#/definitions/.ZAEHLER"
-				},
-				"ZEV": {
-					"$ref": "#/definitions/.ZEV"
-				},
-				"ZEV_TEXT": {
-					"$ref": "#/definitions/.ZEV_TEXT"
-				}
-			},
-			"required": [
-				"ABONR",
-				"ANDERS",
-				"ANL1",
-				"ANL2",
-				"ANLJAHR0",
-				"ANLJAHR1",
-				"ANLJAHR2",
-				"ANLNUTZUNG",
-				"AUFTRAK",
-				"AUFTRSK",
-				"AUFTRSK_ADRESSE1",
-				"AUFTRSK_ADRESSE2",
-				"AUFTRSK_EMAIL",
-				"AUFTRSK_KONZESS",
-				"AUFTRSK_NAME1",
-				"AUFTRSK_NAME2",
-				"AUFTRSK_ORT",
-				"AUFTRSK_PLZ",
-				"AUFTRSK_TELNR",
-				"AUU_ART",
-				"AUU_IN",
-				"BEI_MP",
-				"BEI_MPPV",
-				"BEI_TEXT",
-				"BEI_X",
-				"BEMERKUNG",
-				"BESONDER",
-				"BEST",
-				"COPY_ID",
-				"EGID",
-				"ERWEIT",
-				"EVUAUFTNR",
-				"EW_BEMERKUNG",
-				"EW_SIGN",
-				"EW_SIGNDAT",
-				"EW_SIGNKT",
-				"E_ADRESSE1",
-				"E_ADRESSE2",
-				"E_EMAIL",
-				"E_FAXNR",
-				"E_KONZESS",
-				"E_NAME1",
-				"E_NAME2",
-				"E_ORT",
-				"E_PLZ",
-				"E_PROJECT",
-				"E_TELNR",
-				"FORM_TYP",
-				"GEBAEUDEART",
-				"GEBAEUDENR",
-				"GEBAEUDETEIL",
-				"GEMEINDE",
-				"GRUND_X",
-				"GRUND_XTXT",
-				"IA_DATUM",
-				"ID",
-				"ID_FORMTMP",
-				"ID_PROJECT",
-				"INST_IN",
-				"INST_OUT",
-				"I_ADRESSE1",
-				"I_ADRESSE2",
-				"I_EF_EMAIL",
-				"I_EMAIL",
-				"I_FAXNR",
-				"I_FORM",
-				"I_KONZESS",
-				"I_NAME1",
-				"I_NAME2",
-				"I_ORT",
-				"I_PLZ",
-				"I_PROJECT",
-				"I_SACHB",
-				"I_TELNR",
-				"KONDATUM",
-				"KONDATUM_AKPK",
-				"KONDATUM_SK",
-				"KONDATZUS",
-				"KONTR_DAT",
-				"KONTR_DAT2",
-				"KONTR_SIGN",
-				"KONTR_SIKT",
-				"KONTUMFANG",
-				"KONT_AK",
-				"KONT_PK",
-				"KONT_SIGN2",
-				"KONT_SIKT2",
-				"KONT_SK",
-				"K_ADRESSE1",
-				"K_ADRESSE2",
-				"K_EMAIL",
-				"K_FAXNR",
-				"K_KONZESS",
-				"K_NAME1",
-				"K_NAME2",
-				"K_ORT",
-				"K_PLZ",
-				"K_TELNR",
-				"LAGE",
-				"MANDANT",
-				"NEUANL",
-				"O_HAUSNR",
-				"O_ORT",
-				"O_PLZ",
-				"O_STRASSE",
-				"PACKNAME",
-				"PARZELLE",
-				"PLOMBENTF",
-				"PROJ_JAHR",
-				"PROJ_NR",
-				"P_ADRESSE1",
-				"P_ADRESSE2",
-				"P_EMAIL",
-				"P_FAXNR",
-				"P_NAME1",
-				"P_NAME2",
-				"P_ORT",
-				"P_PLZ",
-				"P_TELNR",
-				"RAPPORT_NR",
-				"SIGNATURE",
-				"SIGNATURE2",
-				"SIGNKT",
-				"SIGNKT2",
-				"SIGN_DATUM",
-				"SIGN_DATUM2",
-				"SINAN",
-				"SINAV",
-				"SP_GUT",
-				"SP_JA",
-				"SP_MANGEL",
-				"SP_NEIN",
-				"SP_PKRELEVANT",
-				"SP_PLOMB",
-				"TERMIN",
-				"TNC",
-				"TNCS",
-				"TNS",
-				"TNTEXT",
-				"TNX",
-				"UU_ART",
-				"UU_IK",
-				"UU_IKLN",
-				"UU_IKLN_ENDE",
-				"UU_IKMAX",
-				"UU_IN",
-				"UU_RISO",
-				"UU_ZWECK",
-				"U_ADRESSE1",
-				"U_ADRESSE2",
-				"U_EMAIL",
-				"U_FAXNR",
-				"U_NAME1",
-				"U_NAME2",
-				"U_ORT",
-				"U_PLZ",
-				"U_TELNR",
-				"VERSICH",
-				"VERT1",
-				"VERT1_X",
-				"VISUM",
-				"V_ADRESSE1",
-				"V_ADRESSE2",
-				"V_EMAIL",
-				"V_FAXNR",
-				"V_NAME1",
-				"V_NAME2",
-				"V_ORT",
-				"V_PLZ",
-				"V_TELNR",
-				"WERK",
-				"WERK_IN",
-				"WERK_OUT",
-				"W_EF_EMAIL",
-				"W_EMAIL",
-				"ZAEHLER",
-				"ZEV",
-				"ZEV_TEXT"
-			],
-			"additionalProperties": false
-		},
-		"ST_BOOL": {
-			"type": "string",
-			"enum": [
-				"FALSE",
-				"TRUE"
-			]
-		},
-		"ST_DATE": {
-			"type": "string",
-			"anyOf": [
-				{
-					"pattern": "^()$"
-				},
-				{
-					"pattern": "^([0-9]{4,4}[0-9]{2,2}[0-9]{2,2}[0-9]{9,9})$"
-				}
-			]
-		},
-		"ST_INT": {
-			"type": "string",
-			"pattern": "^([0-9]*)$"
-		},
-		"ST_STRING": {
-			"type": "string"
-		},
-		"T_BOOL": {
-			"type": [
-				"object",
-				"string",
-				"number",
-				"boolean"
-			],
-			"properties": {
-				"$": {
-					"$ref": "#/definitions/ST_BOOL"
-				},
-				"@OLD": {
-					"$ref": "#/definitions/ST_BOOL"
-				},
-				"@Type": {
-					"type": "string",
-					"enum": [
-						"B"
-					]
-				}
-			},
-			"required": [
-				"@Type"
-			],
-			"additionalProperties": false
-		},
-		"T_DATE": {
-			"type": [
-				"object",
-				"string",
-				"number",
-				"boolean"
-			],
-			"properties": {
-				"$": {
-					"$ref": "#/definitions/ST_DATE"
-				},
-				"@OLD": {
-					"$ref": "#/definitions/ST_DATE"
-				},
-				"@Type": {
-					"type": "string",
-					"enum": [
-						"DT"
-					]
-				}
-			},
-			"required": [
-				"@Type"
-			],
-			"additionalProperties": false
-		},
-		"T_INT": {
-			"type": [
-				"object",
-				"string",
-				"number",
-				"boolean"
-			],
-			"properties": {
-				"$": {
-					"$ref": "#/definitions/ST_INT"
-				},
-				"@OLD": {
-					"$ref": "#/definitions/ST_INT"
-				}
-			},
-			"additionalProperties": false
-		},
-		"T_MEMO": {
-			"type": [
-				"object",
-				"string",
-				"number",
-				"boolean"
-			],
-			"properties": {
-				"$": {
-					"$ref": "#/definitions/ST_STRING"
-				},
-				"@OLD": {
-					"$ref": "#/definitions/ST_STRING"
-				}
-			},
-			"additionalProperties": false
-		},
-		"T_STRING": {
-			"type": [
-				"object",
-				"string",
-				"number",
-				"boolean"
-			],
-			"properties": {
-				"$": {
-					"$ref": "#/definitions/ST_STRING"
-				},
-				"@OLD": {
-					"$ref": "#/definitions/ST_STRING"
-				}
-			},
-			"additionalProperties": false
-		},
-		"xs:string": {
-			"type": "string"
+			}	
 		}
-	}
-}
+	},
+	"properties": {
+		"SINA18": {
+			"$ref": "#/definitions/.SINA18"
+		}
+	},
+	"type": "object"
+}	

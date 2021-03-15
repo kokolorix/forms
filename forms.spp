@@ -6,23 +6,21 @@
 		<File FilePath="MPP-Small.xml" HomeFolder="Yes"/>
 		<File FilePath="SiNa-Hub.xml" HomeFolder="Yes"/>
 		<File FilePath="SINA18.xml" HomeFolder="Yes"/>
+		<File FilePath="VSE_IA18.xml" HomeFolder="Yes"/>
 	</Folder>
 	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
-		<File FilePath="datadic-json.xslt" HomeFolder="Yes"/>
 		<File FilePath="tools\DataDic-To-XmlSchema.xslt" HomeFolder="Yes"/>
-		<File FilePath="datadic-xsd-mini.xslt" HomeFolder="Yes"/>
-		<File FilePath="datadic-xsd.xslt" HomeFolder="Yes"/>
+		<File FilePath="tools\To-JsonSchema.xslt" HomeFolder="Yes"/>
+		<File FilePath="tools\To-XmlSchema.xslt" HomeFolder="Yes"/>
 		<File FilePath="xml-json.xslt" HomeFolder="Yes"/>
 		<File FilePath="xml-xml.xslt" HomeFolder="Yes"/>
 	</Folder>
 	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery;xqu"/>
 	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
 	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
-		<File FilePath="MESSPROT18-mini.xsd" HomeFolder="Yes"/>
 		<File FilePath="MESSPROT18.xsd" HomeFolder="Yes"/>
-		<File FilePath="MPP.xsd" HomeFolder="Yes"/>
-		<File FilePath="SINA18-mini.xsd" HomeFolder="Yes"/>
 		<File FilePath="SINA18.xsd" HomeFolder="Yes"/>
+		<File FilePath="VSE_IA18.xsd" HomeFolder="Yes"/>
 	</Folder>
 	<Folder FolderName="Entities" ExtStr="ent"/>
 	<File FilePath="SiNa-Hub.json" HomeFolder="Yes"/>

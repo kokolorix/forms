@@ -1,1443 +1,1026 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name="DATAPACKET">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element ref="ROW"/>
-				<xs:sequence minOccurs="0">
-					<xs:element ref="PGM_INFO"/>
-				</xs:sequence>
-			</xs:sequence>
-			<xs:attribute name="Version" use="required">
+	<xs:element name="SINA18" type="T_SINA18"/>
+	<xs:complexType name="T_SINA18">
+		<xs:all>
+			<xs:element name="FORM_TYP" type="xs:string"/>
+			<xs:element name="ID" type="xs:int"/>
+			<xs:element name="ID_PROJECT" type="xs:int"/>
+			<xs:element name="COPY_ID" type="xs:int"/>
+			<xs:element name="MANDANT" type="xs:int"/>
+			<xs:element name="ID_FORMTMP" type="xs:int"/>
+			<xs:element name="I_PROJECT" type="xs:int"/>
+			<xs:element name="I_FORM" type="xs:int"/>
+			<xs:element name="E_PROJECT" type="xs:int"/>
+			<xs:element name="INST_OUT" type="xs:string"/>
+			<xs:element name="WERK_IN" type="xs:string"/>
+			<xs:element name="WERK_OUT" type="xs:string"/>
+			<xs:element name="INST_IN" type="xs:string"/>
+			<xs:element name="PROJ_NR">
 				<xs:simpleType>
-					<xs:restriction base="xs:decimal">
-						<xs:enumeration value="1"/>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="12"/>
 					</xs:restriction>
 				</xs:simpleType>
-			</xs:attribute>
-			<xs:attribute name="noNamespaceSchemaLocation" type="xs:string" use="optional"/>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ROW" type="RowT"/>
-	<xs:element name="PGM_INFO">
-		<xs:complexType>
-			<xs:attribute name="FileVersion" use="required">
+			</xs:element>
+			<xs:element name="PROJ_JAHR" type="xs:int"/>
+			<xs:element name="WERK">
 				<xs:simpleType>
-					<xs:restriction base="xs:string"/>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="24"/>
+					</xs:restriction>
 				</xs:simpleType>
-			</xs:attribute>
-			<xs:attribute name="DatenbankAnwender" use="required">
+			</xs:element>
+			<xs:element name="W_EMAIL">
 				<xs:simpleType>
-					<xs:restriction base="xs:byte"/>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
 				</xs:simpleType>
-			</xs:attribute>
-			<xs:attribute name="DatenbankAnwenderDescr" use="required">
+			</xs:element>
+			<xs:element name="W_EF_EMAIL">
 				<xs:simpleType>
-					<xs:restriction base="xs:string"/>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
 				</xs:simpleType>
-			</xs:attribute>
-			<xs:attribute name="FormAnwender" use="required">
+			</xs:element>
+			<xs:element name="VISUM">
 				<xs:simpleType>
-					<xs:restriction base="xs:byte"/>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="6"/>
+					</xs:restriction>
 				</xs:simpleType>
-			</xs:attribute>
-			<xs:attribute name="FormAnwenderDescr" use="required">
+			</xs:element>
+			<xs:element name="I_NAME1">
 				<xs:simpleType>
-					<xs:restriction base="xs:string"/>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
 				</xs:simpleType>
-			</xs:attribute>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="FORM_TYP">
-		<xs:simpleType>
-			<xs:restriction base="xs:string">
-				<xs:enumeration value="Q"/>
-			</xs:restriction>
-		</xs:simpleType>
-	</xs:element>
-	<xs:element name="ID" type="T_INT"/>
-	<xs:element name="ID_PROJECT" type="T_INT"/>
-	<xs:element name="COPY_ID" type="T_INT"/>
-	<xs:element name="MANDANT" type="T_INT"/>
-	<xs:element name="ID_FORMTMP" type="T_INT"/>
-	<xs:element name="I_PROJECT" type="T_INT"/>
-	<xs:element name="I_FORM" type="T_INT"/>
-	<xs:element name="E_PROJECT" type="T_INT"/>
-	<xs:element name="INST_OUT" type="T_DATE"/>
-	<xs:element name="WERK_IN" type="T_DATE"/>
-	<xs:element name="WERK_OUT" type="T_DATE"/>
-	<xs:element name="INST_IN" type="T_DATE"/>
-	<xs:element name="PROJ_NR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="12"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="PROJ_JAHR" type="T_INT"/>
-	<xs:element name="WERK">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="24"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="W_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="W_EF_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="VISUM">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="6"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_KONZESS">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_SACHB">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="24"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_FAXNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_EF_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="O_STRASSE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="O_HAUSNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="24"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="O_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="O_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GEMEINDE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="PARZELLE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="18"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="VERSICH">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="18"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GEBAEUDEART">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GEBAEUDETEIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="LAGE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ANLNUTZUNG">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_FAXNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GEBAEUDENR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="EGID" type="T_INT"/>
-	<xs:element name="ABONR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="EVUAUFTNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="12"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="TERMIN" type="T_DATE"/>
-	<xs:element name="PACKNAME">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="RAPPORT_NR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="P_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="P_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="P_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="P_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="P_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="P_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="P_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="P_FAXNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="P_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="V_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="V_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="V_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="V_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="V_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="V_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="V_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="V_FAXNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="V_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_KONZESS">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_FAXNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="E_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_KONZESS">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_FAXNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="K_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="BEMERKUNG">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ZEV" type="T_BOOL"/>
-	<xs:element name="ZEV_TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ZAEHLER">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ANLJAHR0" type="T_INT"/>
-	<xs:element name="ANL1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ANLJAHR1" type="T_INT"/>
-	<xs:element name="ANL2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ANLJAHR2" type="T_INT"/>
-	<xs:element name="NEUANL" type="T_BOOL"/>
-	<xs:element name="BEST" type="T_BOOL"/>
-	<xs:element name="ANDERS" type="T_BOOL"/>
-	<xs:element name="ERWEIT" type="T_BOOL"/>
-	<xs:element name="GRUND_X" type="T_BOOL"/>
-	<xs:element name="GRUND_XTXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="20"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="KONTUMFANG" type="T_MEMO"/>
-	<xs:element name="IA_DATUM" type="T_DATE"/>
-	<xs:element name="KONT_SK" type="T_BOOL"/>
-	<xs:element name="KONT_AK" type="T_BOOL"/>
-	<xs:element name="KONT_PK" type="T_BOOL"/>
-	<xs:element name="TNS" type="T_BOOL"/>
-	<xs:element name="TNC" type="T_BOOL"/>
-	<xs:element name="TNCS" type="T_BOOL"/>
-	<xs:element name="TNX" type="T_BOOL"/>
-	<xs:element name="TNTEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUU_IN">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="10"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUU_ART">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="18"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="UU_ART">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="18"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="UU_IN">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="10"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="UU_IKMAX">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="UU_IKLN">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="UU_IK">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="UU_IKLN_ENDE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="UU_RISO">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="UU_ZWECK">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="BESONDER">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="92"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="KONDATUM_SK" type="T_DATE"/>
-	<xs:element name="KONDATUM_AKPK" type="T_DATE"/>
-	<xs:element name="KONDATUM" type="T_DATE"/>
-	<xs:element name="KONDATZUS">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="PLOMBENTF" type="T_BOOL"/>
-	<xs:element name="AUFTRAK" type="T_BOOL"/>
-	<xs:element name="AUFTRSK" type="T_BOOL"/>
-	<xs:element name="AUFTRSK_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUFTRSK_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUFTRSK_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUFTRSK_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUFTRSK_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="8"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUFTRSK_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUFTRSK_KONZESS">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUFTRSK_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="16"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AUFTRSK_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="60"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="BEI_MP" type="T_BOOL"/>
-	<xs:element name="BEI_MPPV" type="T_BOOL"/>
-	<xs:element name="BEI_X" type="T_BOOL"/>
-	<xs:element name="BEI_TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="SINAV" type="T_BOOL"/>
-	<xs:element name="SINAN" type="T_BOOL"/>
-	<xs:element name="VERT1_X" type="T_BOOL"/>
-	<xs:element name="VERT1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="40"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="EW_BEMERKUNG" type="T_MEMO"/>
-	<xs:element name="SP_JA" type="T_BOOL"/>
-	<xs:element name="SP_NEIN" type="T_BOOL"/>
-	<xs:element name="SP_GUT" type="T_BOOL"/>
-	<xs:element name="SP_MANGEL" type="T_BOOL"/>
-	<xs:element name="SP_PLOMB" type="T_BOOL"/>
-	<xs:element name="SP_PKRELEVANT" type="T_BOOL"/>
-	<xs:element name="SIGN_DATUM" type="T_DATE"/>
-	<xs:element name="SIGN_DATUM2" type="T_DATE"/>
-	<xs:element name="SIGNATURE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="SIGNKT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="KONTR_SIGN">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="KONTR_SIKT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="KONTR_DAT" type="T_DATE"/>
-	<xs:element name="KONTR_DAT2" type="T_DATE"/>
-	<xs:element name="SIGNATURE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="SIGNKT2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="KONT_SIGN2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="KONT_SIKT2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="EW_SIGNDAT" type="T_DATE"/>
-	<xs:element name="EW_SIGN">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="EW_SIGNKT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:length value="30"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:complexType name="T_MEMO">
-		<xs:simpleContent>
-			<xs:extension base="ST_STRING">
-				<xs:attribute name="OLD" type="ST_STRING" use="optional"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:complexType name="T_STRING">
-		<xs:simpleContent>
-			<xs:extension base="ST_STRING">
-				<xs:attribute name="OLD" type="ST_STRING" use="optional"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:simpleType name="ST_STRING">
-		<xs:restriction base="xs:string"/>
-	</xs:simpleType>
-	<xs:complexType name="T_INT">
-		<xs:simpleContent>
-			<xs:extension base="ST_INT">
-				<xs:attribute name="OLD" type="ST_INT" use="optional"/>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:simpleType name="ST_INT">
-		<xs:restriction base="xs:string">
-			<xs:pattern value="[0-9]*"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:complexType name="T_BOOL">
-		<xs:simpleContent>
-			<xs:extension base="ST_BOOL">
-				<xs:attribute name="OLD" type="ST_BOOL" use="optional"/>
-				<xs:attribute name="Type" use="required">
-					<xs:simpleType>
-						<xs:restriction base="xs:string">
-							<xs:enumeration value="B"/>
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:simpleType name="ST_BOOL">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="FALSE"/>
-			<xs:enumeration value="TRUE"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:complexType name="T_DATE">
-		<xs:simpleContent>
-			<xs:extension base="ST_DATE">
-				<xs:attribute name="OLD" type="ST_DATE" use="optional"/>
-				<xs:attribute name="Type" use="required">
-					<xs:simpleType>
-						<xs:restriction base="xs:string">
-							<xs:enumeration value="DT"/>
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:attribute>
-			</xs:extension>
-		</xs:simpleContent>
-	</xs:complexType>
-	<xs:simpleType name="ST_DATE">
-		<xs:restriction base="xs:string">
-			<xs:pattern value=""/>
-			<xs:pattern value="[0-9]{4}[0-9]{2}[0-9]{2}[0-9]{9}"/><!--Datums-Format: YYYYMMTThhmmssmmm--></xs:restriction></xs:simpleType><xs:complexType name="RowT">
-		<xs:all>
-			<xs:element ref="FORM_TYP"/>
-			<xs:element ref="ID"/>
-			<xs:element ref="ID_PROJECT"/>
-			<xs:element ref="COPY_ID"/>
-			<xs:element ref="MANDANT"/>
-			<xs:element ref="ID_FORMTMP"/>
-			<xs:element ref="I_PROJECT"/>
-			<xs:element ref="I_FORM"/>
-			<xs:element ref="E_PROJECT"/>
-			<xs:element ref="INST_OUT"/>
-			<xs:element ref="WERK_IN"/>
-			<xs:element ref="WERK_OUT"/>
-			<xs:element ref="INST_IN"/>
-			<xs:element ref="PROJ_NR"/>
-			<xs:element ref="PROJ_JAHR"/>
-			<xs:element ref="WERK"/>
-			<xs:element ref="W_EMAIL"/>
-			<xs:element ref="W_EF_EMAIL"/>
-			<xs:element ref="VISUM"/>
-			<xs:element ref="I_NAME1"/>
-			<xs:element ref="I_NAME2"/>
-			<xs:element ref="I_ADRESSE1"/>
-			<xs:element ref="I_ADRESSE2"/>
-			<xs:element ref="I_PLZ"/>
-			<xs:element ref="I_ORT"/>
-			<xs:element ref="I_KONZESS"/>
-			<xs:element ref="I_SACHB"/>
-			<xs:element ref="I_TELNR"/>
-			<xs:element ref="I_FAXNR"/>
-			<xs:element ref="I_EMAIL"/>
-			<xs:element ref="I_EF_EMAIL"/>
-			<xs:element ref="O_STRASSE"/>
-			<xs:element ref="O_HAUSNR"/>
-			<xs:element ref="O_PLZ"/>
-			<xs:element ref="O_ORT"/>
-			<xs:element ref="GEMEINDE"/>
-			<xs:element ref="PARZELLE"/>
-			<xs:element ref="VERSICH"/>
-			<xs:element ref="GEBAEUDEART"/>
-			<xs:element ref="GEBAEUDETEIL"/>
-			<xs:element ref="LAGE"/>
-			<xs:element ref="ANLNUTZUNG"/>
-			<xs:element ref="U_NAME1"/>
-			<xs:element ref="U_NAME2"/>
-			<xs:element ref="U_ADRESSE1"/>
-			<xs:element ref="U_ADRESSE2"/>
-			<xs:element ref="U_PLZ"/>
-			<xs:element ref="U_ORT"/>
-			<xs:element ref="U_TELNR"/>
-			<xs:element ref="U_FAXNR"/>
-			<xs:element ref="U_EMAIL"/>
-			<xs:element ref="GEBAEUDENR"/>
-			<xs:element ref="EGID"/>
-			<xs:element ref="ABONR"/>
-			<xs:element ref="EVUAUFTNR"/>
-			<xs:element ref="TERMIN"/>
-			<xs:element ref="PACKNAME"/>
-			<xs:element ref="RAPPORT_NR"/>
-			<xs:element ref="P_NAME1"/>
-			<xs:element ref="P_NAME2"/>
-			<xs:element ref="P_ADRESSE1"/>
-			<xs:element ref="P_ADRESSE2"/>
-			<xs:element ref="P_PLZ"/>
-			<xs:element ref="P_ORT"/>
-			<xs:element ref="P_TELNR"/>
-			<xs:element ref="P_FAXNR"/>
-			<xs:element ref="P_EMAIL"/>
-			<xs:element ref="V_NAME1"/>
-			<xs:element ref="V_NAME2"/>
-			<xs:element ref="V_ADRESSE1"/>
-			<xs:element ref="V_ADRESSE2"/>
-			<xs:element ref="V_PLZ"/>
-			<xs:element ref="V_ORT"/>
-			<xs:element ref="V_TELNR"/>
-			<xs:element ref="V_FAXNR"/>
-			<xs:element ref="V_EMAIL"/>
-			<xs:element ref="E_NAME1"/>
-			<xs:element ref="E_NAME2"/>
-			<xs:element ref="E_ADRESSE1"/>
-			<xs:element ref="E_ADRESSE2"/>
-			<xs:element ref="E_PLZ"/>
-			<xs:element ref="E_ORT"/>
-			<xs:element ref="E_KONZESS"/>
-			<xs:element ref="E_TELNR"/>
-			<xs:element ref="E_FAXNR"/>
-			<xs:element ref="E_EMAIL"/>
-			<xs:element ref="K_NAME1"/>
-			<xs:element ref="K_NAME2"/>
-			<xs:element ref="K_ADRESSE1"/>
-			<xs:element ref="K_ADRESSE2"/>
-			<xs:element ref="K_PLZ"/>
-			<xs:element ref="K_ORT"/>
-			<xs:element ref="K_KONZESS"/>
-			<xs:element ref="K_TELNR"/>
-			<xs:element ref="K_FAXNR"/>
-			<xs:element ref="K_EMAIL"/>
-			<xs:element ref="BEMERKUNG"/>
-			<xs:element ref="ZEV"/>
-			<xs:element ref="ZEV_TEXT"/>
-			<xs:element ref="ZAEHLER"/>
-			<xs:element ref="ANLJAHR0"/>
-			<xs:element ref="ANL1"/>
-			<xs:element ref="ANLJAHR1"/>
-			<xs:element ref="ANL2"/>
-			<xs:element ref="ANLJAHR2"/>
-			<xs:element ref="NEUANL"/>
-			<xs:element ref="BEST"/>
-			<xs:element ref="ANDERS"/>
-			<xs:element ref="ERWEIT"/>
-			<xs:element ref="GRUND_X"/>
-			<xs:element ref="GRUND_XTXT"/>
-			<xs:element ref="KONTUMFANG"/>
-			<xs:element ref="IA_DATUM"/>
-			<xs:element ref="KONT_SK"/>
-			<xs:element ref="KONT_AK"/>
-			<xs:element ref="KONT_PK"/>
-			<xs:element ref="TNS"/>
-			<xs:element ref="TNC"/>
-			<xs:element ref="TNCS"/>
-			<xs:element ref="TNX"/>
-			<xs:element ref="TNTEXT"/>
-			<xs:element ref="AUU_IN"/>
-			<xs:element ref="AUU_ART"/>
-			<xs:element ref="UU_ART"/>
-			<xs:element ref="UU_IN"/>
-			<xs:element ref="UU_IKMAX"/>
-			<xs:element ref="UU_IKLN"/>
-			<xs:element ref="UU_IK"/>
-			<xs:element ref="UU_IKLN_ENDE"/>
-			<xs:element ref="UU_RISO"/>
-			<xs:element ref="UU_ZWECK"/>
-			<xs:element ref="BESONDER"/>
-			<xs:element ref="KONDATUM_SK"/>
-			<xs:element ref="KONDATUM_AKPK"/>
-			<xs:element ref="KONDATUM"/>
-			<xs:element ref="KONDATZUS"/>
-			<xs:element ref="PLOMBENTF"/>
-			<xs:element ref="AUFTRAK"/>
-			<xs:element ref="AUFTRSK"/>
-			<xs:element ref="AUFTRSK_NAME1"/>
-			<xs:element ref="AUFTRSK_NAME2"/>
-			<xs:element ref="AUFTRSK_ADRESSE1"/>
-			<xs:element ref="AUFTRSK_ADRESSE2"/>
-			<xs:element ref="AUFTRSK_PLZ"/>
-			<xs:element ref="AUFTRSK_ORT"/>
-			<xs:element ref="AUFTRSK_KONZESS"/>
-			<xs:element ref="AUFTRSK_TELNR"/>
-			<xs:element ref="AUFTRSK_EMAIL"/>
-			<xs:element ref="BEI_MP"/>
-			<xs:element ref="BEI_MPPV"/>
-			<xs:element ref="BEI_X"/>
-			<xs:element ref="BEI_TEXT"/>
-			<xs:element ref="SINAV"/>
-			<xs:element ref="SINAN"/>
-			<xs:element ref="VERT1_X"/>
-			<xs:element ref="VERT1"/>
-			<xs:element ref="EW_BEMERKUNG"/>
-			<xs:element ref="SP_JA"/>
-			<xs:element ref="SP_NEIN"/>
-			<xs:element ref="SP_GUT"/>
-			<xs:element ref="SP_MANGEL"/>
-			<xs:element ref="SP_PLOMB"/>
-			<xs:element ref="SP_PKRELEVANT"/>
-			<xs:element ref="SIGN_DATUM"/>
-			<xs:element ref="SIGN_DATUM2"/>
-			<xs:element ref="SIGNATURE"/>
-			<xs:element ref="SIGNKT"/>
-			<xs:element ref="KONTR_SIGN"/>
-			<xs:element ref="KONTR_SIKT"/>
-			<xs:element ref="KONTR_DAT"/>
-			<xs:element ref="KONTR_DAT2"/>
-			<xs:element ref="SIGNATURE2"/>
-			<xs:element ref="SIGNKT2"/>
-			<xs:element ref="KONT_SIGN2"/>
-			<xs:element ref="KONT_SIKT2"/>
-			<xs:element ref="EW_SIGNDAT"/>
-			<xs:element ref="EW_SIGN"/>
-			<xs:element ref="EW_SIGNKT"/>
+			</xs:element>
+			<xs:element name="I_NAME2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_ADRESSE1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_ADRESSE2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_PLZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_ORT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_KONZESS">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_SACHB">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="24"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_TELNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_FAXNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_EMAIL">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="I_EF_EMAIL">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="O_STRASSE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="O_HAUSNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="24"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="O_PLZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="O_ORT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GEMEINDE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PARZELLE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="VERSICH">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GEBAEUDEART">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GEBAEUDETEIL">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="LAGE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ANLNUTZUNG">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="U_NAME1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="U_NAME2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="U_ADRESSE1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="U_ADRESSE2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="U_PLZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="U_ORT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="U_TELNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="U_FAXNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="U_EMAIL">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GEBAEUDENR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EGID" type="xs:int"/>
+			<xs:element name="ABONR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EVUAUFTNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="12"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TERMIN" type="xs:string"/>
+			<xs:element name="PACKNAME">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RAPPORT_NR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="P_NAME1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="P_NAME2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="P_ADRESSE1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="P_ADRESSE2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="P_PLZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="P_ORT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="P_TELNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="P_FAXNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="P_EMAIL">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="V_NAME1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="V_NAME2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="V_ADRESSE1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="V_ADRESSE2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="V_PLZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="V_ORT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="V_TELNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="V_FAXNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="V_EMAIL">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_NAME1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_NAME2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_ADRESSE1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_ADRESSE2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_PLZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_ORT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_KONZESS">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_TELNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_FAXNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="E_EMAIL">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_NAME1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_NAME2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_ADRESSE1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_ADRESSE2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_PLZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_ORT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_KONZESS">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_TELNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_FAXNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="K_EMAIL">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BEMERKUNG">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ZEV" type="xs:boolean"/>
+			<xs:element name="ZEV_TEXT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ZAEHLER">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ANLJAHR0" type="xs:int"/>
+			<xs:element name="ANL1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ANLJAHR1" type="xs:int"/>
+			<xs:element name="ANL2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ANLJAHR2" type="xs:int"/>
+			<xs:element name="NEUANL" type="xs:boolean"/>
+			<xs:element name="BEST" type="xs:boolean"/>
+			<xs:element name="ANDERS" type="xs:boolean"/>
+			<xs:element name="ERWEIT" type="xs:boolean"/>
+			<xs:element name="GRUND_X" type="xs:boolean"/>
+			<xs:element name="GRUND_XTXT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="KONTUMFANG" type="xs:string"/>
+			<xs:element name="IA_DATUM" type="xs:string"/>
+			<xs:element name="KONT_SK" type="xs:boolean"/>
+			<xs:element name="KONT_AK" type="xs:boolean"/>
+			<xs:element name="KONT_PK" type="xs:boolean"/>
+			<xs:element name="TNS" type="xs:boolean"/>
+			<xs:element name="TNC" type="xs:boolean"/>
+			<xs:element name="TNCS" type="xs:boolean"/>
+			<xs:element name="TNX" type="xs:boolean"/>
+			<xs:element name="TNTEXT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUU_IN">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUU_ART">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UU_ART">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UU_IN">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UU_IKMAX">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UU_IKLN">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UU_IK">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UU_IKLN_ENDE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UU_RISO">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="UU_ZWECK">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BESONDER">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="92"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="KONDATUM_SK" type="xs:string"/>
+			<xs:element name="KONDATUM_AKPK" type="xs:string"/>
+			<xs:element name="KONDATUM" type="xs:string"/>
+			<xs:element name="KONDATZUS">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PLOMBENTF" type="xs:boolean"/>
+			<xs:element name="AUFTRAK" type="xs:boolean"/>
+			<xs:element name="AUFTRSK" type="xs:boolean"/>
+			<xs:element name="AUFTRSK_NAME1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUFTRSK_NAME2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUFTRSK_ADRESSE1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUFTRSK_ADRESSE2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUFTRSK_PLZ">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUFTRSK_ORT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUFTRSK_KONZESS">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUFTRSK_TELNR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AUFTRSK_EMAIL">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BEI_MP" type="xs:boolean"/>
+			<xs:element name="BEI_MPPV" type="xs:boolean"/>
+			<xs:element name="BEI_X" type="xs:boolean"/>
+			<xs:element name="BEI_TEXT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SINAV" type="xs:boolean"/>
+			<xs:element name="SINAN" type="xs:boolean"/>
+			<xs:element name="VERT1_X" type="xs:boolean"/>
+			<xs:element name="VERT1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EW_BEMERKUNG" type="xs:string"/>
+			<xs:element name="SP_JA" type="xs:boolean"/>
+			<xs:element name="SP_NEIN" type="xs:boolean"/>
+			<xs:element name="SP_GUT" type="xs:boolean"/>
+			<xs:element name="SP_MANGEL" type="xs:boolean"/>
+			<xs:element name="SP_PLOMB" type="xs:boolean"/>
+			<xs:element name="SP_PKRELEVANT" type="xs:boolean"/>
+			<xs:element name="SIGN_DATUM" type="xs:string"/>
+			<xs:element name="SIGN_DATUM2" type="xs:string"/>
+			<xs:element name="SIGNATURE">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SIGNKT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="KONTR_SIGN">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="KONTR_SIKT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="KONTR_DAT" type="xs:string"/>
+			<xs:element name="KONTR_DAT2" type="xs:string"/>
+			<xs:element name="SIGNATURE2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SIGNKT2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="KONT_SIGN2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="KONT_SIKT2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EW_SIGNDAT" type="xs:string"/>
+			<xs:element name="EW_SIGN">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EW_SIGNKT">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
 		</xs:all>
 	</xs:complexType>
 </xs:schema>

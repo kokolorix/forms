@@ -2,7 +2,7 @@
 <!--
 <?altova_samplexml SINA18.xml?>
 -->
-<?altova_samplexml MPP-Mini.xml?>
+<?altova_samplexml ..\MESSPROT18.xml?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xsl:output method="xml" encoding="utf-8" indent="yes"/>
 	<xsl:output name="xml-def" method="xml" indent="yes"/>
@@ -10,20 +10,18 @@
 	<!-- Main-Template -->
 	<!--=======================================================================-->
 	<xsl:template match="/">
-		<xsl:variable name="fn" select="replace(base-uri(.),'.xml' ,'-mini.xsd')"/>
+		<xsl:variable name="fn" select="replace(base-uri(.),'.xml' ,'.xsd')"/>
 		<xsl:result-document href="{$fn}" format="xml-def">
 			<xs:schema>
-				<xs:element name="FORMULAR">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="ROW" type="T_Row"/>
-						</xs:sequence>
-					</xs:complexType>
+				<xs:element type="T_Row">
+					<xsl:attribute name="name"><xsl:value-of select="Form/@Name"/></xsl:attribute>
+					<xsl:attribute name="type">T_<xsl:value-of select="Form/@Name"/></xsl:attribute>
 				</xs:element>
 				<!--=======================================================================-->
 				<xsl:apply-templates select="/Form/DataDic/Tab/Tab" mode="Elm"/>
 				<!--=======================================================================-->
-				<xs:complexType name="T_Row">
+				<xs:complexType>
+					<xsl:attribute name="name">T_<xsl:value-of select="Form/@Name"/></xsl:attribute>
 					<xs:all>
 						<xsl:call-template name="SpecialElements"/>
 						<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="Elm"/>
@@ -50,6 +48,9 @@
 				</xsl:when>
 				<xsl:when test="@Type='BOOL'">
 					<xsl:text>xs:boolean</xsl:text>
+				</xsl:when>
+				<xsl:when test="@Type='DATE'">
+					<xsl:text>xs:dateTime</xsl:text>
 				</xsl:when>
 				<xsl:otherwise>
 					<xsl:text>xs:string</xsl:text>
@@ -177,23 +178,7 @@
 	<xsl:template match="Tab" mode="ref">
 		<xs:element>
 			<xsl:attribute name="ref">
-				<xsl:value-of select="@Name"/>
-				<xsl:value-of select="/Form/@Name"/>
-				<xsl:text>_DE</xsl:text>
-			</xsl:attribute>
-		</xs:element>
-		<xs:element>
-			<xsl:attribute name="ref">
-				<xsl:value-of select="@Name"/>
-				<xsl:value-of select="/Form/@Name"></xsl:value-of>
-				<xsl:text>_FR</xsl:text>
-			</xsl:attribute>
-		</xs:element>
-		<xs:element>
-			<xsl:attribute name="ref">
-				<xsl:value-of select="@Name"/>
-				<xsl:value-of select="/Form/@Name"></xsl:value-of>
-				<xsl:text>_IT</xsl:text>
+				<xsl:value-of select="@Name"></xsl:value-of>
 			</xsl:attribute>
 		</xs:element>
 	</xsl:template>

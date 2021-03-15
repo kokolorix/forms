@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!--<?altova_samplexml SINA18.xml?>
+<?altova_samplexml ..\MESSPROT18.xml?>
 -->
-<?altova_samplexml MESSPROT18.xml?>
+<?altova_samplexml ..\VSE_IA18.xml?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xsl:output name="out-def" encoding="utf-8" method="text" indent="yes"/>
 	<xsl:variable name="t1" select="'&#x9;'"/>
@@ -9,6 +10,7 @@
 	<xsl:variable name="t3" select="concat($t2, '&#x9;')"/>
 	<xsl:variable name="t4" select="concat($t3, '&#x9;')"/>
 	<xsl:variable name="t5" select="concat($t4, '&#x9;')"/>
+	<xsl:variable name="t6" select="concat($t5, '&#x9;')"/>
 	<xsl:variable name="nl1" select="'&#xA;'"/>
 	<xsl:variable name="nl2" select="concat($nl1, '&#xA;')"/>
 	<!--=======================================================================-->
@@ -21,32 +23,24 @@
 	"$schema": "http://json-schema.org/schema#",
 	"additionalProperties": false,
 	"definitions": {
-		".FORMULAR": {
+		".<xsl:value-of select="Form/@Name"/>": {
 			"additionalProperties": false,
-			"properties": {
-				"ROW": {
-					"$ref": "#/definitions/T_Row"
-				}
-			},
-			"required": [
-				"ROW"
-			],
+			"$ref": "#/definitions/T_<xsl:value-of select="Form/@Name"/>",
 			"type": "object"
 		},
-		"T_Row": {
+		"T_<xsl:value-of select="Form/@Name"/>": {
 			"additionalProperties": false,
 			"properties": {
-				"FORM_TYP": {
+				".FORM_TYP": {
 					"type": "string"
-				}<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="Elm"/>
+				},<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="Elm"/>
 			<xsl:apply-templates select="/Form/DataDic/Tab/Tab" mode="Elm"/>
-			<!--=======================================================================-->
 			}	
 		}
 	},
 	"properties": {
-		"FORMULAR": {
-			"$ref": "#/definitions/.FORMULAR"
+		"<xsl:value-of select="Form/@Name"/>": {
+			"$ref": "#/definitions/.<xsl:value-of select="Form/@Name"/>"
 		}
 	},
 	"type": "object"
@@ -56,6 +50,7 @@
 	<!-- Fld-Template, erstellt ein Feld-Element -->
 	<!--=======================================================================-->
 	<xsl:template match="Fld" mode="Elm">
+		<xsl:param name="indent" select="$t4"></xsl:param>
 		<xsl:variable name="type">
 			<xsl:choose>
 				<xsl:when test="@Type='INT'">
@@ -64,21 +59,42 @@
 				<xsl:when test="@Type='BOOL'">
 					<xsl:text>boolean</xsl:text>
 				</xsl:when>
+				<xsl:when test="@Type='DATE'">
+					<xsl:text>string</xsl:text>
+				</xsl:when>
 				<xsl:otherwise>
 					<xsl:text>string</xsl:text>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<xsl:text>,</xsl:text>
-				"<xsl:value-of select="@Name"/>": {<xsl:if test="@Length">
-					"maximum": 0,		
-					"minimum": <xsl:value-of select="@Length"/>,</xsl:if>
-					"type": "<xsl:value-of select="$type"/>"
-				}</xsl:template>
+		<xsl:if test="position() &gt; 1">
+			<xsl:text>,</xsl:text>
+		</xsl:if>
+		<xsl:value-of select="$nl1"/>
+		<xsl:value-of select="$indent"/>".<xsl:value-of select="@Name"/>": {<xsl:if test="@Length">
+			<xsl:value-of select="$nl1"/>
+			<xsl:value-of select="concat($indent,$t1)"/>"minLength": 0,<xsl:value-of select="$nl1"/>
+			<xsl:value-of select="concat($indent,$t1)"/>"maxLength": <xsl:value-of select="@Length"/>,</xsl:if>
+		<xsl:value-of select="$nl1"/>
+		<xsl:value-of select="concat($indent,$t1)"/>"type": "<xsl:value-of select="$type"/>"<xsl:value-of select="$nl1"/>
+		<xsl:value-of select="concat($indent,'}')"/>
+	</xsl:template>
 	<!--=======================================================================-->
 	<!-- Fld-Template, erstellt ein Subtabellen-Element -->
 	<!--=======================================================================-->
-	<xsl:template match="Tab" mode="Elm"></xsl:template>
+	<xsl:template match="Tab" mode="Elm">
+		<xsl:if test="position() = 1">
+		</xsl:if>
+		<xsl:text>,</xsl:text>
+		<xsl:value-of select="$nl1"/>
+		<xsl:value-of select="$t4"/>".<xsl:value-of select="@Name"/>": {<xsl:value-of select="$nl1"/>
+		<xsl:value-of select="$t5"/>"type": "object",<xsl:value-of select="$nl1"/>
+		<xsl:value-of select="$t5"/>"properties": {<xsl:text></xsl:text>
+					<xsl:apply-templates select="./Fld" mode="Elm">
+			<xsl:with-param name="indent" select="$t6"/>
+		</xsl:apply-templates>
+					}
+				}</xsl:template>
 	<!--=======================================================================-->
 	<!-- Leer-Template, tut gar nichts -->
 	<!--=======================================================================-->

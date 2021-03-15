@@ -3,12 +3,12 @@
 	"$schema": "http://json-schema.org/schema#",
 	"additionalProperties": false,
 	"definitions": {
-		".MESSPROT18": {
+		".VSE_IA18": {
 			"additionalProperties": false,
-			"$ref": "#/definitions/T_MESSPROT18",
+			"$ref": "#/definitions/T_VSE_IA18",
 			"type": "object"
 		},
-		"T_MESSPROT18": {
+		"T_VSE_IA18": {
 			"additionalProperties": false,
 			"properties": {
 				".FORM_TYP": {
@@ -238,13 +238,10 @@
 					"maxLength": 60,
 					"type": "string"
 				},
-				".GEBAEUDENR": {
+				".U_SPRACHE": {
 					"minLength": 0,
-					"maxLength": 16,
+					"maxLength": 2,
 					"type": "string"
-				},
-				".EGID": {
-					"type": "integer"
 				},
 				".ABONR": {
 					"minLength": 0,
@@ -259,46 +256,25 @@
 				".TERMIN": {
 					"type": "string"
 				},
+				".ABSCHLTERMIN": {
+					"type": "string"
+				},
 				".PACKNAME": {
 					"minLength": 0,
 					"maxLength": 16,
 					"type": "string"
 				},
-				".MP_NR": {
-					"minLength": 0,
-					"maxLength": 12,
-					"type": "string"
+				".ANZWOHNG": {
+					"type": "integer"
 				},
-				".RAPPORT_NR": {
-					"minLength": 0,
-					"maxLength": 16,
-					"type": "string"
-				},
-				".AN_INST": {
+				".ZEV": {
 					"type": "boolean"
 				},
-				".AN_KONTR": {
-					"type": "boolean"
-				},
-				".EIGENT": {
+				".ARCH": {
 					"type": "boolean"
 				},
 				".VERW": {
 					"type": "boolean"
-				},
-				".STROMK": {
-					"type": "boolean"
-				},
-				".INST": {
-					"type": "boolean"
-				},
-				".AG_X": {
-					"type": "boolean"
-				},
-				".AG_XTEXT": {
-					"minLength": 0,
-					"maxLength": 16,
-					"type": "string"
 				},
 				".GES_NAME1": {
 					"minLength": 0,
@@ -310,12 +286,12 @@
 					"maxLength": 40,
 					"type": "string"
 				},
-				".GES_ADRESSE1": {
+				".GES_ADR1": {
 					"minLength": 0,
 					"maxLength": 40,
 					"type": "string"
 				},
-				".GES_ADRESSE2": {
+				".GES_ADR2": {
 					"minLength": 0,
 					"maxLength": 40,
 					"type": "string"
@@ -345,427 +321,262 @@
 					"maxLength": 60,
 					"type": "string"
 				},
-				".BEMERKUNG": {
+				".GES_SPRACHE": {
 					"minLength": 0,
-					"maxLength": 40,
+					"maxLength": 2,
 					"type": "string"
 				},
-				".ZEV": {
+				".I_NEW": {
 					"type": "boolean"
 				},
-				".ZEV_TEXT": {
+				".I_EXTENT": {
+					"type": "boolean"
+				},
+				".I_REMOVE": {
+					"type": "boolean"
+				},
+				".I_PROV": {
+					"type": "boolean"
+				},
+				".I_TEMP": {
+					"type": "boolean"
+				},
+				".I_AREA": {
+					"type": "boolean"
+				},
+				".HAK_IST": {
 					"minLength": 0,
-					"maxLength": 40,
+					"maxLength": 1,
 					"type": "string"
 				},
-				".ZAEHLER": {
+				".HAK_AENDERUNG": {
 					"minLength": 0,
-					"maxLength": 40,
+					"maxLength": 1,
 					"type": "string"
 				},
-				".ANLJAHR0": {
-					"type": "integer"
-				},
-				".ANL1": {
-					"minLength": 0,
-					"maxLength": 40,
+				".I_TEXT": {
 					"type": "string"
 				},
-				".ANLJAHR1": {
-					"type": "integer"
-				},
-				".ANL2": {
-					"minLength": 0,
-					"maxLength": 40,
-					"type": "string"
-				},
-				".ANLJAHR2": {
-					"type": "integer"
-				},
-				".MP_NEU": {
-					"type": "boolean"
-				},
-				".MP_BEST": {
-					"type": "boolean"
-				},
-				".MP_ANDERS": {
-					"type": "boolean"
-				},
-				".MP_ERWEIT": {
-					"type": "boolean"
-				},
-				".MP_X": {
-					"type": "boolean"
-				},
-				".MP_XTEXT": {
+				".V_LEIST_VOM": {
 					"minLength": 0,
 					"maxLength": 20,
 					"type": "string"
 				},
-				".MP_SK": {
-					"type": "boolean"
-				},
-				".MP_AK": {
-					"type": "boolean"
-				},
-				".MP_PK": {
-					"type": "boolean"
-				},
-				".MP_SP": {
-					"type": "boolean"
-				},
-				".IA_DATUM": {
-					"type": "string"
-				},
-				".KONDATUM_SK": {
-					"type": "string"
-				},
-				".KONDATUM_AKPKSP": {
-					"type": "string"
-				},
-				".KONDATUM": {
-					"type": "string"
-				},
-				".KONTUMFANG": {
-					"type": "string"
-				},
-				".S_1": {
-					"type": "boolean"
-				},
-				".S_2": {
-					"type": "boolean"
-				},
-				".S_3": {
-					"type": "boolean"
-				},
-				".S_4": {
-					"type": "boolean"
-				},
-				".S_5": {
-					"type": "boolean"
-				},
-				".S_6": {
-					"type": "boolean"
-				},
-				".S_7": {
-					"type": "boolean"
-				},
-				".S_8": {
-					"type": "boolean"
-				},
-				".S_9": {
-					"type": "boolean"
-				},
-				".S_18": {
-					"type": "boolean"
-				},
-				".S_18TEXT": {
+				".V_LEIST_AN": {
 					"minLength": 0,
-					"maxLength": 50,
+					"maxLength": 20,
 					"type": "string"
 				},
-				".S_10": {
-					"type": "boolean"
-				},
-				".S_TNS": {
-					"type": "boolean"
-				},
-				".S_TNC": {
-					"type": "boolean"
-				},
-				".S_TNCS": {
-					"type": "boolean"
-				},
-				".S_SCH3": {
-					"type": "boolean"
-				},
-				".S_TNX": {
-					"type": "boolean"
-				},
-				".S_TNXTEXT": {
+				".V_LEISTMAX": {
 					"minLength": 0,
-					"maxLength": 14,
+					"maxLength": 20,
 					"type": "string"
 				},
-				".S_12": {
+				".STEUER_VNB": {
 					"type": "boolean"
 				},
-				".S_FUND": {
+				".SYSTDIENSTL": {
 					"type": "boolean"
 				},
-				".S_TIEFENERDER": {
+				".MITHKN": {
 					"type": "boolean"
 				},
-				".S_BANDERDER": {
-					"type": "boolean"
+				".RSEANZ": {
+					"type": "integer"
 				},
-				".S_ERDX": {
-					"type": "boolean"
-				},
-				".S_ERDXTEXT": {
+				".RSEKDO": {
 					"minLength": 0,
 					"maxLength": 30,
 					"type": "string"
 				},
-				".S_11": {
-					"type": "boolean"
-				},
-				".S_13": {
-					"type": "boolean"
-				},
-				".S_14": {
-					"type": "boolean"
-				},
-				".S_15": {
-					"type": "boolean"
-				},
-				".S_16": {
-					"type": "boolean"
-				},
-				".S_17": {
-					"type": "boolean"
-				},
-				".F_1": {
-					"type": "boolean"
-				},
-				".F_2": {
-					"type": "boolean"
-				},
-				".F_3": {
-					"type": "boolean"
-				},
-				".F_4": {
-					"type": "boolean"
-				},
-				".F_5N": {
-					"type": "boolean"
-				},
-				".F_6": {
-					"type": "boolean"
-				},
-				".F_6TEXT": {
-					"minLength": 0,
-					"maxLength": 44,
-					"type": "string"
-				},
-				".F_SPANNUNG": {
+				".RSENR": {
 					"minLength": 0,
 					"maxLength": 10,
 					"type": "string"
 				},
-				".F_BEM": {
+				".RSEMONT": {
 					"minLength": 0,
-					"maxLength": 36,
+					"maxLength": 16,
 					"type": "string"
 				},
-				".N_MESSNORM": {
+				".RSENEU": {
+					"type": "boolean"
+				},
+				".RSEVORH": {
+					"type": "boolean"
+				},
+				".RSEAUSW": {
+					"type": "boolean"
+				},
+				".RSEDEMONT": {
+					"type": "boolean"
+				},
+				".RSEUMMONT": {
+					"type": "boolean"
+				},
+				".ANSCH_KAB": {
+					"type": "boolean"
+				},
+				".ANSCH_FREI": {
+					"type": "boolean"
+				},
+				".ANSCH_ORT": {
+					"minLength": 0,
+					"maxLength": 24,
+					"type": "string"
+				},
+				".ANSCH_MAXBEZ": {
+					"minLength": 0,
+					"maxLength": 20,
+					"type": "string"
+				},
+				".ANSCH_MAXSPEIS": {
+					"minLength": 0,
+					"maxLength": 20,
+					"type": "string"
+				},
+				".ANSCH_AS_VOR": {
+					"type": "integer"
+				},
+				".ANSCH_MOD": {
 					"minLength": 0,
 					"maxLength": 14,
 					"type": "string"
 				},
-				".N_MESS1": {
+				".ANSCH_HAKINT": {
+					"type": "boolean"
+				},
+				".ANSCH_HAKNR": {
 					"minLength": 0,
-					"maxLength": 40,
+					"maxLength": 20,
 					"type": "string"
 				},
-				".N_MESS2": {
-					"minLength": 0,
-					"maxLength": 40,
-					"type": "string"
-				},
-				".N_MESS3": {
-					"minLength": 0,
-					"maxLength": 40,
-					"type": "string"
-				},
-				".N_NORM1": {
+				".ANSCH_NEU": {
 					"type": "boolean"
 				},
-				".N_NORM1TEXT": {
-					"minLength": 0,
-					"maxLength": 24,
-					"type": "string"
-				},
-				".N_NORM2": {
+				".ANSCH_VER": {
 					"type": "boolean"
 				},
-				".N_NORM2TEXT": {
-					"minLength": 0,
-					"maxLength": 24,
-					"type": "string"
-				},
-				".N_NORM3": {
+				".ANSCH_WECHS": {
 					"type": "boolean"
 				},
-				".N_NORM3TEXT": {
-					"minLength": 0,
-					"maxLength": 24,
-					"type": "string"
-				},
-				".N_NORM4": {
-					"type": "boolean"
-				},
-				".N_NORM4TEXT": {
-					"minLength": 0,
-					"maxLength": 24,
-					"type": "string"
-				},
-				".N_NORM5": {
-					"type": "boolean"
-				},
-				".N_NORM5TEXT": {
-					"minLength": 0,
-					"maxLength": 24,
-					"type": "string"
-				},
-				".N_NORM6": {
-					"type": "boolean"
-				},
-				".N_NORM6TEXT": {
-					"minLength": 0,
-					"maxLength": 24,
-					"type": "string"
-				},
-				".N_NORM7": {
-					"type": "boolean"
-				},
-				".N_NORM7TEXT": {
-					"minLength": 0,
-					"maxLength": 24,
-					"type": "string"
-				},
-				".N_NORM8": {
-					"type": "boolean"
-				},
-				".N_NORM8TEXT": {
-					"minLength": 0,
-					"maxLength": 24,
-					"type": "string"
-				},
-				".SKLISTE_BEMTITEL": {
-					"minLength": 0,
-					"maxLength": 30,
-					"type": "string"
-				},
-				".SK_ASBEST0": {
-					"type": "boolean"
-				},
-				".SK_ASBEST1": {
-					"type": "boolean"
-				},
-				".SK_1": {
-					"type": "boolean"
-				},
-				".SK_1NORM": {
-					"minLength": 0,
-					"maxLength": 12,
-					"type": "string"
-				},
-				".SK_2": {
-					"type": "boolean"
-				},
-				".SK_3": {
-					"type": "boolean"
-				},
-				".DOKU": {
-					"type": "boolean"
+				".ANSCH_AS_ERF": {
+					"type": "integer"
 				},
 				".SCHEMA": {
 					"type": "boolean"
 				},
-				".ZUSATZ1": {
+				".PLAN": {
 					"type": "boolean"
 				},
-				".ZUSTXT1": {
-					"minLength": 0,
-					"maxLength": 24,
-					"type": "string"
-				},
-				".OHNEMANGEL": {
+				".GESUCH": {
 					"type": "boolean"
 				},
-				".MANGELTEXT": {
-					"minLength": 0,
-					"maxLength": 25,
-					"type": "string"
-				},
-				".GGZ_NAME1": {
-					"minLength": 0,
-					"maxLength": 40,
-					"type": "string"
-				},
-				".GGZ_NAME2": {
-					"minLength": 0,
-					"maxLength": 40,
-					"type": "string"
-				},
-				".GGZ_ADRESSE1": {
-					"minLength": 0,
-					"maxLength": 40,
-					"type": "string"
-				},
-				".GGZ_ADRESSE2": {
-					"minLength": 0,
-					"maxLength": 40,
-					"type": "string"
-				},
-				".GGZ_PLZ": {
-					"minLength": 0,
-					"maxLength": 8,
-					"type": "string"
-				},
-				".GGZ_ORT": {
+				".GESUCHTXT": {
 					"minLength": 0,
 					"maxLength": 30,
 					"type": "string"
 				},
-				".GGZ_KONZESS": {
-					"minLength": 0,
-					"maxLength": 16,
-					"type": "string"
+				".VERBLIST": {
+					"type": "boolean"
 				},
-				".GGZ_TELNR": {
-					"minLength": 0,
-					"maxLength": 16,
-					"type": "string"
+				".TALIST": {
+					"type": "boolean"
 				},
-				".GGZ_EMAIL": {
-					"minLength": 0,
-					"maxLength": 60,
-					"type": "string"
+				".DISP": {
+					"type": "boolean"
 				},
-				".GGZ_DATUM": {
-					"type": "string"
+				".STEUER": {
+					"type": "boolean"
 				},
-				".GGZ_GRUND": {
-					"minLength": 0,
-					"maxLength": 60,
-					"type": "string"
+				".BEILLEER": {
+					"type": "boolean"
 				},
-				".GGZ_SIGN": {
+				".BEILTXT": {
 					"minLength": 0,
 					"maxLength": 30,
 					"type": "string"
 				},
-				".GGZ_SIKT": {
-					"minLength": 0,
-					"maxLength": 30,
+				".INSTBEM": {
 					"type": "string"
 				},
 				".SIGN_DATUM": {
 					"type": "string"
 				},
-				".KONTR_SIGN": {
+				".SIGNATURE": {
 					"minLength": 0,
 					"maxLength": 30,
 					"type": "string"
 				},
-				".KONTR_SIKT": {
+				".SIGNKT": {
 					"minLength": 0,
 					"maxLength": 30,
 					"type": "string"
 				},
-				".SKListe": {
+				".EW_BEW": {
+					"type": "boolean"
+				},
+				".EW_VORB": {
+					"type": "boolean"
+				},
+				".EW_NBEW": {
+					"type": "boolean"
+				},
+				".EW_SCHEMA": {
+					"type": "boolean"
+				},
+				".EW_SCHEMNR": {
+					"minLength": 0,
+					"maxLength": 10,
+					"type": "string"
+				},
+				".EW_BEM": {
+					"type": "string"
+				},
+				".EW_ADR": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".EW_SIGNDAT": {
+					"type": "string"
+				},
+				".EW_SIGN": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".EW_SIGNKT": {
+					"minLength": 0,
+					"maxLength": 30,
+					"type": "string"
+				},
+				".T1": {
+					"minLength": 0,
+					"maxLength": 20,
+					"type": "string"
+				},
+				".T2": {
+					"minLength": 0,
+					"maxLength": 20,
+					"type": "string"
+				},
+				".T3": {
+					"minLength": 0,
+					"maxLength": 20,
+					"type": "string"
+				},
+				".T4": {
+					"minLength": 0,
+					"maxLength": 20,
+					"type": "string"
+				},
+				".T5": {
+					"minLength": 0,
+					"maxLength": 20,
+					"type": "string"
+				},
+				".TAListe": {
 					"type": "object",
 					"properties": {
 						".ID": {
@@ -777,85 +588,131 @@
 						".SEQ_FORM": {
 							"type": "integer"
 						},
-						".NUMMER": {
+						".BEZUEGER": {
 							"minLength": 0,
-							"maxLength": 23,
+							"maxLength": 40,
 							"type": "string"
 						},
-						".BEZ": {
+						".RECHADR": {
 							"minLength": 0,
-							"maxLength": 120,
+							"maxLength": 100,
 							"type": "string"
 						},
-						".LEIT_ART": {
+						".GEBTEIL": {
 							"minLength": 0,
-							"maxLength": 12,
+							"maxLength": 40,
 							"type": "string"
 						},
-						".LEIT_ANZ": {
+						".NUTZUNG": {
 							"minLength": 0,
-							"maxLength": 22,
+							"maxLength": 40,
 							"type": "string"
 						},
-						".I_ART": {
+						".EVUANLNR": {
 							"minLength": 0,
-							"maxLength": 10,
+							"maxLength": 20,
 							"type": "string"
 						},
-						".I_INSTR": {
-							"minLength": 0,
-							"maxLength": 8,
-							"type": "string"
-						},
-						".M_IKMAX": {
-							"minLength": 0,
-							"maxLength": 8,
-							"type": "string"
-						},
-						".M_IKMIN": {
-							"minLength": 0,
-							"maxLength": 8,
-							"type": "string"
-						},
-						".M_IKMAX_LN": {
-							"minLength": 0,
-							"maxLength": 8,
-							"type": "string"
-						},
-						".M_IKMIN_LN": {
-							"minLength": 0,
-							"maxLength": 8,
-							"type": "string"
-						},
-						".M_RISO": {
-							"minLength": 0,
-							"maxLength": 8,
-							"type": "string"
-						},
-						".M_LEIT": {
-							"minLength": 0,
-							"maxLength": 8,
-							"type": "string"
-						},
-						".FI_IN": {
+						".STOCKWERK": {
 							"minLength": 0,
 							"maxLength": 6,
 							"type": "string"
 						},
-						".FI_IDN": {
+						".RAUM": {
 							"minLength": 0,
 							"maxLength": 6,
 							"type": "string"
 						},
-						".FI_T": {
+						".TARIF": {
 							"minLength": 0,
-							"maxLength": 8,
+							"maxLength": 30,
 							"type": "string"
 						},
-						".BEMERK": {
+						".SICH_IN": {
+							"type": "integer"
+						},
+						".WERKNR": {
 							"minLength": 0,
-							"maxLength": 120,
+							"maxLength": 20,
 							"type": "string"
+						},
+						".MONT_ORT": {
+							"minLength": 0,
+							"maxLength": 30,
+							"type": "string"
+						},
+						".ZEV": {
+							"type": "boolean"
+						},
+						".ANZ_AUSSENL": {
+							"type": "integer"
+						},
+						".NEU": {
+							"type": "boolean"
+						},
+						".VORH": {
+							"type": "boolean"
+						},
+						".AUSW": {
+							"type": "boolean"
+						},
+						".DEMONT": {
+							"type": "boolean"
+						},
+						".UMMONT": {
+							"type": "boolean"
+						}
+					}
+				},
+				".VGListe": {
+					"type": "object",
+					"properties": {
+						".ID": {
+							"type": "integer"
+						},
+						".FORM_ID": {
+							"type": "integer"
+						},
+						".SEQ_FORM": {
+							"type": "integer"
+						},
+						".ANZAHL": {
+							"type": "integer"
+						},
+						".VERBRAUCHER": {
+							"type": "boolean"
+						},
+						".ERZEUGER": {
+							"type": "boolean"
+						},
+						".SPEICHER": {
+							"type": "boolean"
+						},
+						".TEXT": {
+							"minLength": 0,
+							"maxLength": 50,
+							"type": "string"
+						},
+						".GES_DATUM": {
+							"type": "string"
+						},
+						".KVA": {
+							"minLength": 0,
+							"maxLength": 20,
+							"type": "string"
+						},
+						".KVA_ANS_NETZ": {
+							"minLength": 0,
+							"maxLength": 20,
+							"type": "string"
+						},
+						".SPEICH_KAP": {
+							"minLength": 0,
+							"maxLength": 20,
+							"type": "string"
+						},
+						".ANZ_AUSSENL": {
+							"type": "integer"
 						}
 					}
 				}
@@ -863,8 +720,8 @@
 		}
 	},
 	"properties": {
-		"MESSPROT18": {
-			"$ref": "#/definitions/.MESSPROT18"
+		"VSE_IA18": {
+			"$ref": "#/definitions/.VSE_IA18"
 		}
 	},
 	"type": "object"
