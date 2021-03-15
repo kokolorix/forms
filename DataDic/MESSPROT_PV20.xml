@@ -1,0 +1,799 @@
+<?xml version="1.0"?>
+<Form Name="MESSPROT_PV20" ID_FORMSET="17" FORMTYP="V">
+	<DataDic>
+		<Tab ID="486" NameExtend="true" German="PV Mess- und Prüfprotokoll" French="PV prot. d'essais - mesures" Status="1" Italian="FV - Rapporto di misura e di collaudo">
+			<Tab ID="1" Name="SKListe" German="AC-Messungen" French="Mesures AC" Status="1" ID_Parent="486" NameExtend="true" Italian="Circuiti">
+				<Fld ID="24534" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true"/>
+				<Fld ID="24535" Name="FORM_ID" German="FORM_ID" French="FORM_ID" Sequenz="2" Type="INT" Required="true" ForeignTab="MESSPROT08" ForeignFld="ID" Linked="true" Child="true"/>
+				<Fld ID="24536" Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Sequenz="3" Type="INT"/>
+				<Fld ID="24537" Name="NUMMER" German="Nummer" French="Numéro" Sequenz="4" Type="STRING" Length="10" UDom="1" UDomRec="2" UDomFld="2" Italian="Numero">
+					<Udo_DE>
+						<Uda>F1</Uda>
+						<Uda>F2</Uda>
+						<Uda>F3</Uda>
+						<Uda>F4</Uda>
+						<Uda>F5</Uda>
+						<Uda>F6</Uda>
+						<Uda>F7</Uda>
+						<Uda>F8</Uda>
+						<Uda>F9</Uda>
+						<Uda>F10</Uda>
+						<Uda>F11</Uda>
+						<Uda>F12</Uda>
+					</Udo_DE>
+					<Udo_FR>
+						<Uda>F1</Uda>
+						<Uda>F2</Uda>
+						<Uda>F3</Uda>
+						<Uda>F4</Uda>
+						<Uda>F5</Uda>
+						<Uda>F6</Uda>
+						<Uda>F7</Uda>
+						<Uda>F8</Uda>
+						<Uda>F9</Uda>
+						<Uda>F10</Uda>
+						<Uda>F11</Uda>
+						<Uda>F12</Uda>
+					</Udo_FR>
+					<Udo_IT>
+						<Uda>F1</Uda>
+						<Uda>F2</Uda>
+						<Uda>F3</Uda>
+						<Uda>F4</Uda>
+						<Uda>F5</Uda>
+						<Uda>F6</Uda>
+						<Uda>F7</Uda>
+						<Uda>F8</Uda>
+						<Uda>F9</Uda>
+						<Uda>F10</Uda>
+						<Uda>F11</Uda>
+						<Uda>F12</Uda>
+					</Udo_IT>
+				</Fld>
+				<Fld ID="24538" Name="BEZ" German="Bezeichnung" French="Désignation" Sequenz="5" Type="STRING" Length="120" UDom="1" UDomRec="2" UDomFld="2" Italian="Designazione">
+					<Udo_DE>
+						<Uda>HAK</Uda>
+						<Uda>Licht EG</Uda>
+						<Uda>Licht 1.OG</Uda>
+						<Uda>Küche</Uda>
+						<Uda>Geschirrspüler</Uda>
+						<Uda>Kochherd</Uda>
+						<Uda>Steamer</Uda>
+						<Uda>Keller</Uda>
+						<Uda>Boiler (300l)</Uda>
+						<Uda>Heizung</Uda>
+						<Uda>Waschmaschine</Uda>
+						<Uda>Garage</Uda>
+						<Uda>UG</Uda>
+						<Uda>SGK</Uda>
+						<Uda>Aussenbeleuchtung</Uda>
+						<Uda>Mansarde</Uda>
+					</Udo_DE>
+					<Udo_FR>
+						<Uda>Coffret d'introduction</Uda>
+						<Uda>Lumière REZ</Uda>
+						<Uda>Lumière 1er étage</Uda>
+						<Uda>Cuisine</Uda>
+						<Uda>Lave-vaisselle</Uda>
+						<Uda>Cuisinière</Uda>
+						<Uda>Steamer</Uda>
+						<Uda>Cave</Uda>
+						<Uda>Chauffe-eau</Uda>
+						<Uda>Chauffage</Uda>
+						<Uda>Machine à laver</Uda>
+						<Uda>Garage</Uda>
+						<Uda>Tableau d'étage</Uda>
+						<Uda>Ensemble d'appareillage</Uda>
+						<Uda>Eclairage extérieur</Uda>
+						<Uda>Mansarde</Uda>
+					</Udo_FR>
+					<Udo_IT><Uda>DPS</Uda><Uda>Luce piano terra</Uda><Uda>Luce 1° piano</Uda><Uda>Cucina</Uda><Uda>Lavastoviglie</Uda><Uda>Cucina economica</Uda><Uda>Ferro da stiro</Uda><Uda>Cantina</Uda><Uda>Boiler (300l)</Uda><Uda>Riscaldamento</Uda><Uda>Lavatrice</Uda><Uda>Garage</Uda><Uda>Piano interrato</Uda><Uda>App. ass. di protezione e manovra</Uda><Uda>Impianto d’illuminazione esterno</Uda><Uda>Mansarda</Uda></Udo_IT></Fld>
+				<Fld ID="24539" Name="LEIT_ART" German="Leiter Art" French="Câble type" Sequenz="6" Type="STRING" Length="12" UDom="1" UDomRec="2" UDomFld="2" Italian="Tipo di cavo">
+					<Udo_DE>
+						<Uda>T</Uda>
+						<Uda>TT</Uda>
+						<Uda>TT-CLT</Uda>
+						<Uda>HO7V-U</Uda>
+						<Uda>HO7V-R</Uda>
+						<Uda>CH-N1W-U</Uda>
+						<Uda>CH-N1W-R</Uda>
+					</Udo_DE>
+					<Udo_FR>
+						<Uda>T</Uda>
+						<Uda>TT</Uda>
+						<Uda>TT-CLT</Uda>
+						<Uda>HO7V-U</Uda>
+						<Uda>HO7V-R</Uda>
+						<Uda>CH-N1W-U</Uda>
+						<Uda>CH-N1W-R</Uda>
+					</Udo_FR>
+					<Udo_IT>
+						<Uda>T</Uda>
+						<Uda>TT</Uda>
+						<Uda>TT-CLT</Uda>
+						<Uda>HO7V-U</Uda>
+						<Uda>HO7V-R</Uda>
+						<Uda>CH-N1W-U</Uda>
+						<Uda>CH-N1W-R</Uda>
+					</Udo_IT>
+				</Fld>
+				<Fld ID="24540" Name="LEIT_ANZ" German="Anzahl Leiter" French="Câble nbr conducteurs" Sequenz="7" Type="STRING" Length="22" UDom="1" UDomRec="2" UDomFld="2" Italian="Numero Conduttori">
+					<Udo_DE>
+						<Uda>3x1.5</Uda>
+						<Uda>4x1.5</Uda>
+						<Uda>4x2.5</Uda>
+						<Uda>5x1.5</Uda>
+						<Uda>5x2.5</Uda>
+						<Uda>5x4</Uda>
+						<Uda>5x6</Uda>
+						<Uda>5x10</Uda>
+						<Uda>5x16</Uda>
+					</Udo_DE>
+					<Udo_FR>
+						<Uda>3x1.5</Uda>
+						<Uda>4x1.5</Uda>
+						<Uda>4x2.5</Uda>
+						<Uda>5x1.5</Uda>
+						<Uda>5x2.5</Uda>
+						<Uda>5x4</Uda>
+						<Uda>5x6</Uda>
+						<Uda>5x10</Uda>
+						<Uda>5x16</Uda>
+					</Udo_FR>
+					<Udo_IT>
+						<Uda>3x1.5</Uda>
+						<Uda>4x1.5</Uda>
+						<Uda>4x2.5</Uda>
+						<Uda>5x1.5</Uda>
+						<Uda>5x2.5</Uda>
+						<Uda>5x4</Uda>
+						<Uda>5x6</Uda>
+						<Uda>5x10</Uda>
+						<Uda>5x16</Uda>
+					</Udo_IT>
+				</Fld>
+				<Fld ID="24541" Name="I_ART" German="Art / Charakteristik" French="c/s Type" Sequenz="8" Type="STRING" Length="10" UDom="1" UDomRec="2" UDomFld="2" Italian="Tipo / caratteristica">
+					<Udo_DE>
+						<Uda>DI flink</Uda>
+						<Uda>DII träg</Uda>
+						<Uda>DIIIträg</Uda>
+						<Uda>LSB</Uda>
+						<Uda>LSC</Uda>
+						<Uda>LSD</Uda>
+						<Uda>FI-LSB</Uda>
+						<Uda>FI-LSC</Uda>
+						<Uda>FI-LSD</Uda>
+						<Uda>DIN00</Uda>
+						<Uda>NH00</Uda>
+						<Uda>NH1</Uda>
+						<Uda>NH2</Uda>
+						<Uda>NH3</Uda>
+					</Udo_DE>
+					<Udo_FR>
+						<Uda>DI</Uda>
+						<Uda>DII</Uda>
+						<Uda>DIII</Uda>
+						<Uda>LSB</Uda>
+						<Uda>LSC</Uda>
+						<Uda>LSD</Uda>
+						<Uda>FI-LSB</Uda>
+						<Uda>FI-LSC</Uda>
+						<Uda>FI-LSD</Uda>
+						<Uda>DIN00</Uda>
+						<Uda>NH1</Uda>
+						<Uda>NH2</Uda>
+						<Uda>NH3</Uda>
+					</Udo_FR>
+					<Udo_IT>
+						<Uda>DI</Uda>
+						<Uda>DII</Uda>
+						<Uda>DIII</Uda>
+						<Uda>LSB</Uda>
+						<Uda>LSC</Uda>
+						<Uda>LSD</Uda>
+						<Uda>FI-LSB</Uda>
+						<Uda>FI-LSC</Uda>
+						<Uda>FI-LSD</Uda>
+						<Uda>DIN00</Uda>
+						<Uda>NH1</Uda>
+						<Uda>NH2</Uda>
+						<Uda>NH3</Uda>
+					</Udo_IT>
+				</Fld>
+				<Fld ID="24542" Name="I_INSTR" German="I n" French="I n" Sequenz="9" Type="STRING" Length="8" UDom="1" UDomRec="2" UDomFld="2" Italian="I n">
+					<Udo_DE>
+						<Uda>6</Uda>
+						<Uda>10</Uda>
+						<Uda>13</Uda>
+						<Uda>16</Uda>
+						<Uda>20</Uda>
+						<Uda>25</Uda>
+						<Uda>32</Uda>
+						<Uda>40</Uda>
+						<Uda>63</Uda>
+						<Uda>80</Uda>
+						<Uda>100</Uda>
+						<Uda>125</Uda></Udo_DE>
+					<Udo_FR>
+						<Uda>6</Uda>
+						<Uda>10</Uda>
+						<Uda>13</Uda>
+						<Uda>16</Uda>
+						<Uda>20</Uda>
+						<Uda>25</Uda>
+						<Uda>32</Uda>
+						<Uda>40</Uda>
+						<Uda>63</Uda>
+						<Uda>80</Uda>
+						<Uda>100</Uda>
+						<Uda>125</Uda>
+					</Udo_FR>
+					<Udo_IT>
+						<Uda>6</Uda>
+						<Uda>10</Uda>
+						<Uda>13</Uda>
+						<Uda>16</Uda>
+						<Uda>20</Uda>
+						<Uda>25</Uda>
+						<Uda>32</Uda>
+						<Uda>40</Uda>
+						<Uda>63</Uda>
+						<Uda>80</Uda>
+						<Uda>100</Uda>
+						<Uda>125</Uda>
+					</Udo_IT>
+				</Fld>
+				<Fld ID="24543" Name="M_IKMAX" German="Ik Anfang" French="Ik début" Sequenz="10" Type="STRING" Length="8" Italian="Ik inizio"/>
+				<Fld ID="24544" Name="M_IKMIN" German="Ik Ende" French="Ik fin" Sequenz="11" Type="STRING" Length="8" Italian="Ik finale"/>
+				<Fld Name="M_IKMAX_LN" German="Ik Anfang" French="Ik début" Type="STRING" Length="8" Italian="Ik inizio"/>
+				<Fld Name="M_IKMIN_LN" Length="8" Type="STRING" German="Ik Ende" French="Ik fin" Italian="Ik finale"/>
+				<Fld ID="24545" Name="M_RISO" German="R Isolation" French="R isolation" Sequenz="12" Type="STRING" Length="8" UDom="1" UDomRec="2" UDomFld="2" Italian="R isolamento"/>
+				<Fld ID="24546" Name="M_LEIT" German="Leitfähigkeit Schutzleiter" French="Continuité de conducteur PE" Sequenz="13" Type="STRING" Length="8" UDom="1" UDomRec="2" UDomFld="2" Italian="Conduttore protettivo di condu"/>
+				<Fld ID="24547" Name="FI_IN" German="FI In" French="FI In" Sequenz="14" Type="STRING" Length="5" UDom="1" UDomRec="2" UDomFld="2" Italian="FI In">
+					<Udo_DE>
+						<Uda>13</Uda>
+						<Uda>16</Uda>
+						<Uda>25</Uda>
+						<Uda>32</Uda>
+						<Uda>40</Uda><Uda>63</Uda></Udo_DE>
+					<Udo_FR>
+						<Uda>13</Uda>
+						<Uda>16</Uda>
+						<Uda>25</Uda>
+						<Uda>32</Uda>
+						<Uda>40</Uda>
+						<Uda>63</Uda>
+					</Udo_FR>
+					<Udo_IT>
+						<Uda>13</Uda>
+						<Uda>16</Uda>
+						<Uda>25</Uda>
+						<Uda>32</Uda>
+						<Uda>40</Uda>
+						<Uda>63</Uda>
+					</Udo_IT>
+				</Fld>
+				<Fld ID="24548" Name="FI_IDN" German="FI IdN" French="FI IdN" Sequenz="15" Type="STRING" Length="6" UDom="1" UDomRec="2" UDomFld="2" Italian="FI IdN">
+					<Udo_DE>
+						<Uda>10</Uda>
+						<Uda>30</Uda>
+						<Uda>300</Uda>
+					</Udo_DE>
+					<Udo_FR>
+						<Uda>10</Uda>
+						<Uda>30</Uda>
+						<Uda>300</Uda>
+					</Udo_FR>
+					<Udo_IT>
+						<Uda>10</Uda>
+						<Uda>30</Uda>
+						<Uda>300</Uda>
+					</Udo_IT>
+				</Fld>
+				<Fld ID="24549" Name="FI_T" German="FI Auslösezeit [ms]" French="FI temps décl. [ms]" Sequenz="16" Type="STRING" Length="8" UDom="1" UDomRec="2" UDomFld="2" Italian="Tempo di intervento FI [ms]"/>
+				<Fld Name="BEMERK" German="Freies Feld (Bemerkungen)" French="Champ libre (remarques)" Length="120" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" Italian="Casella libera (Commenti)"/>
+			</Tab>
+			<Tab ID="2" Name="WRListe" German="Wechselrichter" French="Onduleurs" Status="1" ID_Parent="486" NameExtend="true" Italian="Inverter">
+				<Fld ID="24550" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true" Italian="ID"/>
+				<Fld ID="24551" Name="FORM_ID" German="FORM_ID" French="FORM_ID" Sequenz="2" Type="INT" Required="true" ForeignTab="MESSPROT08" ForeignFld="ID" Linked="true" Child="true" Italian="FORM_ID"/>
+				<Fld ID="24552" Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Sequenz="3" Type="INT" Italian="SEQ_FORM"/>
+				<Fld ID="24553" Name="WR_NUMMER" German="Nummer" French="Circuit N°" Sequenz="4" Type="STRING" Length="7" UDom="1" UDomRec="2" UDomFld="2" Italian="Circuito no."/>
+				<Fld ID="24554" Name="STRANGZUORDNUNG" German="Zuordnung Stränge" French="Ordre des circuits" Sequenz="5" Type="STRING" Length="100" UDom="1" UDomRec="2" UDomFld="2" Italian="Attribuzione stringhe"/>
+				<Fld ID="24555" Name="SERIEN_NR" German="Serien-Nr." French="Numéro de série" Sequenz="6" Type="STRING" Length="20" UDom="1" UDomRec="2" UDomFld="2" Italian="No. di serie"/>
+				<Fld ID="24557" Name="GRIDCODE" German="Eingestellter Gridcode" French="Gridcode réglé" Sequenz="7" Type="STRING" Length="26" UDom="1" UDomRec="2" UDomFld="2" Italian="Gridcode regolato">
+					<Udo_DE>
+						<Uda>CH 2017</Uda>
+						<Uda>AR-N 4105:2013</Uda>
+						<Uda>AR-N 4105:2018</Uda>
+						<Uda>VDE 126-1-1:2013</Uda>
+						<Uda>VDE 126-1-1:A1:2012</Uda>
+						<Uda>EN 50438:2007</Uda>
+						<Uda>CH (vor 2012)</Uda>
+						<Uda>VDE 126-1-1:2010</Uda>
+						<Uda>VFR 2013</Uda>
+						<Uda>VFR 2014</Uda>
+					</Udo_DE>
+					<Udo_FR><Uda>CH 2017</Uda><Uda>AR-N 4105:2013</Uda><Uda>AR-N 4105:2018</Uda><Uda>VDE 126-1-1:2013</Uda><Uda>VDE 126-1-1:A1:2012</Uda><Uda>EN 50438:2007</Uda><Uda>CH (vor 2012)</Uda><Uda>VDE 126-1-1:2010</Uda><Uda>VFR 2013</Uda><Uda>VFR 2014</Uda></Udo_FR><Udo_IT><Uda>CH 2017</Uda><Uda>AR-N 4105:2013</Uda><Uda>AR-N 4105:2018</Uda><Uda>VDE 126-1-1:2013</Uda><Uda>VDE 126-1-1:A1:2012</Uda><Uda>EN 50438:2007</Uda><Uda>CH (vor 2012)</Uda><Uda>VDE 126-1-1:2010</Uda><Uda>VFR 2013</Uda><Uda>VFR 2014</Uda></Udo_IT></Fld>
+				<Fld ID="24558" Name="AUSFALL" German="Prüfung Netzausfall" French="Vérification panne réseau" Sequenz="8" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true" Italian="Controllo guasto della rete"/>
+				<Fld Name="EINST_BLINDLEIST" German="Blindleistungseinstellung" Sequenz="9" Type="STRING" Length="12" UDom="1" UDomRec="2" UDomFld="2" Italian="cosphi regolato" French="Réglage puissance réactive">
+					<Udo_DE UDefault="cosphi = 1">
+						<Uda>cosphi=fix</Uda>
+						<Uda>cosphi=f(P)</Uda>
+						<Uda>Q=fix</Uda>
+						<Uda>Q=f(U)</Uda><Uda>Q=f(P)</Uda><Uda>andere</Uda></Udo_DE>
+					<Udo_FR UDefault="cosphi = 1"><Uda>cosphi=fix</Uda><Uda>cosphi=f(P)</Uda><Uda>Q=fix</Uda><Uda>Q=f(U)</Uda><Uda>Q=f(P)</Uda><Uda>autre</Uda></Udo_FR><Udo_IT UDefault="cosphi = 1"><Uda>cosphi=fix</Uda><Uda>cosphi=f(P)</Uda><Uda>Q=fix</Uda><Uda>Q=f(U)</Uda><Uda>Q=f(P)</Uda><Uda>altro</Uda></Udo_IT></Fld>
+				<Fld Name="WERT_BLINDLEIST" German="Blindleistungswert" Length="8" Type="STRING" French="Valeur puissance réactive" Italian="Valore potenza reattiva" UDom="1" UDomRec="2" UDomFld="2"/><Fld Name="BEMERK" German="Freies Feld (Bemerkungen)" French="Champ libre (remarques)" Length="120" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" Italian="Casella libera (Commenti)"/>
+			</Tab>
+			<Tab ID="3" German="PV-Module" NameExtend="true" Name="AngPVListe" French="Modules PV" ID_Parent="486" Italian="Modulo FV">
+				<Fld Name="ID" Type="INT" Required="true" German="ID" French="ID" Italian="ID"/>
+				<Fld Name="FORM_ID" German="FORM_ID" French="FORM_ID" Type="INT" Required="true" Italian="FORM_ID"/>
+				<Fld Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Type="INT" Italian="SEQ_FORM"/>
+				<Fld Name="TYP_NR" German="Typ Nr." Type="STRING" French="Type N°" UDom="1" UDomRec="2" UDomFld="2" Italian="Tipo no." Length="7"/>
+				<Fld Name="HERSTELLER" Length="20" Type="STRING" German="Hersteller" French="Fabricant" UDom="1" UDomRec="2" UDomFld="2" Italian="Fabbricante">
+				</Fld>
+				<Fld Name="MODUL_TYP" Length="20" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" German="Modultyp" French="Type de module" Italian="Tipo di modulo"/>
+				<Fld Name="LEISTUNG_MPP" Type="REAL" German="P mpp [W]" French="P mpp [W]" UDom="1" UDomRec="2" UDomFld="2" Italian="P mpp [W]" Length="20" Precision="4"/>
+				<Fld Name="SPANNUNG_MPP" German="U mpp [V]" French="U mpp [V]" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" Italian="U mpp [V]" Length="8" Precision="4"/>
+				<Fld Name="STROM_MPP" German="I mpp [A]" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" French="I mpp [A]" Italian="I mpp [A]" Length="8" Precision="4"/>
+				<Fld Name="SPANNUNG_OC" UDom="1" UDomRec="2" UDomFld="2" German="U oc [V]" French="U oc [V]" Type="STRING" Italian="U oc [V]" Length="8" Precision="4"/>
+				<Fld Name="STROM_SC" UDom="1" UDomRec="2" UDomFld="2" German="I sc [A]" French="I sc [A]" Type="STRING" Italian="I sc [A]" Length="8" Precision="4"/>
+				<Fld Name="STROM_RUECK" UDom="1" UDomRec="2" UDomFld="2" German="I rück [A]" Type="STRING" French="I final [A]" Italian="I finale [A]" Length="8" Precision="4"/>
+				<Fld Name="ANZAHL" UDom="1" UDomRec="2" UDomFld="2" German="Anzahl" French="Nombre" Type="INT" Italian="Quantità"/>
+			</Tab>
+			<Tab ID="4" Name="AngWRListe" NameExtend="true" German="Wechselrichter / Leistungsoptimierer" French="Onduleur / Optimiseur de performance" ID_Parent="486" Italian="Dati inverter / Dispositivo di ottimizzazzione di potenza">
+				<Fld Name="ID" Type="INT" Required="true" German="ID" French="ID" Italian="ID"/>
+				<Fld Name="FORM_ID" German="FORM_ID" French="FORM_ID" Type="INT" Required="true" Italian="FORM_ID"/>
+				<Fld Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Type="INT" Italian="SEQ_FORM"/>
+				<Fld Name="TYP_NR" Type="STRING" German="Typ Nr." French="Type N°" UDom="1" UDomRec="2" UDomFld="2" Italian="Tipo no." Length="7"/>
+				<Fld Name="HERSTELLER" Type="STRING" Length="20" UDom="1" UDomRec="2" UDomFld="2" Italian="Fabbricante" German="Hersteller" French="Fabricant"><Udo_DE><Uda>Fronius</Uda><Uda>Refusol</Uda><Uda>SMA</Uda><Uda>Kostal</Uda><Uda>Sputnik</Uda><Uda>Siemens</Uda></Udo_DE><Udo_FR><Uda>Fronius</Uda><Uda>Refusol</Uda><Uda>SMA</Uda><Uda>Kostal</Uda><Uda>Sputnik</Uda><Uda>Siemens</Uda></Udo_FR><Udo_IT><Uda>Fronius</Uda><Uda>Refusol</Uda><Uda>SMA</Uda><Uda>Kostal</Uda><Uda>Sputnik</Uda><Uda>Siemens</Uda></Udo_IT></Fld>
+				<Fld Name="MODELL" Type="STRING" Length="20" UDom="1" UDomRec="2" UDomFld="2" German="Modell" French="Modèle" Italian="Modello"/>
+				<Fld Name="FREI_1" Length="20" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" German="(freies Feld)" French="'(champ libre)" Italian="'(casella libera)"/>
+				<Fld Name="LEISTUNG_AC" German="P AC [kVA]" Type="REAL" UDom="1" UDomRec="2" UDomFld="2" French="PAC [kVA]" Italian="PAC [kVA]" Length="20" Precision="4"/>
+				<Fld Name="GALV_TRENNUNG" German="Galv. Trenn." Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2" French="Sép. Galv." Italian="Separ. Galv.">
+					<Udo_DE UDefault="false">
+					</Udo_DE>
+					<Udo_FR UDefault="false">
+					</Udo_FR>
+					<Udo_IT UDefault="false"/></Fld>
+				<Fld Name="HYBRID" German="Hybrid" Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2" Italian="Ibrido" French="Hybrid">
+					<Udo_DE UDefault="false">
+					</Udo_DE>
+					<Udo_FR UDefault="false">
+					</Udo_FR>
+					<Udo_IT UDefault="false"/></Fld>
+				<Fld Name="ANZAHL" German="Anzahl [St.]" Type="INT" UDom="1" UDomRec="2" UDomFld="2" French="Nombre" Italian="Quantità"/>
+			</Tab>
+			<Tab ID="5" Name="AngPVArrayListe" NameExtend="true" German="PV-Array und PV-Strang" French="Générateur et circuit PV" ID_Parent="486" Italian="Dati generatore e circuito FV">
+				<Fld Name="ID" German="ID" French="ID" Type="INT" Required="true" Italian="ID"/>
+				<Fld Name="FORM_ID" German="FORM_ID" French="FORM_ID" Type="INT" Required="true" Italian="FORM_ID"/>
+				<Fld Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Type="INT" Italian="SEQ_FORM"/>
+				<Fld Name="STRANG_NR" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" German="Strang Nr." French="Circuit n°" Italian="Stringa no." Length="8"/>
+				<Fld Name="MODULTYP_NR" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" German="Modultyp Nr." French="N° type module" Italian="Modulo tipo no." Length="8"/>
+				<Fld Name="ANZAHL_MODULE" German="Anz. Module je Strang" Type="INT" UDom="1" UDomRec="2" UDomFld="2" French="N°de modules par circuit" Italian="Quantità moduli/stringa"/>
+				<Fld Name="WR_VERSCHALTUNG" German="Verschaltet auf WR Nr." Type="STRING" UDom="1" UDomRec="2" UDomFld="2" French="Couplé à l'onduleur n°" Italian="Accoppiato all'inverter no." Length="8"/>
+				<Fld Name="TEILARRAY_NR" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" German="Teilarray Nr. (S/O/N/W)" French="Circuit partiel (S/E/N/O)" Italian="Stringa parz. no. (S/E/N/O)" Length="8"/>
+				<Fld Name="TYP" German="Typ" Length="14" Type="STRING" French="Type" UDom="1" UDomRec="2" UDomFld="2" Italian="Tipo"/>
+				<Fld Name="QUERSCHNITT" German="Querschnitt [mm2]" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" French="Section [mm2]" Italian="Sezione [mm2]" Length="10">
+					<Udo_DE>
+						<Uda>2.5</Uda>
+						<Uda>4</Uda>
+						<Uda>6</Uda>
+					</Udo_DE>
+					<Udo_FR>
+						<Uda>2.5</Uda>
+						<Uda>4</Uda>
+						<Uda>6</Uda>
+					</Udo_FR>
+					<Udo_IT><Uda>2.5</Uda><Uda>4</Uda><Uda>6</Uda></Udo_IT></Fld>
+			</Tab>
+			<Tab ID="6" Name="FPListe" NameExtend="true" German="Funktionsprüfung und Messungen Kategorie 1" French="Tests de fonctionn. et mesures caté. 1" ID_Parent="486" Italian="Prova di funzionamento e misura categoria 1&quot;">
+				<Fld Name="ID" German="ID" French="ID" Type="INT" Required="true" Italian="ID"/>
+				<Fld Name="FORM_ID" German="FORM_ID" French="FORM_ID" Type="INT" Required="true" Italian="FORM_ID"/>
+				<Fld Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Type="INT" Italian="SEQ_FORM"/>
+				<Fld Name="STRANG_NR" German="Strang Nr." Type="STRING" French="Circuit n°" UDom="1" UDomRec="2" UDomFld="2" Italian="Stringa no." Length="8"/>
+				<Fld Name="FP_POLARITAET" Type="BOOL" German="Polarität geprüft" Required="true" UDom="1" UDomRec="2" UDomFld="2" French="Polarité vérifiée" Italian="Polarità verificata"/>
+				<Fld Name="FP_VERPOLUNG_GAK" German="Verpolung GAK geprüft" Type="BOOL" French="Inversion polarité coffret int" Required="true" UDom="1" UDomRec="2" UDomFld="2" Italian="Inversione polarità allacciame"/>
+				<Fld Name="FP_SPANNUNG1" German="UOC Gen. max n x UOC x Tk" UDom="1" UDomRec="2" UDomFld="2" Type="STRING" French="UOC gén. max n x UOC x Tk" Italian="UOC Gen. max n x UOC x Tk" Length="8"/>
+				<Fld Name="FP_STROM1" German="ISC STC x 1.25" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" French="ISC STC x 1.25" Italian="ISC STC x 1.25" Length="8"/>
+				<Fld Name="FP_SPANNUNG2" German="U OC [V]" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" French="U OC [V]" Italian="U OC [V]" Length="8" Precision="4"/>
+				<Fld Name="FP_STROM2" German="I SC [A]" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" French="I SC [A]" Italian="I SC [A]" Length="8" Precision="4"/>
+				<Fld Name="FP_WIDERSTAND1" German="R ISO [MOhm]" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" French="R ISO [MOhm]" Italian="R ISO [MOhm]" Length="8" Precision="4"/>
+				<Fld Name="FP_SPANNUNG3" German="U mpp [V]" French="U mpp [V]" UDom="1" UDomRec="2" UDomFld="2" Type="STRING" Italian="U mpp [V]" Length="8" Precision="4"/>
+				<Fld Name="FP_STROM3" German="I mpp [A]" French="I mpp [A]" UDom="1" UDomRec="2" UDomFld="2" Type="STRING" Italian="I mpp [A]" Length="8" Precision="4"/>
+				<Fld Name="FP_WIDERSTAND2" German="R PA [Ohm]" UDom="1" UDomRec="2" UDomFld="2" French="R PA [Ohm]" Type="STRING" Italian="R PA [Ohm]" Length="8" Precision="4"/>
+			</Tab>
+			<Fld ID="24260" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true" Italian="ID"/>
+			<Fld ID="24261" Name="ID_PROJECT" German="Projekt" French="Projet" Sequenz="2" Type="INT" Italian="Progetto"/>
+			<Fld ID="24262" Name="COPY_ID" German="ID der Kopie" French="ID de la copie" Sequenz="3" Type="INT" Italian="ID della copia"/>
+			<Fld ID="24263" Name="MANDANT" German="Mandant" French="Mandant" Sequenz="4" Type="INT" Italian="Mandant"/>
+			<Fld ID="24264" Name="ID_FORMTMP" German="Formular" French="Formulaire" Sequenz="5" Type="INT" Italian="Formulario"/>
+			<Fld ID="24265" Name="I_PROJECT" German="Projekt-ID" French="I_PROJECT" Sequenz="6" Type="INT" Italian="I_PROJECT"/>
+			<Fld ID="24266" Name="I_FORM" German="Formular ID" French="I_FORM" Sequenz="7" Type="INT" Italian="I_FORM"/>
+			<Fld ID="24267" Name="E_PROJECT" German="Projekt ID" French="E_PROJECT" Sequenz="8" Type="INT" Italian="E_PROJECT"/>
+			<Fld ID="24268" Name="INST_OUT" German="Exportdatum" French="Date de l'exportation" Sequenz="9" Type="DATE" Italian="Data di esportazione"/>
+			<Fld ID="24269" Name="WERK_IN" German="Empfangsdatum" French="Date de réception" Sequenz="10" Type="DATE" Italian="Data di ricezione"/>
+			<Fld ID="24270" Name="WERK_OUT" German="Exportdatum" French="Date de l'exportation" Sequenz="11" Type="DATE" Italian="Data di esportazione"/>
+			<Fld ID="24271" Name="INST_IN" German="Empfangsdatum" French="Date de réception" Sequenz="12" Type="DATE" Italian="Data di ricezione"/>
+			<Fld ID="24272" Name="PROJ_NR" German="Nummer" French="Numéro" Sequenz="13" Type="STRING" Length="12" UDomRec="2" UDomFld="2" Italian="Numero"/>
+			<Fld ID="24273" Name="PROJ_JAHR" German="Jahr" French="Année" Sequenz="14" Type="INT" UDomRec="2" UDomFld="2" Italian="Anno"/>
+			<Fld ID="24274" Name="WERK" German="Netzbetreiberin" French="Exploitant de réseau" Sequenz="15" Type="STRING" Length="24" Italian="Gestore di rete"/>
+			<Fld ID="24275" Name="W_EMAIL" German="E-Mail Adresse der Netzbetr." French="W_EMAIL" Sequenz="16" Type="STRING" Length="60" Italian="W_EMAIL"/>
+			<Fld ID="24276" Name="W_EF_EMAIL" German="W_EF_EMAIL" French="W_EF_EMAIL" Sequenz="17" Type="STRING" Length="60" Italian="W_EF_EMAIL"/>
+			<Fld ID="24277" Name="VISUM" German="Visum" French="Visa" Sequenz="18" Type="STRING" Length="6" Italian="Visto"/>
+			<Fld ID="24278" Name="I_NAME1" German="Installateur" French="Installateur" Sequenz="19" Type="STRING" Length="40" Italian="Installatore"/>
+			<Fld ID="24279" Name="I_NAME2" German="Inst. Name 2" French="Installateur nom 2" Sequenz="20" Type="STRING" Length="40" Italian="Installatore nome 2"/>
+			<Fld ID="24280" Name="I_ADRESSE1" German="Adr. des Installateurs" French="Adresse de l'inst." Sequenz="21" Type="STRING" Length="40" Italian="Indirizzo dell'installatore"/>
+			<Fld ID="24281" Name="I_ADRESSE2" German="Adr. des Installateurs" French="Adresse de l'inst." Sequenz="22" Type="STRING" Length="40" Italian="Indirizzo dell'installatore"/>
+			<Fld ID="24282" Name="I_PLZ" German="PLZ  des Installateurs" French="NPA de l'inst." Sequenz="23" Type="STRING" Length="8" Italian="NPA dell'installatore"/>
+			<Fld ID="24283" Name="I_ORT" German="Ort des Installateurs" French="Lieu de l'inst." Sequenz="24" Type="STRING" Length="30" Italian="Località dell'installatore"/>
+			<Fld ID="24284" Name="I_KONZESS" German="Bew.-Nr. des Installateurs" French="N° d'autorisation de l'inst." Sequenz="25" Type="STRING" Length="16" Italian="Autorizz. N° dell'installatore"/>
+			<Fld ID="24285" Name="I_SACHB" German="Sachbearbeiter des Inst.betr." French="Personne responsable" Sequenz="26" Type="STRING" Length="24" Italian="Responsabile"/>
+			<Fld ID="24286" Name="I_TELNR" German="Tel.Nr. des Installateurs" French="Téléphone de l'inst." Sequenz="27" Type="STRING" Length="16" Italian="Tel. dell'installatore"/>
+			<Fld ID="24287" Name="I_FAXNR" German="Fax Nr. des Installateurs" French="Fax. de l'inst." Sequenz="28" Type="STRING" Length="16" Italian="Fax dell'installatore"/>
+			<Fld ID="24288" Name="I_EMAIL" German="E-Mail des Installateurs" French="Adresse e-mail de l'inst." Sequenz="29" Type="STRING" Length="60" Italian="E-mail dell'installatore"/>
+			<Fld ID="24289" Name="I_EF_EMAIL" German="I_EF_EMAIL" French="I_EF_EMAIL" Sequenz="30" Type="STRING" Length="60" Italian="I_EF_EMAIL"/>
+			<Fld ID="24290" Name="O_STRASSE" German="Strasse des Objekts" French="Rue de l'objet" Sequenz="31" Type="STRING" Length="30" Italian="Via dell'impianto"/>
+			<Fld ID="24291" Name="O_HAUSNR" German="Hausnr. des Objekts" French="N° de l'objet" Sequenz="32" Type="STRING" Length="24" Italian="N° dell'impianto"/>
+			<Fld ID="24292" Name="O_PLZ" German="PLZ des Objekts" French="NPA de l'objet" Sequenz="33" Type="STRING" Length="8" Italian="NPA dell'impianto"/>
+			<Fld ID="24293" Name="O_ORT" German="Ort des Objekts" French="Lieu de l'objet" Sequenz="34" Type="STRING" Length="30" Italian="Località dell'impianto"/>
+			<Fld ID="24294" Name="GEMEINDE" German="GEMEINDE" French="GEMEINDE" Sequenz="35" Type="STRING" Length="30" Italian="GEMEINDE"/>
+			<Fld ID="24295" Name="PARZELLE" German="PARZELLE" French="PARZELLE" Sequenz="36" Type="STRING" Length="18" Italian="PARZELLE"/>
+			<Fld ID="24296" Name="VERSICH" German="VERSICH" French="VERSICH" Sequenz="37" Type="STRING" Length="18" Italian="VERSICH"/>
+			<Fld ID="24297" Name="GEBAEUDEART" German="GEBAEUDEART" French="GEBAEUDEART" Sequenz="38" Type="STRING" Length="40" Italian="GEBAEUDEART"/>
+			<Fld Name="GEBAEUDETEIL" German="GEBAEUDETEIL" French="GEBAEUDETEIL" Length="40" Type="STRING" Italian="GEBAEUDETEIL"/>
+			<Fld ID="24298" Name="LAGE" German="Lage" French="Situation" Sequenz="39" Type="STRING" Length="40" Italian="Luego"/>
+			<Fld ID="24299" Name="ANLNUTZUNG" German="Anlage" French="Etage, situation" Sequenz="40" Type="STRING" Length="40" Italian="Impianto"/>
+			<Fld ID="24300" Name="U_NAME1" German="Stromkunde" French="Exploitant / Client" Sequenz="41" Type="STRING" Length="40" Italian="Responsabile"/>
+			<Fld ID="24301" Name="U_NAME2" German="Stromk. (Vorname)" French="Exploitant (Prénom)" Sequenz="42" Type="STRING" Length="40" Italian="Responsabile (Cognome)"/>
+			<Fld ID="24302" Name="U_ADRESSE1" German="Adresse" French="Adresse" Sequenz="43" Type="STRING" Length="40" Italian="Indrizzio"/>
+			<Fld ID="24303" Name="U_ADRESSE2" German="Adresse 2" French="Adresse 2" Sequenz="44" Type="STRING" Length="40" Italian="Indrizzio 2"/>
+			<Fld ID="24304" Name="U_PLZ" German="PLZ" French="NPA" Sequenz="45" Type="STRING" Length="8" Italian="NPA"/>
+			<Fld ID="24305" Name="U_ORT" German="Ort" French="Lieu" Sequenz="46" Type="STRING" Length="30" Italian="Località"/>
+			<Fld ID="24306" Name="U_TELNR" German="Tel.Nr." French="Téléphone" Sequenz="47" Type="STRING" Length="16" Italian="Tel. n°"/>
+			<Fld ID="24307" Name="U_FAXNR" German="Fax.Nr." French="Fax" Sequenz="48" Type="STRING" Length="16" Italian="Fax"/>
+			<Fld ID="24308" Name="U_EMAIL" German="E-Mail" French="E-mail" Sequenz="49" Type="STRING" Length="60" Italian="E-mail"/>
+			<Fld Name="GEBAEUDENR" German="Gebäude-Nr." French="Bâtiment No" Length="16" Type="STRING" UDomFld="2" Italian="N° edificio"/>
+			<Fld Name="EGID" German="EGID Nr." French="EGID N°" Type="INT" UDomFld="2" DisplayFormat="#," EditFormat="#" Minimum="1" Maximum="900000000" Italian="EGID N°"/>
+			<Fld ID="24309" Name="ABONR" German="Anlage-Nr." French="Installation No" Sequenz="50" Type="STRING" Length="16" UDomFld="2" Italian="Impianto N°"/>
+			<Fld ID="24310" Name="EVUAUFTNR" German="EVUAUFTNR" French="EVUAUFTNR" Sequenz="51" Type="STRING" Length="12" Italian="EVUAUFTNR"/>
+			<Fld ID="24311" Name="TERMIN" German="TERMIN" French="TERMIN" Sequenz="52" Type="DATE" Italian="TERMIN">
+			</Fld>
+			<Fld ID="24312" Name="PACKNAME" German=".evu-Package Name" French="Fichier pack EDE" Sequenz="53" Type="STRING" Length="16" Italian="PACKNAME"/>
+			<Fld ID="24313" Name="MP_NR" German="Mess + Prüfprotokoll Nr." French="Protocole d'essais-mesures N°" Italian="Prot. di prova e di misura n°" Sequenz="54" Type="STRING" Length="12" UDomFld="2"/>
+			<Fld ID="24314" Name="RAPPORT_NR" German="Rapport-Nr." French="No du rapport" Sequenz="55" Type="STRING" Length="12" Italian="Rapporto n°"/>
+			<Fld ID="24315" Name="AN_INST" German="Elektro-Installateur" French="Installateur électricien" Italian="All'installatore elettrico" Sequenz="56" Type="BOOL" Required="true"/>
+			<Fld ID="24316" Name="AN_KONTR" German="Kontrollorgan" French="Organe de contrôle" Italian="Per Org. di controllo indip." Sequenz="57" Type="BOOL" Required="true"/>
+			<Fld ID="24319" Name="EIGENT" German="Eigentümer" French="Propriétaire" Italian="Proprietario" Sequenz="60" Type="BOOL" Required="true"/>
+			<Fld ID="24320" Name="VERW" German="Verwaltung" French="Régie/Gérance" Italian="Amministrazione" Sequenz="61" Type="BOOL" Required="true"/>
+			<Fld ID="24321" Name="STROMK" German="Stromkunde" French="Client" Italian="Cliente" Sequenz="62" Type="BOOL" Required="true"/>
+			<Fld Name="INST" German="Elektro-Installateur" French="Installateur électricien" Italian="Installatore elettr." Type="BOOL" Required="true"/>
+			<Fld ID="24323" Name="AG_X" German="Auftraggeber anderer" French="Maître d'oeuvre autre" Italian="Committente altro" Sequenz="64" Type="BOOL" Required="true"/>
+			<Fld ID="24324" Name="AG_XTEXT" German="Auftraggeber Bezeichnung" French="Maître d'oeuvre désignation" Italian="Committente altro designazione" Sequenz="65" Type="STRING" Length="16" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24325" Name="GES_NAME1" German="Auftraggeber Name 1" French="Maître d'oeuvre Nom 1" Italian="Committente Nome 1" Sequenz="66" Type="STRING" Length="40"/>
+			<Fld ID="24326" Name="GES_NAME2" German="Auftraggeber Name 2" French="Maître d'oeuvre Nom 2" Italian="Committente Nome 2" Sequenz="67" Type="STRING" Length="40"/>
+			<Fld ID="24327" Name="GES_ADRESSE1" German="Auftraggeber Adresse 1" French="Maître d'oeuvre Adresse 1" Italian="Committente Indizzio 1" Sequenz="68" Type="STRING" Length="40"/>
+			<Fld ID="24328" Name="GES_ADRESSE2" German="Auftraggeber Adresse 2" French="Maître d'oeuvre Adresse 2" Italian="Committente Indrizzio 2" Sequenz="69" Type="STRING" Length="40"/>
+			<Fld ID="24329" Name="GES_PLZ" German="Auftraggeber PLZ" French="Maître d'oeuvre NPA" Italian="Committente NPA" Sequenz="70" Type="STRING" Length="8"/>
+			<Fld ID="24330" Name="GES_ORT" German="Auftraggeber Ort" French="Maître d'oeuvre Localité" Italian="Committente Località" Sequenz="71" Type="STRING" Length="30"/>
+			<Fld ID="24331" Name="GES_TELNR" German="Auftraggeber Tel.-Nr." French="Maître d'oeuvre N°-Tél." Italian="Committente Tel." Sequenz="72" Type="STRING" Length="16"/>
+			<Fld ID="24332" Name="GES_FAXNR" German="Auftraggeber Fax-Nr." French="Maître d'oeuvre N°-Fax" Italian="Committente Fax" Sequenz="73" Type="STRING" Length="16"/>
+			<Fld Name="GES_EMAIL" German="Auftraggeber E-Mail" French="Maître d'oeuvre E-Mail" Italian="Committente E-mail" Length="60" Type="STRING"/>
+			<Fld ID="24333" Name="BEMERKUNG" German="Ort der Inst. Bemerkung" French="Adresse de l'inst. Remarque" Italian="Luego dell'imp. Osservazioni" Sequenz="74" Type="STRING" Length="40" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="ZEV" German="Zusammenschluss zum Eigenverb." French="Regrp. cadre cons. propre RCP" Italian="RCP" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="ZEV_TEXT" Length="40" Type="STRING" German="ZEV Text" French="RCP texte" Italian="RCP testo" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="ANLJAHR0" German="Anlage Jahr 1" French="Installation Ans 1" Italian="Impianto Anno 1" Type="INT" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="ANL1" German="Anlage Jahr 2" French="Installation Ans 2" Italian="Impianto Anno 2" Length="40" Type="STRING" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="ANLJAHR1" German="Anlage Jahr 2" French="Installation Ans 2" Italian="Impianto Anno 2" Type="INT" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="ANL2" Length="40" Type="STRING" German="Anlage Jahr 3" Italian="Impianto Anno 3" French="Installation Ans 3" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="ANLJAHR2" German="Anlage Jahr 3" French="Installation Ans 3" Italian="Impianto Anno 3" Type="INT" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="ZAEHLER" Length="26" Type="STRING" German="Zähler-Nr." French="Compteur n°" Italian="Contatore N°"/>
+			<Fld ID="24339" Name="PLANVORNR" German="Planvorlage-Nr." French="Projet n°" Italian="Avviso d'imp. n°" Sequenz="80" Type="STRING" Length="20" UDomFld="2">
+				<Udo_IT UDisplayFormat="1"/>
+			</Fld>
+			<Fld ID="24340" Name="PLANVORDATUM" German="Planvorlage-Datum" French="Projet date" Italian="Avviso d'imp. n° data" Sequenz="81" Type="DATE" UDomFld="2">
+			</Fld>
+			<Fld Name="BEGLAUBIGNR" Length="20" Type="STRING" German="Beglaubigungs-Nr." French="Numéro d'authentification" Italian="Piano n°" UDomFld="2"/>
+			<Fld Name="BEGLAUBIGDATUM" Type="DATE" German="Beglaubigungs-Datum" French="Date d'authentification" Italian="Piano n° data" UDomFld="2"/>
+			<Fld ID="24341" Name="MP_NEU" German="Neuanlage" French="Installation neuve" Italian="Impianto nuovo" Sequenz="82" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24342" Name="MP_BEST" German="Bestehende Anlage" French="Installation existante" Italian="Impianto esistente" Sequenz="83" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24343" Name="MP_ANDERS" German="Änderung" French="Modification" Italian="Modificare" Sequenz="84" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24344" Name="MP_ERWEIT" German="Erweiterung" French="Extension" Italian="Ampliamento" Sequenz="85" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24346" Name="MP_X" German="Anderer Prüfgrund" French="Autre raison de contrôle" Italian="Altro motivo del contr." Sequenz="87" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24347" Name="MP_XTEXT" German="Anderer Prüfgrund Text" French="Autre raison de contrôle Texte" Italian="Altro motivo del contr. testo" Sequenz="88" Type="STRING" Length="20" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24349" Name="MP_SK" German="Schlusskontrolle" French="Contrôle final" Italian="Controllo finale" Sequenz="90" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24350" Name="MP_AK" German="Abnahmekontrolle" French="Contrôle de réception" Italian="Controllo collaudo" Sequenz="91" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24351" Name="MP_PK" German="Periodische Kontrolle" French="Contrôle périodique" Italian="Controllo periodico" Sequenz="92" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="MP_SP" German="Stichprobenkontrolle" French="Sondage" Italian="Controlli a campione" Type="BOOL" Required="true" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24352" Name="IA_DATUM" German="Installationsanzeige Datum" French="Date de l'AI" Italian="Data del'Avviso d'inst." Sequenz="93" Type="DATE" UDomFld="2"/>
+			<Fld Name="KONTUMFANG" German="Kontrollumfang" French="Description du contrôle" Italian="Estensione del controllo" Type="MEMO" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="KONDATUM_SK" German="Datum der Kontrolle SK" French="Date de contrôle CF" Italian="Data del controllo CF" Type="DATE" UDomFld="2"/>
+			<Fld Name="KONDATUM_AKPKSP" German="Datum der Kontrolle AK/PK/SP" French="Date de contrôle CR/CP/CS" Italian="Data del controllo CC/CP/CCE" Type="DATE" UDomFld="2"/>
+			<Fld Name="KONDATUM" German="Datum der Kontrolle" French="Date de contrôle" Italian="Data del controllo" Type="DATE"/>
+			<Fld Name="PE1_NORMTEXT" Length="30" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" French="Rés. test 1 norme texte" German="Prüfergebnis 1 Normtext" Italian="Ris. contr. 1 norma testo"><Udo_DE UDefault="(Ziffer 6 der SNEN 62446-1)"><Uda>(Ziffer 6 der SNEN 62446-1)</Uda></Udo_DE><Udo_FR UDefault="(chiffre 6 de la SNEN 62446-1)"><Uda>(chiffre 6 de la SNEN 62446-1)</Uda></Udo_FR><Udo_IT UDefault="(cifra 6 della SNEN 62446-1)"><Uda>(cifra 6 della SNEN 62446-1)</Uda></Udo_IT></Fld><Fld Name="PE1_KEINMANGEL" German="Prüfergebnis 1 Keine Mängel" French="Rés. test 1 Pas de défauts" Italian="Ris. contr. 1 Nessun difetto" Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE1_1X" German="Prüfergebnis 1 Frei 1" French="Rés. test 1 libre 1" Italian="Ris. contr. 1 libero 1" Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE1_1XTEXT" Type="STRING" Length="40" German="Prüfergebnis 1 Frei 1 Text" French="Rés. test 1 libre 1 texte" Italian="Ris. contr. 1 libero 1 testo" UDom="1" UDomRec="2" UDomFld="2"><Udo_DE><Uda>Mängel gemäss Bericht</Uda></Udo_DE><Udo_FR><Uda>Défauts selon le rapport</Uda></Udo_FR><Udo_IT><Uda>Difetti secondo il rapporto</Uda></Udo_IT></Fld>
+			<Fld Name="PE1_2X" Type="BOOL" Required="true" German="Prüfergebnis 1 Frei 2" French="Rés. test 1 libre 2" Italian="Ris. contr. 1 libero 2" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE1_2XTEXT" Length="40" Type="STRING" German="Prüfergebnis 1 Frei 2 Text" French="Rés. test 1 libre 2 texte" Italian="Ris. contr. 1 libero 2 testo" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE1_3X" Type="BOOL" Required="true" German="Prüfergebnis 1 Frei 3" French="Rés. test 1 libre 3" Italian="Ris. contr. 1 libero 3" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE1_3XTEXT" Length="40" Type="STRING" German="Prüfergebnis 1 Frei 3 Text" French="Rés. test 1 libre 3 texte" Italian="Ris. contr. 1 libero 3 testo" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_NORMTEXT" Type="STRING" Length="30" German="Prüfergebnis 2 Normtext" French="Rés. test 2 norme texte" Italian="Ris. contr. 2 norma testo" UDom="1" UDomRec="2" UDomFld="2"><Udo_DE UDefault="(Ziffer 7 der SNEN 62446-1)"><Uda>(Ziffer 7 der SNEN 62446-1)</Uda></Udo_DE><Udo_FR UDefault="(chiffre 7 de la SNEN 62446-1)"><Uda>(chiffre 7 de la SNEN 62446-1)</Uda></Udo_FR><Udo_IT UDefault="(cifra 7 della SNEN 62446-1)"><Uda>(cifra 7 della SNEN 62446-1)</Uda></Udo_IT></Fld><Fld Name="PE2_UIKENNLINIE" Type="BOOL" Required="true" German="Prüfergebnis 2 Aufnahme U/I..." French="Rés. test 2 Vis. courbe U/I..." Italian="Ris. contr. 2 Vis. curva U/I.." UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_IRVERFAHREN" Type="BOOL" Required="true" German="Prüfergebnis 2 Aufnahme IR..." French="Rés. test 2 analyse par IR..." Italian="Ris. contr. 2 analisi IR..." UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_ELVERFAHREN" Type="BOOL" Required="true" German="Prüfergebnis 2 Aufnahme EL..." French="Rés. test 2 analyse par éle..." Italian="Ris. contr. 2 analisi con el.." UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_1X" Type="BOOL" German="Prüfergebnis 2 Frei 1" French="Rés. test 2 libre 1" Italian="Ris. contr. 2 libero 1" Required="true" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_1XTEXT" Length="40" Type="STRING" German="Prüfergebnis 2 Frei 1 Text" French="Rés. test 2 libre 1 texte" Italian="Ris. contr. 2 libero 1 testo" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_SPANNUNG" Type="BOOL" Required="true" German="Prüfergebnis 2 Prüfung Span..." French="Rés. test 2 Vérification mi..." Italian="Ris. contr. 2 Collaudo mess..." UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_SPERRDIODEN" Type="BOOL" Required="true" German="Prüfergebnis 2 Prüfung Sper..." French="Rés. test 2 Vérification di..." Italian="Ris. contr. 2 Collaudo di....." UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_RISO" Type="BOOL" Required="true" German="Prüfergebnis 2 Prüfung Riso..." French="Rés. test 2 Vérification Ri..." Italian="Ris. contr. 2 Collaudo Riso..." UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_2X" Type="BOOL" Required="true" German="Prüfergebnis 2 Frei 2" French="Rés. test 2 libre 2" Italian="Ris. contr. 2 libero 2" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PE2_2XTEXT" Type="STRING" German="Prüfergebnis 2 Frei 2 Text" French="Rés. test 2 libre 2 texte" Italian="Ris. contr. 2 libero 2 testo" Length="40" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="PROJEKTBEZ" German="Angabe inst. System Projekt" French="Indications sur le système ..." Italian="Dati sistema install. Progetto" Length="60" Type="STRING" UDom="2" UDomRec="2" UDomFld="2"/>
+			<Fld Name="NENNLEIST_DC" Type="REAL" German="Nennleistung STC DC [kW]" French="Puissance nominale STC DC [kW]" Italian="Potenza nominale STC DC [kW]" UDomFld="2" Length="20" Precision="4"/>
+			<Fld Name="TOTNENNLEIST_DC" Type="REAL" German="Nennleistung STC DC [W]" French="Puissance nominale STC DC [W]" Italian="Potenza nominale STC DC [W]" Length="20" Precision="4"/><Fld Name="NENNLEIST_AC" Type="REAL" German="Nennleistung STC AC [kVA]" French="Puissance nomin. STC AC [kVA]" Italian="Potenza nominale STC AC [kVA]" UDomFld="2" Length="20" Precision="4"/>
+			<Fld ID="24356" Name="ANL_FLACHDACH" German="Flachdach" French="Toit plat" Italian="Tetto piano" Sequenz="97" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true">
+			</Fld>
+			<Fld ID="24357" Name="ANL_SCHRAEGDACH" German="Schrägdach" French="Toit incliné" Italian="Tetto a falda" Sequenz="98" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true">
+			</Fld>
+			<Fld ID="24359" Name="ANL_FASSADE" German="Fassade" French="Façade" Italian="Facciata" Sequenz="100" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true">
+			</Fld>
+			<Fld ID="24358" Name="ANL_DACHINTEG" German="dachintegriert" French="Intégré dans toit" Italian="Integrato nel tetto" Sequenz="99" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true">
+			</Fld>
+			<Fld ID="24360" Name="ANL_FREI" German="freistehend" French="indépendant" Italian="libero" Sequenz="101" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true">
+			</Fld>
+			<Fld ID="24361" Name="ANL_AUSRICHT" German="Ausrichtung" French="Alignement" Italian="Orientamento" Sequenz="102" Type="STRING" Length="12" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="24362" Name="ANL_NEIGUNG" German="Neigung" French="Inclinaison" Italian="Pendenza" Sequenz="103" Type="STRING" Length="12" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="24364" Name="ANL_VERBUND" German="Netzverbund" French="en réseau" Italian="Connesso alla rete" Sequenz="105" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true">
+			</Fld>
+			<Fld ID="24363" Name="ANL_INSEL" German="Inselanlage" French="en îlot" Italian="Impianto isolato" Sequenz="104" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true">
+			</Fld>
+			<Fld ID="24365" Name="ANL_BESCHRIEB" German="Anlage-Kurzbeschrieb" French="Description succincte" Italian="Breve descrizione" Sequenz="106" Type="MEMO" UDom="1" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="24354" Name="MONTAGEVON" German="Zeitraum Montage von" French="Période montage du" Italian="Periodo di montaggio da" Sequenz="95" Type="DATE" Length="22" UDomFld="2" UDom="2">
+			</Fld>
+			<Fld ID="24355" Name="MONTAGEBIS" German="Zeitraum Montage bis" French="Période montage au" Italian="Periodo di montaggio a" Sequenz="96" Type="DATE" UDomFld="2" UDom="2">
+			</Fld>
+			<Fld Name="PVTOT_ANZ" Type="INT" German="Total Anzahl PV-Module" French="Nombre total de modules PV" Italian="Quantità totale di moduli PV" UDomFld="2"/>
+			<Fld Name="WRTOT_ANZ" Type="INT" German="Total Anzahl WR/LO" French="Nombre total d'onduleurs /..." Italian="Quantità tot. di inverter /..." UDomFld="2"/>
+			<Fld ID="24395" Name="BLITZ_GEB" German="Blitzschutzanlage vorhanden" French="Protection contre la foudre..." Italian="Parafulmine esistente" Sequenz="136" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld Name="BLITZ_KONZEPT_X" German="Überspann. u. Blitzschutzkonz." French="Concept protection contre ..." Italian="Concetto di protezione..." Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="BLITZ_KONZEPT_XTEXT" Length="40" Type="STRING" Required="true" German="Blitzschutzkonzept Text" French="Concept protection texte" Italian="Concetto parafulmine testo" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="NIN Variante 1">
+					<Uda>
+NIN Variante 1</Uda>
+					<Uda>
+NIN Variante 2</Uda>
+					<Uda>
+NIN Variante 3</Uda>
+					<Uda>
+NIN Variante 4</Uda>
+					<Uda>
+NIN Variante xB</Uda>
+					<Uda>
+NIN Variante xC</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="NIBT Variante 1"><Uda>NIBT Variante 1</Uda><Uda>NIBT Variante 2</Uda><Uda>NIBT Variante 3</Uda><Uda>NIBT Variante 4</Uda><Uda>NIBT Variante xB</Uda><Uda>NIBT Variante xC</Uda></Udo_FR><Udo_IT UDefault="NIBT Variante 1"><Uda>NIBT Variante 1</Uda><Uda>NIBT Variante 2</Uda><Uda>NIBT Variante 3</Uda><Uda>NIBT Variante 4</Uda><Uda>NIBT Variante xB</Uda><Uda>NIBT Variante xC</Uda></Udo_IT></Fld>
+			<Fld Name="BLITZ_GENLPS" German="Direkte Anbindung Generator..." French="Liaison directe du générate..." Italian="Connessione diretta generat..." Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24396" Name="BLITZ_KL1" German="Blitzschutzklasse 1" French="Classe de prot. 1" Italian="Classe di parafulm. richiest 1" Sequenz="137" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24397" Name="BLITZ_KL2" German="Blitzschutzklasse 2" French="Classe de prot. 2" Italian="Classe di parafulm. richiest 2" Sequenz="138" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24398" Name="BLITZ_KL3" German="Blitzschutzklasse 3" French="Classe de prot. 3" Italian="Classe di parafulm. richiest 3" Sequenz="139" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24406" Name="SP_1" German="Sichtprüfung 1 (Richtige A...)" French="Contrôle visuel 1 (Chiox et..)" Italian="Contr. a vista 1 (Scelta e...)" Sequenz="147" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24407" Name="SP_2" German="Sichtprüfung 2 (Dachbefest...)" French="Contrôle visuel 2 (Composa...)" Italian="Contr. a vista 2 (Componen...)" Sequenz="148" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24408" Name="SP_3" German="Sichtprüfung 3 (Vorgaben B...)" French="Contrôle visuel 3 (Conform...)" Italian="Contr. a vista 3 (Conforme...)" Sequenz="149" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24409" Name="SP_4" German="Sichtprüfung 4 (Installiert..)" French="Contrôle visuel 4 (Cond. d...)" Italian="Contr. a vista 4 (Condutto...)" Sequenz="150" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld Name="SCHUTZ_PAQUER" German="Querschnitt SPA für PVA [mm2]" Type="STRING" French="Section PE pur PV [mm2]" Italian="Sezione PE per FV [mm2]" UDom="2" UDomRec="2" UDomFld="2" Length="8"/>
+			<Fld Name="SCHUTZ_POTQUER" German="Querschnitt Haupt-SPA [mm2]" Type="STRING" French="Section PE principal [mm2]" Italian="SezionePE principale [mm2]" UDom="2" UDomRec="2" UDomFld="2" Length="8"/>
+			<Fld ID="24410" Name="SP_5" German="Sichtprüfung 5 (Installiert..)" French="Contrôle visuel 5 (Les dis...)" Italian="Contr. a vista 5 (Disposiz...)" Sequenz="151" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24411" Name="SP_6" German="Sichtprüfung 6 (Minimale F...)" French="Contrôle visuel 6 (Superfi...)" Italian="Contr. a vista 6 (Area min...)" Sequenz="152" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24412" Name="SP_7" German="Sichtprüfung 7 (Trennungsa...)" French="Contrôle visuel 7 (Distanc...)" Italian="Contr. a vista 7 (Distanze...)" Sequenz="153" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24413" Name="SP_8" German="Sichtprüfung 8 (Alle DC-Ko...)" French="Contrôle visuel 8 (Compos...)" Italian="Contr. a vista 8 (Tutti co...)" Sequenz="154" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24414" Name="SP_9" German="Sichtprüfung 9 (Trennvorri...)" French="Contrôle visuel 9 (Disposi...)" Italian="Contr. a vista 9 (Disposit...)" Sequenz="155" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24415" Name="SP_10" German="Sichtprüfung 10 (PV-Module...)" French="Contrôle visuel 10 (Module...)" Italian="Contr. a vista 10 (Moduli ...)" Sequenz="156" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24416" Name="SP_11" German="Sichtprüfung 11 (DC-Lasttr...)" French="Contrôle visuel 11 (Présen...)" Italian="Contr. a vista 11 (Interru...)" Sequenz="157" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24417" Name="SP_12" German="Sichtprüfung 12 (Anschluss...)" French="Contrôle visuel 12 (Racord...)" Italian="Contr. a vista 12 (Disposi...)" Sequenz="158" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24418" Name="SP_13" German="Sichtprüfung 13 (AC-LAsttr...)" French="Contrôle visuel 13 (Interr...)" Italian="Contr. a vista 13 (Interru...)" Sequenz="159" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24419" Name="SP_14" German="Sichtprüfung 14 (RCD Typ B...)" French="Contrôle visuel 14 (Présen...)" Italian="Contr. a vista 14 (RCD tip...)" Sequenz="160" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24420" Name="SP_15X" German="Sichtprüfung 15 (RCD Typ...)" French="Contrôle visuel 15 (RCD du...)" Italian="Contr. a vista 15 (RCD tip...)" Sequenz="161" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld Name="SP_15XTEXT" Length="3" Type="STRING" German="RCD Typ Text" French="RCD du type texte" Italian="RCD tipo testo" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld ID="24421" Name="SP_16" German="Sichtprüfung 16 (Schutz du...)" French="Contrôle visuel 16 (RCD in...)" Italian="Contr. a vista 16 (Protezi...)" Sequenz="162" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24422" Name="SP_17" German="Sichtprüfung 17 (Betriebs-...)" French="Contrôle visuel 17 (Paramé...)" Italian="Contr. a vista 17 (Paramet...)" Sequenz="163" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24423" Name="SP_18" German="Sichtprüfung 18 (Alle Stro...)" French="Contrôle visuel 18 (Circui...)" Italian="Contr. a vista 18 (Tutti i...)" Sequenz="164" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld Name="SP_NORMTEXT" Length="20" Type="STRING" French="Contrôle visuel norme texte" Italian="Contr. a vista norma testo" German="Sichtprüfung Normtext" UDom="1" UDomRec="2" UDomFld="2"><Udo_DE UDefault="NIN 7.12.5.1.4"><Uda>NIN 7.12.5.1.4</Uda></Udo_DE><Udo_FR UDefault="NIBT 7.12.5.1.4"><Uda>NIBT 7.12.5.1.4</Uda></Udo_FR><Udo_IT UDefault="NIBT 7.12.5.1.4"><Uda>NIBT 7.12.5.1.4</Uda></Udo_IT></Fld><Fld ID="24424" Name="SP_19" German="Sichtprüfung 19 (auf WR ...)" French="Contrôle visuel 19 (sur on...)" Italian="Contr. a vista 19 (Inverte...)" Sequenz="165" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24425" Name="SP_20" German="Sichtprüfung 20 (Solar-DC ...)" French="Contrôle visuel 20 (Solar ...)" Italian="Contr. a vista 20 (FV DC t...)" Sequenz="166" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24426" Name="SP_21" German="Sichtprüfung 21 (auf SGK /...)" French="Contrôle visuel 21 (ense...)" Italian="Contr. a vista 21 (appare...)" Sequenz="167" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24428" Name="SP_22" German="Sichtprüfung 22 (Prinzipsc...)" French="Contrôle visuel 22 (Schéma...)" Italian="Contr. a vista 22 (Schema...)" Sequenz="169" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24430" Name="SP_23" German="Sichtprüfung 23 (Abschaltv...)" French="Contrôle visuel 23 (Mécan...)" Italian="Contr. a vista 23 (Disatti...)" Sequenz="171" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld Name="SP_24" Type="BOOL" German="Sichtprüfung 24 (Kontaktda...)" Required="true" UDom="1" UDomRec="2" UDomFld="2" French="Contrôle visuel 24 (Coordo...)" Italian="Contr. a vista 24 (Recapit...)"/>
+			<Fld Name="N_MESSNORM" Type="STRING" German="Verwendete Messgeräte Norm" French="Instruments de mesure Norme" Italian="App. di misura Norma" Length="14" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="SN EN 61557" ULookupOnly="true">
+					<Uda>IEC 61010</Uda>
+					<Uda>SN EN 61557</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="SN EN 61557" ULookupOnly="true">
+					<Uda>IEC 61010</Uda>
+					<Uda>SN EN 61557</Uda>
+				</Udo_FR>
+				<Udo_IT UDefault="SN EN 61557" ULookupOnly="true">
+					<Uda>IEC 61010</Uda>
+					<Uda>SN EN 61557</Uda>
+				</Udo_IT>
+			</Fld>
+			<Fld Name="N_MESS1" German="Verwendete Messgeräte 1" French="Instruments de mesure 1" Italian="App. di misura 1" Type="STRING" UDom="1" UDomRec="2" UDomFld="2" Length="40"/>
+			<Fld Name="N_MESS2" German="Verwendete Messgeräte 2" French="Instruments de mesure 2" Italian="App. di misura 2" Type="STRING" Length="40" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="N_MESS3" German="Verwendete Messgeräte 3" French="Instruments de mesure 3" Italian="App. di misura 3" Length="40" Type="STRING" UDom="1" UDomRec="2" UDomFld="2"/>
+			<Fld Name="N_NORM1" Type="BOOL" German="Norm 1" French="Norme 1" Italian="Norma 1" Required="true" UDom="1" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld Name="N_NORM1TEXT" Length="24" Type="STRING" German="Norm 1 Text" French="Norme 1 texte" Italian="Norma 1 testo" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="NIV">
+					<Uda>NIV</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="OIBT"><Uda>OIBT</Uda></Udo_FR><Udo_IT UDefault="NIBT"><Uda>NIBT</Uda></Udo_IT></Fld>
+			<Fld Name="N_NORM2" Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2" German="Norm 2" French="Norme 2" Italian="Norma 2"/>
+			<Fld ID="24459" Name="N_NORM2TEXT" German="Norm 2 Text" French="Norme 2 texte" Italian="Norma 2 testo" Sequenz="200" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="NIN SN 411000:2020">
+					<Uda>NIN SN 411000:2020</Uda>
+					<Uda>NIN SN 411000:2015</Uda>
+					<Uda>NIN 2020</Uda>
+					<Uda>NIN 2015</Uda>
+					<Uda>NIN 2010</Uda>
+					<Uda>NIN 2005</Uda>
+					<Uda>SEV 1000:2010</Uda><Uda>SEV 1000:2005</Uda></Udo_DE>
+				<Udo_FR UDefault="NIBT SN 411000:2020">
+					<Uda>NIBT SN 411000:2020</Uda>
+					<Uda>NIBT SN 411000:2015</Uda>
+					<Uda>NIBT 2020</Uda>
+					<Uda>NIBT 2015</Uda>
+					<Uda>NIBT 2010</Uda>
+					<Uda>NIBT 2005</Uda>
+					<Uda>SEV 1000:2010</Uda><Uda>SEV 1000:2005</Uda></Udo_FR>
+				<Udo_IT UDefault="NIBT SN 411000:2015"><Uda>NIBT SN 411000:2020</Uda><Uda>NIBT SN 411000:2015</Uda><Uda>NIBT 2020</Uda><Uda>NIBT 2015</Uda><Uda>NIBT 2010</Uda><Uda>NIBT 2005</Uda><Uda>SEV 1000:2010</Uda><Uda>SEV 1000:2005</Uda></Udo_IT></Fld>
+			<Fld ID="24460" Name="N_NORM3" German="Norm 3" French="Norme 3" Sequenz="201" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true" Italian="Norma 3"/>
+			<Fld ID="24461" Name="N_NORM3TEXT" German="Norm 3 Text" French="Norme 3 texte" Sequenz="202" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2" Italian="Norma 3 testo">
+				<Udo_DE UDefault="WV">
+					<Uda>WV</Uda>
+					<Uda>HV</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="PDIE">
+					<Uda>PDIE</Uda>
+					<Uda>PIE</Uda>
+				</Udo_FR>
+				<Udo_IT UDefault="WV"><Uda>WV</Uda><Uda>HV</Uda></Udo_IT></Fld>
+			<Fld ID="24462" Name="N_NORM4" German="Norm 4" French="Norme 4" Italian="Norma 4" Sequenz="203" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24463" Name="N_NORM4TEXT" German="Norm 4 Text" French="Norme 4 texte" Italian="Norma 4 testo" Sequenz="204" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="SN EN 62446-1">
+					<Uda>SN EN 62446-1</Uda>
+					<Uda>SN EN 61439</Uda>
+					<Uda>SN EN 60439</Uda>
+					<Uda>SN EN 60204</Uda>
+					<Uda>SN EN 50160</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="SN EN 62446-1">
+					<Uda>SN EN 62446-1</Uda>
+					<Uda>SN EN 61439</Uda>
+					<Uda>SN EN 60439</Uda>
+					<Uda>SN EN 60204</Uda>
+					<Uda>SN EN 50160</Uda>
+				</Udo_FR>
+				<Udo_IT UDefault="SN EN 62446-1"><Uda>SN EN 62446-1</Uda><Uda>SN EN 61439</Uda><Uda>SN EN 60439</Uda><Uda>SN EN 60204</Uda><Uda>SN EN 50160</Uda></Udo_IT></Fld>
+			<Fld ID="24464" Name="N_NORM5" German="Norm 5" French="Norme 5" Italian="Norma 5" Sequenz="205" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24465" Name="N_NORM5TEXT" German="Norm 5 Text" French="Norme 5 texte" Italian="Norma 5 testo" Sequenz="206" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="SNR 464022 Blitzschutz">
+					<Uda>SNR 464022 Blitzschutz</Uda>
+					<Uda>EN 60204</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="SNR 464022 Protect. contr. foudre">
+					<Uda>SNR 464022 Protect. contr. foudre</Uda>
+					<Uda>EN 60204</Uda>
+				</Udo_FR>
+				<Udo_IT><Uda>SNR 464022 Parafulmine</Uda><Uda>EN 60204</Uda></Udo_IT></Fld>
+			<Fld ID="24466" Name="N_NORM6" German="Norm 6" French="Norme 6" Italian="Norma 6" Sequenz="207" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24467" Name="N_NORM6TEXT" German="Norm 6 Text" French="Norme 6 texte" Italian="Norma 6 testo" Sequenz="208" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="D-A-CH-CZ">
+					<Uda>D-A-CH-CZ</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="D-A-CH-CZ">
+					<Uda>D-A-CH-CZ</Uda>
+				</Udo_FR>
+				<Udo_IT UDefault="D-A-CH-CZ"><Uda>D-A-CH-CZ</Uda></Udo_IT></Fld>
+			<Fld ID="24468" Name="N_NORM7" German="Norm 7" French="Norme 7" Italian="Norma 7" Sequenz="209" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24469" Name="N_NORM7TEXT" German="Norm 7 Text" French="Norme 7 texte" Italian="Norma 7 testo" Sequenz="210" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="Werkvorschriften (TAB)">
+					<Uda>Werkvorschriften (TAB)</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="Prescriptions PDIE (CTR)">
+					<Uda>Prescriptions PDIE (CTR)</Uda>
+				</Udo_FR>
+				<Udo_IT UDefault="Prescrizioni PDIE (CTR)"><Uda>Prescrizioni PDIE (CTR)</Uda></Udo_IT></Fld>
+			<Fld ID="24470" Name="N_NORM8" German="Norm 8" French="Norme 8" Italian="Norma 8" Sequenz="211" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24471" Name="N_NORM8TEXT" German="Norm 8 Text" French="Norme 8 texte" Italian="Norma 8 testo" Sequenz="212" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="SNR 464022">
+					<Uda>SNR 464022</Uda>
+					<Uda>SEV 4022:2008</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="SNR 464022">
+					<Uda>SNR 464022</Uda>
+					<Uda>SEV 4022:2008</Uda>
+				</Udo_FR>
+				<Udo_IT UDefault="SNR 464022"><Uda>SNR 464022</Uda><Uda>SEV 4022:2008</Uda></Udo_IT></Fld>
+			<Fld Name="SKLISTE_BEMTITEL" German="Stromkreise Freies Feld Titel" French="Circuits titre de champ libre" Italian="Titolo della propria colonna" Length="30" Type="STRING" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="Bemerkungen">
+					<Uda>Bemerkungen</Uda>
+				</Udo_DE>
+				<Udo_FR UDefault="Remarques">
+					<Uda>Remarques</Uda>
+				</Udo_FR>
+				<Udo_IT UDefault="Osservazioni"><Uda>Osservazioni</Uda></Udo_IT></Fld>
+			<Fld ID="24474" Name="UM_DATUM" German="Umgebungsbed. Datum" French="Cond. ambiantes date" Italian="Cond. ambientali date" Sequenz="217" Type="DATE" UDomFld="2"/>
+			<Fld ID="24475" Name="UM_ZEIT" German="Umgebungsbed. Zeit" French="Cond. ambiantes heure" Italian="Cond. ambientali ora" Sequenz="218" Type="STRING" Length="10" UDomFld="2"/>
+			<Fld ID="24478" Name="UM_SONNIG" German="Umgebungsbed. sonnig" French="Cond. ambiantes ensoleillé" Italian="Cond. ambientali soleggiato" Sequenz="221" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24480" Name="UM_WOLKIG" German="Umgebungsbed. leicht bewölkt" French="Cond. ambiantes part.nuageux" Italian="Cond. ambientali nuvoloso" Sequenz="223" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24479" Name="UM_WECHSEL" German="Umgebungsbed. wechselhaft" French="Cond. ambiantes variable" Italian="Cond. ambientali variable" Sequenz="222" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24481" Name="UM_X" German="Umgebungsbed. andere" French="Cond. ambiantes autres" Sequenz="224" Italian="Cond. ambientali altro" Type="BOOL" UDom="2" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24482" Name="UM_XTEXT" German="Umgebungsbed. andere Text" French="Cond. ambiantes autres texte" Italian="Cond. ambientali altr testo" Sequenz="225" Type="STRING" Length="60" UDom="2" UDomRec="2" UDomFld="2">
+				<Udo_DE>
+					<Uda>stark bewölkt, ungünstige Bedingungen</Uda>
+					<Uda>Regen, ungünstige Bedingungen</Uda>
+					<Uda>leichter Schneefall, ungünstige Bedingungen</Uda>
+				</Udo_DE>
+				<Udo_FR>
+					<Uda>Très nuageux, conditions défavorables</Uda>
+					<Uda>Pluie, conditions défavorables</Uda>
+					<Uda>Légère neige, conditions défavorables</Uda>
+				</Udo_FR>
+				<Udo_IT><Uda>Condizioni molto nuvolose e sfavorevoli</Uda><Uda>Pioggia, condizioni sfavorevoli</Uda><Uda>Nevicate leggere, condizioni sfavorevoli</Uda></Udo_IT></Fld>
+			<Fld ID="24477" Name="UM_EINSTRAHL" German="Umgebungsbed. Einstrahlung" French="Cond. ambiantes irradiation" Italian="Cond. ambientali irradiazione" Sequenz="220" Type="STRING" UDom="2" UDomRec="2" UDomFld="2" Length="8"/>
+			<Fld ID="24476" Name="UM_TEMP" German="Umgebungsbed. Temperatur" French="Cond. ambiantes température" Italian="Cond. ambientali temperatura" Sequenz="219" Type="STRING" UDom="2" UDomRec="2" UDomFld="2" Length="8"/>
+			<Fld ID="24447" Name="FP_1" German="Funktionsprüfung 1 (Schutz...)" French="Essais 1 (Conducteur...)" Italian="Prova di funz. 1 (Condutto...)" Sequenz="188" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24448" Name="FP_2" German="Funktionsprüfung 2 (SPA-Le...)" French="Essais 2 (Cond. protection PE)" Italian="Prova di funz. 2 (Cond. PE)" Sequenz="189" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24449" Name="FP_3" German="Funktionsprüfung 3 (SPA Ar...)" French="Essais 3 (PE cadre ciruit)" Italian="Prova di funz. 3 (Stringa PE)" Sequenz="190" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24450" Name="TK_MODUL" German="mit modulspez. Temp.koeff." French="Coeff. du temp. spécifique" Italian="Coeff. di temp. specifico" Sequenz="191" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld Name="TK_KORR" Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2" German="Korrekturfaktor TK" French="Facteur correctif Tk" Italian="Fattore correzione Tk"/>
+			<Fld ID="24451" Name="TK_KORRXTEXT" German="Korrekturfaktor TK Text" French="Facteur correctif Tk texte" Italian="Fattore correzione Tk testo" Sequenz="192" Type="STRING" Length="40" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE>
+					<Uda>1.15 bei H ≤ 800 müM</Uda>
+					<Uda>1.20 bei 800 ≤ H ≤ 1500 müM</Uda>
+					<Uda>1.25 bei H ≥ 1500 müM</Uda>
+				</Udo_DE>
+				<Udo_FR><Uda>1.15 à H ≤ 800 m s. mer</Uda><Uda>1.20 à 800 ≤ H ≤ 1500 m s. mer</Uda><Uda>1.25 à H ≥ 1500 m s. mer</Uda></Udo_FR><Udo_IT><Uda>1.15 se H ≤ 800 m.s.l.m</Uda><Uda>1.20 se 800 ≤ H ≤ 1500 m.s.l.m</Uda><Uda>1.25 se H ≥ 1500 m.s.l.m</Uda></Udo_IT></Fld>
+			<Fld Name="FP_4" Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2" German="Funktionsprüfung 4 (Funkti...)" French="Essais 4 (Test conctionnem...)" Italian="Prova di funz. 4 (Controll...)"/>
+			<Fld Name="FP_5" Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2" German="Funktionsprüfung 5 (Funkti...)" French="Essais 5 (Test de fonction...)" Italian="Prova di funz. 5 (Controll...)"/>
+			<Fld Name="FP_6" Required="true" UDom="1" UDomRec="2" UDomFld="2" German="Funktionsprüfung 5 (DC-gek...)" Type="BOOL" French="Essais 6 (Couplé on DC)" Italian="Prova di funz. 6 (Accop. DC)"/>
+			<Fld Name="FP_7" Type="BOOL" Required="true" UDom="1" UDomRec="2" UDomFld="2" French="Essais 7 (Couplé en AC)" German="Funktionsprüfung 7 (AC-gek...)" Italian="Prova di funz. 7 (Accop. AC)"/>
+			<Fld ID="24484" Name="MAC_1" German="AC-Mess. ab Anlagenschalter" French="..." Italian="da interruttore principale AC" Sequenz="227" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="24485" Name="MAC_2" German="AC-Mess. vollständige Inst." French="Mes. AC inst. complète" Italian="Installazione completa" Sequenz="228" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="26261" Name="GGZ_NAME1" German="GGZ_NAME1" French="GGZ_NAME1" Sequenz="172" Type="STRING" Length="40" Italian="GGZ_NAME1" UDomFld="2" UDom="2" UDomRec="2">
+			</Fld>
+			<Fld ID="26262" Name="GGZ_NAME2" German="GGZ_NAME2" French="GGZ_NAME2" Sequenz="173" Type="STRING" Length="40" Italian="GGZ_NAME2" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="26263" Name="GGZ_ADRESSE1" German="GGZ_ADRESSE1" French="GGZ_ADRESSE1" Sequenz="174" Type="STRING" Length="40" Italian="GGZ_ADRESSE1" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="26270" Name="GGZ_ADRESSE2" German="GGZ_ADRESSE2" French="GGZ_ADRESSE2" Sequenz="175" Type="STRING" Length="40" Italian="GGZ_ADRESSE2" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="26264" Name="GGZ_PLZ" German="GGZ_PLZ" French="GGZ_PLZ" Sequenz="176" Type="STRING" Length="8" Italian="GGZ_PLZ" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="26265" Name="GGZ_ORT" German="GGZ_ORT" French="GGZ_ORT" Sequenz="177" Type="STRING" Length="30" Italian="GGZ_ORT" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="26266" Name="GGZ_KONZESS" German="GGZ_KONZESS" French="GGZ_KONZESS" Sequenz="178" Type="STRING" Length="16" Italian="GGZ_KONZESS" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="26267" Name="GGZ_TELNR" German="GGZ_TELNR" French="GGZ_TELNR" Sequenz="179" Type="STRING" Length="16" Italian="GGZ_TELNR" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="26271" Name="GGZ_EMAIL" German="GGZ_EMAIL" French="GGZ_EMAIL" Sequenz="180" Type="STRING" Length="60" Italian="GGZ_EMAIL" UDom="2" UDomRec="2" UDomFld="2">
+			</Fld>
+			<Fld ID="26260" Name="GGZ_DATUM" German="GGZ_DATUM" French="GGZ_DATUM" Sequenz="181" Type="DATE" Italian="GGZ_DATUM" UDomFld="2">
+			</Fld>
+			<Fld ID="26268" Name="GGZ_GRUND" German="Gegenzeichnung Grund" French="Contre-signée Raison" Sequenz="182" Type="STRING" Length="60" UDom="2" UDomFld="2" Italian="Controfirma motiva" UDomRec="2"/>
+			<Fld ID="26269" Name="GGZ_SIGN" German="GGZ_SIGN" French="GGZ_SIGN" Sequenz="183" Type="STRING" Length="30" Italian="GGZ_SIGN" UDomFld="2">
+			</Fld>
+			<Fld ID="26272" Name="GGZ_SIKT" German="GGZ_SIKT" French="GGZ_SIKT" Sequenz="184" Type="STRING" Length="30" Italian="GGZ_SIKT" UDomFld="2">
+			</Fld>
+			<Fld ID="24497" Name="SIGN_DATUM2" German="Kontrolldatum" French="Date du contrôle" Italian="Data di controllo" Sequenz="240" Type="DATE" UDomFld="2"/>
+			<Fld ID="24498" Name="SIGN_DATUM" German="SIGN_DATUM" French="SIGN_DATUM" Italian="SIGN_DATUM" Sequenz="241" Type="DATE" UDomFld="2"/>
+			<Fld ID="24499" Name="KONTR_SIGN" German="KONTR_SIGN" French="KONTR_SIGN" Italian="KONTR_SIGN" Sequenz="242" Type="STRING" Length="30" UDomFld="2"/>
+			<Fld ID="24500" Name="KONTR_SIKT" German="KONTR_SIKT" French="KONTR_SIKT" Italian="KONTR_SIKT" Sequenz="243" Type="STRING" Length="30" UDomFld="2"/>
+			<Fld ID="24501" Name="SIGNATURE" German="SIGNATURE" French="SIGNATURE" Italian="SIGNATURE" Sequenz="244" Type="STRING" Length="30" UDomFld="2"/>
+			<Fld ID="24502" Name="SIGNKT" German="SIGNKT" French="SIGNKT" Italian="SIGNKT" Sequenz="245" Type="STRING" Length="30" UDomFld="2"/>
+		</Tab>
+	</DataDic>
+	<FormTemplate ID="2155" KURZBEZ="PV MPP" TITEL="Mess- und Prüfprotokoll Photovoltaik" SprachCode="1031" AUTOR="ESTI" AUTORBEZ="PV MessProt - 2020" FormNr="181" Version="4" DDTab="MESSPROT_PV18_DE" PgmVersion="10.0.14.0"/>
+	<FormTemplate ID="2156" KURZBEZ="PV PM" TITEL="PV protocole d'essais - mesures" SprachCode="1036" AUTOR="ESTI" AUTORBEZ="PV ProtMesu - 2020" FormNr="281" Version="4" DDTab="MESSPROT_PV18_FR" PgmVersion="10.0.14.0"/>
+	<FormTemplate SprachCode="1040" ID="2159" KURZBEZ="FV PM" TITEL="FV protocollo di prova e misura" AUTOR="ESTI" AUTORBEZ="FV PM - 2020" FormNr="381" Version="4" PgmVersion="10.0.14.0"/></Form>

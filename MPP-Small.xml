@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form Name="MESSPROT18" ID_FORMSET="17" FORMTYP="P">
+	<DataDic>
+		<Tab ID="505" NameExtend="true" German="Mess- und Prüfprotokoll" French="Protocole d&apos;essais - mesures" Status="1">
+			<Fld ID="25987" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="25988" Name="ID_PROJECT" German="Projekt" French="Projet" Sequenz="2" Type="INT">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="25991" Name="ID_FORMTMP" German="Formular" French="Formulaire" Sequenz="5" Type="INT">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="25992" Name="I_PROJECT" German="Projekt-ID" French="I_PROJECT" Sequenz="6" Type="INT">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="25993" Name="I_FORM" German="Formular ID" French="I_FORM" Sequenz="7" Type="INT">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="25995" Name="INST_OUT" German="Exportdatum" French="Date de l&apos;exportation" Sequenz="9" Type="DATE">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="25996" Name="WERK_IN" German="Empfangsdatum" French="Date de réception" Sequenz="10" Type="DATE">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="25997" Name="WERK_OUT" German="Exportdatum" French="Date de l&apos;exportation" Sequenz="11" Type="DATE">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="25998" Name="INST_IN" German="Empfangsdatum" French="Date de réception" Sequenz="12" Type="DATE">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="25999" Name="PROJ_NR" German="Nummer" French="Numéro" Sequenz="13" Type="STRING" Length="12" UDomRec="2" UDomFld="2">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26000" Name="PROJ_JAHR" German="Jahr" French="Année" Sequenz="14" Type="INT" UDomRec="2" UDomFld="2">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26001" Name="WERK" German="Netzbetreiberin" French="Exploitant de réseau" Italian="Gestore di rete" Sequenz="15" Type="STRING" Length="24">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26004" Name="VISUM" German="Visum" French="Visa" Italian="Visto" Sequenz="18" Type="STRING" Length="6">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26005" Name="I_NAME1" German="Installateur" French="Installateur" Sequenz="19" Type="STRING" Length="40">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26006" Name="I_NAME2" German="Inst. Name 2" French="Installateur nom 2" Sequenz="20" Type="STRING" Length="40">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26007" Name="I_ADRESSE1" German="Adr. des Installateurs" French="Adresse de l&apos;inst." Sequenz="21" Type="STRING" Length="40">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26008" Name="I_ADRESSE2" German="Adr. des Installateurs" French="Adresse de l&apos;inst." Sequenz="22" Type="STRING" Length="40">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26009" Name="I_PLZ" German="PLZ  des Installateurs" French="NPA de l&apos;inst." Sequenz="23" Type="STRING" Length="8">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26010" Name="I_ORT" German="Ort des Installateurs" French="Lieu de l&apos;inst." Sequenz="24" Type="STRING" Length="30">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26011" Name="I_KONZESS" German="Bew.-Nr. des Installateurs" French="N° d&apos;autorisation de l&apos;inst." Sequenz="25" Type="STRING" Length="16">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26012" Name="I_SACHB" German="Sachbearbeiter des Inst.betr." French="Personne responsable" Sequenz="26" Type="STRING" Length="24">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26013" Name="I_TELNR" German="Tel.Nr. des Installateurs" French="Téléphone de l&apos;inst." Sequenz="27" Type="STRING" Length="16">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26015" Name="I_EMAIL" German="E-Mail des Installateurs" French="Adresse e-mail de l&apos;inst." Sequenz="29" Type="STRING" Length="60">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26017" Name="O_STRASSE" German="Strasse des Objekts" French="Rue de l&apos;objet" Sequenz="31" Type="STRING" Length="30">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26018" Name="O_HAUSNR" German="Hausnr. des Objekts" French="N° de l&apos;objet" Sequenz="32" Type="STRING" Length="24">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26019" Name="O_PLZ" German="PLZ des Objekts" French="NPA de l&apos;objet" Sequenz="33" Type="STRING" Length="8">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26020" Name="O_ORT" German="Ort des Objekts" French="Lieu de l&apos;objet" Sequenz="34" Type="STRING" Length="30">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26286" Name="EGID" German="EGID Nr." French="EGID No" Italian="EGID Nr." Sequenz="52" Type="INT" UDom="2" UDomRec="2" UDomFld="2" Minimum="1" Maximum="900000000" DisplayFormat="#," EditFormat="#">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26037" Name="EVUAUFTNR" German="EVUAUFTNR" French="EVUAUFTNR" Sequenz="54" Type="STRING" Length="12">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26038" Name="TERMIN" German="TERMIN" French="TERMIN" Sequenz="55" Type="DATE">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26039" Name="PACKNAME" German=".evu-Package Name" French="Fichier pack EDE" Sequenz="56" Type="STRING" Length="16">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26251" Name="KONDATUM" German="Datum der Kontrolle" French="Date de contrôle" Italian="Datum der Kontrolle" Sequenz="98" Type="DATE">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26067" Name="KONTUMFANG" German="Kontrollumfang" French="Description du contrôle" Italian="Estensione del controllo" Sequenz="99" Type="MEMO" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE/>
+				<Udo_FR/>
+			</Fld>
+			<Fld ID="26240" Name="N_MESSNORM" German="Verwendete Messgeräte Norm" French="Instruments de mesure Norme" Italian="App. di misura Norma" Sequenz="139" Type="STRING" Length="14" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE ULookupOnly="true" UDefault="SN EN 61557">
+					<Uda>IEC 61010</Uda>
+					<Uda>SN EN 61557</Uda>
+				</Udo_DE>
+				<Udo_FR ULookupOnly="true" UDefault="SN EN 61557">
+					<Uda>IEC 61010</Uda>
+					<Uda>SN EN 61557</Uda>
+				</Udo_FR>
+			</Fld>
+			<Fld ID="26137" Name="N_NORM1" German="Norm 1" French="Norme 1" Italian="Norma 1" Sequenz="143" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+			<Fld ID="26138" Name="N_NORM1TEXT" German="Norm 1 Text" French="Norme 1 texte" Italian="Norma 1 testo" Sequenz="144" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2">
+				<Udo_DE UDefault="NIV"/>
+				<Udo_FR UDefault="OIBT"/>
+			</Fld>
+			<Tab ID="506" Name="SKListe" NameExtend="true" German="Stromkreise" French="Circuits" Status="1" ID_Parent="505">
+				<Fld ID="26173" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true">
+					<Udo_DE/>
+					<Udo_FR/>
+				</Fld>
+				<Fld ID="26174" Name="FORM_ID" German="FORM_ID" French="FORM_ID" Sequenz="2" Type="INT" Required="true" ForeignTab="MESSPROT08" ForeignFld="ID" Linked="true" Child="true">
+					<Udo_DE/>
+					<Udo_FR/>
+				</Fld>
+				<Fld ID="26175" Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Sequenz="3" Type="INT">
+					<Udo_DE/>
+					<Udo_FR/>
+				</Fld>
+				<Fld ID="26177" Name="BEZ" German="Bezeichnung" French="Désignation" Italian="Denominazione" Sequenz="5" Type="STRING" Length="120" UDom="1" UDomRec="2" UDomFld="2">
+					<Udo_DE>
+						<Uda>HAK</Uda>
+						<Uda>Licht EG</Uda>
+						<Uda>Licht 1.OG</Uda>
+						<Uda>Küche</Uda>
+						<Uda>Geschirrspüler</Uda>
+						<Uda>Kochherd</Uda>
+						<Uda>Steamer</Uda>
+						<Uda>Keller</Uda>
+						<Uda>Boiler (300l)</Uda>
+						<Uda>Heizung</Uda>
+						<Uda>Waschmaschine</Uda>
+						<Uda>Garage</Uda>
+						<Uda>UG</Uda>
+						<Uda>SGK</Uda>
+						<Uda>Aussenbeleuchtung</Uda>
+						<Uda>Mansarde</Uda>
+					</Udo_DE>
+					<Udo_FR>
+						<Uda>Coffret d&apos;introduction</Uda>
+						<Uda>Lumière REZ</Uda>
+						<Uda>Lumière 1er étage</Uda>
+						<Uda>Cuisine</Uda>
+						<Uda>Lave-vaisselle</Uda>
+						<Uda>Cuisinière</Uda>
+						<Uda>Steamer</Uda>
+						<Uda>Cave</Uda>
+						<Uda>Chauffe-eau</Uda>
+						<Uda>Chauffage</Uda>
+						<Uda>Machine à laver</Uda>
+						<Uda>Garage</Uda>
+						<Uda>Tableau d&apos;étage</Uda>
+						<Uda>Ensemble d&apos;appareillage</Uda>
+						<Uda>Eclairage extérieur</Uda>
+						<Uda>Mansarde</Uda>
+					</Udo_FR>
+				</Fld>
+				<Fld ID="26182" Name="M_IKMAX" German="Ik Anfang" French="Ik début" Italian="Ik max." Sequenz="10" Type="STRING" Length="8"/>
+				<Fld ID="26183" Name="M_IKMIN" German="Ik Ende" French="Ik fin" Italian="Ik min." Sequenz="11" Type="STRING" Length="8">
+					<Udo_DE/>
+					<Udo_FR/>
+				</Fld>
+				<Fld ID="26246" Name="M_IKMAX_LN" German="Ik Anfang" French="Ik début" Italian="Ik max." Sequenz="12" Type="STRING" Length="8"/>
+				<Fld ID="26247" Name="M_IKMIN_LN" German="Ik Ende" French="Ik fin" Italian="Ik min." Sequenz="13" Type="STRING" Length="8"/>
+				<Fld ID="26184" Name="M_RISO" German="R Isolation" French="R isolation" Italian="R Iso" Sequenz="14" Type="STRING" Length="8" UDom="1" UDomRec="2" UDomFld="2"/>
+				<Fld ID="26185" Name="M_LEIT" German="Leitfähigkeit Schutzleiter" French="Continuité de conducteur PE" Italian="Conducibilita" Sequenz="15" Type="STRING" Length="8" UDom="1" UDomRec="2" UDomFld="2"/>
+			</Tab>
+		</Tab>
+	</DataDic>
+	<FormTemplate ID="2153" KURZBEZ="MessProt" TITEL="Mess- und Prüfprotokoll" SprachCode="1031" AUTOR="ESTI" AUTORBEZ="MessProt - 2018" FormNr="196" DDTab="MESSPROT18_DE" PgmVersion="9.0.9.0" Version="7"/>
+	<FormTemplate ID="2154" KURZBEZ="ProtMesu" TITEL="Protocole d&apos;essais - mesures" SprachCode="1036" AUTOR="IFICF" AUTORBEZ="ProtMesu - 2018" FormNr="296" DDTab="MESSPROT18_FR" PgmVersion="9.0.9.0" Version="7"/>
+</Form>

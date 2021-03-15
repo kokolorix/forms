@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Addresses">
+		<xs:alternative test="./format = 'US'" type="USAdresses" />
+<!--		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="format"/>
+				<xs:element name="address" minOccurs="0" maxOccurs="unbounded">
+					<xs:alternative test="@format ='US'" type="USAddress"/>
+					<xs:alternative test="@format ='Canada'" type="CanadaAddress"/>
+					<xs:alternative type="xs:error"/>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+-->	</xs:element>
+	
+	<xs:complexType  name="USAdresses">
+		<xs:sequence>
+			<xs:element name="format"/>
+			<xs:element name="address" minOccurs="0" maxOccurs="unbounded" type="USAddress">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="USAddress">
+		<xs:sequence>
+			<xs:element name="street" type="xs:string"/>
+			<xs:element name="city" type="xs:string"/>
+			<xs:element name="state" type="xs:string"/>
+			<xs:element name="zip" type="xs:positiveInteger"/>
+		</xs:sequence>
+		<xs:attribute name="format" type="xs:string" fixed="US"/>
+	</xs:complexType>
+	
+	<xs:complexType name="CanadaAddress">
+		<xs:sequence>
+			<xs:element name="civicAddress" type="xs:string"/>
+			<xs:element name="municipality" type="xs:string"/>
+			<xs:element name="province" type="xs:string"/>
+			<xs:element name="postalCode" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="format" type="xs:string" fixed="Canada"/>
+	</xs:complexType>
+</xs:schema>

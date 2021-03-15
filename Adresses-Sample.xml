@@ -1,0 +1,22 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Addresses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AdressSample.xsd">
+	<format>US</format>
+    <address format="US">
+        <street>123 Main Street</street>
+        <city>Lansing</city>
+        <state>Michigan</state>
+        <zip>48864</zip>
+    </address>
+    <address format="Canada">
+        <civicAddress>10-123 1/2 Main ST SE</civicAddress>
+        <municipality>Montreal</municipality>
+        <province>QC</province>
+        <postalCode>H3Z 2Y7</postalCode>
+    </address>
+    <address format="Canada2">
+        <civicAddress>10-123 1/2 Main ST SE</civicAddress>
+        <municipality>Montreal</municipality>
+        <province>QC</province>
+        <postalCode>H3Z 2Y7</postalCode>
+    </address>
+</Addresses>

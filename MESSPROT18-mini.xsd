@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name="xml">
+	<xs:element name="FORMULAR">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="ROW" type="T_Row"/>
@@ -11,7 +11,6 @@
 	<xs:element name="SKListeMESSPROT18_DE" substitutionGroup="SKListe" type="T_SKListe"/>
 	<xs:element name="SKListeMESSPROT18_FR" substitutionGroup="SKListe" type="T_SKListe"/>
 	<xs:element name="SKListeMESSPROT18_IT" substitutionGroup="SKListe" type="T_SKListe"/>
-	
 	<xs:complexType name="T_Row">
 		<xs:all>
 			<xs:element name="FORM_TYP" type="xs:string"/>
@@ -867,10 +866,12 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element ref="SKListe"/>
+			<xs:element ref="SKListeMESSPROT18_DE"/>
+			<xs:element ref="SKListeMESSPROT18_FR"/>
+			<xs:element ref="SKListeMESSPROT18_IT"/>
 		</xs:all>
 	</xs:complexType>
-	<xs:complexType name="T_SKListe" abstract="true">
+	<xs:complexType name="T_SKListe">
 		<xs:sequence minOccurs="0" maxOccurs="unbounded">
 			<xs:element name="ROW">
 				<xs:complexType>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Form Name="BASEL_TA" ID_FORMSET="65809" FORMTYP="T">
+   <DataDic>
+      <Tab ID="164" NameExtend="true" German="Werkapparate-Rapport 2005" French="Werkapparate-Rapport 2005" Status="1">
+         <Tab ID="168" Name="TAListe" NameExtend="true" German="Werkapparate" French="Werkapparate" Status="1" ID_Parent="164">
+            <Fld ID="5838" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true"/>
+            <Fld ID="5839" Name="FORM_ID" German="Formular" French="Formulaire" Sequenz="2" Type="INT" ForeignTab="BASEL_TA" ForeignFld="ID" Linked="true" Child="true"/>
+            <Fld ID="5840" Name="SCHEMA_ID" German="Schema" French="Schéma" Sequenz="3" Type="INT"/>
+            <Fld ID="5841" Name="SEQ_FORM" German="SEQ_FORM" French="SEQ_FORM" Sequenz="4" Type="INT"/>
+            <Fld ID="5842" Name="SEQ_SCHEM" German="SEQ_SCHEM" French="SEQ_SCHEM" Sequenz="5" Type="INT"/>
+            <Fld ID="5843" Name="BEZUEGER" German="Name Zeile 1" French="Name Zeile 1" Sequenz="6" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5844" Name="BEZUEGER2" German="Name Zeile 2" French="Name Zeile 2" Sequenz="7" Type="STRING" Length="24" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5845" Name="STOCKWERK" German="Stockwerk" French="Stockwerk" Sequenz="8" Type="STRING" Length="6" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5846" Name="WOHNUNG" German="Wohnung Nr." French="Wohnung Nr." Sequenz="9" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5848" Name="TARIF" German="Tarif" French="Tarif" Sequenz="10" Type="STRING" Length="10" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5849" Name="SICH_IN" German="Sicherung Nennstrom" French="Sicherung Nennstrom" Sequenz="11" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5850" Name="V_ANZAHL" German="Verbraucher Zeile 1 Anzahl" French="Verbraucher Zeile 1 Anzahl" Sequenz="12" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5852" Name="V_TEXT" German="Verbraucher Zeile 1 Art" French="Verbraucher Zeile 1 Art" Sequenz="13" Type="STRING" Length="50" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5854" Name="V_KVA" German="Verbraucher Zeile 1 Leistung" French="Verbraucher Zeile 1 Leistung" Sequenz="14" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5851" Name="V_ANZAHL2" German="Verbraucher Zeile 2 Anzahl" French="Verbraucher Zeile 2 Anzahl" Sequenz="15" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5853" Name="V_TEXT2" German="Verbraucher Zeile 2 Art" French="Verbraucher Zeile 2 Art" Sequenz="16" Type="STRING" Length="50" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5855" Name="V_KVA2" German="Verbraucher Zeile 2 Leistung" French="Verbraucher Zeile 2 Leistung" Sequenz="17" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5847" Name="TA_ART" German="Art" French="Art" Sequenz="18" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5856" Name="POLZAHL" German="Polzahl" French="Polzahl" Sequenz="19" Type="INT" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5859" Name="KUNDENNR" German="Kunden-Nr." French="Kunden-Nr." Sequenz="20" Type="STRING" Length="11" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5857" Name="MONTAGE" German="Montage" French="Montage" Sequenz="21" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+            <Fld ID="5858" Name="DEMONTAGE" German="Demontage" French="Demontage" Sequenz="22" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true"/>
+            <Fld ID="5860" Name="WERKNR" German="Werk-Nr." French="Werk-Nr." Sequenz="23" Type="STRING" Length="12" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5861" Name="FABRIKNR" German="Fabrik-Nr." French="Fabrik-Nr." Sequenz="24" Type="STRING" Length="12" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5862" Name="TYP" German="Typ" French="Typ" Sequenz="25" Type="STRING" Length="12" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5863" Name="VOLT" German="Spannung" French="Spannung" Sequenz="26" Type="STRING" Length="8" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5864" Name="GROESSE" German="Strom" French="Strom" Sequenz="27" Type="STRING" Length="12" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5865" Name="Z_STAND1" German="Zählerstand I" French="Zählerstand I" Sequenz="28" Type="STRING" Length="11" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5866" Name="Z_STAND2" German="Zählerstand II" French="Zählerstand II" Sequenz="29" Type="STRING" Length="11" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5867" Name="ABLESEKONS" German="Ablesekonstante" French="Ablesekonstante" Sequenz="30" Type="STRING" Length="11" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5868" Name="MAXZEIGTS" German="Max-Zeiger Teilstr." French="Max-Zeiger Teilstr." Sequenz="31" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5869" Name="MAXZEIGKW" German="Max-Zeiger à kW" French="Max-Zeiger à kW" Sequenz="32" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5870" Name="KUM_STAND" German="Kumulativ-Zähler Stand" French="Kumulativ-Zähler Stand" Sequenz="33" Type="STRING" Length="5" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5871" Name="KUM_KONST" German="Kumulativ-Zähler Konstante" French="Kumulativ-Zähler Konstante" Sequenz="34" Type="STRING" Length="3" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5872" Name="MAXKVA" German="Höchstzulässige Belastung" French="Höchstzulässige Belastung" Sequenz="35" Type="STRING" Length="12" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5873" Name="RUECKSTAND" German="Rückstellzählwerk Stand" French="Rückstellzählwerk Stand" Sequenz="36" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5874" Name="RUECKKAPAZ" German="Rückstellzählwerk Kapazität" French="Rückstellzählwerk Kapazität" Sequenz="37" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5875" Name="EICHUNG" German="Eichung / Rückgabe" French="Eichung / Rückgabe" Sequenz="38" Type="STRING" Length="11" UDom="1" UDomRec="2" UDomFld="2"/>
+            <Fld ID="5876" Name="MONT_ORT" German="Standort" French="Standort" Sequenz="39" Type="STRING" Length="16" UDom="1" UDomRec="2" UDomFld="2"/>
+         </Tab>
+         <Fld ID="5420" Name="ID" German="ID" French="ID" Sequenz="1" Type="INT" UpdateKey="true" Unique="true" Required="true"/>
+         <Fld ID="5421" Name="ID_PROJECT" German="Projekt" French="Projet" Sequenz="2" Type="INT"/>
+         <Fld ID="5422" Name="COPY_ID" German="ID der Kopie" French="ID de la copie" Sequenz="3" Type="INT"/>
+         <Fld ID="5423" Name="MANDANT" German="MANDANT" French="MANDANT" Sequenz="4" Type="INT"/>
+         <Fld ID="5424" Name="ID_FORMTMP" German="Formular" French="Formulaire" Sequenz="5" Type="INT"/>
+         <Fld ID="5425" Name="I_PROJECT" German="I_PROJECT" French="I_PROJECT" Sequenz="6" Type="INT"/>
+         <Fld ID="5426" Name="I_FORM" German="I_FORM" French="I_FORM" Sequenz="7" Type="INT"/>
+         <Fld ID="5427" Name="E_PROJECT" German="E_PROJECT" French="E_PROJECT" Sequenz="8" Type="INT"/>
+         <Fld ID="5428" Name="INST_OUT" German="INST_OUT" French="INST_OUT" Sequenz="9" Type="DATE"/>
+         <Fld ID="5429" Name="WERK_IN" German="Eingang" French="Date de réception" Sequenz="10" Type="DATE" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5430" Name="WERK_OUT" German="WERK_OUT" French="WERK_OUT" Sequenz="11" Type="DATE"/>
+         <Fld ID="5431" Name="INST_IN" German="INST_IN" French="INST_IN" Sequenz="12" Type="DATE"/>
+         <Fld ID="5432" Name="PROJ_NR" German="Nr." French="N°" Sequenz="13" Type="STRING" Length="12"/>
+         <Fld ID="5433" Name="PROJ_JAHR" German="Jahr" French="Année" Sequenz="14" Type="INT"/>
+         <Fld ID="5434" Name="WERK" German="WERK" French="WERK" Sequenz="15" Type="STRING" Length="24"/>
+         <Fld ID="5435" Name="W_EMAIL" German="W_EMAIL" French="W_EMAIL" Sequenz="16" Type="STRING" Length="40"/>
+         <Fld ID="5436" Name="VISUM" German="Visum" French="Visa" Sequenz="17" Type="STRING" Length="6" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5437" Name="I_NAME1" German="I_NAME1" French="I_NAME1" Sequenz="18" Type="STRING" Length="30"/>
+         <Fld ID="5438" Name="I_NAME2" German="I_NAME2" French="I_NAME2" Sequenz="19" Type="STRING" Length="30"/>
+         <Fld ID="5439" Name="I_ADRESSE1" German="I_ADRESSE1" French="I_ADRESSE1" Sequenz="20" Type="STRING" Length="30"/>
+         <Fld ID="5440" Name="I_ADRESSE2" German="I_ADRESSE2" French="I_ADRESSE2" Sequenz="21" Type="STRING" Length="30"/>
+         <Fld ID="5441" Name="I_PLZ" German="I_PLZ" French="I_PLZ" Sequenz="22" Type="STRING" Length="8"/>
+         <Fld ID="5442" Name="I_ORT" German="I_ORT" French="I_ORT" Sequenz="23" Type="STRING" Length="22"/>
+         <Fld ID="5443" Name="I_KONZESS" German="I_KONZESS" French="I_KONZESS" Sequenz="24" Type="STRING" Length="16"/>
+         <Fld ID="5444" Name="I_SACHB" German="I_SACHB" French="I_SACHB" Sequenz="25" Type="STRING" Length="24"/>
+         <Fld ID="5445" Name="I_TELNR" German="I_TELNR" French="I_TELNR" Sequenz="26" Type="STRING" Length="16"/>
+         <Fld ID="5446" Name="I_FAXNR" German="I_FAXNR" French="I_FAXNR" Sequenz="27" Type="STRING" Length="16"/>
+         <Fld ID="5447" Name="I_EMAIL" German="I_EMAIL" French="I_EMAIL" Sequenz="28" Type="STRING" Length="40"/>
+         <Fld ID="5448" Name="O_STRASSE" German="O_STRASSE" French="O_STRASSE" Sequenz="29" Type="STRING" Length="22"/>
+         <Fld ID="5449" Name="O_HAUSNR" German="O_HAUSNR" French="O_HAUSNR" Sequenz="30" Type="STRING" Length="18"/>
+         <Fld ID="5450" Name="O_PLZ" German="O_PLZ" French="O_PLZ" Sequenz="31" Type="STRING" Length="8"/>
+         <Fld ID="5451" Name="O_ORT" German="O_ORT" French="O_ORT" Sequenz="32" Type="STRING" Length="22"/>
+         <Fld ID="5452" Name="U_NAME1" German="Kunde Name" French="U_NAME1" Sequenz="33" Type="STRING" Length="30" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5453" Name="U_NAME2" German="Kunde Vorname" French="U_NAME2" Sequenz="34" Type="STRING" Length="30" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5454" Name="U_ADRESSE1" German="U_ADRESSE1" French="U_ADRESSE1" Sequenz="35" Type="STRING" Length="30"/>
+         <Fld ID="5455" Name="U_ADRESSE2" German="U_ADRESSE2" French="U_ADRESSE2" Sequenz="36" Type="STRING" Length="30"/>
+         <Fld ID="5456" Name="U_PLZ" German="U_PLZ" French="U_PLZ" Sequenz="37" Type="STRING" Length="8"/>
+         <Fld ID="5457" Name="U_ORT" German="U_ORT" French="U_ORT" Sequenz="38" Type="STRING" Length="22"/>
+         <Fld ID="5458" Name="U_TELNR" German="Kunde Tel." French="U_TELNR" Sequenz="39" Type="STRING" Length="16" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5459" Name="U_FAXNR" German="U_FAXNR" French="U_FAXNR" Sequenz="40" Type="STRING" Length="16"/>
+         <Fld ID="5460" Name="U_EMAIL" German="U_EMAIL" French="U_EMAIL" Sequenz="41" Type="STRING" Length="40"/>
+         <Fld ID="5461" Name="GEMEINDE" German="GEMEINDE" French="GEMEINDE" Sequenz="42" Type="STRING" Length="22"/>
+         <Fld ID="5462" Name="PARZELLE" German="PARZELLE" French="PARZELLE" Sequenz="43" Type="STRING" Length="18"/>
+         <Fld ID="5515" Name="OBJEKTART" German="Art" French="OBJEKTART" Sequenz="44" Type="STRING" Length="22"/>
+         <Fld ID="5463" Name="STOCKWERK" German="STOCKWERK" French="STOCKWERK" Sequenz="45" Type="STRING" Length="18"/>
+         <Fld ID="5464" Name="LAGE" German="LAGE" French="LAGE" Sequenz="46" Type="STRING" Length="18"/>
+         <Fld ID="5465" Name="RAEUME" German="RAEUME" French="RAEUME" Sequenz="47" Type="STRING" Length="18"/>
+         <Fld ID="5466" Name="EIGENT" German="EIGENT" French="EIGENT" Sequenz="48" Type="BOOL" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5467" Name="ARCH" German="ARCH" French="ARCH" Sequenz="49" Type="BOOL" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5468" Name="VERW" German="VERW" French="VERW" Sequenz="50" Type="BOOL" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5469" Name="GES_NAME1" German="GES_NAME1" French="GES_NAME1" Sequenz="51" Type="STRING" Length="30"/>
+         <Fld ID="5470" Name="GES_NAME2" German="GES_NAME2" French="GES_NAME2" Sequenz="52" Type="STRING" Length="30"/>
+         <Fld ID="5471" Name="GES_ADR1" German="GES_ADR1" French="GES_ADR1" Sequenz="53" Type="STRING" Length="30"/>
+         <Fld ID="5472" Name="GES_ADR2" German="GES_ADR2" French="GES_ADR2" Sequenz="54" Type="STRING" Length="30"/>
+         <Fld ID="5473" Name="GES_PLZ" German="GES_PLZ" French="GES_PLZ" Sequenz="55" Type="STRING" Length="8"/>
+         <Fld ID="5474" Name="GES_ORT" German="GES_ORT" French="GES_ORT" Sequenz="56" Type="STRING" Length="22"/>
+         <Fld ID="5475" Name="GES_TELNR" German="GES_TELNR" French="GES_TELNR" Sequenz="57" Type="STRING" Length="16"/>
+         <Fld ID="5476" Name="GES_FAXNR" German="GES_FAXNR" French="GES_FAXNR" Sequenz="58" Type="STRING" Length="16"/>
+         <Fld ID="5477" Name="GES_EMAIL" German="GES_EMAIL" French="GES_EMAIL" Sequenz="59" Type="STRING" Length="40"/>
+         <Fld ID="5478" Name="ABONR" German="Installations-Nr." French="Installation No" Sequenz="60" Type="STRING" Length="12"/>
+         <Fld ID="5479" Name="EVUAUFTNR" German="Order Nr." French="Ordre No" Sequenz="61" Type="STRING" Length="12"/>
+         <Fld ID="5480" Name="PACKNAME" German="PACKNAME" French="PACKNAME" Sequenz="62" Type="STRING" Length="16"/>
+         <Fld ID="5599" Name="EW_IWB" German="IWB" French="IWB" Sequenz="63" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5600" Name="EW_EBM" German="EBM" French="EBM" Sequenz="64" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5601" Name="EW_EBL" German="EBL" French="EBL" Sequenz="65" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5481" Name="I_NEW" German="Neuerstellungen" French="I_NEW" Sequenz="66" Type="BOOL" Length="1" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5482" Name="I_EXTENT" German="Erweiterungen" French="I_EXTENT" Sequenz="67" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5483" Name="I_CHANGE" German="Änderungen" French="I_CHANGE" Sequenz="68" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5516" Name="ZAEHLERMON" German="Zählermontage" French="ZAEHLERMON" Sequenz="69" Type="BOOL" UDom="1" UDomRec="2" UDomFld="2" Required="true">
+            <Udo_DE UDefault="false"/>
+         </Fld>
+         <Fld ID="5517" Name="STD_HEISS" German="Aufheizzeiten Heisswassersp." French="STD_HEISS" Sequenz="70" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5518" Name="STD_RAUM" German="Aufheizzeiten Raumheizung" French="STD_RAUM" Sequenz="71" Type="REAL" Length="20" Precision="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5519" Name="BEM" German="Bemerkungen" French="BEM" Sequenz="72" Type="MEMO" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5520" Name="MONTDATUM" German="Zählermontage ab" French="MONTDATUM" Sequenz="73" Type="STRING" Length="22" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5521" Name="EW_AUSGEF1" German="Ausgeführt Zeile 1" French="EW_AUSGEF1" Sequenz="74" Type="STRING" Length="30" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5522" Name="EW_AUSGEF2" German="Ausgeführt Zeile 2" French="EW_AUSGEF2" Sequenz="75" Type="STRING" Length="30" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5484" Name="SIGN_DATUM" German="SIGN_DATUM" French="SIGN_DATUM" Sequenz="76" Type="DATE"/>
+         <Fld ID="5485" Name="SIGNATURE" German="SIGNATURE" French="SIGNATURE" Sequenz="77" Type="STRING" Length="30"/>
+         <Fld ID="5486" Name="SIGNKT" German="SIGNKT" French="SIGNKT" Sequenz="78" Type="STRING" Length="30"/>
+         <Fld ID="5603" Name="KONTR_SIGN" German="Unterschrift Kontrollber." French="KONTR_SIGN" Sequenz="79" Type="STRING" Length="30"/>
+         <Fld ID="5604" Name="KONTR_SIKT" German="Unterschrift Kontrollber." French="KONTR_SIKT" Sequenz="80" Type="STRING" Length="30"/>
+         <Fld ID="5602" Name="KONTR_DAT" German="Datum der Kontrolle" French="KONTR_DAT" Sequenz="81" Type="DATE"/>
+         <Fld ID="5487" Name="T1" German="Zirkulation 1." French="T1" Sequenz="82" Type="STRING" Length="16" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5488" Name="T2" German="Zirkulation 2." French="T2" Sequenz="83" Type="STRING" Length="16" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5489" Name="T3" German="Zirkulation 3." French="T3" Sequenz="84" Type="STRING" Length="16" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5490" Name="T4" German="Zirkulation 4." French="T4" Sequenz="85" Type="STRING" Length="16" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5491" Name="T5" German="Zirkulation 5." French="T5" Sequenz="86" Type="STRING" Length="8" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5492" Name="T6" German="Zirkulation 6." French="T6" Sequenz="87" Type="STRING" Length="8" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5493" Name="T7" German="Zirkulation 7." French="T7" Sequenz="88" Type="STRING" Length="8" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5494" Name="T8" German="Zirkulation 8." French="T8" Sequenz="89" Type="STRING" Length="8" UDomRec="1" UDomFld="2"/>
+         <Fld ID="5523" Name="TARIF1" German="Tarif 1" French="TARIF1" Sequenz="90" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5524" Name="TARIF2" German="Tarif 2" French="TARIF2" Sequenz="91" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5525" Name="TARIF3" German="Tarif 3" French="TARIF3" Sequenz="92" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5526" Name="TARIF4" German="Tarif 4" French="TARIF4" Sequenz="93" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5527" Name="DRAHT1" German="Draht 1" French="DRAHT1" Sequenz="94" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5528" Name="DRAHT2" German="Draht 2" French="DRAHT2" Sequenz="95" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5529" Name="DRAHT3" German="Draht 3" French="DRAHT3" Sequenz="96" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5530" Name="DRAHT4" German="Draht 4" French="DRAHT4" Sequenz="97" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5531" Name="DRAHT5" German="Draht 5" French="DRAHT5" Sequenz="98" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5532" Name="DRAHT6" German="Draht 6" French="DRAHT6" Sequenz="99" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5533" Name="DRAHT7" German="Draht 7" French="DRAHT7" Sequenz="100" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5534" Name="DRAHT8" German="Draht 8" French="DRAHT8" Sequenz="101" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5535" Name="DRAHT9" German="Draht 9" French="DRAHT9" Sequenz="102" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5536" Name="DRAHT10" German="Draht 10" French="DRAHT10" Sequenz="103" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5537" Name="DRAHT11" German="Draht 11" French="DRAHT11" Sequenz="104" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5538" Name="DRAHT12" German="Draht 12" French="DRAHT12" Sequenz="105" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5543" Name="CODE1" German="Code 1" French="CODE1" Sequenz="106" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5544" Name="CODE2" German="Code 2" French="CODE2" Sequenz="107" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5545" Name="CODE3" German="Code 3" French="CODE3" Sequenz="108" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5546" Name="CODE4" German="Code 4" French="CODE4" Sequenz="109" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5547" Name="CODE5" German="Code 5" French="CODE5" Sequenz="110" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5548" Name="CODE6" German="Code 6" French="CODE6" Sequenz="111" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5549" Name="CODE7" German="Code 7" French="CODE7" Sequenz="112" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5550" Name="CODE8" German="Code 8" French="CODE8" Sequenz="113" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5551" Name="CODE9" German="Code 9" French="CODE9" Sequenz="114" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5552" Name="CODE10" German="Code 10" French="CODE10" Sequenz="115" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5553" Name="CODE11" German="Code 11" French="CODE11" Sequenz="116" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5554" Name="CODE12" German="Code 12" French="CODE12" Sequenz="117" Type="STRING" Length="4" UDom="1" UDomRec="2" UDomFld="2"/>
+         <Fld ID="5559" Name="FUNKTION12" German="Funktion 12" French="FUNKTION12" Sequenz="118" Type="STRING" Length="11" UDom="1" UDomRec="2" UDomFld="2"/>
+      </Tab>
+   </DataDic>
+   <FormTemplate ID="113" KURZBEZ="TA" TITEL="Werkapparate-Rapport 2004" SprachCode="1031" AUTOR="IWB/EBM/EBL" AUTORBEZ="IWB/EBM/EBL WA 2004" FormNr="113" Version="1" DDTab="BASEL_TA_DE"/>
+</Form>

@@ -2,7 +2,7 @@
 <!--
 <?altova_samplexml SINA18.xml?>
 -->
-<?altova_samplexml MESSPROT18.xml?>
+<?altova_samplexml MPP-Mini.xml?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xsl:output method="xml" encoding="utf-8" indent="yes"/>
 	<xsl:output name="xml-def" method="xml" indent="yes"/>
@@ -13,7 +13,7 @@
 		<xsl:variable name="fn" select="replace(base-uri(.),'.xml' ,'-mini.xsd')"/>
 		<xsl:result-document href="{$fn}" format="xml-def">
 			<xs:schema>
-				<xs:element name="xml">
+				<xs:element name="FORMULAR">
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="ROW" type="T_Row"/>
@@ -21,20 +21,13 @@
 					</xs:complexType>
 				</xs:element>
 				<!--=======================================================================-->
-				<!--=======================================================================-->
-				<xsl:call-template name="Types"/>
+				<xsl:apply-templates select="/Form/DataDic/Tab/Tab" mode="Elm"/>
 				<!--=======================================================================-->
 				<xs:complexType name="T_Row">
 					<xs:all>
 						<xsl:call-template name="SpecialElements"/>
 						<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="Elm"/>
-						<xsl:apply-templates select="/Form/DataDic/Tab/Tab" mode="Elm"/>
-						<!--					
-						<xs:element ref="FORM_TYP"/>
-						<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="ref"/>
 						<xsl:apply-templates select="/Form/DataDic/Tab/Tab" mode="ref"/>
-						
--->
 					</xs:all>
 				</xs:complexType>
 				<xsl:apply-templates select="/Form/DataDic/Tab/Tab" mode="T"/>
@@ -93,7 +86,7 @@
 		</xs:element>
 	</xsl:template>
 	<!--=======================================================================-->
-	<!-- Fld-Template, erstellt ein Subtabellen-Element -->
+	<!-- Tab-Template, erstellt Subtabellen-Elemente -->
 	<!--=======================================================================-->
 	<xsl:template match="Tab" mode="Elm">
 		<xs:element>
@@ -149,9 +142,7 @@
 		</xs:element>
 	</xsl:template>
 	<!--=======================================================================-->
-	<!-- Fld-Template, erstellt einen Feld-Typ -->
-	<!--=======================================================================-->
-	<xsl:template name="Types"></xsl:template>
+	<!-- Tab-Template, erstellt einen Subtabellen-Typ -->
 	<!--=======================================================================-->
 	<xsl:template match="Tab" mode="T">
 		<xs:complexType>
@@ -180,6 +171,9 @@
 			</xsl:attribute>
 		</xs:element>
 	</xsl:template>
+	<!--=======================================================================-->
+	<!-- Tab-Template, erstellt die Subtabellen-Element Referenzen -->
+	<!--=======================================================================-->
 	<xsl:template match="Tab" mode="ref">
 		<xs:element>
 			<xsl:attribute name="ref">
@@ -187,7 +181,6 @@
 				<xsl:value-of select="/Form/@Name"/>
 				<xsl:text>_DE</xsl:text>
 			</xsl:attribute>
-			<xsl:attribute name="minOccurs">0</xsl:attribute>
 		</xs:element>
 		<xs:element>
 			<xsl:attribute name="ref">
@@ -195,7 +188,6 @@
 				<xsl:value-of select="/Form/@Name"></xsl:value-of>
 				<xsl:text>_FR</xsl:text>
 			</xsl:attribute>
-			<xsl:attribute name="minOccurs">0</xsl:attribute>
 		</xs:element>
 		<xs:element>
 			<xsl:attribute name="ref">
@@ -203,7 +195,6 @@
 				<xsl:value-of select="/Form/@Name"></xsl:value-of>
 				<xsl:text>_IT</xsl:text>
 			</xsl:attribute>
-			<xsl:attribute name="minOccurs">0</xsl:attribute>
 		</xs:element>
 	</xsl:template>
 	<!--=======================================================================-->
@@ -211,13 +202,3 @@
 	<!--=======================================================================-->
 	<xsl:template match="@*|node()"/>
 </xsl:stylesheet>
-<!--
-		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-			<xs:element name="DATAPACKET"> 
-		</xs:schema>
-
-    <xsl:copy>
-      <xsl:apply-templates select="@*|node()" />
-    </xsl:copy>
-
--->

@@ -3,11 +3,13 @@
 	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
 		<File FilePath="MESSPROT18.xml" HomeFolder="Yes"/>
 		<File FilePath="MPP-Hub.xml" HomeFolder="Yes"/>
+		<File FilePath="MPP-Small.xml" HomeFolder="Yes"/>
 		<File FilePath="SiNa-Hub.xml" HomeFolder="Yes"/>
 		<File FilePath="SINA18.xml" HomeFolder="Yes"/>
 	</Folder>
 	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
 		<File FilePath="datadic-json.xslt" HomeFolder="Yes"/>
+		<File FilePath="tools\DataDic-To-XmlSchema.xslt" HomeFolder="Yes"/>
 		<File FilePath="datadic-xsd-mini.xslt" HomeFolder="Yes"/>
 		<File FilePath="datadic-xsd.xslt" HomeFolder="Yes"/>
 		<File FilePath="xml-json.xslt" HomeFolder="Yes"/>

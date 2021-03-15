@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" xmlns:xs="http://www.w3.org/2001/XMLSchema" vc:minVersion="1.1">
 	<xs:element name="DATAPACKET">
 		<xs:complexType>
 			<xs:sequence>
@@ -54,695 +54,105 @@
 			</xs:restriction>
 		</xs:simpleType>
 	</xs:element>
-	<xs:element name="ID" type="T_INT"/>
-	<xs:element name="ID_PROJECT" type="T_INT"/>
-	<xs:element name="COPY_ID" type="T_INT"/>
-	<xs:element name="MANDANT" type="T_INT"/>
-	<xs:element name="ID_FORMTMP" type="T_INT"/>
-	<xs:element name="I_PROJECT" type="T_INT"/>
-	<xs:element name="I_FORM" type="T_INT"/>
-	<xs:element name="E_PROJECT" type="T_INT"/>
-	<xs:element name="INST_OUT" type="T_DATE"/>
-	<xs:element name="WERK_IN" type="T_DATE"/>
-	<xs:element name="WERK_OUT" type="T_DATE"/>
-	<xs:element name="INST_IN" type="T_DATE"/>
-	<xs:element name="PROJ_NR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="12"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="PROJ_JAHR" type="T_INT"/>
-	<xs:element name="WERK">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="W_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="60"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="W_EF_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="60"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="VISUM">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="6"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="8"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_KONZESS">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_SACHB">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_FAXNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="60"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="I_EF_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="60"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="O_STRASSE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="O_HAUSNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="O_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="8"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="O_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GEMEINDE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="PARZELLE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="18"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="VERSICH">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="18"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GEBAEUDEART">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GEBAEUDETEIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="LAGE">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ANLNUTZUNG">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="8"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_FAXNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="U_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="60"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GEBAEUDENR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="EGID" type="T_INT"/>
-	<xs:element name="ABONR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="EVUAUFTNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="12"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="TERMIN" type="T_DATE"/>
-	<xs:element name="PACKNAME">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="MP_NR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="12"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="RAPPORT_NR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="AN_INST" type="T_BOOL"/>
-	<xs:element name="AN_KONTR" type="T_BOOL"/>
-	<xs:element name="EIGENT" type="T_BOOL"/>
-	<xs:element name="VERW" type="T_BOOL"/>
-	<xs:element name="STROMK" type="T_BOOL"/>
-	<xs:element name="INST" type="T_BOOL"/>
-	<xs:element name="AG_X" type="T_BOOL"/>
-	<xs:element name="AG_XTEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GES_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GES_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GES_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GES_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GES_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="8"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GES_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GES_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GES_FAXNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GES_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="60"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="BEMERKUNG">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ZEV" type="T_BOOL"/>
-	<xs:element name="ZEV_TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ZAEHLER">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ANLJAHR0" type="T_INT"/>
-	<xs:element name="ANL1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ANLJAHR1" type="T_INT"/>
-	<xs:element name="ANL2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="ANLJAHR2" type="T_INT"/>
-	<xs:element name="MP_NEU" type="T_BOOL"/>
-	<xs:element name="MP_BEST" type="T_BOOL"/>
-	<xs:element name="MP_ANDERS" type="T_BOOL"/>
-	<xs:element name="MP_ERWEIT" type="T_BOOL"/>
-	<xs:element name="MP_X" type="T_BOOL"/>
-	<xs:element name="MP_XTEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="20"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="MP_SK" type="T_BOOL"/>
-	<xs:element name="MP_AK" type="T_BOOL"/>
-	<xs:element name="MP_PK" type="T_BOOL"/>
-	<xs:element name="MP_SP" type="T_BOOL"/>
-	<xs:element name="IA_DATUM" type="T_DATE"/>
-	<xs:element name="KONDATUM_SK" type="T_DATE"/>
-	<xs:element name="KONDATUM_AKPKSP" type="T_DATE"/>
-	<xs:element name="KONDATUM" type="T_DATE"/>
-	<xs:element name="KONTUMFANG" type="T_MEMO"/>
+	<xs:element name="ID"/>
+	<xs:element name="ID_PROJECT"/>
+	<xs:element name="COPY_ID"/>
+	<xs:element name="MANDANT"/>
+	<xs:element name="ID_FORMTMP"/>
+	<xs:element name="I_PROJECT"/>
+	<xs:element name="I_FORM"/>
+	<xs:element name="E_PROJECT"/>
+	<xs:element name="INST_OUT"/>
+	<xs:element name="WERK_IN"/>
+	<xs:element name="WERK_OUT"/>
+	<xs:element name="INST_IN"/>
+	<xs:element name="PROJ_NR"/>
+	<xs:element name="PROJ_JAHR"/>
+	<xs:element name="WERK"/>
+	<xs:element name="W_EMAIL"/>
+	<xs:element name="W_EF_EMAIL"/>
+	<xs:element name="VISUM"/>
+	<xs:element name="I_NAME1"/>
+	<xs:element name="I_NAME2"/>
+	<xs:element name="I_ADRESSE1"/>
+	<xs:element name="I_ADRESSE2"/>
+	<xs:element name="I_PLZ"/>
+	<xs:element name="I_ORT"/>
+	<xs:element name="I_KONZESS"/>
+	<xs:element name="I_SACHB"/>
+	<xs:element name="I_TELNR"/>
+	<xs:element name="I_FAXNR"/>
+	<xs:element name="I_EMAIL"/>
+	<xs:element name="I_EF_EMAIL"/>
+	<xs:element name="O_STRASSE"/>
+	<xs:element name="O_HAUSNR"/>
+	<xs:element name="O_PLZ"/>
+	<xs:element name="O_ORT"/>
+	<xs:element name="GEMEINDE"/>
+	<xs:element name="PARZELLE"/>
+	<xs:element name="VERSICH"/>
+	<xs:element name="GEBAEUDEART"/>
+	<xs:element name="GEBAEUDETEIL"/>
+	<xs:element name="LAGE"/>
+	<xs:element name="ANLNUTZUNG"/>
+	<xs:element name="U_NAME1"/>
+	<xs:element name="U_NAME2"/>
+	<xs:element name="U_ADRESSE1"/>
+	<xs:element name="U_ADRESSE2"/>
+	<xs:element name="U_PLZ"/>
+	<xs:element name="U_ORT"/>
+	<xs:element name="U_TELNR"/>
+	<xs:element name="U_FAXNR"/>
+	<xs:element name="U_EMAIL"/>
+	<xs:element name="GEBAEUDENR"/>
+	<xs:element name="EGID"/>
+	<xs:element name="ABONR"/>
+	<xs:element name="EVUAUFTNR"/>
+	<xs:element name="TERMIN"/>
+	<xs:element name="PACKNAME"/>
+	<xs:element name="MP_NR"/>
+	<xs:element name="RAPPORT_NR"/>
+	<xs:element name="AN_INST"/>
+	<xs:element name="AN_KONTR"/>
+	<xs:element name="EIGENT"/>
+	<xs:element name="VERW"/>
+	<xs:element name="STROMK"/>
+	<xs:element name="INST"/>
+	<xs:element name="AG_X"/>
+	<xs:element name="AG_XTEXT"/>
+	<xs:element name="GES_NAME1"/>
+	<xs:element name="GES_NAME2"/>
+	<xs:element name="GES_ADRESSE1"/>
+	<xs:element name="GES_ADRESSE2"/>
+	<xs:element name="GES_PLZ"/>
+	<xs:element name="GES_ORT"/>
+	<xs:element name="GES_TELNR"/>
+	<xs:element name="GES_FAXNR"/>
+	<xs:element name="GES_EMAIL"/>
+	<xs:element name="BEMERKUNG"/>
+	<xs:element name="ZEV"/>
+	<xs:element name="ZEV_TEXT"/>
+	<xs:element name="ZAEHLER"/>
+	<xs:element name="ANLJAHR0"/>
+	<xs:element name="ANL1"/>
+	<xs:element name="ANLJAHR1"/>
+	<xs:element name="ANL2"/>
+	<xs:element name="ANLJAHR2"/>
+	<xs:element name="MP_NEU"/>
+	<xs:element name="MP_BEST"/>
+	<xs:element name="MP_ANDERS"/>
+	<xs:element name="MP_ERWEIT"/>
+	<xs:element name="MP_X"/>
+	<xs:element name="MP_XTEXT"/>
+	<xs:element name="MP_SK"/>
+	<xs:element name="MP_AK"/>
+	<xs:element name="MP_PK"/>
+	<xs:element name="MP_SP"/>
+	<xs:element name="IA_DATUM"/>
+	<xs:element name="KONDATUM_SK"/>
+	<xs:element name="KONDATUM_AKPKSP"/>
+	<xs:element name="KONDATUM"/>
+	<xs:element name="KONTUMFANG"/>
 	<xs:element name="S_1" type="T_BOOL"/>
 	<xs:element name="S_2" type="T_BOOL"/>
 	<xs:element name="S_3" type="T_BOOL"/>
@@ -836,21 +246,7 @@
 			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="N_MESSNORM">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="14"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="IEC 61010" xml:lang="de"/>
-					<xs:pattern value="SN EN 61557" xml:lang="de"/>
-					<xs:pattern value="IEC 61010" xml:lang="fr"/>
-					<xs:pattern value="SN EN 61557" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
+	<xs:element name="N_MESSNORM"/>
 	<xs:element name="N_MESS1">
 		<xs:complexType>
 			<xs:simpleContent>
@@ -882,298 +278,44 @@
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="N_NORM1" type="T_BOOL"/>
-	<xs:element name="N_NORM1TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
+	<xs:element name="N_NORM1TEXT"/>
 	<xs:element name="N_NORM2" type="T_BOOL"/>
-	<xs:element name="N_NORM2TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="NIN 2015" xml:lang="de"/>
-					<xs:pattern value="NIN 2010" xml:lang="de"/>
-					<xs:pattern value="NIN 2005" xml:lang="de"/>
-					<xs:pattern value="NIN SN 411000:2015" xml:lang="de"/>
-					<xs:pattern value="SEV 1000:2010" xml:lang="de"/>
-					<xs:pattern value="SEV 1000:2005" xml:lang="de"/>
-					<xs:pattern value="NIBT 2015" xml:lang="fr"/>
-					<xs:pattern value="NIBT 2010" xml:lang="fr"/>
-					<xs:pattern value="NIBT 2005" xml:lang="fr"/>
-					<xs:pattern value="NIBT SN 411000:2015" xml:lang="fr"/>
-					<xs:pattern value="SEV 1000:2010" xml:lang="fr"/>
-					<xs:pattern value="SEV 1000:2005" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
+	<xs:element name="N_NORM2TEXT"/>
 	<xs:element name="N_NORM3" type="T_BOOL"/>
-	<xs:element name="N_NORM3TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="WV" xml:lang="de"/>
-					<xs:pattern value="HV" xml:lang="de"/>
-					<xs:pattern value="PDIE" xml:lang="fr"/>
-					<xs:pattern value="PIE" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
+	<xs:element name="N_NORM3TEXT"/>
 	<xs:element name="N_NORM4" type="T_BOOL"/>
-	<xs:element name="N_NORM4TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="SN EN 61439" xml:lang="de"/>
-					<xs:pattern value="SN EN 60439" xml:lang="de"/>
-					<xs:pattern value="SN EN 60204" xml:lang="de"/>
-					<xs:pattern value="SN EN 50160" xml:lang="de"/>
-					<xs:pattern value="SN EN 61439" xml:lang="fr"/>
-					<xs:pattern value="SN EN 60439" xml:lang="fr"/>
-					<xs:pattern value="SN EN 60204" xml:lang="fr"/>
-					<xs:pattern value="SN EN 50160" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
+	<xs:element name="N_NORM4TEXT"/>
 	<xs:element name="N_NORM5" type="T_BOOL"/>
-	<xs:element name="N_NORM5TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="Werkvorschriften (TAB)" xml:lang="de"/>
-					<xs:pattern value="Prescriptions PDIE (CTR)" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="N_NORM6" type="T_BOOL"/>
-	<xs:element name="N_NORM6TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="D-A-CH-CZ" xml:lang="de"/>
-					<xs:pattern value="D-A-CH-CZ" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="N_NORM7" type="T_BOOL"/>
-	<xs:element name="N_NORM7TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="SNR 464022" xml:lang="de"/>
-					<xs:pattern value="SEV 4022:2008" xml:lang="de"/>
-					<xs:pattern value="SNR 464022" xml:lang="fr"/>
-					<xs:pattern value="SEV 4022:2008" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="N_NORM8" type="T_BOOL"/>
-	<xs:element name="N_NORM8TEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="SKLISTE_BEMTITEL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="Bemerkungen" xml:lang="de"/>
-					<xs:pattern value="Remarques" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="SK_ASBEST0" type="T_BOOL"/>
-	<xs:element name="SK_ASBEST1" type="T_BOOL"/>
-	<xs:element name="SK_1" type="T_BOOL"/>
-	<xs:element name="SK_1NORM">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="12"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="EN 61439" xml:lang="de"/>
-					<xs:pattern value="EN 60439" xml:lang="de"/>
-					<xs:pattern value="SNG 461429" xml:lang="de"/>
-					<xs:pattern value="EN 61439" xml:lang="fr"/>
-					<xs:pattern value="EN 60439" xml:lang="fr"/>
-					<xs:pattern value="SNG 461429" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="SK_2" type="T_BOOL"/>
-	<xs:element name="SK_3" type="T_BOOL"/>
-	<xs:element name="DOKU" type="T_BOOL"/>
-	<xs:element name="SCHEMA" type="T_BOOL"/>
-	<xs:element name="ZUSATZ1" type="T_BOOL"/>
-	<xs:element name="ZUSTXT1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="24"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="OHNEMANGEL" type="T_BOOL"/>
-	<xs:element name="MANGELTEXT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="25"/>
-					<xs:pattern value=".*"/>
-					<xs:pattern value="keine Mängel festgestellt" xml:lang="de"/>
-					<xs:pattern value="Mängel gemäss Bericht" xml:lang="de"/>
-					<xs:pattern value="Aucun défaut constaté" xml:lang="fr"/>
-					<xs:pattern value="Défauts selon le rapport" xml:lang="fr"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_NAME1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_NAME2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_ADRESSE1">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_ADRESSE2">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="40"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_PLZ">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="8"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_ORT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_KONZESS">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_TELNR">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="16"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_EMAIL">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="60"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_DATUM" type="T_DATE"/>
+	<xs:element name="N_NORM5TEXT"/>
+	<xs:element name="N_NORM6"/>
+	<xs:element name="N_NORM6TEXT"/>
+	<xs:element name="N_NORM7"/>
+	<xs:element name="N_NORM7TEXT"/>
+	<xs:element name="N_NORM8"/>
+	<xs:element name="N_NORM8TEXT"/>
+	<xs:element name="SKLISTE_BEMTITEL"/>
+	<xs:element name="SK_ASBEST0"/>
+	<xs:element name="SK_ASBEST1"/>
+	<xs:element name="SK_1"/>
+	<xs:element name="SK_1NORM"/>
+	<xs:element name="SK_2"/>
+	<xs:element name="SK_3"/>
+	<xs:element name="DOKU"/>
+	<xs:element name="SCHEMA"/>
+	<xs:element name="ZUSATZ1"/>
+	<xs:element name="ZUSTXT1"/>
+	<xs:element name="OHNEMANGEL"/>
+	<xs:element name="MANGELTEXT"/>
+	<xs:element name="GGZ_NAME1"/>
+	<xs:element name="GGZ_NAME2"/>
+	<xs:element name="GGZ_ADRESSE1"/>
+	<xs:element name="GGZ_ADRESSE2"/>
+	<xs:element name="GGZ_PLZ"/>
+	<xs:element name="GGZ_ORT"/>
+	<xs:element name="GGZ_KONZESS"/>
+	<xs:element name="GGZ_TELNR"/>
+	<xs:element name="GGZ_EMAIL"/>
+	<xs:element name="GGZ_DATUM"/>
 	<xs:element name="GGZ_GRUND">
 		<xs:complexType>
 			<xs:simpleContent>
@@ -1184,54 +326,15 @@
 			</xs:simpleContent>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="GGZ_SIGN">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="GGZ_SIKT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="SIGN_DATUM" type="T_DATE"/>
-	<xs:element name="KONTR_SIGN">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="KONTR_SIKT">
-		<xs:complexType>
-			<xs:simpleContent>
-				<xs:restriction base="T_STRING">
-					<xs:minLength value="0"/>
-					<xs:maxLength value="30"/>
-					<xs:pattern value=".*"/>
-				</xs:restriction>
-			</xs:simpleContent>
-		</xs:complexType>
-	</xs:element>
-	<xs:element name="SKListeMESSPROT18_DE" type="T_SKListe"/>
-	<xs:element name="SKListeMESSPROT18_FR" type="T_SKListe"/>
-	<xs:element name="SKListeMESSPROT18_IT" type="T_SKListe"/>
+	<xs:element name="GGZ_SIGN"/>
+	<xs:element name="GGZ_SIKT"/>
+	<xs:element name="SIGN_DATUM"/>
+	<xs:element name="KONTR_SIGN"/>
+	<xs:element name="KONTR_SIKT"/>
+	<xs:element name="SKListe" type="T_SKListe"/>
+	<xs:element name="SKListeMESSPROT18_DE" substitutionGroup="SKListe" type="T_SKListe"/>
+	<xs:element name="SKListeMESSPROT18_FR" substitutionGroup="SKListe" type="T_SKListe"/>
+	<xs:element name="SKListeMESSPROT18_IT" substitutionGroup="SKListe" type="T_SKListe"/>
 	<xs:complexType name="T_MEMO">
 		<xs:simpleContent>
 			<xs:extension base="ST_STRING">
@@ -1488,9 +591,7 @@
 			<xs:element ref="SIGN_DATUM"/>
 			<xs:element ref="KONTR_SIGN"/>
 			<xs:element ref="KONTR_SIKT"/>
-			<xs:element ref="SKListeMESSPROT18_DE" minOccurs="0"/>
-			<xs:element ref="SKListeMESSPROT18_FR" minOccurs="0"/>
-			<xs:element ref="SKListeMESSPROT18_IT" minOccurs="0"/>
+			<xs:element ref="SKListe"/>
 		</xs:all>
 	</xs:complexType>
 	<xs:complexType name="T_SKListe">
@@ -1498,215 +599,15 @@
 			<xs:element name="ROW">
 				<xs:complexType>
 					<xs:all>
-						<xs:element name="ID" type="T_INT"/>
-						<xs:element name="FORM_ID" type="T_INT"/>
-						<xs:element name="SEQ_FORM" type="T_INT"/>
-						<xs:element name="NUMMER">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="23"/>
-										<xs:pattern value=".*"/>
-										<xs:pattern value="F1" xml:lang="de"/>
-										<xs:pattern value="F2" xml:lang="de"/>
-										<xs:pattern value="F3" xml:lang="de"/>
-										<xs:pattern value="F4" xml:lang="de"/>
-										<xs:pattern value="F5" xml:lang="de"/>
-										<xs:pattern value="F6" xml:lang="de"/>
-										<xs:pattern value="F7" xml:lang="de"/>
-										<xs:pattern value="F8" xml:lang="de"/>
-										<xs:pattern value="F9" xml:lang="de"/>
-										<xs:pattern value="F10" xml:lang="de"/>
-										<xs:pattern value="F11" xml:lang="de"/>
-										<xs:pattern value="F12" xml:lang="de"/>
-										<xs:pattern value="F1" xml:lang="fr"/>
-										<xs:pattern value="F2" xml:lang="fr"/>
-										<xs:pattern value="F3" xml:lang="fr"/>
-										<xs:pattern value="F4" xml:lang="fr"/>
-										<xs:pattern value="F5" xml:lang="fr"/>
-										<xs:pattern value="F6" xml:lang="fr"/>
-										<xs:pattern value="F7" xml:lang="fr"/>
-										<xs:pattern value="F8" xml:lang="fr"/>
-										<xs:pattern value="F9" xml:lang="fr"/>
-										<xs:pattern value="F10" xml:lang="fr"/>
-										<xs:pattern value="F11" xml:lang="fr"/>
-										<xs:pattern value="F12" xml:lang="fr"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="BEZ">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="120"/>
-										<xs:pattern value=".*"/>
-										<xs:pattern value="HAK" xml:lang="de"/>
-										<xs:pattern value="Licht EG" xml:lang="de"/>
-										<xs:pattern value="Licht 1.OG" xml:lang="de"/>
-										<xs:pattern value="Küche" xml:lang="de"/>
-										<xs:pattern value="Geschirrspüler" xml:lang="de"/>
-										<xs:pattern value="Kochherd" xml:lang="de"/>
-										<xs:pattern value="Steamer" xml:lang="de"/>
-										<xs:pattern value="Keller" xml:lang="de"/>
-										<xs:pattern value="Boiler (300l)" xml:lang="de"/>
-										<xs:pattern value="Heizung" xml:lang="de"/>
-										<xs:pattern value="Waschmaschine" xml:lang="de"/>
-										<xs:pattern value="Garage" xml:lang="de"/>
-										<xs:pattern value="UG" xml:lang="de"/>
-										<xs:pattern value="SGK" xml:lang="de"/>
-										<xs:pattern value="Aussenbeleuchtung" xml:lang="de"/>
-										<xs:pattern value="Mansarde" xml:lang="de"/>
-										<xs:pattern value="Coffret d'introduction" xml:lang="fr"/>
-										<xs:pattern value="Lumière REZ" xml:lang="fr"/>
-										<xs:pattern value="Lumière 1er étage" xml:lang="fr"/>
-										<xs:pattern value="Cuisine" xml:lang="fr"/>
-										<xs:pattern value="Lave-vaisselle" xml:lang="fr"/>
-										<xs:pattern value="Cuisinière" xml:lang="fr"/>
-										<xs:pattern value="Steamer" xml:lang="fr"/>
-										<xs:pattern value="Cave" xml:lang="fr"/>
-										<xs:pattern value="Chauffe-eau" xml:lang="fr"/>
-										<xs:pattern value="Chauffage" xml:lang="fr"/>
-										<xs:pattern value="Machine à laver" xml:lang="fr"/>
-										<xs:pattern value="Garage" xml:lang="fr"/>
-										<xs:pattern value="Tableau d'étage" xml:lang="fr"/>
-										<xs:pattern value="Ensemble d'appareillage" xml:lang="fr"/>
-										<xs:pattern value="Eclairage extérieur" xml:lang="fr"/>
-										<xs:pattern value="Mansarde" xml:lang="fr"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="LEIT_ART">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="12"/>
-										<xs:pattern value=".*"/>
-										<xs:pattern value="T" xml:lang="de"/>
-										<xs:pattern value="TT" xml:lang="de"/>
-										<xs:pattern value="TT-CLT" xml:lang="de"/>
-										<xs:pattern value="HO7V-U" xml:lang="de"/>
-										<xs:pattern value="HO7V-R" xml:lang="de"/>
-										<xs:pattern value="CH-N1W-U" xml:lang="de"/>
-										<xs:pattern value="CH-N1W-R" xml:lang="de"/>
-										<xs:pattern value="T" xml:lang="fr"/>
-										<xs:pattern value="TT" xml:lang="fr"/>
-										<xs:pattern value="TT-CLT" xml:lang="fr"/>
-										<xs:pattern value="HO7V-U" xml:lang="fr"/>
-										<xs:pattern value="HO7V-R" xml:lang="fr"/>
-										<xs:pattern value="CH-N1W-U" xml:lang="fr"/>
-										<xs:pattern value="CH-N1W-R" xml:lang="fr"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="LEIT_ANZ">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="22"/>
-										<xs:pattern value=".*"/>
-										<xs:pattern value="3x1.5" xml:lang="de"/>
-										<xs:pattern value="4x1.5" xml:lang="de"/>
-										<xs:pattern value="4x2.5" xml:lang="de"/>
-										<xs:pattern value="5x1.5" xml:lang="de"/>
-										<xs:pattern value="5x2.5" xml:lang="de"/>
-										<xs:pattern value="5x4" xml:lang="de"/>
-										<xs:pattern value="5x6" xml:lang="de"/>
-										<xs:pattern value="5x10" xml:lang="de"/>
-										<xs:pattern value="5x16" xml:lang="de"/>
-										<xs:pattern value="3x1.5" xml:lang="fr"/>
-										<xs:pattern value="4x1.5" xml:lang="fr"/>
-										<xs:pattern value="4x2.5" xml:lang="fr"/>
-										<xs:pattern value="5x1.5" xml:lang="fr"/>
-										<xs:pattern value="5x2.5" xml:lang="fr"/>
-										<xs:pattern value="5x4" xml:lang="fr"/>
-										<xs:pattern value="5x6" xml:lang="fr"/>
-										<xs:pattern value="5x10" xml:lang="fr"/>
-										<xs:pattern value="5x16" xml:lang="fr"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="I_ART">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="10"/>
-										<xs:pattern value=".*"/>
-										<xs:pattern value="DI flink" xml:lang="de"/>
-										<xs:pattern value="DII träg" xml:lang="de"/>
-										<xs:pattern value="DIIIträg" xml:lang="de"/>
-										<xs:pattern value="LSB" xml:lang="de"/>
-										<xs:pattern value="LSC" xml:lang="de"/>
-										<xs:pattern value="LSD" xml:lang="de"/>
-										<xs:pattern value="FI-LSB" xml:lang="de"/>
-										<xs:pattern value="FI-LSC" xml:lang="de"/>
-										<xs:pattern value="FI-LSD" xml:lang="de"/>
-										<xs:pattern value="DIN00" xml:lang="de"/>
-										<xs:pattern value="NH00" xml:lang="de"/>
-										<xs:pattern value="NH1" xml:lang="de"/>
-										<xs:pattern value="NH2" xml:lang="de"/>
-										<xs:pattern value="NH3" xml:lang="de"/>
-										<xs:pattern value="DI" xml:lang="fr"/>
-										<xs:pattern value="DII" xml:lang="fr"/>
-										<xs:pattern value="DIII" xml:lang="fr"/>
-										<xs:pattern value="LSB" xml:lang="fr"/>
-										<xs:pattern value="LSC" xml:lang="fr"/>
-										<xs:pattern value="LSD" xml:lang="fr"/>
-										<xs:pattern value="FI-LSB" xml:lang="fr"/>
-										<xs:pattern value="FI-LSC" xml:lang="fr"/>
-										<xs:pattern value="FI-LSD" xml:lang="fr"/>
-										<xs:pattern value="DIN00" xml:lang="fr"/>
-										<xs:pattern value="NH00" xml:lang="fr"/>
-										<xs:pattern value="NH1" xml:lang="fr"/>
-										<xs:pattern value="NH2" xml:lang="fr"/>
-										<xs:pattern value="NH3" xml:lang="fr"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="I_INSTR">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="8"/>
-										<xs:pattern value=".*"/>
-										<xs:pattern value="6" xml:lang="de"/>
-										<xs:pattern value="10" xml:lang="de"/>
-										<xs:pattern value="13" xml:lang="de"/>
-										<xs:pattern value="16" xml:lang="de"/>
-										<xs:pattern value="20" xml:lang="de"/>
-										<xs:pattern value="25" xml:lang="de"/>
-										<xs:pattern value="32" xml:lang="de"/>
-										<xs:pattern value="40" xml:lang="de"/>
-										<xs:pattern value="63" xml:lang="de"/>
-										<xs:pattern value="80" xml:lang="de"/>
-										<xs:pattern value="100" xml:lang="de"/>
-										<xs:pattern value="125" xml:lang="de"/>
-										<xs:pattern value="6" xml:lang="fr"/>
-										<xs:pattern value="10" xml:lang="fr"/>
-										<xs:pattern value="13" xml:lang="fr"/>
-										<xs:pattern value="16" xml:lang="fr"/>
-										<xs:pattern value="20" xml:lang="fr"/>
-										<xs:pattern value="25" xml:lang="fr"/>
-										<xs:pattern value="32" xml:lang="fr"/>
-										<xs:pattern value="40" xml:lang="fr"/>
-										<xs:pattern value="63" xml:lang="fr"/>
-										<xs:pattern value="80" xml:lang="fr"/>
-										<xs:pattern value="100" xml:lang="fr"/>
-										<xs:pattern value="125" xml:lang="fr"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="ID"/>
+						<xs:element name="FORM_ID"/>
+						<xs:element name="SEQ_FORM"/>
+						<xs:element name="NUMMER"/>
+						<xs:element name="BEZ"/>
+						<xs:element name="LEIT_ART"/>
+						<xs:element name="LEIT_ANZ"/>
+						<xs:element name="I_ART"/>
+						<xs:element name="I_INSTR"/>
 						<xs:element name="M_IKMAX">
 							<xs:complexType>
 								<xs:simpleContent>
@@ -1717,17 +618,7 @@
 								</xs:simpleContent>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="M_IKMIN">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="8"/>
-										<xs:pattern value=".*"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="M_IKMIN"/>
 						<xs:element name="M_IKMAX_LN">
 							<xs:complexType>
 								<xs:simpleContent>
@@ -1768,46 +659,8 @@
 								</xs:simpleContent>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="FI_IN">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="6"/>
-										<xs:pattern value=".*"/>
-										<xs:pattern value="13" xml:lang="de"/>
-										<xs:pattern value="16" xml:lang="de"/>
-										<xs:pattern value="25" xml:lang="de"/>
-										<xs:pattern value="32" xml:lang="de"/>
-										<xs:pattern value="40" xml:lang="de"/>
-										<xs:pattern value="63" xml:lang="de"/>
-										<xs:pattern value="13" xml:lang="fr"/>
-										<xs:pattern value="16" xml:lang="fr"/>
-										<xs:pattern value="25" xml:lang="fr"/>
-										<xs:pattern value="32" xml:lang="fr"/>
-										<xs:pattern value="40" xml:lang="fr"/>
-										<xs:pattern value="63" xml:lang="fr"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
-						<xs:element name="FI_IDN">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="6"/>
-										<xs:pattern value=".*"/>
-										<xs:pattern value="10" xml:lang="de"/>
-										<xs:pattern value="30" xml:lang="de"/>
-										<xs:pattern value="300" xml:lang="de"/>
-										<xs:pattern value="10" xml:lang="fr"/>
-										<xs:pattern value="30" xml:lang="fr"/>
-										<xs:pattern value="300" xml:lang="fr"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="FI_IN"/>
+						<xs:element name="FI_IDN"/>
 						<xs:element name="FI_T">
 							<xs:complexType>
 								<xs:simpleContent>
@@ -1818,17 +671,7 @@
 								</xs:simpleContent>
 							</xs:complexType>
 						</xs:element>
-						<xs:element name="BEMERK">
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:restriction base="T_STRING">
-										<xs:minLength value="0"/>
-										<xs:maxLength value="120"/>
-										<xs:pattern value=".*"/>
-									</xs:restriction>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="BEMERK"/>
 					</xs:all>
 				</xs:complexType>
 			</xs:element>

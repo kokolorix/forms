@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!--<?altova_samplexml SINA18.xml?>
 -->
-<?altova_samplexml MESSPROT18.xml?>
+<?altova_samplexml MPP-Small.xml?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xsl:output method="xml" encoding="utf-8" indent="yes"/>
 	<xsl:output name="xml-def" method="xml" indent="yes"/>
@@ -154,14 +154,26 @@
 		</xs:element>
 	</xsl:template>
 	<!--=======================================================================-->
-	<!-- Fld-Template, erstellt ein Subtabellen-Element -->
+	<!-- Tab-Template, erstellt ein Subtabellen-Element -->
 	<!--=======================================================================-->
 	<xsl:template match="Tab" mode="Elm">
 		<xs:element>
 			<xsl:attribute name="name">
 				<xsl:value-of select="@Name"/>
+			</xsl:attribute>
+			<xsl:attribute name="type">
+				<xsl:text>T_</xsl:text>
+				<xsl:value-of select="@Name"/>
+			</xsl:attribute>
+		</xs:element>
+		<xs:element>
+			<xsl:attribute name="name">
+				<xsl:value-of select="@Name"/>
 				<xsl:value-of select="/Form/@Name"/>
 				<xsl:text>_DE</xsl:text>
+			</xsl:attribute>
+			<xsl:attribute name="substitutionGroup">
+				<xsl:value-of select="@Name"/>
 			</xsl:attribute>
 			<xsl:attribute name="type">
 				<xsl:text>T_</xsl:text>
@@ -174,6 +186,9 @@
 				<xsl:value-of select="/Form/@Name"></xsl:value-of>
 				<xsl:text>_FR</xsl:text>
 			</xsl:attribute>
+		<xsl:attribute name="substitutionGroup">
+				<xsl:value-of select="@Name"/>
+			</xsl:attribute>
 			<xsl:attribute name="type">
 				<xsl:text>T_</xsl:text>
 				<xsl:value-of select="@Name"/>
@@ -184,6 +199,9 @@
 				<xsl:value-of select="@Name"/>
 				<xsl:value-of select="/Form/@Name"></xsl:value-of>
 				<xsl:text>_IT</xsl:text>
+			</xsl:attribute>
+		<xsl:attribute name="substitutionGroup">
+				<xsl:value-of select="@Name"/>
 			</xsl:attribute>
 			<xsl:attribute name="type">
 				<xsl:text>T_</xsl:text>
@@ -301,7 +319,6 @@
 				<xsl:value-of select="/Form/@Name"/>
 				<xsl:text>_DE</xsl:text>
 			</xsl:attribute>
-			<xsl:attribute name="minOccurs">0</xsl:attribute>
 		</xs:element>
 		<xs:element>
 			<xsl:attribute name="ref">
@@ -309,7 +326,6 @@
 				<xsl:value-of select="/Form/@Name"></xsl:value-of>
 				<xsl:text>_FR</xsl:text>
 			</xsl:attribute>
-			<xsl:attribute name="minOccurs">0</xsl:attribute>
 		</xs:element>
 		<xs:element>
 			<xsl:attribute name="ref">
@@ -317,7 +333,6 @@
 				<xsl:value-of select="/Form/@Name"></xsl:value-of>
 				<xsl:text>_IT</xsl:text>
 			</xsl:attribute>
-			<xsl:attribute name="minOccurs">0</xsl:attribute>
 		</xs:element>
 	</xsl:template>
 	<!--=======================================================================-->
@@ -325,13 +340,3 @@
 	<!--=======================================================================-->
 	<xsl:template match="@*|node()"/>
 </xsl:stylesheet>
-<!--
-		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-			<xs:element name="DATAPACKET"> 
-		</xs:schema>
-
-    <xsl:copy>
-      <xsl:apply-templates select="@*|node()" />
-    </xsl:copy>
-
--->

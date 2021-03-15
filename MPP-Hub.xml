@@ -1,4 +1,9 @@
-<DATAPACKET Version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MESSPROT18.xsd">
+
+
+
+
+
+<DATAPACKET Version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DataDic\MESSPROT18.xsd">
 	<ROW>
 		<FORM_TYP>P</FORM_TYP>
 		<ID OLD="1">1</ID>
