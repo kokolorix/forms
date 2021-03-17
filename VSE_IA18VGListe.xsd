@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="VGListe" type="T_VGListe"/>
+	<xs:element name="VGListeVSE_IA18_DE" substitutionGroup="VGListe" type="T_VGListe"/>
+	<xs:element name="VGListeVSE_IA18_FR" substitutionGroup="VGListe" type="T_VGListe"/>
+	<xs:element name="VGListeVSE_IA18_IT" substitutionGroup="VGListe" type="T_VGListe"/>
+	<xs:complexType name="T_VGListe">
+		<xs:sequence minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="ROW">
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="ID" type="xs:int"/>
+						<xs:element name="FORM_ID" type="xs:int"/>
+						<xs:element name="SEQ_FORM" type="xs:int"/>
+						<xs:element name="ANZAHL" type="xs:int"/>
+						<xs:element name="VERBRAUCHER" type="xs:boolean"/>
+						<xs:element name="ERZEUGER" type="xs:boolean"/>
+						<xs:element name="SPEICHER" type="xs:boolean"/>
+						<xs:element name="TEXT">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="0"/>
+									<xs:maxLength value="50"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="GES_DATUM" type="xs:dateTime"/>
+						<xs:element name="KVA">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="0"/>
+									<xs:maxLength value="20"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="KVA_ANS_NETZ">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="0"/>
+									<xs:maxLength value="20"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="SPEICH_KAP">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="0"/>
+									<xs:maxLength value="20"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="ANZ_AUSSENL" type="xs:int"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

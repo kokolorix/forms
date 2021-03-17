@@ -1,0 +1,75 @@
+
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".VGListe": {
+			"additionalProperties": false,
+			"$ref": "#/definitions/T_VGListe",
+			"type": "object"
+		},
+		"T_VGListe": {
+			"additionalProperties": false,
+			"properties": {	
+				".VGListe": {
+					"type": "object",
+					"properties": {
+					".ID": {
+						"type": "integer"
+					},
+					".FORM_ID": {
+						"type": "integer"
+					},
+					".SEQ_FORM": {
+						"type": "integer"
+					},
+					".ANZAHL": {
+						"type": "integer"
+					},
+					".VERBRAUCHER": {
+						"type": "boolean"
+					},
+					".ERZEUGER": {
+						"type": "boolean"
+					},
+					".SPEICHER": {
+						"type": "boolean"
+					},
+					".TEXT": {
+						"minLength": 0,
+						"maxLength": 50,
+						"type": "string"
+					},
+					".GES_DATUM": {
+						"type": "string"
+					},
+					".KVA": {
+						"minLength": 0,
+						"maxLength": 20,
+						"type": "string"
+					},
+					".KVA_ANS_NETZ": {
+						"minLength": 0,
+						"maxLength": 20,
+						"type": "string"
+					},
+					".SPEICH_KAP": {
+						"minLength": 0,
+						"maxLength": 20,
+						"type": "string"
+					},
+					".ANZ_AUSSENL": {
+						"type": "integer"
+					}
+					}
+				}
+			}	
+		}
+	},
+	"properties": {
+		"": {
+			"$ref": "#/definitions/.VGListe"
+		}
+	},
+	"type": "object"
+}		

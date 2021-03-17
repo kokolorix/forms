@@ -19,7 +19,7 @@ shift
 goto:loop
 
 :doIt
-set outFile=%~dpn1.json
+set outFile=%~dpn1.xsd
 
 set path=%cd%\tools;%path%
 set xslt2=%~dp0Tools\%~n0.xslt

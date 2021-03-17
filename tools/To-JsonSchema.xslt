@@ -33,8 +33,8 @@
 			"properties": {
 				".FORM_TYP": {
 					"type": "string"
-				},<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="Elm"/>
-			<xsl:apply-templates select="/Form/DataDic/Tab/Tab" mode="Elm"/>
+				},<xsl:apply-templates select="/Form/DataDic/Tab/Fld" mode="elm"/>
+			<xsl:apply-templates select="/Form/DataDic/Tab/Tab" mode="elm1"/>
 			}	
 		}
 	},
@@ -45,11 +45,12 @@
 	},
 	"type": "object"
 }	</xsl:result-document>
+		<xsl:apply-templates select="/Form/DataDic/Tab/Tab" mode="doc"/>
 	</xsl:template>
 	<!--=======================================================================-->
 	<!-- Fld-Template, erstellt ein Feld-Element -->
 	<!--=======================================================================-->
-	<xsl:template match="Fld" mode="Elm">
+	<xsl:template match="Fld" mode="elm">
 		<xsl:param name="indent" select="$t4"></xsl:param>
 		<xsl:variable name="type">
 			<xsl:choose>
@@ -82,20 +83,57 @@
 	<!--=======================================================================-->
 	<!-- Fld-Template, erstellt ein Subtabellen-Element -->
 	<!--=======================================================================-->
-	<xsl:template match="Tab" mode="Elm">
+	<xsl:template match="Tab" mode="elm1">
 		<xsl:if test="position() = 1">
 		</xsl:if>
 		<xsl:text>,</xsl:text>
 		<xsl:value-of select="$nl1"/>
 		<xsl:value-of select="$t4"/>".<xsl:value-of select="@Name"/>": {<xsl:value-of select="$nl1"/>
 		<xsl:value-of select="$t5"/>"type": "object",<xsl:value-of select="$nl1"/>
-		<xsl:value-of select="$t5"/>"properties": {<xsl:text></xsl:text>
-					<xsl:apply-templates select="./Fld" mode="Elm">
-			<xsl:with-param name="indent" select="$t6"/>
-		</xsl:apply-templates>
+		<xsl:value-of select="$t5"/>"properties": {
 					}
 				}</xsl:template>
 	<!--=======================================================================-->
+	<xsl:template match="Tab" mode="elm2">
+		<xsl:if test="position() != 1"><xsl:text>,</xsl:text></xsl:if>
+		<xsl:value-of select="$nl1"/>
+		<xsl:value-of select="$t4"/>".<xsl:value-of select="@Name"/>": {<xsl:value-of select="$nl1"/>
+		<xsl:value-of select="$t5"/>"type": "object",<xsl:value-of select="$nl1"/>
+		<xsl:value-of select="$t5"/>"properties": {<xsl:text></xsl:text>
+					<xsl:apply-templates select="./Fld" mode="elm">
+						<xsl:with-param name="indent" select="$t5"/>
+					</xsl:apply-templates>
+					}
+				}</xsl:template>
+	<!--=======================================================================-->
+	<!-- Tab-Template, erstellt die Subtabellen-Element Dokumentt -->
+	<!--=======================================================================-->
+	<xsl:template match="Tab" mode="doc">
+		<xsl:variable name="fn" select="replace(base-uri(.),'.xml' ,concat(@Name,'.json'))"/>
+		<xsl:result-document href="{$fn}" format="out-def">
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".<xsl:value-of select="@Name"/>": {
+			"additionalProperties": false,
+			"$ref": "#/definitions/T_<xsl:value-of select="@Name"/>",
+			"type": "object"
+		},
+		"T_<xsl:value-of select="@Name"/>": {
+			"additionalProperties": false,
+			"properties": {	<xsl:apply-templates select="." mode="elm2"/>
+			}	
+		}
+	},
+	"properties": {
+		"<xsl:value-of select="Form/@Name"/>": {
+			"$ref": "#/definitions/.<xsl:value-of select="@Name"/>"
+		}
+	},
+	"type": "object"
+}		</xsl:result-document>	
+	</xsl:template>
 	<!-- Leer-Template, tut gar nichts -->
 	<!--=======================================================================-->
 	<xsl:template match="@*|node()"/>

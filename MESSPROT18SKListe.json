@@ -1,0 +1,117 @@
+
+{
+	"$schema": "http://json-schema.org/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		".SKListe": {
+			"additionalProperties": false,
+			"$ref": "#/definitions/T_SKListe",
+			"type": "object"
+		},
+		"T_SKListe": {
+			"additionalProperties": false,
+			"properties": {	
+				".SKListe": {
+					"type": "object",
+					"properties": {
+					".ID": {
+						"type": "integer"
+					},
+					".FORM_ID": {
+						"type": "integer"
+					},
+					".SEQ_FORM": {
+						"type": "integer"
+					},
+					".NUMMER": {
+						"minLength": 0,
+						"maxLength": 23,
+						"type": "string"
+					},
+					".BEZ": {
+						"minLength": 0,
+						"maxLength": 120,
+						"type": "string"
+					},
+					".LEIT_ART": {
+						"minLength": 0,
+						"maxLength": 12,
+						"type": "string"
+					},
+					".LEIT_ANZ": {
+						"minLength": 0,
+						"maxLength": 22,
+						"type": "string"
+					},
+					".I_ART": {
+						"minLength": 0,
+						"maxLength": 10,
+						"type": "string"
+					},
+					".I_INSTR": {
+						"minLength": 0,
+						"maxLength": 8,
+						"type": "string"
+					},
+					".M_IKMAX": {
+						"minLength": 0,
+						"maxLength": 8,
+						"type": "string"
+					},
+					".M_IKMIN": {
+						"minLength": 0,
+						"maxLength": 8,
+						"type": "string"
+					},
+					".M_IKMAX_LN": {
+						"minLength": 0,
+						"maxLength": 8,
+						"type": "string"
+					},
+					".M_IKMIN_LN": {
+						"minLength": 0,
+						"maxLength": 8,
+						"type": "string"
+					},
+					".M_RISO": {
+						"minLength": 0,
+						"maxLength": 8,
+						"type": "string"
+					},
+					".M_LEIT": {
+						"minLength": 0,
+						"maxLength": 8,
+						"type": "string"
+					},
+					".FI_IN": {
+						"minLength": 0,
+						"maxLength": 6,
+						"type": "string"
+					},
+					".FI_IDN": {
+						"minLength": 0,
+						"maxLength": 6,
+						"type": "string"
+					},
+					".FI_T": {
+						"minLength": 0,
+						"maxLength": 8,
+						"type": "string"
+					},
+					".BEMERK": {
+						"minLength": 0,
+						"maxLength": 120,
+						"type": "string"
+					}
+					}
+				}
+			}	
+		}
+	},
+	"properties": {
+		"": {
+			"$ref": "#/definitions/.SKListe"
+		}
+	},
+	"type": "object"
+}		

@@ -1,0 +1,216 @@
+<DATAPACKET Version="1.0">
+	<ROW>
+		<FORM_TYP>I</FORM_TYP>
+		<ID OLD="1">1</ID>
+		<ID_PROJECT/>
+		<COPY_ID/>
+		<MANDANT/>
+		<ID_FORMTMP OLD="2142">2142</ID_FORMTMP>
+		<I_PROJECT/>
+		<I_FORM/>
+		<E_PROJECT/>
+		<INST_OUT Type="DT"/>
+		<WERK_IN Type="DT"/>
+		<WERK_OUT Type="DT"/>
+		<INST_IN Type="DT"/>
+		<PROJ_NR/>
+		<PROJ_JAHR/>
+		<WERK OLD="EW infraDATA">EW infraDATA</WERK>
+		<W_EMAIL/>
+		<W_EF_EMAIL/>
+		<VISUM/>
+		<I_NAME1 OLD="Zange Elektro AG">Zange Elektro AG</I_NAME1>
+		<I_NAME2/>
+		<I_ADRESSE1 OLD="Brunnmattstrasse 35">Brunnmattstrasse 35</I_ADRESSE1>
+		<I_ADRESSE2/>
+		<I_PLZ OLD="6560">6560</I_PLZ>
+		<I_ORT OLD="Neustadt">Neustadt</I_ORT>
+		<I_KONZESS OLD="I-334455">I-334455</I_KONZESS>
+		<I_SACHB OLD="Simon Reber">Simon Reber</I_SACHB>
+		<I_TELNR OLD="031 917 00 43">031 917 00 43</I_TELNR>
+		<I_FAXNR OLD="062 556 66 11">062 556 66 11</I_FAXNR>
+		<I_EMAIL OLD="resi@brunnerinformatik.ch">resi@brunnerinformatik.ch</I_EMAIL>
+		<I_EF_EMAIL/>
+		<O_STRASSE OLD="Mittelstrasse">Mittelstrasse</O_STRASSE>
+		<O_HAUSNR OLD="7">7</O_HAUSNR>
+		<O_PLZ OLD="6560">6560</O_PLZ>
+		<O_ORT OLD="Neustadt">Neustadt</O_ORT>
+		<GEMEINDE OLD="Neustadt">Neustadt</GEMEINDE>
+		<PARZELLE/>
+		<VERSICH/>
+		<GEBAEUDEART OLD="Zweifamilienhaus">Zweifamilienhaus</GEBAEUDEART>
+		<GEBAEUDETEIL/>
+		<LAGE/>
+		<ANLNUTZUNG OLD="Allgemein">Allgemein</ANLNUTZUNG>
+		<U_NAME1 OLD="Heinz Bastel">Heinz Bastel</U_NAME1>
+		<U_NAME2/>
+		<U_ADRESSE1 OLD="Mittelstrasse 7">Mittelstrasse 7</U_ADRESSE1>
+		<U_ADRESSE2/>
+		<U_PLZ OLD="6560">6560</U_PLZ>
+		<U_ORT OLD="Neustadt">Neustadt</U_ORT>
+		<U_TELNR/>
+		<U_FAXNR/>
+		<U_EMAIL/>
+		<U_SPRACHE OLD="d">d</U_SPRACHE>
+		<ABONR/>
+		<EVUAUFTNR/>
+		<TERMIN OLD="20210315000000000" Type="DT">20210315000000000</TERMIN>
+		<ABSCHLTERMIN Type="DT"/>
+		<PACKNAME OLD="ewid.evu">ewid.evu</PACKNAME>
+		<ANZWOHNG/>
+		<ZEV OLD="FALSE" Type="B">FALSE</ZEV>
+		<ARCH OLD="FALSE" Type="B">FALSE</ARCH>
+		<VERW OLD="FALSE" Type="B">FALSE</VERW>
+		<GES_NAME1/>
+		<GES_NAME2/>
+		<GES_ADR1/>
+		<GES_ADR2/>
+		<GES_PLZ/>
+		<GES_ORT/>
+		<GES_TELNR/>
+		<GES_FAXNR/>
+		<GES_EMAIL/>
+		<GES_SPRACHE/>
+		<I_NEW OLD="FALSE" Type="B">FALSE</I_NEW>
+		<I_EXTENT OLD="TRUE" Type="B">TRUE</I_EXTENT>
+		<I_REMOVE OLD="FALSE" Type="B">FALSE</I_REMOVE>
+		<I_PROV OLD="FALSE" Type="B">FALSE</I_PROV>
+		<I_TEMP OLD="FALSE" Type="B">FALSE</I_TEMP>
+		<I_AREA OLD="FALSE" Type="B">FALSE</I_AREA>
+		<HAK_IST/>
+		<HAK_AENDERUNG/>
+		<I_TEXT OLD="Ein Test für Evu-Mappen">
+			<line>Ein Test für Evu-Mappen</line>
+		</I_TEXT>
+		<V_LEIST_VOM/>
+		<V_LEIST_AN/>
+		<V_LEISTMAX/>
+		<STEUER_VNB OLD="FALSE" Type="B">FALSE</STEUER_VNB>
+		<SYSTDIENSTL OLD="FALSE" Type="B">FALSE</SYSTDIENSTL>
+		<MITHKN OLD="FALSE" Type="B">FALSE</MITHKN>
+		<RSEANZ/>
+		<RSEKDO/>
+		<RSENR/>
+		<RSEMONT/>
+		<RSENEU OLD="FALSE" Type="B">FALSE</RSENEU>
+		<RSEVORH OLD="FALSE" Type="B">FALSE</RSEVORH>
+		<RSEAUSW OLD="FALSE" Type="B">FALSE</RSEAUSW>
+		<RSEDEMONT OLD="FALSE" Type="B">FALSE</RSEDEMONT>
+		<RSEUMMONT OLD="FALSE" Type="B">FALSE</RSEUMMONT>
+		<ANSCH_KAB OLD="FALSE" Type="B">FALSE</ANSCH_KAB>
+		<ANSCH_FREI OLD="FALSE" Type="B">FALSE</ANSCH_FREI>
+		<ANSCH_ORT/>
+		<ANSCH_MAXBEZ/>
+		<ANSCH_MAXSPEIS/>
+		<ANSCH_AS_VOR/>
+		<ANSCH_MOD/>
+		<ANSCH_HAKINT OLD="FALSE" Type="B">FALSE</ANSCH_HAKINT>
+		<ANSCH_HAKNR/>
+		<ANSCH_NEU OLD="FALSE" Type="B">FALSE</ANSCH_NEU>
+		<ANSCH_VER OLD="FALSE" Type="B">FALSE</ANSCH_VER>
+		<ANSCH_WECHS OLD="FALSE" Type="B">FALSE</ANSCH_WECHS>
+		<ANSCH_AS_ERF/>
+		<SCHEMA OLD="FALSE" Type="B">FALSE</SCHEMA>
+		<PLAN OLD="FALSE" Type="B">FALSE</PLAN>
+		<GESUCH OLD="FALSE" Type="B">FALSE</GESUCH>
+		<GESUCHTXT/>
+		<VERBLIST OLD="FALSE" Type="B">FALSE</VERBLIST>
+		<TALIST OLD="FALSE" Type="B">FALSE</TALIST>
+		<DISP OLD="FALSE" Type="B">FALSE</DISP>
+		<STEUER OLD="FALSE" Type="B">FALSE</STEUER>
+		<BEILLEER OLD="FALSE" Type="B">FALSE</BEILLEER>
+		<BEILTXT/>
+		<INSTBEM/>
+		<SIGN_DATUM OLD="20210315000000000" Type="DT">20210315000000000</SIGN_DATUM>
+		<SIGNATURE OLD="OvpRu1Mx48n">OvpRu1Mx48n</SIGNATURE>
+		<SIGNKT OLD="Simon Reber">Simon Reber</SIGNKT>
+		<EW_BEW OLD="FALSE" Type="B">FALSE</EW_BEW>
+		<EW_VORB OLD="FALSE" Type="B">FALSE</EW_VORB>
+		<EW_NBEW OLD="FALSE" Type="B">FALSE</EW_NBEW>
+		<EW_SCHEMA OLD="FALSE" Type="B">FALSE</EW_SCHEMA>
+		<EW_SCHEMNR/>
+		<EW_BEM/>
+		<EW_ADR/>
+		<EW_SIGNDAT Type="DT"/>
+		<EW_SIGN/>
+		<EW_SIGNKT/>
+		<T1/>
+		<T2/>
+		<T3/>
+		<T4/>
+		<T5/>
+		<TAListeVSE_IA18_DE>
+			<ROW>
+				<ID>1</ID>
+				<FORM_ID>1</FORM_ID>
+				<SEQ_FORM>1</SEQ_FORM>
+				<BEZUEGER>Heinz Bastel</BEZUEGER>
+				<RECHADR/>
+				<GEBTEIL>EG + UG</GEBTEIL>
+				<NUTZUNG>Wohnung</NUTZUNG>
+				<EVUANLNR/>
+				<STOCKWERK>EG</STOCKWERK>
+				<RAUM/>
+				<TARIF/>
+				<SICH_IN/>
+				<WERKNR>05001</WERKNR>
+				<MONT_ORT/>
+				<ZEV Type="B">FALSE</ZEV>
+				<ANZ_AUSSENL/>
+				<NEU Type="B">FALSE</NEU>
+				<VORH Type="B">TRUE</VORH>
+				<AUSW Type="B">FALSE</AUSW>
+				<DEMONT Type="B">FALSE</DEMONT>
+				<UMMONT Type="B">FALSE</UMMONT>
+			</ROW>
+			<ROW>
+				<ID>2</ID>
+				<FORM_ID>1</FORM_ID>
+				<SEQ_FORM>2</SEQ_FORM>
+				<BEZUEGER>Heinz Bastel</BEZUEGER>
+				<RECHADR/>
+				<GEBTEIL>1. OG</GEBTEIL>
+				<NUTZUNG>Wohnung</NUTZUNG>
+				<EVUANLNR/>
+				<STOCKWERK>1. OG</STOCKWERK>
+				<RAUM/>
+				<TARIF/>
+				<SICH_IN/>
+				<WERKNR>05002</WERKNR>
+				<MONT_ORT/>
+				<ZEV Type="B">FALSE</ZEV>
+				<ANZ_AUSSENL/>
+				<NEU Type="B">FALSE</NEU>
+				<VORH Type="B">TRUE</VORH>
+				<AUSW Type="B">FALSE</AUSW>
+				<DEMONT Type="B">FALSE</DEMONT>
+				<UMMONT Type="B">FALSE</UMMONT>
+			</ROW>
+			<ROW>
+				<ID>3</ID>
+				<FORM_ID>1</FORM_ID>
+				<SEQ_FORM>3</SEQ_FORM>
+				<BEZUEGER>Heinz Bastel</BEZUEGER>
+				<RECHADR/>
+				<GEBTEIL/>
+				<NUTZUNG>Allgemein</NUTZUNG>
+				<EVUANLNR/>
+				<STOCKWERK/>
+				<RAUM/>
+				<TARIF/>
+				<SICH_IN/>
+				<WERKNR>05003</WERKNR>
+				<MONT_ORT/>
+				<ZEV Type="B">FALSE</ZEV>
+				<ANZ_AUSSENL/>
+				<NEU Type="B">FALSE</NEU>
+				<VORH Type="B">TRUE</VORH>
+				<AUSW Type="B">FALSE</AUSW>
+				<DEMONT Type="B">FALSE</DEMONT>
+				<UMMONT Type="B">FALSE</UMMONT>
+			</ROW>
+		</TAListeVSE_IA18_DE>
+		<VGListeVSE_IA18_DE/>
+	</ROW>
+	<PGM_INFO FileVersion="9.0.31.11151" DatenbankAnwender="1" DatenbankAnwenderDescr="ElektroForm Installateur" FormAnwender="1" FormAnwenderDescr="Installateur"/>
+</DATAPACKET>

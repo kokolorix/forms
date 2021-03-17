@@ -10,7 +10,7 @@
 	<!-- Main-Template -->
 	<!--=======================================================================-->
 	<xsl:template match="/">
-		<xsl:variable name="fn" select="replace(base-uri(.),'.xml' ,'.xsd')"/>
+		<xsl:variable name="fn" select="replace(base-uri(.),'.xml' ,'-full.xsd')"/>
 		<xsl:result-document href="{$fn}" format="xml-def">
 			<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
 				<xs:element name="DATAPACKET">

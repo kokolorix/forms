@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="VSE_IA18" type="T_VSE_IA18"/>
-	<xs:element name="TAListe" type="T_TAListe"/>
-	<xs:element name="TAListeVSE_IA18_DE" substitutionGroup="TAListe" type="T_TAListe"/>
-	<xs:element name="TAListeVSE_IA18_FR" substitutionGroup="TAListe" type="T_TAListe"/>
-	<xs:element name="TAListeVSE_IA18_IT" substitutionGroup="TAListe" type="T_TAListe"/>
-	<xs:element name="VGListe" type="T_VGListe"/>
-	<xs:element name="VGListeVSE_IA18_DE" substitutionGroup="VGListe" type="T_VGListe"/>
-	<xs:element name="VGListeVSE_IA18_FR" substitutionGroup="VGListe" type="T_VGListe"/>
-	<xs:element name="VGListeVSE_IA18_IT" substitutionGroup="VGListe" type="T_VGListe"/>
+	<xs:element name="TAListe"/>
+	<xs:element name="TAListeVSE_IA18_DE" substitutionGroup="TAListe"/>
+	<xs:element name="TAListeVSE_IA18_FR" substitutionGroup="TAListe"/>
+	<xs:element name="TAListeVSE_IA18_IT" substitutionGroup="TAListe"/>
+	<xs:element name="VGListe"/>
+	<xs:element name="VGListeVSE_IA18_DE" substitutionGroup="VGListe"/>
+	<xs:element name="VGListeVSE_IA18_FR" substitutionGroup="VGListe"/>
+	<xs:element name="VGListeVSE_IA18_IT" substitutionGroup="VGListe"/>
 	<xs:complexType name="T_VSE_IA18">
 		<xs:all>
 			<xs:element name="FORM_TYP" type="xs:string"/>
@@ -20,10 +20,10 @@
 			<xs:element name="I_PROJECT" type="xs:int"/>
 			<xs:element name="I_FORM" type="xs:int"/>
 			<xs:element name="E_PROJECT" type="xs:int"/>
-			<xs:element name="INST_OUT" type="xs:string"/>
-			<xs:element name="WERK_IN" type="xs:string"/>
-			<xs:element name="WERK_OUT" type="xs:string"/>
-			<xs:element name="INST_IN" type="xs:string"/>
+			<xs:element name="INST_OUT" type="xs:dateTime"/>
+			<xs:element name="WERK_IN" type="xs:dateTime"/>
+			<xs:element name="WERK_OUT" type="xs:dateTime"/>
+			<xs:element name="INST_IN" type="xs:dateTime"/>
 			<xs:element name="PROJ_NR">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -345,8 +345,8 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="TERMIN" type="xs:string"/>
-			<xs:element name="ABSCHLTERMIN" type="xs:string"/>
+			<xs:element name="TERMIN" type="xs:dateTime"/>
+			<xs:element name="ABSCHLTERMIN" type="xs:dateTime"/>
 			<xs:element name="PACKNAME">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -592,7 +592,7 @@
 				</xs:simpleType>
 			</xs:element>
 			<xs:element name="INSTBEM" type="xs:string"/>
-			<xs:element name="SIGN_DATUM" type="xs:string"/>
+			<xs:element name="SIGN_DATUM" type="xs:dateTime"/>
 			<xs:element name="SIGNATURE">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -630,7 +630,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="EW_SIGNDAT" type="xs:string"/>
+			<xs:element name="EW_SIGNDAT" type="xs:dateTime"/>
 			<xs:element name="EW_SIGN">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -690,157 +690,5 @@
 			<xs:element ref="TAListe"/>
 			<xs:element ref="VGListe"/>
 		</xs:all>
-	</xs:complexType>
-	<xs:complexType name="T_TAListe">
-		<xs:sequence minOccurs="0" maxOccurs="unbounded">
-			<xs:element name="ROW">
-				<xs:complexType>
-					<xs:all>
-						<xs:element name="ID" type="xs:int"/>
-						<xs:element name="FORM_ID" type="xs:int"/>
-						<xs:element name="SEQ_FORM" type="xs:int"/>
-						<xs:element name="BEZUEGER">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="40"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="RECHADR">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="100"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="GEBTEIL">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="40"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="NUTZUNG">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="40"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="EVUANLNR">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="20"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="STOCKWERK">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="6"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="RAUM">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="6"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="TARIF">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="30"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="SICH_IN" type="xs:int"/>
-						<xs:element name="WERKNR">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="20"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="MONT_ORT">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="30"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="ZEV" type="xs:boolean"/>
-						<xs:element name="ANZ_AUSSENL" type="xs:int"/>
-						<xs:element name="NEU" type="xs:boolean"/>
-						<xs:element name="VORH" type="xs:boolean"/>
-						<xs:element name="AUSW" type="xs:boolean"/>
-						<xs:element name="DEMONT" type="xs:boolean"/>
-						<xs:element name="UMMONT" type="xs:boolean"/>
-					</xs:all>
-				</xs:complexType>
-			</xs:element>
-		</xs:sequence>
-	</xs:complexType>
-	<xs:complexType name="T_VGListe">
-		<xs:sequence minOccurs="0" maxOccurs="unbounded">
-			<xs:element name="ROW">
-				<xs:complexType>
-					<xs:all>
-						<xs:element name="ID" type="xs:int"/>
-						<xs:element name="FORM_ID" type="xs:int"/>
-						<xs:element name="SEQ_FORM" type="xs:int"/>
-						<xs:element name="ANZAHL" type="xs:int"/>
-						<xs:element name="VERBRAUCHER" type="xs:boolean"/>
-						<xs:element name="ERZEUGER" type="xs:boolean"/>
-						<xs:element name="SPEICHER" type="xs:boolean"/>
-						<xs:element name="TEXT">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="50"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="GES_DATUM" type="xs:string"/>
-						<xs:element name="KVA">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="20"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="KVA_ANS_NETZ">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="20"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="SPEICH_KAP">
-							<xs:simpleType>
-								<xs:restriction base="xs:string">
-									<xs:minLength value="0"/>
-									<xs:maxLength value="20"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
-						<xs:element name="ANZ_AUSSENL" type="xs:int"/>
-					</xs:all>
-				</xs:complexType>
-			</xs:element>
-		</xs:sequence>
 	</xs:complexType>
 </xs:schema>

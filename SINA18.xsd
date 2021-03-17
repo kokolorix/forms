@@ -12,10 +12,10 @@
 			<xs:element name="I_PROJECT" type="xs:int"/>
 			<xs:element name="I_FORM" type="xs:int"/>
 			<xs:element name="E_PROJECT" type="xs:int"/>
-			<xs:element name="INST_OUT" type="xs:string"/>
-			<xs:element name="WERK_IN" type="xs:string"/>
-			<xs:element name="WERK_OUT" type="xs:string"/>
-			<xs:element name="INST_IN" type="xs:string"/>
+			<xs:element name="INST_OUT" type="xs:dateTime"/>
+			<xs:element name="WERK_IN" type="xs:dateTime"/>
+			<xs:element name="WERK_OUT" type="xs:dateTime"/>
+			<xs:element name="INST_IN" type="xs:dateTime"/>
 			<xs:element name="PROJ_NR">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -338,7 +338,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="TERMIN" type="xs:string"/>
+			<xs:element name="TERMIN" type="xs:dateTime"/>
 			<xs:element name="PACKNAME">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -717,7 +717,7 @@
 				</xs:simpleType>
 			</xs:element>
 			<xs:element name="KONTUMFANG" type="xs:string"/>
-			<xs:element name="IA_DATUM" type="xs:string"/>
+			<xs:element name="IA_DATUM" type="xs:dateTime"/>
 			<xs:element name="KONT_SK" type="xs:boolean"/>
 			<xs:element name="KONT_AK" type="xs:boolean"/>
 			<xs:element name="KONT_PK" type="xs:boolean"/>
@@ -821,9 +821,9 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="KONDATUM_SK" type="xs:string"/>
-			<xs:element name="KONDATUM_AKPK" type="xs:string"/>
-			<xs:element name="KONDATUM" type="xs:string"/>
+			<xs:element name="KONDATUM_SK" type="xs:dateTime"/>
+			<xs:element name="KONDATUM_AKPK" type="xs:dateTime"/>
+			<xs:element name="KONDATUM" type="xs:dateTime"/>
 			<xs:element name="KONDATZUS">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -936,8 +936,8 @@
 			<xs:element name="SP_MANGEL" type="xs:boolean"/>
 			<xs:element name="SP_PLOMB" type="xs:boolean"/>
 			<xs:element name="SP_PKRELEVANT" type="xs:boolean"/>
-			<xs:element name="SIGN_DATUM" type="xs:string"/>
-			<xs:element name="SIGN_DATUM2" type="xs:string"/>
+			<xs:element name="SIGN_DATUM" type="xs:dateTime"/>
+			<xs:element name="SIGN_DATUM2" type="xs:dateTime"/>
 			<xs:element name="SIGNATURE">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -970,8 +970,8 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="KONTR_DAT" type="xs:string"/>
-			<xs:element name="KONTR_DAT2" type="xs:string"/>
+			<xs:element name="KONTR_DAT" type="xs:dateTime"/>
+			<xs:element name="KONTR_DAT2" type="xs:dateTime"/>
 			<xs:element name="SIGNATURE2">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
@@ -1004,7 +1004,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="EW_SIGNDAT" type="xs:string"/>
+			<xs:element name="EW_SIGNDAT" type="xs:dateTime"/>
 			<xs:element name="EW_SIGN">
 				<xs:simpleType>
 					<xs:restriction base="xs:string">
