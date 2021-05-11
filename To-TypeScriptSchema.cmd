@@ -27,7 +27,7 @@ pause
 goto:eof
 
 :doIt
-set outFile=%~dpn1.json
+set outFile=%~dpn1.ts
 
 set path=%cd%\tools;%path%
 set xslt2=%~dp0Tools\%~n0.xslt
@@ -35,3 +35,4 @@ set xslt2=%~dp0Tools\%~n0.xslt
 if exist "%~1" AltovaXML.exe -xslt2 "%xslt2%" -in "%~1" -param outFile='file:///%outFile:\=/%' -out "%outFile%" 
 echo Gespeichert in: %outFile% 
 goto:eof
+

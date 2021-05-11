@@ -1,6 +1,7 @@
 
 @echo off
 cd /d "%~dp0"
+set wait=5
 
 if "%*" NEQ "" echo %*
 :: empty call => call with test argument
@@ -10,13 +11,20 @@ if "%~1"=="" goto:eof
 :loop
 :: if no more arguments break the loop
 if "%~1"=="" (
-  :: if not started in VSCode pause
-  if "%VSCODE_PID%"=="" pause
-  goto:eof
+  :: Wenn mit Coderunner in VS-Code gestartet wurde, sofort beeenden
+  if "%VSCODE_PID%" NEQ "" goto:eof
+
+  choice /c wq /t %wait% /d q /m "W=pause, Q=quit(%wait%s)"
+  if errorlevel 2 goto:eof
+  if errorlevel 1 goto:pause
 )
 call:doIt %1
 shift
 goto:loop
+
+:pause
+pause
+goto:eof
 
 :doIt
 set outFile=%~dpn1.xsd
