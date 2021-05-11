@@ -2,8 +2,12 @@
 <Project>
 	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
 		<File FilePath="MESSPROT18.xml" HomeFolder="Yes"/>
+		<File FilePath="MESSPROT18_DE.xml" HomeFolder="Yes"/>
 		<File FilePath="SINA18.xml" HomeFolder="Yes"/>
+		<File FilePath="SINA18_DE.xml" HomeFolder="Yes"/>
 		<File FilePath="VSE_IA18.xml" HomeFolder="Yes"/>
+		<File FilePath="VSE_IA18_DE.xml" HomeFolder="Yes"/>
+		<File FilePath="VSE_TAG_DE.xml" HomeFolder="Yes"/>
 	</Folder>
 	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
 		<File FilePath="tools\DataDic-To-XmlSchema.xslt" HomeFolder="Yes"/>

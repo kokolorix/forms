@@ -138,12 +138,22 @@ export const <xsl:value-of select="/Form/@name"/>
 					<xsl:value-of select="$indent1"/>rows: <xsl:value-of select="@rows"/>,<xsl:value-of select="$nl1"/>
 				</xsl:if>
 				<xsl:value-of select="$indent1"/>dataType : '<xsl:value-of select="@dataType"/>'<xsl:value-of select="$nl1"/>
-				<xsl:value-of select="$indent"/>},<xsl:value-of select="$nl1"/>
+				<xsl:variable name="ddxml" select="replace(/Form/@name , '(.+)_(DE|FR|IT)$', '..\\DataDic\\$1.xml')" ></xsl:variable>				
+				<xsl:variable name="udo" select="replace(/Form/@name , '(.+)_(DE|FR|IT)$', 'Udo_$2')" ></xsl:variable>				
+				<xsl:variable name="fname" select="@field" ></xsl:variable>				
+				<!--<xsl:value-of select="$indent1"/>ddxml : '<xsl:value-of select="$udo"/><xsl:value-of select="$ddxml"/>'<xsl:value-of select="$nl1"/>-->
+				<xsl:value-of select="$indent1"/>options : [<xsl:text/>
+				<xsl:apply-templates select="document($ddxml)//Fld[./@Name=$fname]/*[name(.)=$udo]/Uda" mode="ddxml" /><xsl:value-of select="$nl1"/>
+				<xsl:value-of select="$indent1"/>],<xsl:text/>
+ 				<xsl:value-of select="$indent"/>},<xsl:value-of select="$nl1"/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+	<xsl:template match="Uda" mode="ddxml">
+		<xsl:text> '</xsl:text><xsl:value-of select="."/><xsl:text>',</xsl:text>
+	</xsl:template>
 	<!--=======================================================================-->
-	<!-- Fld-Template, erstellt ein Adressen Element -->
+	<!-- Adresse-Template, erstellt ein Adressen Element -->
 	<!--=======================================================================-->
 	<xsl:template match="Adresse" mode="ctrl1">
 		<xsl:param name="indent" select="$t2"/>
