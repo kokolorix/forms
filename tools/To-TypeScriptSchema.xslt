@@ -21,24 +21,32 @@
 		<xsl:variable name="fn" select="replace(base-uri(.),'.xml' ,'.ts')"/>
 		<xsl:result-document href="{$fn}" format="out-def">
 			<xsl:text/>	
-import { ColDef, ISchema } from 'src/app/components';
+import { ColDef, ISchema, IComponent } from 'src/app/components';
 import { formguid_<xsl:value-of select="/Form/@name"/>, SchemaGuids } from './schema-guid-def';
 import { inputGroup, label, labelhtml, schemaClassLayout, w_full, cb_single, multiple_checkboxes_with_cust } from './schema-utils';
 		<xsl:apply-templates select="/Form/Snippet" mode="ctrl"/>
+			<xsl:value-of select="$nl2"/>export const <xsl:value-of select="/Form/@name"/>: IComponent = {
+	type: 'panel',
+	classLayout: 'w-full',
+	children: [<xsl:text/>
+		<xsl:for-each select="/Form/Snippet">
+			<xsl:value-of select="$nl1"/>
+			<xsl:value-of select="$t2"/>
+			<xsl:value-of select="/Form/@name"/>
+			<xsl:value-of select="position()"/>_<xsl:value-of select="@name"/>
+			<xsl:text>,</xsl:text>
+		</xsl:for-each>
+	]
+}
 			<xsl:value-of select="$nl2"/>
-			<xsl:text>SchemaGuids.registerSchema(formguid_</xsl:text>
-			<xsl:value-of select="/Form/@name"/>, '<xsl:value-of select="/Form/@caption"/>', '<xsl:value-of select="/Form/@iconText"/>'<xsl:text/>
-			<xsl:text>, [</xsl:text>
-			<xsl:for-each select="/Form/Snippet">
-				<xsl:if test="position() &gt; 1">
-					<xsl:text>,</xsl:text>
-				</xsl:if>
+			<xsl:text>SchemaGuids.registerSchema(formguid_</xsl:text><xsl:value-of select="/Form/@name"/>
+			<xsl:text>, '</xsl:text>
+			<xsl:value-of select="/Form/@caption"/>', '<xsl:value-of select="/Form/@iconText"/>',<xsl:text/>
+			<xsl:text> [</xsl:text>
 				<xsl:value-of select="$nl1"/>
 				<xsl:value-of select="$t1"/>
-				<xsl:value-of select="/Form/@name"/>
-				<xsl:value-of select="position()"/>_<xsl:value-of select="@name"/>
-			</xsl:for-each>
-			<xsl:value-of select="$nl1"/>
+				<xsl:value-of select="/Form/@name"/><xsl:text>,</xsl:text>
+				<xsl:value-of select="$nl1"/>
 			<xsl:text>])</xsl:text>
 		</xsl:result-document>
 	</xsl:template>
@@ -47,17 +55,24 @@ import { inputGroup, label, labelhtml, schemaClassLayout, w_full, cb_single, mul
 	<!--=======================================================================-->
 	<xsl:template match="Snippet" mode="ctrl">
 		<xsl:param name="indent" select="$t2"/>
-export const <xsl:value-of select="/Form/@name"/>
-		<xsl:value-of select="position()"/>_<xsl:value-of select="@name"/>: ISchema = {
-	type: 'panel',
-	name: '<xsl:value-of select="@name"/>',
-	label: '<xsl:value-of select="@caption"/>',
-	classLayout: schemaClassLayout,
-	children: [<xsl:value-of select="$nl1"/>
-		<xsl:apply-templates select="./*" mode="ctrl1">
-			<xsl:with-param name="indent" select="$t2"/>
-		</xsl:apply-templates>
-	]
+const <xsl:value-of select="/Form/@name"/>
+		<xsl:value-of select="position()"/>_<xsl:value-of select="@name"/>: IComponent = {
+	type: 'card',
+	classLayout: 'w-full',
+	children: [
+		{
+			type: 'panel',
+			name: '<xsl:value-of select="@name"/>',
+			label: '<xsl:value-of select="@caption"/>',
+			class: 'col-span-2',
+			classLayout: schemaClassLayout,
+			children: [<xsl:value-of select="$nl1"/>
+				<xsl:apply-templates select="./*" mode="ctrl1">
+					<xsl:with-param name="indent" select="$t4"/>
+				</xsl:apply-templates>
+			],
+		},
+	],
 }
 	</xsl:template>
 	<!--=======================================================================-->
