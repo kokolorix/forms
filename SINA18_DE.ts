@@ -283,6 +283,7 @@ const SINA18_DE3_FrKontakteSINA: IComponent = {
 			]
 		),
 		
+	
 		label('Unabhängiges Kontrollorgan', true, 'font-bold'),
 						label('Bewillig.-Nr:'),
 				{
@@ -352,6 +353,7 @@ const SINA18_DE3_FrKontakteSINA: IComponent = {
 			]
 		),
 		
+	
 		label('Eigentümer', true, 'font-bold'),
 		
 		label('Name'),
@@ -413,6 +415,7 @@ const SINA18_DE3_FrKontakteSINA: IComponent = {
 			]
 		),
 		
+	
 		label('Verwaltung', true, 'font-bold'),
 		
 		label('Name'),
@@ -474,6 +477,7 @@ const SINA18_DE3_FrKontakteSINA: IComponent = {
 			]
 		),
 		
+	
 			],
 		},
 	],
@@ -738,7 +742,7 @@ const SINA18_DE6_FrBeilagenSINA18: IComponent = {
 }
 	
 
-export const SINA18_DE: IComponent = {
+export const SINA18_DE: ISchema = {
 	type: 'panel',
 	classLayout: 'w-full',
 	children: [

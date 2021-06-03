@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!--<?altova_samplexml SINA18.xml?>
 <?altova_samplexml ..\MESSPROT_PV20_DE.xml?>
-<?altova_samplexml ..\SINA18_DE.xml?>
--->
 <?altova_samplexml ..\VSE_IA18_DE.xml?>
+-->
+<?altova_samplexml ..\SINA18_DE.xml?>
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xsl:output name="out-def" encoding="utf-8" method="text"/>
 	<xsl:variable name="t1" select="'&#x9;'"/>
@@ -25,7 +25,7 @@ import { ColDef, ISchema, IComponent } from 'src/app/components';
 import { formguid_<xsl:value-of select="/Form/@name"/>, SchemaGuids } from './schema-guid-def';
 import { inputGroup, label, labelhtml, schemaClassLayout, w_full, cb_single, multiple_checkboxes_with_cust } from './schema-utils';
 		<xsl:apply-templates select="/Form/Snippet" mode="ctrl"/>
-			<xsl:value-of select="$nl2"/>export const <xsl:value-of select="/Form/@name"/>: IComponent = {
+			<xsl:value-of select="$nl2"/>export const <xsl:value-of select="/Form/@name"/>: ISchema = {
 	type: 'panel',
 	classLayout: 'w-full',
 	children: [<xsl:text/>
